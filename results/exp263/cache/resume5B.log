@@ -1,0 +1,3 @@
+== base ('three_species', 'cached')
+== fit ('three_species', 'TS-5', 'probes_A', 'joint') ok 30407s
+== fit ('three_species', 'TS-3', 'nonneg', 'joint') ok 44957s

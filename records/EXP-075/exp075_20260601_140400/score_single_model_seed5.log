@@ -1,0 +1,33 @@
+2026-06-01 18:11:31,030 [INFO] ascension.benchmarks.alien_depth: alien_depth: max_depth=6 per_layer=(True, False, True, False, False, True) held_out_rmse=0.21206819539332167 q_drift=None n_hyp=4 elapsed_ms=10504
+========================================================================
+ALIEN RUN ddea1a78-d5d3-42ef-9890-597c61dcc03a
+  run.status=completed  halt_reason=duration_exceeded
+  PROVENANCE (P-15.2-6): benchmark_system='alien_universe'  included_in_distillation_v1=False
+  SCORING MODE: FAMILY (L3/L4 vs held-out products {3,5})
+  node types: {'hypothesis': 4}
+  hypothesis nodes=4  status_breakdown={'active': 4}
+  SPEND: 11 llm_calls, $1.1369 total
+    provider='google': 11 calls, $1.1369
+------------------------------------------------------------------------
+  DISCOVERY DEPTH (P-15.2-1/2/3): max_depth=6
+    per_layer L1..L6 = (True, False, True, False, False, True)
+    HONEST consecutive force-law depth (L1-L4, L-057) = 1   [L5=False L6=True reported separately, non-consecutive]
+    held_out_rss_reduction=0.21206819539332167  q_drift=None
+  scorer notes (11):
+    - L1: inverse-square term + Newton accel-fit converges ('(k - j/r) / r**2')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('(k - j/r) / r**2')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('(s1 + s2 - 1) / r')
+    - L6 DENIED: claimed symmetry not verified by sympy ('(s1 + s2 - 1) / r')
+    - L1: inverse-square term + Newton accel-fit converges ('kappa*(s1+s2)/(m1*r**3) - G*m2/r**2')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('kappa*(s1+s2)/(m1*r**3) - G*m2/r**2')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('kappa*(s1+s2)/(m1*r**3) - G*m2/r**2')
+    - L6 DENIED: claimed symmetry not verified by sympy ('kappa*(s1+s2)/(m1*r**3) - G*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('s1*s2 / (m1 * r**2)')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('s1*s2 / (m1 * r**2)')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('s1*s2 / (m1 * r**2)')
+  distinct symbolic_form count=4 (sample up to 30):
+    (k - j/r) / r**2
+    (s1 + s2 - 1) / r
+    kappa*(s1+s2)/(m1*r**3) - G*m2/r**2
+    s1*s2 / (m1 * r**2)
+========================================================================

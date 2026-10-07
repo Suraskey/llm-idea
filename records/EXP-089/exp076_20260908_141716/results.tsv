@@ -1,0 +1,2 @@
+seed	arm	run_id	max_depth	per_layer
+5	instrument_only	88eaf47e-9954-47e5-bfb7-fab6b866c403	2	per_layer L1..L6 = (True, True, False, False, False, False)

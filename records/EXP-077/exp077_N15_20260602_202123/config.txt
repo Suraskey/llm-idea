@@ -1,0 +1,4 @@
+label=exp077_N15
+council_provider_mode=single-provider
+call_budget=15  (0 = OFF / wall-clock-matched)
+max_duration_s=3600  per_run_ceiling_usd=5

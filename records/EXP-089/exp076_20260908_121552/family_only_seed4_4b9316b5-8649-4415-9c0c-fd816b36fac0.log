@@ -1,0 +1,73 @@
+2026-09-08 12:16:05,838 [INFO] __main__: orchestrator CLI benchmark: system=alien_family seed=4 n_members=4 n_bodies=2 n_steps=1000 n_held_out=13
+2026-09-08 12:16:05,841 [INFO] __main__: orchestrator CLI pre-set run_id=4b9316b5-8649-4415-9c0c-fd816b36fac0
+2026-09-08 12:16:05,847 [INFO] __main__: orchestrator CLI episode start: n_agents=5 campaign_id=None focus=None max_duration_seconds=1200 call_budget=None agents=[('plato', 30), ('aristotle', 5), ('diogenes', 15), ('heraclitus', 60), ('parmenides', 20)]
+2026-09-08 12:16:05,897 [INFO] ascension.orchestrator.orchestrator: orchestrator: alien run-record flags written to runs.config for run_id=4b9316b5-8649-4415-9c0c-fd816b36fac0: benchmark_system=alien_universe included_in_distillation_v1=False council_variant=council
+2026-09-08 12:16:05,900 [INFO] ascension.orchestrator.orchestrator: orchestrator started: run_id=4b9316b5-8649-4415-9c0c-fd816b36fac0 n_agents=5
+2026-09-08 12:16:05,930 [INFO] ascension.council.round_close: RoundCloseCoordinator starting: window=60s run_id=4b9316b5-8649-4415-9c0c-fd816b36fac0 score_ranking=True alien_fit_ranking=True
+2026-09-08 12:16:05,971 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-09-08 12:16:05,998 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=parmenides model=meta/llama-3.3-70b-instruct
+2026-09-08 12:16:06,254 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-09-08 12:16:06,366 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 12:16:06,367 [WARNING] ascension.council.base: council aristotle iter 1: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 12:16:06,367 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=aristotle error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 12:16:06,375 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 12:16:06,376 [WARNING] ascension.council.base: council parmenides iter 1: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 12:16:06,376 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=parmenides error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 12:16:06,473 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 12:16:06,473 [WARNING] ascension.council.base: council diogenes iter 1: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 12:16:06,473 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=diogenes error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 12:16:11,204 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 12:16:11,207 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 12:16:11,213 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 12:16:11,214 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 12:16:11,394 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-09-08 12:16:11,447 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 12:16:11,448 [WARNING] ascension.council.base: council aristotle iter 2: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 12:16:11,448 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=aristotle error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 12:16:16,476 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-09-08 12:16:16,652 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 12:16:16,652 [WARNING] ascension.council.base: council aristotle iter 3: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 12:16:16,653 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=aristotle error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 12:16:16,657 [ERROR] ascension.orchestrator.orchestrator: agent halted by 3-strike rule: agent=aristotle
+2026-09-08 12:16:16,660 [INFO] ascension.orchestrator.orchestrator: orchestrator: agent supervise task 'agent-aristotle' finished; continuing with the remaining agents (D-18)
+2026-09-08 12:16:21,529 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-09-08 12:16:21,588 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 12:16:21,589 [WARNING] ascension.council.base: council diogenes iter 2: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 12:16:21,589 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=diogenes error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 12:16:26,398 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=parmenides model=meta/llama-3.3-70b-instruct
+2026-09-08 12:16:26,465 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 12:16:26,466 [WARNING] ascension.council.base: council parmenides iter 2: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 12:16:26,466 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=parmenides error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 12:16:36,614 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-09-08 12:16:36,819 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 12:16:36,819 [WARNING] ascension.council.base: council diogenes iter 3: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 12:16:36,819 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=diogenes error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 12:16:36,825 [ERROR] ascension.orchestrator.orchestrator: agent halted by 3-strike rule: agent=diogenes
+2026-09-08 12:16:36,827 [INFO] ascension.orchestrator.orchestrator: orchestrator: agent supervise task 'agent-diogenes' finished; continuing with the remaining agents (D-18)
+2026-09-08 12:16:46,506 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=parmenides model=meta/llama-3.3-70b-instruct
+2026-09-08 12:16:46,670 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 12:16:46,671 [WARNING] ascension.council.base: council parmenides iter 3: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 12:16:46,671 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=parmenides error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 12:16:46,677 [ERROR] ascension.orchestrator.orchestrator: agent halted by 3-strike rule: agent=parmenides
+2026-09-08 12:16:46,678 [INFO] ascension.orchestrator.orchestrator: orchestrator: agent supervise task 'agent-parmenides' finished; continuing with the remaining agents (D-18)
+2026-09-08 12:17:05,967 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 1 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-09-08 12:17:34,366 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 12:17:34,739 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 12:18:00,690 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 12:18:00,733 [WARNING] ascension.council.base: council heraclitus iter 1: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=heraclitus schema=CouncilHypothesis
+2026-09-08 12:18:00,734 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=SchemaValidationFailed: SchemaValidationFailed role=heraclitus schema=CouncilHypothesis
+2026-09-08 12:18:05,164 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 12:18:05,166 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 12:18:05,992 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-09-08 12:18:34,985 [INFO] ascension.council.round_close: RoundCloseCoordinator stopped after 2 rounds (run_id=4b9316b5-8649-4415-9c0c-fd816b36fac0)
+2026-09-08 12:18:35,002 [INFO] __main__: orchestrator CLI exit: run_id=4b9316b5-8649-4415-9c0c-fd816b36fac0 halt_reason=sigint n_agents=5 n_halted=3
+2026-09-08 12:19:46,959 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"

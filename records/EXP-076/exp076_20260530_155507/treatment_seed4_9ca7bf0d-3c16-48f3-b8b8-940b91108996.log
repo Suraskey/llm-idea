@@ -1,0 +1,429 @@
+2026-05-30 18:39:47,446 [INFO] __main__: orchestrator CLI benchmark: system=alien_family seed=4 n_members=4 n_bodies=2 n_steps=1000 n_held_out=13
+2026-05-30 18:39:47,449 [INFO] __main__: orchestrator CLI pre-set run_id=9ca7bf0d-3c16-48f3-b8b8-940b91108996
+2026-05-30 18:39:47,449 [INFO] __main__: orchestrator CLI episode start: n_agents=5 campaign_id=None focus=None max_duration_seconds=1200 agents=[('plato', 30), ('aristotle', 5), ('diogenes', 15), ('heraclitus', 60), ('parmenides', 20)]
+2026-05-30 18:39:47,461 [INFO] ascension.orchestrator.orchestrator: orchestrator: alien run-record flags written to runs.config for run_id=9ca7bf0d-3c16-48f3-b8b8-940b91108996: benchmark_system=alien_universe included_in_distillation_v1=False council_variant=council
+2026-05-30 18:39:47,464 [INFO] ascension.orchestrator.orchestrator: orchestrator started: run_id=9ca7bf0d-3c16-48f3-b8b8-940b91108996 n_agents=5
+2026-05-30 18:39:47,475 [INFO] ascension.council.round_close: RoundCloseCoordinator starting: window=60s run_id=9ca7bf0d-3c16-48f3-b8b8-940b91108996 score_ranking=True alien_fit_ranking=True
+2026-05-30 18:39:47,516 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-05-30 18:39:47,554 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=parmenides model=meta/llama-3.3-70b-instruct
+2026-05-30 18:39:47,577 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:39:47,812 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-30 18:39:47,813 [WARNING] ascension.council.base: council aristotle iter 1: unexpected error: NvidiaError: NVIDIA returned HTTP 429 for model 'meta/llama-3.3-70b-instruct': {"status":429,"title":"Too Many Requests"}
+2026-05-30 18:39:48,685 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:39:48,688 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:39:48,714 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:39:48,716 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:39:52,836 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-05-30 18:39:53,123 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-30 18:39:53,124 [WARNING] ascension.council.base: council aristotle iter 2: unexpected error: NvidiaError: NVIDIA returned HTTP 429 for model 'meta/llama-3.3-70b-instruct': {"status":429,"title":"Too Many Requests"}
+2026-05-30 18:39:54,785 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:39:54,787 [WARNING] ascension.llm.providers.nvidia: NVIDIA structured fallback JSON failed schema 'CouncilHypothesis': 1 validation error for CouncilHypothesis
+  Value error, posterior must sum to 1.0 ± 1e-3; got 0.600000. Pitfall 3 case: agent dropped/double-counted mass. [type=value_error, input_value={'content': {'symbolic_fo...ependence to manifest.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-05-30 18:39:54,802 [WARNING] ascension.council.base: council diogenes iter 1: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=diogenes schema=CouncilHypothesis
+2026-05-30 18:39:58,148 [WARNING] ascension.council.base: council aristotle iter 3: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:03,168 [WARNING] ascension.council.base: council aristotle iter 4: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:08,202 [WARNING] ascension.council.base: council aristotle iter 5: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:09,849 [WARNING] ascension.council.base: council diogenes iter 2: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:13,220 [WARNING] ascension.council.base: council aristotle iter 6: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:18,240 [WARNING] ascension.council.base: council aristotle iter 7: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:23,262 [WARNING] ascension.council.base: council aristotle iter 8: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:24,884 [WARNING] ascension.council.base: council diogenes iter 3: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:28,283 [WARNING] ascension.council.base: council aristotle iter 9: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:31,715 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:40:31,732 [WARNING] ascension.agent.publish: insert_node: embed failed for type=hypothesis run_id=9ca7bf0d-3c16-48f3-b8b8-940b91108996 — deadlettering: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:33,308 [WARNING] ascension.council.base: council aristotle iter 10: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:38,328 [WARNING] ascension.council.base: council aristotle iter 11: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:39,919 [WARNING] ascension.council.base: council diogenes iter 4: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:43,369 [WARNING] ascension.council.base: council aristotle iter 12: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:47,485 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 1 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-05-30 18:40:48,387 [WARNING] ascension.council.base: council aristotle iter 13: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:51,768 [WARNING] ascension.council.base: council parmenides iter 2: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:52,893 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:40:52,915 [WARNING] ascension.agent.publish: insert_node: embed failed for type=hypothesis run_id=9ca7bf0d-3c16-48f3-b8b8-940b91108996 — deadlettering: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:53,404 [WARNING] ascension.council.base: council aristotle iter 14: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:54,943 [WARNING] ascension.council.base: council diogenes iter 5: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:40:58,423 [WARNING] ascension.council.base: council aristotle iter 15: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:03,445 [WARNING] ascension.council.base: council aristotle iter 16: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:08,469 [WARNING] ascension.council.base: council aristotle iter 17: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:08,508 [INFO] ascension.council.diversity: council diversity warmup: 4 distinct agents < 5 minimum; skipping gate evaluation (entropy=-0.000 bits recorded as below_threshold=False per Pitfall 1)
+2026-05-30 18:41:09,969 [WARNING] ascension.council.base: council diogenes iter 6: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:11,787 [WARNING] ascension.council.base: council parmenides iter 3: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:13,490 [WARNING] ascension.council.base: council aristotle iter 18: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:18,514 [WARNING] ascension.council.base: council aristotle iter 19: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:23,534 [WARNING] ascension.council.base: council aristotle iter 20: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:24,998 [WARNING] ascension.council.base: council diogenes iter 7: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:27,829 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:41:27,850 [WARNING] ascension.agent.publish: insert_node: embed failed for type=hypothesis run_id=9ca7bf0d-3c16-48f3-b8b8-940b91108996 — deadlettering: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:28,557 [WARNING] ascension.council.base: council aristotle iter 21: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:31,821 [WARNING] ascension.council.base: council parmenides iter 4: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:33,572 [WARNING] ascension.council.base: council aristotle iter 22: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:38,587 [WARNING] ascension.council.base: council aristotle iter 23: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:40,023 [WARNING] ascension.council.base: council diogenes iter 8: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:43,605 [WARNING] ascension.council.base: council aristotle iter 24: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:47,548 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 2 — alien proposal c52b87eb-667e-4fdc-ad62-4ced662f92a9 could not be parsed/evaluated to a finite force (symbolic_form='(k*s1*s2 - G) * m2 / r**2'); excluded from alien-fit ranking
+2026-05-30 18:41:47,548 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 2 — alien-fit ranking could not rank >=2 proposals (1 rankable); falling back to CONFIDENCE ranking for this round. This is the genuine-failure path (engineering_discipline_no_coverups — loud, never a silent circular signal). Investigate if it recurs: it means the Council emitted no parseable symbolic_form.
+2026-05-30 18:41:56,662 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 persisted residual feedback (fit=0.935 steeper_power=True oscillation=True) for best=c52b87eb-667e-4fdc-ad62-4ced662f92a9
+2026-05-30 18:41:56,681 [WARNING] ascension.council.base: council aristotle iter 25: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:56,683 [WARNING] ascension.council.base: council parmenides iter 5: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:56,707 [WARNING] ascension.council.base: council diogenes iter 9: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:57,284 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:41:57,291 [ERROR] ascension.agora.criteria_layer: populate_criteria_from_round failed: y_plus=c52b87eb-667e-4fdc-ad62-4ced662f92a9 y_minus=e9dcfba4-31c4-4fba-9f48-5a47d194f25e round_id=2 error=ProviderUnavailable: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:57,301 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 closed — 0 new criteria from (best=c52b87eb-667e-4fdc-ad62-4ced662f92a9, worst=e9dcfba4-31c4-4fba-9f48-5a47d194f25e)
+2026-05-30 18:41:57,402 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:41:57,404 [WARNING] ascension.council.base: council heraclitus iter 2: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:41:57,987 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:41:57,990 [WARNING] ascension.council.base: council plato iter 2: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:01,712 [WARNING] ascension.council.base: council aristotle iter 26: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:06,747 [WARNING] ascension.council.base: council aristotle iter 27: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:11,750 [WARNING] ascension.council.base: council diogenes iter 10: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:11,765 [WARNING] ascension.council.base: council aristotle iter 28: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:16,696 [WARNING] ascension.council.base: council parmenides iter 6: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:16,783 [WARNING] ascension.council.base: council aristotle iter 29: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:21,805 [WARNING] ascension.council.base: council aristotle iter 30: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:21,859 [INFO] ascension.council.diversity: council diversity warmup: 4 distinct agents < 5 minimum; skipping gate evaluation (entropy=-0.000 bits recorded as below_threshold=False per Pitfall 1)
+2026-05-30 18:42:26,787 [WARNING] ascension.council.base: council diogenes iter 11: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:26,818 [WARNING] ascension.council.base: council aristotle iter 31: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:28,302 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:42:28,304 [WARNING] ascension.council.base: council plato iter 3: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:31,836 [WARNING] ascension.council.base: council aristotle iter 32: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:36,711 [WARNING] ascension.council.base: council parmenides iter 7: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:36,853 [WARNING] ascension.council.base: council aristotle iter 33: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:41,816 [WARNING] ascension.council.base: council diogenes iter 12: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:41,874 [WARNING] ascension.council.base: council aristotle iter 34: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:46,894 [WARNING] ascension.council.base: council aristotle iter 35: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:51,913 [WARNING] ascension.council.base: council aristotle iter 36: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:56,727 [WARNING] ascension.council.base: council parmenides iter 8: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:56,856 [WARNING] ascension.council.base: council diogenes iter 13: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:56,931 [WARNING] ascension.council.base: council aristotle iter 37: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:57,314 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 3 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-05-30 18:42:57,729 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:42:57,731 [WARNING] ascension.council.base: council heraclitus iter 3: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:42:58,432 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:42:58,433 [WARNING] ascension.council.base: council plato iter 4: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:01,948 [WARNING] ascension.council.base: council aristotle iter 38: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:06,970 [WARNING] ascension.council.base: council aristotle iter 39: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:11,889 [WARNING] ascension.council.base: council diogenes iter 14: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:11,988 [WARNING] ascension.council.base: council aristotle iter 40: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:16,761 [WARNING] ascension.council.base: council parmenides iter 9: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:17,010 [WARNING] ascension.council.base: council aristotle iter 41: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:22,034 [WARNING] ascension.council.base: council aristotle iter 42: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:26,927 [WARNING] ascension.council.base: council diogenes iter 15: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:27,054 [WARNING] ascension.council.base: council aristotle iter 43: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:28,716 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:43:28,718 [WARNING] ascension.council.base: council plato iter 5: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:28,767 [INFO] ascension.council.diversity: council diversity warmup: 4 distinct agents < 5 minimum; skipping gate evaluation (entropy=-0.000 bits recorded as below_threshold=False per Pitfall 1)
+2026-05-30 18:43:32,069 [WARNING] ascension.council.base: council aristotle iter 44: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:36,780 [WARNING] ascension.council.base: council parmenides iter 10: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:37,091 [WARNING] ascension.council.base: council aristotle iter 45: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:41,955 [WARNING] ascension.council.base: council diogenes iter 16: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:42,109 [WARNING] ascension.council.base: council aristotle iter 46: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:47,130 [WARNING] ascension.council.base: council aristotle iter 47: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:52,147 [WARNING] ascension.council.base: council aristotle iter 48: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:56,801 [WARNING] ascension.council.base: council parmenides iter 11: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:56,986 [WARNING] ascension.council.base: council diogenes iter 17: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:57,164 [WARNING] ascension.council.base: council aristotle iter 49: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:57,323 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 4 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-05-30 18:43:57,969 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:43:57,971 [WARNING] ascension.council.base: council heraclitus iter 4: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:43:58,838 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:43:58,839 [WARNING] ascension.council.base: council plato iter 6: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:02,179 [WARNING] ascension.council.base: council aristotle iter 50: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:07,194 [WARNING] ascension.council.base: council aristotle iter 51: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:12,015 [WARNING] ascension.council.base: council diogenes iter 18: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:12,211 [WARNING] ascension.council.base: council aristotle iter 52: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:16,819 [WARNING] ascension.council.base: council parmenides iter 12: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:17,227 [WARNING] ascension.council.base: council aristotle iter 53: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:22,243 [WARNING] ascension.council.base: council aristotle iter 54: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:27,047 [WARNING] ascension.council.base: council diogenes iter 19: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:27,260 [WARNING] ascension.council.base: council aristotle iter 55: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:29,099 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:44:29,101 [WARNING] ascension.council.base: council plato iter 7: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:32,278 [WARNING] ascension.council.base: council aristotle iter 56: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:36,840 [WARNING] ascension.council.base: council parmenides iter 13: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:37,295 [WARNING] ascension.council.base: council aristotle iter 57: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:37,337 [INFO] ascension.council.diversity: council diversity warmup: 4 distinct agents < 5 minimum; skipping gate evaluation (entropy=-0.000 bits recorded as below_threshold=False per Pitfall 1)
+2026-05-30 18:44:42,076 [WARNING] ascension.council.base: council diogenes iter 20: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:42,312 [WARNING] ascension.council.base: council aristotle iter 58: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:47,329 [WARNING] ascension.council.base: council aristotle iter 59: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:52,347 [WARNING] ascension.council.base: council aristotle iter 60: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:56,855 [WARNING] ascension.council.base: council parmenides iter 14: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:57,103 [WARNING] ascension.council.base: council diogenes iter 21: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:57,332 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 5 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-05-30 18:44:57,363 [WARNING] ascension.council.base: council aristotle iter 61: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=1752165.709070208
+2026-05-30 18:44:58,251 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:44:58,254 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:44:59,418 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:44:59,421 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:45:02,380 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-05-30 18:45:12,127 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:45:16,874 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=parmenides model=meta/llama-3.3-70b-instruct
+2026-05-30 18:45:17,128 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-30 18:45:17,129 [WARNING] ascension.council.base: council parmenides iter 15: unexpected error: NvidiaError: NVIDIA returned HTTP 429 for model 'meta/llama-3.3-70b-instruct': {"status":429,"title":"Too Many Requests"}
+2026-05-30 18:45:26,222 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:45:26,232 [WARNING] ascension.llm.providers.nvidia: NVIDIA structured fallback JSON failed schema 'CouncilHypothesis': 1 validation error for CouncilHypothesis
+  Value error, posterior must sum to 1.0 ± 1e-3; got 0.600000. Pitfall 3 case: agent dropped/double-counted mass. [type=value_error, input_value={'content': {'symbolic_fo...r the observed motion.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-05-30 18:45:26,247 [WARNING] ascension.council.base: council diogenes iter 22: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=diogenes schema=CouncilHypothesis
+2026-05-30 18:45:33,330 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:45:33,719 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:45:37,156 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=parmenides model=meta/llama-3.3-70b-instruct
+2026-05-30 18:45:38,793 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-05-30 18:45:41,286 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:45:57,182 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:45:57,342 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 6 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-05-30 18:45:57,439 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:46:03,025 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:46:03,308 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:46:05,900 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:46:05,901 [WARNING] ascension.llm.providers.nvidia: NVIDIA structured fallback JSON failed schema 'CouncilHypothesis': 1 validation error for CouncilHypothesis
+  Value error, posterior must sum to 1.0 ± 1e-3; got 0.560000. Pitfall 3 case: agent dropped/double-counted mass. [type=value_error, input_value={'content': {'symbolic_fo...r the observed motion.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-05-30 18:46:05,912 [WARNING] ascension.council.base: council diogenes iter 23: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=diogenes schema=CouncilHypothesis
+2026-05-30 18:46:20,946 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:46:23,993 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:46:24,383 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:46:29,458 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-05-30 18:46:33,728 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:46:33,730 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:46:33,988 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:46:34,320 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:46:39,401 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-05-30 18:46:43,293 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:46:43,567 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:46:43,617 [INFO] ascension.agora._dispute_companion: dispute_companion_written rejected_node_id=5bc36209-ecd1-4f3f-8cc6-1b2896b8d395 run_id=9ca7bf0d-3c16-48f3-b8b8-940b91108996
+2026-05-30 18:46:43,620 [INFO] ascension.agora.conflict_detection: conflict_detection: flagged ['5bc36209-ecd1-4f3f-8cc6-1b2896b8d395', 'c52b87eb-667e-4fdc-ad62-4ced662f92a9'] | trigger=agent_flag signal=contradicts_edge target_confidence>0.7
+2026-05-30 18:46:44,390 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:46:44,558 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:46:49,632 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-05-30 18:46:57,375 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 7 — alien proposal 5bc36209-ecd1-4f3f-8cc6-1b2896b8d395 could not be parsed/evaluated to a finite force (symbolic_form='G*m1*m2/r**2.5 + alpha*sin(k*r) + beta/r**3'); excluded from alien-fit ranking
+2026-05-30 18:46:57,385 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 7 — alien proposal 73d5ad00-dd3b-4048-948b-6e44aa59074d could not be parsed/evaluated to a finite force (symbolic_form='G*m2*r/(r**2 + alpha*r**2.5 + beta*sin(k*r))'); excluded from alien-fit ranking
+2026-05-30 18:46:57,425 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 7 persisted residual feedback (fit=0.946 steeper_power=False oscillation=False) for best=20d93d48-dced-4c27-9584-3cde13460443
+2026-05-30 18:47:03,611 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 7 persisted experiment feedback (fitted_exponent=3.4 rss_reduction=1.000) for best=20d93d48-dced-4c27-9584-3cde13460443
+2026-05-30 18:47:03,624 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:47:03,834 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:47:03,836 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:47:03,932 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:47:03,934 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:47:04,606 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:47:04,963 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:47:10,029 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-05-30 18:47:18,502 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:47:18,803 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:47:18,827 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Avoids introducing new, unobserved physical properties or entities.'
+2026-05-30 18:47:18,989 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:47:19,042 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Commits to specific parameter values rather than proposing parameter ranges.'
+2026-05-30 18:47:19,241 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:47:19,255 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Justifies its terms by direct, explicit reference to features in the data.'
+2026-05-30 18:47:19,368 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 429 Too Many Requests"
+2026-05-30 18:47:21,535 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 429 Too Many Requests"
+2026-05-30 18:47:23,914 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 429 Too Many Requests"
+2026-05-30 18:47:24,293 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:47:24,423 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 429 Too Many Requests"
+2026-05-30 18:47:26,710 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:47:26,926 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:47:26,929 [WARNING] ascension.llm.providers.nvidia: NVIDIA structured fallback JSON failed schema 'CouncilHypothesis': 1 validation error for CouncilHypothesis
+  Value error, posterior must sum to 1.0 ± 1e-3; got 0.900000. Pitfall 3 case: agent dropped/double-counted mass. [type=value_error, input_value={'content': {'symbolic_fo...ic errors in the data.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-05-30 18:47:26,943 [WARNING] ascension.council.base: council diogenes iter 25: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=diogenes schema=CouncilHypothesis
+2026-05-30 18:47:28,776 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:47:28,814 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Proposes minimal modifications to established laws rather than a full reformulat'
+2026-05-30 18:47:28,818 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=20d93d48-dced-4c27-9584-3cde13460443 y_minus=6b0f9796-e32b-4ee8-a13f-597a07b576a5 round_id=7 emitted=4 deduplicated=4 inserted=0 call_id=009a1418-87fb-4a6c-a6f7-2843279e4e3c
+2026-05-30 18:47:28,818 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 7 closed — 0 new criteria from (best=20d93d48-dced-4c27-9584-3cde13460443, worst=6b0f9796-e32b-4ee8-a13f-597a07b576a5)
+2026-05-30 18:47:31,799 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-05-30 18:47:34,529 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:47:34,757 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 429 Too Many Requests"
+2026-05-30 18:47:37,033 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:47:41,977 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:47:47,739 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:47:47,910 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 429 Too Many Requests"
+2026-05-30 18:47:50,239 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:47:50,880 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:47:51,035 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:47:51,123 [INFO] ascension.agora._dispute_companion: dispute_companion_written rejected_node_id=a1d472ea-a73a-4da8-ad35-1125fb8dcd74 run_id=9ca7bf0d-3c16-48f3-b8b8-940b91108996
+2026-05-30 18:47:51,128 [INFO] ascension.agora.conflict_detection: conflict_detection: flagged ['a1d472ea-a73a-4da8-ad35-1125fb8dcd74', '40320c09-8e79-4329-b7cf-317c4663c672'] | trigger=agent_flag signal=contradicts_edge target_confidence>0.7
+2026-05-30 18:48:06,161 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:48:07,387 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:48:07,389 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:48:28,847 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 8 — alien proposal a1d472ea-a73a-4da8-ad35-1125fb8dcd74 could not be parsed/evaluated to a finite force (symbolic_form='G*m1*m2/r**2 + alpha/r**3.4 + beta*s1*s2/r**2*sin(2*atan2(y2-y1, x2-x1))'); excluded from alien-fit ranking
+2026-05-30 18:48:28,856 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 8 — alien proposal 40320c09-8e79-4329-b7cf-317c4663c672 could not be parsed/evaluated to a finite force (symbolic_form='s1*s2*m2*(-alpha/r**p - beta*sin(kappa*r))'); excluded from alien-fit ranking
+2026-05-30 18:48:28,856 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 8 — alien-fit ranking could not rank >=2 proposals (1 rankable); falling back to CONFIDENCE ranking for this round. This is the genuine-failure path (engineering_discipline_no_coverups — loud, never a silent circular signal). Investigate if it recurs: it means the Council emitted no parseable symbolic_form.
+2026-05-30 18:48:28,874 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 8 persisted residual feedback (fit=0.569 steeper_power=True oscillation=True) for best=40320c09-8e79-4329-b7cf-317c4663c672
+2026-05-30 18:48:29,169 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:48:29,172 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:48:46,031 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:48:46,334 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:48:46,349 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Derives the final model from a stated first principle.'
+2026-05-30 18:48:46,509 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:48:46,529 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Posits a generative mechanism rather than only describing observed components.'
+2026-05-30 18:48:46,694 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:48:46,717 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Integrates evidence into a unified theoretical framework, not an ad-hoc aggregat'
+2026-05-30 18:48:46,724 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=40320c09-8e79-4329-b7cf-317c4663c672 y_minus=b4fc0220-a207-4c1e-bb4e-0a110050e8e2 round_id=8 emitted=3 deduplicated=3 inserted=0 call_id=5fa91ca6-be4a-4590-b6bc-c0337381cbce
+2026-05-30 18:48:46,724 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 8 closed — 0 new criteria from (best=40320c09-8e79-4329-b7cf-317c4663c672, worst=b4fc0220-a207-4c1e-bb4e-0a110050e8e2)
+2026-05-30 18:48:50,450 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:48:50,452 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:48:51,429 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:48:51,432 [WARNING] ascension.llm.providers.nvidia: NVIDIA structured fallback JSON failed schema 'CouncilHypothesis': 1 validation error for CouncilHypothesis
+  Value error, posterior must sum to 1.0 ± 1e-3; got 0.800000. Pitfall 3 case: agent dropped/double-counted mass. [type=value_error, input_value={'content': {'symbolic_fo...matic leftover motion.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-05-30 18:48:51,445 [WARNING] ascension.council.base: council diogenes iter 27: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=diogenes schema=CouncilHypothesis
+2026-05-30 18:49:06,474 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:49:16,215 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:49:16,453 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:49:16,558 [WARNING] ascension.council.diversity: council diversity below threshold: entropy=-0.000 bits < 1.500 (n_distinct_agents=5, n_clusters=1, window_size=25) — Argus (Phase 14.0) will flag if persistent
+2026-05-30 18:49:37,163 [WARNING] ascension.council.base: council parmenides iter 16: unexpected error: NvidiaError: NVIDIA transport error for model 'meta/llama-3.3-70b-instruct': ReadTimeout: 
+2026-05-30 18:49:43,006 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:49:43,023 [WARNING] ascension.council.base: council heraclitus iter 7: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=heraclitus schema=CouncilHypothesis
+2026-05-30 18:49:45,552 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:49:45,555 [WARNING] ascension.llm.providers.nvidia: NVIDIA structured fallback JSON failed schema 'CouncilHypothesis': 1 validation error for CouncilHypothesis
+  Value error, posterior must sum to 1.0 ± 1e-3; got 0.800000. Pitfall 3 case: agent dropped/double-counted mass. [type=value_error, input_value={'content': {'symbolic_fo...f the observed motion.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-05-30 18:49:45,566 [WARNING] ascension.council.base: council diogenes iter 28: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=diogenes schema=CouncilHypothesis
+2026-05-30 18:49:46,733 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:49:46,734 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:49:46,746 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 9 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-05-30 18:49:57,195 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=parmenides model=meta/llama-3.3-70b-instruct
+2026-05-30 18:49:57,540 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-30 18:49:57,541 [WARNING] ascension.council.base: council parmenides iter 17: unexpected error: NvidiaError: NVIDIA returned HTTP 429 for model 'meta/llama-3.3-70b-instruct': {"status":429,"title":"Too Many Requests"}
+2026-05-30 18:50:00,607 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:50:17,564 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=parmenides model=meta/llama-3.3-70b-instruct
+2026-05-30 18:50:29,970 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:50:29,976 [WARNING] ascension.llm.providers.nvidia: NVIDIA structured fallback JSON failed schema 'CouncilHypothesis': 1 validation error for CouncilHypothesis
+  Value error, posterior must sum to 1.0 ± 1e-3; got 0.800000. Pitfall 3 case: agent dropped/double-counted mass. [type=value_error, input_value={'content': {'symbolic_fo...the systematic errors.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-05-30 18:50:29,990 [WARNING] ascension.council.base: council diogenes iter 29: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=diogenes schema=CouncilHypothesis
+2026-05-30 18:50:33,591 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:50:33,850 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:50:43,327 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:50:43,329 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:50:45,019 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:50:46,753 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 10 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-05-30 18:51:04,300 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:51:04,303 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:51:29,413 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:51:29,798 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:51:29,887 [INFO] ascension.agora._dispute_companion: dispute_companion_written rejected_node_id=a6b5083c-4371-4b16-9ddc-b461414b0072 run_id=9ca7bf0d-3c16-48f3-b8b8-940b91108996
+2026-05-30 18:51:29,893 [INFO] ascension.agora.conflict_detection: conflict_detection: flagged ['a6b5083c-4371-4b16-9ddc-b461414b0072', '5cffe1b2-8e7d-44f0-95e2-53fc20740a57'] | trigger=agent_flag signal=contradicts_edge target_confidence>0.7
+2026-05-30 18:51:31,807 [WARNING] ascension.council.base: council aristotle iter 68: unexpected error: NvidiaError: NVIDIA transport error for model 'meta/llama-3.3-70b-instruct': ReadTimeout: 
+2026-05-30 18:51:36,832 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-05-30 18:51:44,928 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:51:46,474 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:51:46,762 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 11 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-05-30 18:51:46,803 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:51:55,078 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:51:55,789 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:51:59,314 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:51:59,316 [WARNING] ascension.llm.providers.nvidia: NVIDIA structured fallback JSON failed schema 'CouncilHypothesis': 1 validation error for CouncilHypothesis
+  Value error, posterior must sum to 1.0 ± 1e-3; got 0.800000. Pitfall 3 case: agent dropped/double-counted mass. [type=value_error, input_value={'content': {'symbolic_fo...matic leftover motion.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-05-30 18:51:59,327 [WARNING] ascension.council.base: council diogenes iter 31: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=diogenes schema=CouncilHypothesis
+2026-05-30 18:52:14,361 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:52:14,675 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-30 18:52:14,677 [WARNING] ascension.council.base: council diogenes iter 32: unexpected error: NvidiaError: NVIDIA returned HTTP 429 for model 'meta/llama-3.3-70b-instruct': {"status":429,"title":"Too Many Requests"}
+2026-05-30 18:52:17,076 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:52:17,079 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:52:29,718 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:52:46,800 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 12 persisted residual feedback (fit=0.941 steeper_power=True oscillation=True) for best=275dda66-1877-4495-a3dc-8565737df7a3
+2026-05-30 18:52:47,027 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:52:47,029 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:52:55,690 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:52:55,693 [WARNING] ascension.llm.providers.nvidia: NVIDIA structured fallback JSON failed schema 'CouncilHypothesis': 1 validation error for CouncilHypothesis
+  Value error, posterior must sum to 1.0 ± 1e-3; got 0.800000. Pitfall 3 case: agent dropped/double-counted mass. [type=value_error, input_value={'content': {'symbolic_fo...n the observed motion.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-05-30 18:52:55,704 [WARNING] ascension.council.base: council diogenes iter 33: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=diogenes schema=CouncilHypothesis
+2026-05-30 18:52:56,236 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:52:56,237 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:53:10,753 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:53:13,817 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:53:14,394 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:53:14,421 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis correctly includes all necessary physical parameters in th'
+2026-05-30 18:53:14,621 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:53:14,636 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis explicitly links each new model component to a specific ob'
+2026-05-30 18:53:14,778 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:53:14,794 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis provides a complete mathematical formula that unifies the '
+2026-05-30 18:53:14,796 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=275dda66-1877-4495-a3dc-8565737df7a3 y_minus=74ed7f42-7acf-41ea-ada0-cfc77bb16b7e round_id=12 emitted=3 deduplicated=3 inserted=0 call_id=6912b132-7e3e-472e-b5a4-d1035fc750e0
+2026-05-30 18:53:14,797 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 12 closed — 0 new criteria from (best=275dda66-1877-4495-a3dc-8565737df7a3, worst=74ed7f42-7acf-41ea-ada0-cfc77bb16b7e)
+2026-05-30 18:53:19,456 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:53:19,691 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:53:19,776 [INFO] ascension.agora._dispute_companion: dispute_companion_written rejected_node_id=da07f503-a8e7-41e1-8ad7-515dc7ee7963 run_id=9ca7bf0d-3c16-48f3-b8b8-940b91108996
+2026-05-30 18:53:19,780 [INFO] ascension.agora.conflict_detection: conflict_detection: flagged ['da07f503-a8e7-41e1-8ad7-515dc7ee7963', '5cffe1b2-8e7d-44f0-95e2-53fc20740a57'] | trigger=agent_flag signal=contradicts_edge target_confidence>0.7
+2026-05-30 18:53:21,837 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:53:22,132 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:53:34,820 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:53:44,960 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:53:45,183 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:53:53,082 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:53:53,091 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:54:14,827 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 13 — alien proposal f0ca566c-4d2e-4dc2-912a-eeaf2b19428d could not be parsed/evaluated to a finite force (symbolic_form='-G*m1*m2/r**2 + kappa*s1*s2/r**3.4 + beta*cos(omega*r)'); excluded from alien-fit ranking
+2026-05-30 18:54:14,855 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 13 persisted residual feedback (fit=0.946 steeper_power=False oscillation=False) for best=da07f503-a8e7-41e1-8ad7-515dc7ee7963
+2026-05-30 18:54:14,868 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:54:14,869 [WARNING] ascension.llm.providers.nvidia: NVIDIA structured fallback JSON failed schema 'CouncilHypothesis': 1 validation error for CouncilHypothesis
+  Value error, posterior must sum to 1.0 ± 1e-3; got 0.800000. Pitfall 3 case: agent dropped/double-counted mass. [type=value_error, input_value={'content': {'symbolic_fo...nent to fully explain.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-05-30 18:54:14,881 [WARNING] ascension.council.base: council diogenes iter 35: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=diogenes schema=CouncilHypothesis
+2026-05-30 18:54:15,113 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:54:15,116 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:54:17,711 [WARNING] ascension.council.base: council parmenides iter 18: unexpected error: NvidiaError: NVIDIA transport error for model 'meta/llama-3.3-70b-instruct': ReadTimeout: 
+2026-05-30 18:54:29,921 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:54:34,085 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:54:34,394 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:54:34,662 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:54:34,743 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Avoids introducing new theoretical constructs where phenomenological terms suffi'
+2026-05-30 18:54:34,967 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:54:34,980 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Directly models observed features of the data rather than explaining them as sec'
+2026-05-30 18:54:34,983 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=da07f503-a8e7-41e1-8ad7-515dc7ee7963 y_minus=1add6c1c-e568-44aa-afc4-69baaaf740cc round_id=13 emitted=3 deduplicated=2 inserted=1 call_id=072e5fb0-0d1e-405a-b5cb-a5da12dfd03d
+2026-05-30 18:54:34,983 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 13 closed — 1 new criteria from (best=da07f503-a8e7-41e1-8ad7-515dc7ee7963, worst=1add6c1c-e568-44aa-afc4-69baaaf740cc)
+2026-05-30 18:54:37,739 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=parmenides model=meta/llama-3.3-70b-instruct
+2026-05-30 18:54:45,796 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:54:45,800 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:54:50,433 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:54:50,701 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:55:21,204 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:55:21,206 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:55:21,579 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:55:21,599 [WARNING] ascension.council.base: council heraclitus iter 10: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=heraclitus schema=CouncilHypothesis
+2026-05-30 18:55:34,994 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 14 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-05-30 18:55:37,031 [WARNING] ascension.council.base: council aristotle iter 69: unexpected error: NvidiaError: NVIDIA transport error for model 'meta/llama-3.3-70b-instruct': ReadTimeout: 
+2026-05-30 18:55:42,054 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-05-30 18:56:21,907 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:56:21,910 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:56:30,500 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:56:30,518 [WARNING] ascension.council.base: council plato iter 15: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=plato schema=CouncilHypothesis
+2026-05-30 18:56:35,003 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 15 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-05-30 18:57:00,714 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:57:00,717 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:57:18,045 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:57:18,328 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:57:35,015 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 16 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-05-30 18:58:18,789 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:58:18,793 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:58:28,353 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:58:28,618 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:58:30,077 [WARNING] ascension.council.base: council diogenes iter 36: unexpected error: NvidiaError: NVIDIA transport error for model 'meta/llama-3.3-70b-instruct': ReadTimeout: 
+2026-05-30 18:58:30,115 [INFO] ascension.council.diversity: council diversity warmup: 4 distinct agents < 5 minimum; skipping gate evaluation (entropy=-0.000 bits recorded as below_threshold=False per Pitfall 1)
+2026-05-30 18:58:35,028 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 17 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-05-30 18:58:37,913 [WARNING] ascension.council.base: council parmenides iter 19: unexpected error: NvidiaError: NVIDIA transport error for model 'meta/llama-3.3-70b-instruct': ReadTimeout: 
+2026-05-30 18:58:45,105 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:58:57,938 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=parmenides model=meta/llama-3.3-70b-instruct
+2026-05-30 18:58:58,905 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-05-30 18:58:58,906 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-05-30 18:59:01,621 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-30 18:59:01,630 [WARNING] ascension.llm.providers.nvidia: NVIDIA structured fallback JSON failed schema 'CouncilHypothesis': 1 validation error for CouncilHypothesis
+  Value error, posterior must sum to 1.0 ± 1e-3; got 0.800000. Pitfall 3 case: agent dropped/double-counted mass. [type=value_error, input_value={'content': {'symbolic_fo...planation of the data.'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-05-30 18:59:01,646 [WARNING] ascension.council.base: council diogenes iter 37: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=diogenes schema=CouncilHypothesis
+2026-05-30 18:59:16,701 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:59:17,004 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-30 18:59:17,005 [WARNING] ascension.council.base: council diogenes iter 38: unexpected error: NvidiaError: NVIDIA returned HTTP 429 for model 'meta/llama-3.3-70b-instruct': {"status":429,"title":"Too Many Requests"}
+2026-05-30 18:59:26,546 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-05-30 18:59:26,757 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-05-30 18:59:32,049 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:59:32,338 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-30 18:59:32,340 [WARNING] ascension.council.base: council diogenes iter 39: unexpected error: NvidiaError: NVIDIA returned HTTP 429 for model 'meta/llama-3.3-70b-instruct': {"status":429,"title":"Too Many Requests"}
+2026-05-30 18:59:35,040 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 18 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-05-30 18:59:42,200 [WARNING] ascension.council.base: council aristotle iter 70: unexpected error: NvidiaError: NVIDIA transport error for model 'meta/llama-3.3-70b-instruct': ReadTimeout: 
+2026-05-30 18:59:47,230 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-05-30 18:59:47,374 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-05-30 18:59:47,480 [WARNING] ascension.orchestrator.orchestrator: orchestrator: --max-duration-seconds=1200 elapsed — initiating graceful drain (halt_reason='duration_exceeded')
+2026-05-30 18:59:47,483 [INFO] ascension.council.round_close: RoundCloseCoordinator stopped after 18 rounds (run_id=9ca7bf0d-3c16-48f3-b8b8-940b91108996)
+2026-05-30 18:59:47,491 [INFO] __main__: orchestrator CLI exit: run_id=9ca7bf0d-3c16-48f3-b8b8-940b91108996 halt_reason=duration_exceeded n_agents=5 n_halted=0

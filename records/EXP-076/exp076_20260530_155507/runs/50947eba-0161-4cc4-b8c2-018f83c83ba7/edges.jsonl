@@ -1,0 +1,4 @@
+{"id":"452991aa-2e72-4a8f-85b8-2007ec7e7af5","from_node":"3401faa4-eb31-4d09-b1e1-1ce1b20ca220","to_node":"6f6832f5-a5b0-4448-91c0-01b160cbc141","type":"CONTRADICTS","weight":1,"created_at":"2026-05-31T01:27:57.918072+00:00","metadata":{}}
+{"id":"5c09dcad-e1be-4f7d-9687-f4f12d16a6be","from_node":"1ef2fb20-07d9-4257-8a37-c5b72ac48521","to_node":"71235b1a-7ac7-4e65-96e8-6e74c162b21d","type":"CONTRADICTS","weight":1,"created_at":"2026-05-31T01:34:20.225835+00:00","metadata":{}}
+{"id":"2067e781-4958-4350-a466-4c9b9b867dbe","from_node":"8f41450c-962e-4e35-828a-ff52d6bf37a9","to_node":"71235b1a-7ac7-4e65-96e8-6e74c162b21d","type":"CONTRADICTS","weight":1,"created_at":"2026-05-31T01:34:42.970108+00:00","metadata":{}}
+{"id":"bb4eee48-f981-410a-9d24-49855cae0b65","from_node":"b4fd2a2a-b329-4ef0-bf68-dc239e871dc5","to_node":"fdc6884b-2a48-4b32-b9f0-f81528df77ba","type":"CONTRADICTS","weight":1,"created_at":"2026-05-31T01:39:35.225182+00:00","metadata":{}}

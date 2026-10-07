@@ -1,0 +1,50 @@
+EXP-074 8-seed confirmatory starting, TS=20260526_224106, manifest=.planning/research/exp074_8seed_manifest_20260526_224106.tsv
+===== seed=0 ARM=control battery=false run_id=13596d81-8556-48e7-8b08-e7518ff747d0 dur=900s ceil=$6 =====
+===== seed=0 ARM=control DONE (exit 0) run_id=13596d81-8556-48e7-8b08-e7518ff747d0 =====
+--- inter-run pause 90s (quota recovery) ---
+===== seed=0 ARM=treatment battery=true run_id=8f7bb91f-b66a-4b41-ba5f-043e77b482d3 dur=900s ceil=$6 =====
+===== seed=0 ARM=treatment DONE (exit 0) run_id=8f7bb91f-b66a-4b41-ba5f-043e77b482d3 =====
+--- inter-run pause 90s (quota recovery) ---
+===== seed=1 ARM=control battery=false run_id=7c9d85ef-6fb2-4995-9040-1a87212223ef dur=900s ceil=$6 =====
+===== seed=1 ARM=control DONE (exit 0) run_id=7c9d85ef-6fb2-4995-9040-1a87212223ef =====
+--- inter-run pause 90s (quota recovery) ---
+===== seed=1 ARM=treatment battery=true run_id=ed65332e-f1b0-457e-9e1f-1402bf6541ff dur=900s ceil=$6 =====
+===== seed=1 ARM=treatment DONE (exit 0) run_id=ed65332e-f1b0-457e-9e1f-1402bf6541ff =====
+--- inter-run pause 90s (quota recovery) ---
+===== seed=2 ARM=control battery=false run_id=064e6d33-e997-4bc0-b8a1-1dfc770333b8 dur=900s ceil=$6 =====
+===== seed=2 ARM=control DONE (exit 0) run_id=064e6d33-e997-4bc0-b8a1-1dfc770333b8 =====
+--- inter-run pause 90s (quota recovery) ---
+===== seed=2 ARM=treatment battery=true run_id=7de79551-337b-439c-9ec9-11613284571b dur=900s ceil=$6 =====
+===== seed=2 ARM=treatment DONE (exit 0) run_id=7de79551-337b-439c-9ec9-11613284571b =====
+--- inter-run pause 90s (quota recovery) ---
+===== seed=3 ARM=control battery=false run_id=a1c0beeb-4593-49ab-b4a5-b74db122ecef dur=900s ceil=$6 =====
+===== seed=3 ARM=control DONE (exit 0) run_id=a1c0beeb-4593-49ab-b4a5-b74db122ecef =====
+--- inter-run pause 90s (quota recovery) ---
+===== seed=3 ARM=treatment battery=true run_id=bf8d59e5-a52f-47d9-9a8f-96fccb9d8a06 dur=900s ceil=$6 =====
+===== seed=3 ARM=treatment DONE (exit 0) run_id=bf8d59e5-a52f-47d9-9a8f-96fccb9d8a06 =====
+--- inter-run pause 90s (quota recovery) ---
+===== seed=4 ARM=control battery=false run_id=c95881eb-6fd8-4f78-8733-c3b2301686fa dur=900s ceil=$6 =====
+===== seed=4 ARM=control DONE (exit 0) run_id=c95881eb-6fd8-4f78-8733-c3b2301686fa =====
+--- inter-run pause 90s (quota recovery) ---
+===== seed=4 ARM=treatment battery=true run_id=c42e881c-49d6-4611-b887-021c9d794426 dur=900s ceil=$6 =====
+===== seed=4 ARM=treatment DONE (exit 0) run_id=c42e881c-49d6-4611-b887-021c9d794426 =====
+--- inter-run pause 90s (quota recovery) ---
+===== seed=5 ARM=control battery=false run_id=e67e3c27-d0bc-41f4-983d-ed590e16990f dur=900s ceil=$6 =====
+===== seed=5 ARM=control DONE (exit 0) run_id=e67e3c27-d0bc-41f4-983d-ed590e16990f =====
+--- inter-run pause 90s (quota recovery) ---
+===== seed=5 ARM=treatment battery=true run_id=2e6712ec-c382-477c-bebc-1b1ed68e3345 dur=900s ceil=$6 =====
+===== seed=5 ARM=treatment DONE (exit 0) run_id=2e6712ec-c382-477c-bebc-1b1ed68e3345 =====
+--- inter-run pause 90s (quota recovery) ---
+===== seed=6 ARM=control battery=false run_id=49debc5c-aa9d-4e22-9d70-0eaeb0303b10 dur=900s ceil=$6 =====
+===== seed=6 ARM=control DONE (exit 0) run_id=49debc5c-aa9d-4e22-9d70-0eaeb0303b10 =====
+--- inter-run pause 90s (quota recovery) ---
+===== seed=6 ARM=treatment battery=true run_id=0cadff0f-4db0-4a95-98f0-bfbc6b7a0a52 dur=900s ceil=$6 =====
+===== seed=6 ARM=treatment DONE (exit 0) run_id=0cadff0f-4db0-4a95-98f0-bfbc6b7a0a52 =====
+--- inter-run pause 90s (quota recovery) ---
+===== seed=7 ARM=control battery=false run_id=75c0813c-5491-47db-8cf4-62cd3b3ae909 dur=900s ceil=$6 =====
+===== seed=7 ARM=control DONE (exit 0) run_id=75c0813c-5491-47db-8cf4-62cd3b3ae909 =====
+--- inter-run pause 90s (quota recovery) ---
+===== seed=7 ARM=treatment battery=true run_id=6007ad21-30af-47af-a66a-46dd82edfe29 dur=900s ceil=$6 =====
+===== seed=7 ARM=treatment DONE (exit 0) run_id=6007ad21-30af-47af-a66a-46dd82edfe29 =====
+EXP-074 8-SEED COMPLETE. Score with:
+  poetry run python scripts/score_exp074.py .planning/research/exp074_8seed_manifest_20260526_224106.tsv

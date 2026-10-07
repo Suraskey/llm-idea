@@ -1,0 +1,30 @@
+[ether] truth predictions done (26s)
+[three_species] truth predictions done (29s)
+[dark_matter] truth predictions done (30s)
+[ether] parity 0.00e+00 / fast 5.07e-12
+[three_species] parity 0.00e+00 / fast 3.76e-11
+[dark_matter] parity 0.00e+00 / fast 1.78e-06
+[ether] FD step 0.0001 done (135s)
+[dark_matter] FD step 0.0001 done (158s)
+[three_species] FD step 0.0001 done (214s)
+[ether] FD step 0.001 done (236s)
+[dark_matter] FD step 0.001 done (272s)
+[ether] ranker BEST = S47
+== base ('ether', 'ok')
+[dark_matter] ranker BEST = S26
+== base ('dark_matter', 'ok')
+[three_species] FD step 0.001 done (386s)
+[three_species] ranker BEST = DEFAULT
+== base ('three_species', 'ok')
+[dm_count] N=5 solo_DEFAULT done (0s)
+[dm_count] N=5 solo_S26 done (0s)
+[dm_count] N=5 solo_S33 done (0s)
+[dm_count] N=5 solo_S21 done (0s)
+[dm_count] N=5 solo_S13 done (0s)
+[dm_count] N=5 joint_chosen done (0s)
+[dm_count] N=20 solo_DEFAULT done (0s)
+== fit dmcount ok 3617s
+== fit ('three_species', 'TS-2', 'merge_BC', 'joint') ok 15019s
+== fit ('three_species', 'TS-2', 'all_identical', 'joint') ok 1523s
+== fit ('three_species', 'TS-2', 'merge_AB', 'joint') ok 26263s
+== fit ('three_species', 'TS-2', 'merge_AC', 'joint') ok 40740s

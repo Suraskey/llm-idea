@@ -1,0 +1,64 @@
+id	name	dim	n_params	structural	round0_status	rank	cond	triage	best_added	after_status	any_restores	P4_max_rel	error
+1	RC-circuit	1	3	False	structurally_non_identifiable	2	inf	change_class	IC-1 (ODEBench held-out IC), [0,1]	structurally_non_identifiable	False	5.3422252042225275e-14	
+2	Population growth naive	1	1	True	identifiable	1	1.000e+00	capability	None	None	None	None	
+3	Population growth carrying capacity	1	2	True	identifiable	2	3.395e+03	capability	None	None	None	None	
+4	RC-circuit non-linear resistor	1	2	True	identifiable	2	7.728e+01	capability	None	None	None	None	
+5	Velocity falling object	1	2	True	identifiable	2	6.765e+01	capability	None	None	None	None	
+6	Autocatalysis	1	2	True	identifiable	2	1.049e+01	capability	None	None	None	None	
+7	Gompertz law tumor growth	1	2	True	identifiable	2	1.229e+04	capability	None	None	None	None	
+8	Logistic equation Allee effect	1	3	True	identifiable	3	2.646e+07	capability	None	None	None	None	
+9	Language death model	1	2	True	identifiable	2	1.114e+01	capability	None	None	None	None	
+10	Refined language death model	1	2	True	identifiable	2	6.233e+01	capability	None	None	None	None	
+11	Naive critical slowing down	1	0	True	no_free_parameters	0	1.000e+00	no_free_parameters	None	None	None	None	
+12	Photons in a laser	1	2	True	identifiable	2	1.126e+02	capability	None	None	None	None	
+13	Overdamped bead	1	2	True	identifiable	2	1.085e+06	capability	None	None	None	None	
+14	Budworm outbreak model	1	4	True	identifiable	4	5.412e+07	capability	None	None	None	None	
+15	Budworm outbreak predation	1	2	True	identifiable	2	2.391e+03	capability	None	None	None	None	
+16	Landau equation	1	3	True	identifiable	3	9.105e+02	capability	None	None	None	None	
+17	Logistic equation harvesting	1	3	True	identifiable	3	1.405e+05	capability	None	None	None	None	
+18	Improved logistic equation harvesting	1	4	True	structurally_non_identifiable	3	inf	design_within_class	box IC 4, [0,1]	identifiable	True	None	
+19	Improved logistic equation harvesting dimensionless	1	2	True	identifiable	2	4.188e+02	capability	None	None	None	None	
+20	Autocatalytic gene switching	1	2	True	identifiable	2	4.147e+01	capability	None	None	None	None	
+21	Dimensionally reduced SIR	1	2	True	identifiable	2	1.811e+01	capability	None	None	None	None	
+22	Protein expression	1	4	True	identifiable	4	3.351e+05	capability	None	None	None	None	
+23	Overdamped pendulum	1	1	True	identifiable	1	1.000e+00	capability	None	None	None	None	
+24	Harmonic oscillator	2	1	True	identifiable	1	1.000e+00	capability	None	None	None	None	
+25	Harmonic oscillator damping	2	2	True	identifiable	2	1.302e+00	capability	None	None	None	None	
+26	Lotka-Volterra competition	2	3	True	identifiable	3	1.189e+01	capability	None	None	None	None	
+27	Lotka-Volterra simple	2	4	True	identifiable	4	2.910e+01	capability	None	None	None	None	
+28	Pendulum without friction	2	1	True	identifiable	1	1.000e+00	capability	None	None	None	None	
+29	Dipole fixed point	2	1	True	identifiable	1	1.000e+00	capability	None	None	None	None	
+30	Catalyzing RNA molecules	2	1	True	identifiable	1	1.000e+00	capability	None	None	None	None	
+31	SIR infection	2	2	True	identifiable	2	6.640e+00	capability	None	None	None	None	
+32	Damped double well oscillator	2	1	True	identifiable	1	1.000e+00	capability	None	None	None	None	
+33	Glider	2	1	True	identifiable	1	1.000e+00	capability	None	None	None	None	
+34	Frictionless bead	2	1	True	identifiable	1	1.000e+00	capability	None	None	None	None	
+35	Rotational dynamics	2	1	True	identifiable	1	1.000e+00	capability	None	None	None	None	
+36	Pendulum non-linear damping	2	1	True	identifiable	1	1.000e+00	capability	None	None	None	None	
+37	Van der Pol oscillator	2	1	True	identifiable	1	1.000e+00	capability	None	None	None	None	
+38	Van der Pol oscillator simplified	2	1	True	identifiable	1	1.000e+00	capability	None	None	None	None	
+39	Glycolytic oscillator	2	2	True	identifiable	2	3.788e+00	capability	None	None	None	None	
+40	Duffing equation	2	1	True	identifiable	1	1.000e+00	capability	None	None	None	None	
+41	Cell cycle model	2	3	True	identifiable	3	6.311e+01	capability	None	None	None	None	
+42	CDIMA reaction	2	3	True	identifiable	3	1.297e+01	capability	None	None	None	None	
+43	Driven pendulum linear damping	2	2	True	identifiable	2	5.711e+00	capability	None	None	None	None	
+44	Driven pendulum quadratic damping	2	2	True	identifiable	2	1.698e+01	capability	None	None	None	None	
+45	Gray-Scott model	2	2	True	identifiable	2	1.338e+00	capability	None	None	None	None	
+46	Interacting bar magnets	2	1	True	identifiable	1	1.000e+00	capability	None	None	None	None	
+47	Binocular rivalry model	2	2	True	identifiable	2	1.207e+01	capability	None	None	None	None	
+48	Bacterial respiration model	2	3	True	identifiable	3	1.879e+01	capability	None	None	None	None	
+49	Brusselator	2	2	True	identifiable	2	3.889e+00	capability	None	None	None	None	
+50	Schnackenberg model	2	2	True	identifiable	2	1.307e+00	capability	None	None	None	None	
+51	Oscillator death model	2	2	True	identifiable	2	1.446e+00	capability	None	None	None	None	
+52	Maxwell-Bloch equations	3	4	True	identifiable	4	6.961e+01	capability	None	None	None	None	
+53	Apoptosis model	3	10	True	identifiable	10	2.166e+06	capability	None	None	None	None	
+54	Lorenz equations periodic	3	3	True	identifiable	3	5.519e+00	capability	None	None	None	None	
+55	Lorenz equations complex periodic	3	3	True	identifiable	3	2.267e+01	capability	None	None	None	None	
+56	Lorenz equations chaotic	3	3	True	identifiable	3	1.205e+01	capability	None	None	None	None	
+57	Rössler fixed point	3	4	True	identifiable	4	4.368e+01	capability	None	None	None	None	
+58	Rössler attractor periodic	3	4	True	identifiable	4	7.766e+01	capability	None	None	None	None	
+59	Rössler attractor chaotic	3	4	True	identifiable	4	9.349e+01	capability	None	None	None	None	
+60	Aizawa attractor	3	6	True	identifiable	6	2.209e+04	capability	None	None	None	None	
+61	Chen-Lee attractor	3	4	True	identifiable	4	2.232e+01	capability	None	None	None	None	
+62	Binocular rivalry adaptation	4	4	True	identifiable	4	2.327e+01	capability	None	None	None	None	
+63	SEIR infection	4	3	True	identifiable	3	3.169e+00	capability	None	None	None	None	

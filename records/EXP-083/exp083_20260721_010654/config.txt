@@ -1,0 +1,7 @@
+label=exp083
+git_sha=8890c4e531e5450fa4605073de713a7dc8b2fca4
+benchmark_system=alien_family_v2  score_flag=--family-v2
+council_provider_mode=single-provider
+call_budget=0  (0 = OFF / wall-clock-matched)
+max_duration_s=1200  per_run_ceiling_usd=10
+delta_vs_exp081=L-064 class: DET-01 residual-channel V2-law held-out ICs (b3d4674) + DET-02 regime plateau gate (6c9cf34) + DET-04 scorer band [2.2,2.8]; code otherwise identical

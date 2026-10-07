@@ -1,0 +1,108 @@
+2026-06-07 19:59:01,238 [INFO] ascension.benchmarks.alien_depth: alien_depth: max_depth=6 per_layer=(True, True, True, False, False, True) held_out_rmse=0.32083882427693194 q_drift=None n_hyp=64 elapsed_ms=13464
+========================================================================
+ALIEN RUN d9601407-5f76-42ec-9598-2799eca5dd3c
+  run.status=completed  halt_reason=duration_exceeded
+  PROVENANCE (P-15.2-6): benchmark_system='alien_universe'  included_in_distillation_v1=False
+  SCORING MODE: FAMILY-V2 (V2 law: sum coupling + r^-2.5; L3/L4 vs held-out sums {4,6})
+  node types: {'dispute': 13, 'hypothesis': 64}
+  hypothesis nodes=64  status_breakdown={'contested': 19, 'active': 45}
+  SPEND: 183 llm_calls, $5.0443 total
+    provider='google': 183 calls, $5.0443
+------------------------------------------------------------------------
+  DISCOVERY DEPTH (P-15.2-1/2/3): max_depth=6
+    per_layer L1..L6 = (True, True, True, False, False, True)
+    HONEST consecutive force-law depth (L1-L4, L-057) = 3   [L5=False L6=True reported separately, non-consecutive]
+    held_out_rss_reduction=0.32083882427693194  q_drift=None
+  scorer notes (160):
+    - L1: inverse-square term + Newton accel-fit converges ('(G * s1 * s2) / r**2 + (alpha * s1 * s2) / r**3.4')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('(G * s1 * s2) / r**2 + (alpha * s1 * s2) / r**3.4')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(G * s1 * s2) / r**2 + (alpha * s1 * s2) / r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('(G*m1*m2)/r**2 - (kappa*s1*s2)/r**p + (alpha/r**2) * cos(omega * log(r))')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(G*m1*m2)/r**2 - (kappa*s1*s2)/r**p + (alpha/r**2) * cos(omega * log(r))')
+    - L1: inverse-square term + Newton accel-fit converges ('(a * s1 * s2 / r**2) + (b * s1 * s2 / r**3.4)')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('(a * s1 * s2 / r**2) + (b * s1 * s2 / r**3.4)')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(a * s1 * s2 / r**2) + (b * s1 * s2 / r**3.4)')
+    - L1: inverse-square term + Newton accel-fit converges ('(alpha * s1 * s2 / r**2) + (beta * cos(kappa * r) / r**p)')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(alpha * s1 * s2 / r**2) + (beta * cos(kappa * r) / r**p)')
+    - L1: inverse-square term + Newton accel-fit converges ('(alpha * s1 * s2 / r**2) - (beta * cos(kappa * log(r)) / r**2)')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(alpha * s1 * s2 / r**2) - (beta * cos(kappa * log(r)) / r**2)')
+    - L1: inverse-square term + Newton accel-fit converges ('(alpha * s1 * s2) / r**2 + (beta / r**3.4) * (1 + gamma * cos(omega * log(r)))')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('(alpha * s1 * s2) / r**2 + (beta / r**3.4) * (1 + gamma * cos(omega * log(r)))')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(alpha * s1 * s2) / r**2 + (beta / r**3.4) * (1 + gamma * cos(omega * log(r)))')
+    - L1: inverse-square term + Newton accel-fit converges ('(alpha * s1 * s2) / r**2 + beta / r**3.4')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('(alpha * s1 * s2) / r**2 + beta / r**3.4')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(alpha * s1 * s2) / r**2 + beta / r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('(alpha*s1*s2)/r**2 + (beta/r**3) * cos(omega * log(r))')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('(alpha*s1*s2)/r**2 + (beta/r**3) * cos(omega * log(r))')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(alpha*s1*s2)/r**2 + (beta/r**3) * cos(omega * log(r))')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(k*s1*s2/r**p) * (1 + A*cos(w*log(r)))')
+    - L1: inverse-square term + Newton accel-fit converges ('(kappa * s1 * s2 - G * m1 * m2) / (m1 * r**2)')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(kappa * s1 * s2 - G * m1 * m2) / (m1 * r**2)')
+    - L1: inverse-square term + Newton accel-fit converges ('(kappa * s1 * s2 - G) / r**2')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(kappa * s1 * s2 - G) / r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('(kappa * s1 * s2 / r**2) + (alpha / r**3.4) * cos(beta * log(r))')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('(kappa * s1 * s2 / r**2) + (alpha / r**3.4) * cos(beta * log(r))')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(kappa * s1 * s2 / r**2) + (alpha / r**3.4) * cos(beta * log(r))')
+    - L1: inverse-square term + Newton accel-fit converges ('(kappa * s1 * s2 / r**2) + (beta * s1 * s2 / r**3.4)')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('(kappa * s1 * s2 / r**2) + (beta * s1 * s2 / r**3.4)')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(kappa * s1 * s2 / r**2) + (beta * s1 * s2 / r**3.4)')
+    - L1: inverse-square term + Newton accel-fit converges ('(kappa * s1 * s2 / r**2) - (alpha / r**p) + (gamma * cos(omega * r))')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(kappa * s1 * s2 / r**2) - (alpha / r**p) + (gamma * cos(omega * r))')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(s1*s2 * cos(kappa * r) - G) / r**p')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(s1*s2 - C) / r**p * (1 + alpha * cos(omega * log(r)))')
+    - L1: inverse-square term + Newton accel-fit converges ('(s1*s2)/r**2 + gamma*cos(k*r)/r**alpha')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(s1*s2)/r**2 + gamma*cos(k*r)/r**alpha')
+    - L1: inverse-square term + Newton accel-fit converges ('(s1*s2/m1) * (-G/r**2 - K/r**3.4)')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('(s1*s2/m1) * (-G/r**2 - K/r**3.4)')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(s1*s2/m1) * (-G/r**2 - K/r**3.4)')
+    - L3: hidden sum does real work, hidden-basis RSS reduction 0.321 (+rationale tiebreaker) ('(s1+s2)/r**alpha + beta*cos(kappa*r)/r**gamma')
+    - L6 DENIED: claimed symmetry not verified by sympy ('(s1+s2)/r**alpha + beta*cos(kappa*r)/r**gamma')
+    - L1: inverse-square term + Newton accel-fit converges ('-G*(m1+s1)*(m2+s2)/r**2')
+    - L6 DENIED: claimed symmetry not verified by sympy ('-G*(m1+s1)*(m2+s2)/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('-G*m1*m2/r**2 + beta*s1*s2*cos(gamma*log(r))/r**3.4')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('-G*m1*m2/r**2 + beta*s1*s2*cos(gamma*log(r))/r**3.4')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('-G*m1*m2/r**2 + beta*s1*s2*cos(gamma*log(r))/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('-G*m1*m2/r**2 + kappa*s1*s2/r**3.4 * cos(omega*log(r))')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('-G*m1*m2/r**2 + kappa*s1*s2/r**3.4 * cos(omega*log(r))')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('-G*m1*m2/r**2 + kappa*s1*s2/r**3.4 * cos(omega*log(r))')
+    - L1: inverse-square term + Newton accel-fit converges ('-G*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('-G*m2/r**2 + k*s1*s2/(m1*r**3.4)')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('-G*m2/r**2 + k*s1*s2/(m1*r**3.4)')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('-G*m2/r**2 + k*s1*s2/(m1*r**3.4)')
+    - L1: inverse-square term + Newton accel-fit converges ('-G*m2/r**2 + k*s1*s2/r**3.4')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('-G*m2/r**2 + k*s1*s2/r**3.4')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('-G*m2/r**2 + k*s1*s2/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('-G/r**2 + K * s1 * s2 * cos(omega * log(r)) / r**3.4')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('-G/r**2 + K * s1 * s2 * cos(omega * log(r)) / r**3.4')
+  distinct symbolic_form count=64 (sample up to 30):
+    (G * s1 * s2) / r**2 + (alpha * s1 * s2) / r**3.4
+    (G*m1*m2)/r**2 - (kappa*s1*s2)/r**p + (alpha/r**2) * cos(omega * log(r))
+    (a * s1 * s2 / r**2) + (b * s1 * s2 / r**3.4)
+    (alpha * s1 * s2 / r**2) + (beta * cos(kappa * r) / r**p)
+    (alpha * s1 * s2 / r**2) - (beta * cos(kappa * log(r)) / r**2)
+    (alpha * s1 * s2) / r**2 + (beta / r**3.4) * (1 + gamma * cos(omega * log(r)))
+    (alpha * s1 * s2) / r**2 + beta / r**3.4
+    (alpha*s1*s2)/r**2 + (beta/r**3) * cos(omega * log(r))
+    (k*s1*s2/r**p) * (1 + A*cos(w*log(r)))
+    (kappa * s1 * s2 - G * m1 * m2) / (m1 * r**2)
+    (kappa * s1 * s2 - G) / r**2
+    (kappa * s1 * s2 / r**2) + (alpha / r**3.4) * cos(beta * log(r))
+    (kappa * s1 * s2 / r**2) + (beta * s1 * s2 / r**3.4)
+    (kappa * s1 * s2 / r**2) - (alpha / r**p) + (gamma * cos(omega * r))
+    (s1*s2 * cos(kappa * r) - G) / r**p
+    (s1*s2 - C) / r**p * (1 + alpha * cos(omega * log(r)))
+    (s1*s2)/r**2 + gamma*cos(k*r)/r**alpha
+    (s1*s2/m1) * (-G/r**2 - K/r**3.4)
+    (s1+s2)/r**alpha + beta*cos(kappa*r)/r**gamma
+    -G*(m1+s1)*(m2+s2)/r**2
+    -G*m1*m2/r**2 + beta*s1*s2*cos(gamma*log(r))/r**3.4
+    -G*m1*m2/r**2 + kappa*s1*s2/r**3.4 * cos(omega*log(r))
+    -G*m2/r**2
+    -G*m2/r**2 + k*s1*s2/(m1*r**3.4)
+    -G*m2/r**2 + k*s1*s2/r**3.4
+    -G/r**2 + K * s1 * s2 * cos(omega * log(r)) / r**3.4
+    -G/r**2 + kappa*s1*s2*((vx2-vx1)*(x2-x1) + (vy2-vy1)*(y2-y1))/r
+    -G/r**2 + kappa*s1*s2/r**3.4
+    -alpha/r**2 * (1 + beta * cos(gamma*log(r) + s1 + s2))
+    -alpha/r**2 + beta*s1*s2/r**3 * cos(gamma * log(r))
+========================================================================

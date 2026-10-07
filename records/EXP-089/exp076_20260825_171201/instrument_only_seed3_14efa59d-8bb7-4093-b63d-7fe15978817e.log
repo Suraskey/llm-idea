@@ -1,0 +1,716 @@
+2026-08-26 15:06:37,645 [INFO] __main__: orchestrator CLI benchmark: system=alien_universe seed=3 n_bodies=2 n_steps=1000 n_held_out=13
+2026-08-26 15:06:37,646 [INFO] __main__: orchestrator CLI pre-set run_id=14efa59d-8bb7-4093-b63d-7fe15978817e
+2026-08-26 15:06:37,646 [INFO] __main__: orchestrator CLI episode start: n_agents=5 campaign_id=None focus=None max_duration_seconds=1200 call_budget=None agents=[('plato', 30), ('aristotle', 5), ('diogenes', 15), ('heraclitus', 60), ('parmenides', 20)]
+2026-08-26 15:06:37,673 [INFO] ascension.orchestrator.orchestrator: orchestrator: alien run-record flags written to runs.config for run_id=14efa59d-8bb7-4093-b63d-7fe15978817e: benchmark_system=alien_universe included_in_distillation_v1=False council_variant=council
+2026-08-26 15:06:37,677 [INFO] ascension.orchestrator.orchestrator: orchestrator started: run_id=14efa59d-8bb7-4093-b63d-7fe15978817e n_agents=5
+2026-08-26 15:06:37,710 [INFO] ascension.council.round_close: RoundCloseCoordinator starting: window=60s run_id=14efa59d-8bb7-4093-b63d-7fe15978817e score_ranking=True alien_fit_ranking=True
+2026-08-26 15:06:37,790 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-08-26 15:06:37,831 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=parmenides model=meta/llama-3.3-70b-instruct
+2026-08-26 15:06:37,838 [WARNING] ascension.council.base: council aristotle iter 1: unexpected error: NvidiaError: NVIDIA transport error for model 'meta/llama-3.3-70b-instruct': ConnectError: [Errno 8] nodename nor servname provided, or not known
+2026-08-26 15:06:37,838 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=aristotle error=NvidiaError: NVIDIA transport error for model 'meta/llama-3.3-70b-instruct': ConnectError: [Errno 8] nodename nor servname provided, or not known
+2026-08-26 15:06:37,876 [WARNING] ascension.council.base: council parmenides iter 1: unexpected error: NvidiaError: NVIDIA transport error for model 'meta/llama-3.3-70b-instruct': ConnectError: [Errno 8] nodename nor servname provided, or not known
+2026-08-26 15:06:37,878 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=parmenides error=NvidiaError: NVIDIA transport error for model 'meta/llama-3.3-70b-instruct': ConnectError: [Errno 8] nodename nor servname provided, or not known
+2026-08-26 15:06:37,934 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-08-26 15:06:37,944 [WARNING] ascension.council.base: council diogenes iter 1: unexpected error: NvidiaError: NVIDIA transport error for model 'meta/llama-3.3-70b-instruct': ConnectError: [Errno 8] nodename nor servname provided, or not known
+2026-08-26 15:06:37,944 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=diogenes error=NvidiaError: NVIDIA transport error for model 'meta/llama-3.3-70b-instruct': ConnectError: [Errno 8] nodename nor servname provided, or not known
+2026-08-26 15:06:40,605 [WARNING] ascension.council.base: council plato iter 1: unexpected error: TransportError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("HTTPSConnection(host='oauth2.googleapis.com', port=443): Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-08-26 15:06:40,605 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=TransportError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("HTTPSConnection(host='oauth2.googleapis.com', port=443): Failed to re
+2026-08-26 15:06:40,612 [WARNING] ascension.council.base: council heraclitus iter 1: unexpected error: TransportError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("HTTPSConnection(host='oauth2.googleapis.com', port=443): Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-08-26 15:06:40,612 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=TransportError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("HTTPSConnection(host='oauth2.googleapis.com', port=443): Failed to re
+2026-08-26 15:11:22,179 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-08-26 15:11:22,217 [WARNING] ascension.council.base: council aristotle iter 2: unexpected error: NvidiaError: NVIDIA transport error for model 'meta/llama-3.3-70b-instruct': ConnectError: [Errno 8] nodename nor servname provided, or not known
+2026-08-26 15:11:22,218 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=aristotle error=NvidiaError: NVIDIA transport error for model 'meta/llama-3.3-70b-instruct': ConnectError: [Errno 8] nodename nor servname provided, or not known
+2026-08-26 15:11:27,329 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-08-26 15:11:27,780 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-08-26 15:11:27,781 [WARNING] ascension.council.base: council aristotle iter 3: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-08-26 15:11:27,781 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=aristotle error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-08-26 15:11:31,812 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-08-26 15:11:32,181 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-08-26 15:11:32,181 [WARNING] ascension.council.base: council diogenes iter 2: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-08-26 15:11:32,182 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=diogenes error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-08-26 15:11:32,832 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=aristotle model=meta/llama-3.3-70b-instruct
+2026-08-26 15:11:32,893 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-08-26 15:11:32,893 [WARNING] ascension.council.base: council aristotle iter 4: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-08-26 15:11:32,893 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=aristotle error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-08-26 15:11:32,898 [ERROR] ascension.orchestrator.orchestrator: agent halted by 3-strike rule: agent=aristotle
+2026-08-26 15:11:32,905 [INFO] ascension.orchestrator.orchestrator: orchestrator: agent supervise task 'agent-aristotle' finished; continuing with the remaining agents (D-18)
+2026-08-26 15:11:36,708 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=parmenides model=meta/llama-3.3-70b-instruct
+2026-08-26 15:11:36,773 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-08-26 15:11:36,774 [WARNING] ascension.council.base: council parmenides iter 2: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-08-26 15:11:36,774 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=parmenides error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-08-26 15:11:47,280 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-08-26 15:11:47,677 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-08-26 15:11:47,678 [WARNING] ascension.council.base: council diogenes iter 3: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-08-26 15:11:47,678 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=diogenes error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-08-26 15:11:51,040 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:11:51,044 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:11:56,808 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=parmenides model=meta/llama-3.3-70b-instruct
+2026-08-26 15:11:57,279 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-08-26 15:11:57,280 [WARNING] ascension.council.base: council parmenides iter 3: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-08-26 15:11:57,280 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=parmenides error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-08-26 15:12:02,771 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=diogenes model=meta/llama-3.3-70b-instruct
+2026-08-26 15:12:02,969 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-08-26 15:12:02,970 [WARNING] ascension.council.base: council diogenes iter 4: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-08-26 15:12:02,970 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=diogenes error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-08-26 15:12:02,980 [ERROR] ascension.orchestrator.orchestrator: agent halted by 3-strike rule: agent=diogenes
+2026-08-26 15:12:02,985 [INFO] ascension.orchestrator.orchestrator: orchestrator: agent supervise task 'agent-diogenes' finished; continuing with the remaining agents (D-18)
+2026-08-26 15:12:16,505 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 1 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-08-26 15:12:17,319 [INFO] ascension.llm.queue: NVIDIA PRIMARY: role=parmenides model=meta/llama-3.3-70b-instruct
+2026-08-26 15:12:17,515 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-08-26 15:12:17,515 [WARNING] ascension.council.base: council parmenides iter 4: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-08-26 15:12:17,516 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=parmenides error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-08-26 15:12:17,520 [ERROR] ascension.orchestrator.orchestrator: agent halted by 3-strike rule: agent=parmenides
+2026-08-26 15:12:17,522 [INFO] ascension.orchestrator.orchestrator: orchestrator: agent supervise task 'agent-parmenides' finished; continuing with the remaining agents (D-18)
+2026-08-26 15:12:19,988 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:12:19,996 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:12:54,674 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:12:54,896 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:12:58,080 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:12:58,371 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:13:16,592 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 2 — alien proposal 92bbb980-cd2c-40a6-9c8b-7129ad26e3d3 could not be parsed/evaluated to a finite force (symbolic_form='G*m1*m2/r**2 + K*s1*s2/r**3'); excluded from alien-fit ranking
+2026-08-26 15:13:16,593 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 2 — alien-fit ranking could not rank >=2 proposals (1 rankable); falling back to CONFIDENCE ranking for this round. This is the genuine-failure path (engineering_discipline_no_coverups — loud, never a silent circular signal). Investigate if it recurs: it means the Council emitted no parseable symbolic_form.
+2026-08-26 15:13:26,095 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 persisted residual feedback (fit=0.935 steeper_power=True oscillation=True) for best=8a392504-eeda-46f1-8c0e-265cc8f62beb
+2026-08-26 15:13:26,687 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:13:26,691 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:13:28,954 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:13:28,958 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:13:41,943 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:13:42,200 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:13:42,274 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis proposes a more parsimonious model with fewer free paramet'
+2026-08-26 15:13:42,464 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:13:42,520 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis details the falsification of simpler, alternative models i'
+2026-08-26 15:13:42,683 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:13:43,008 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis avoids introducing new, unobserved intrinsic properties to'
+2026-08-26 15:13:43,277 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:13:43,291 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis grounds its parameter estimation in a stated physical prin'
+2026-08-26 15:13:43,294 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=8a392504-eeda-46f1-8c0e-265cc8f62beb y_minus=92bbb980-cd2c-40a6-9c8b-7129ad26e3d3 round_id=2 emitted=4 deduplicated=4 inserted=0 call_id=4706ca27-c60c-49b0-b7cb-858d4eef6f2f
+2026-08-26 15:13:43,294 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 closed — 0 new criteria from (best=8a392504-eeda-46f1-8c0e-265cc8f62beb, worst=92bbb980-cd2c-40a6-9c8b-7129ad26e3d3)
+2026-08-26 15:13:55,350 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:13:55,354 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:14:11,108 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:14:11,398 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:14:28,795 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:14:29,120 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:14:42,250 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:14:42,265 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:14:43,315 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 3 — alien proposal d8a1aa7c-ce84-4ab1-8ea5-14dffe70a563 could not be parsed/evaluated to a finite force (symbolic_form='G*m2/r**2 - k/r**p + A*cos(omega*r)/r**2'); excluded from alien-fit ranking
+2026-08-26 15:14:43,318 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 3 — alien proposal dd7c4514-0592-4282-abd3-3d43289a6c63 could not be parsed/evaluated to a finite force (symbolic_form='-G * m2 / r**2 - alpha * cos(k*r) / r**3'); excluded from alien-fit ranking
+2026-08-26 15:14:43,318 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 3 — alien-fit ranking could not rank >=2 proposals (0 rankable); falling back to CONFIDENCE ranking for this round. This is the genuine-failure path (engineering_discipline_no_coverups — loud, never a silent circular signal). Investigate if it recurs: it means the Council emitted no parseable symbolic_form.
+2026-08-26 15:14:43,332 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 3 persisted residual feedback (fit=0.944 steeper_power=True oscillation=False) for best=d8a1aa7c-ce84-4ab1-8ea5-14dffe70a563
+2026-08-26 15:14:49,829 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 3 persisted experiment feedback (fitted_exponent=3.4 rss_reduction=1.000) for best=d8a1aa7c-ce84-4ab1-8ea5-14dffe70a563
+2026-08-26 15:14:49,968 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:14:49,969 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:15:16,548 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:15:16,826 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:15:16,903 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Proposes distinct functional terms to model qualitatively different residuals, a'
+2026-08-26 15:15:17,057 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:15:17,325 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:15:17,369 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Avoids coupling the functional dependence of separate corrective terms (e.g., al'
+2026-08-26 15:15:17,373 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=d8a1aa7c-ce84-4ab1-8ea5-14dffe70a563 y_minus=dd7c4514-0592-4282-abd3-3d43289a6c63 round_id=3 emitted=3 deduplicated=2 inserted=1 call_id=ccc8b113-538c-4420-8015-fed3f15c1866
+2026-08-26 15:15:17,374 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 3 closed — 1 new criteria from (best=d8a1aa7c-ce84-4ab1-8ea5-14dffe70a563, worst=dd7c4514-0592-4282-abd3-3d43289a6c63)
+2026-08-26 15:15:27,688 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:15:28,001 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:15:30,076 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:15:30,080 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:15:58,655 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:15:58,905 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:16:11,275 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:16:11,524 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:16:17,415 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 4 — alien proposal 3df73751-918b-4d7d-bfef-a45d1de1efc6 could not be parsed/evaluated to a finite force (symbolic_form='G / r**(2.0 + epsilon * cos(omega * r))'); excluded from alien-fit ranking
+2026-08-26 15:16:17,415 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 4 — alien-fit ranking could not rank >=2 proposals (1 rankable); falling back to CONFIDENCE ranking for this round. This is the genuine-failure path (engineering_discipline_no_coverups — loud, never a silent circular signal). Investigate if it recurs: it means the Council emitted no parseable symbolic_form.
+2026-08-26 15:16:17,453 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 4 persisted residual feedback (fit=0.944 steeper_power=True oscillation=True) for best=5e7c9ade-07a9-449c-9616-1a55f48a3caa
+2026-08-26 15:16:24,179 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 4 persisted experiment feedback (fitted_exponent=3.4 rss_reduction=1.000) for best=5e7c9ade-07a9-449c-9616-1a55f48a3caa
+2026-08-26 15:16:24,475 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:16:24,480 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:16:40,705 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:16:41,005 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:16:43,725 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:16:43,945 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:16:44,227 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The model is specified by an explicit mathematical equation, not a qualitative d'
+2026-08-26 15:16:44,422 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:16:44,472 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body="It makes a specific quantitative prediction about a parameter's value, not just "
+2026-08-26 15:16:44,648 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:16:44,731 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body="The model's functional form is explicitly derived from cited experimental eviden"
+2026-08-26 15:16:45,033 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:16:45,044 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='It explicitly states which simpler, incumbent models are falsified by the eviden'
+2026-08-26 15:16:45,046 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=5e7c9ade-07a9-449c-9616-1a55f48a3caa y_minus=3df73751-918b-4d7d-bfef-a45d1de1efc6 round_id=4 emitted=4 deduplicated=4 inserted=0 call_id=deba56d6-d936-40e8-9959-ea22409d81dc
+2026-08-26 15:16:45,046 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 4 closed — 0 new criteria from (best=5e7c9ade-07a9-449c-9616-1a55f48a3caa, worst=3df73751-918b-4d7d-bfef-a45d1de1efc6)
+2026-08-26 15:17:11,451 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:17:11,457 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:17:12,442 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:17:12,445 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:17:45,054 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 5 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-08-26 15:17:51,715 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:17:51,988 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:18:05,999 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:18:06,193 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:18:36,620 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:18:36,623 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:18:45,097 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 6 — alien proposal 6906b444-ad07-4026-a57a-e577f6e1c6d8 could not be parsed/evaluated to a finite force (symbolic_form='(G/r**2 + K/r**p) * m2'); excluded from alien-fit ranking
+2026-08-26 15:18:45,102 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 6 — alien-fit ranking could not rank >=2 proposals (1 rankable); falling back to CONFIDENCE ranking for this round. This is the genuine-failure path (engineering_discipline_no_coverups — loud, never a silent circular signal). Investigate if it recurs: it means the Council emitted no parseable symbolic_form.
+2026-08-26 15:18:45,128 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 6 persisted residual feedback (fit=0.935 steeper_power=True oscillation=True) for best=6906b444-ad07-4026-a57a-e577f6e1c6d8
+2026-08-26 15:18:51,558 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 6 persisted experiment feedback (fitted_exponent=3.4 rss_reduction=1.000) for best=6906b444-ad07-4026-a57a-e577f6e1c6d8
+2026-08-26 15:18:52,043 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:18:52,047 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:18:52,278 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:18:52,281 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:19:15,169 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:19:15,640 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:19:15,669 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Presents a complete and unambiguous mathematical expression for the proposed law'
+2026-08-26 15:19:15,889 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:19:15,927 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Grounds its formulation in established physical quantities rather than undefined'
+2026-08-26 15:19:16,126 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:19:16,178 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Is more parsimonious, introducing fewer new physical properties or free paramete'
+2026-08-26 15:19:16,350 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:19:16,626 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Frames the model in terms of physical principles, not the social process of its '
+2026-08-26 15:19:16,635 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=6906b444-ad07-4026-a57a-e577f6e1c6d8 y_minus=b0a7a090-e651-4e7d-a11c-1d1b624dd87f round_id=6 emitted=4 deduplicated=4 inserted=0 call_id=09f95740-9747-42d6-b188-9a28e1a076d4
+2026-08-26 15:19:16,636 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 6 closed — 0 new criteria from (best=6906b444-ad07-4026-a57a-e577f6e1c6d8, worst=b0a7a090-e651-4e7d-a11c-1d1b624dd87f)
+2026-08-26 15:19:22,819 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:19:23,139 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:19:30,118 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:19:30,419 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:19:53,532 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:19:53,537 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:20:16,710 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 7 — alien proposal fb415129-c76c-4c99-ab98-55a54e7c7004 could not be parsed/evaluated to a finite force (symbolic_form='G/r**2 + alpha/r**3.4 + beta*cos(k*r)'); excluded from alien-fit ranking
+2026-08-26 15:20:16,716 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 7 — alien proposal e47fbb2b-cbd2-43f0-a5a0-38b66cdbe7b5 could not be parsed/evaluated to a finite force (symbolic_form='G*m2/r**2 + k*m2/r**3.5'); excluded from alien-fit ranking
+2026-08-26 15:20:16,716 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 7 — alien-fit ranking could not rank >=2 proposals (0 rankable); falling back to CONFIDENCE ranking for this round. This is the genuine-failure path (engineering_discipline_no_coverups — loud, never a silent circular signal). Investigate if it recurs: it means the Council emitted no parseable symbolic_form.
+2026-08-26 15:20:16,764 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 7 persisted residual feedback (fit=0.944 steeper_power=True oscillation=True) for best=fb415129-c76c-4c99-ab98-55a54e7c7004
+2026-08-26 15:20:17,223 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:20:17,225 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:20:30,916 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:20:30,919 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:20:34,506 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:20:34,789 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:20:40,117 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:20:40,415 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:20:40,465 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The hypothesis justifies its parameter choices based on empirical data rather th'
+2026-08-26 15:20:40,679 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:20:40,952 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The hypothesis proposes a model that accounts for a greater number of distinct, '
+2026-08-26 15:20:41,405 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:20:41,419 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The hypothesis justifies its complexity by mapping each of its components to a s'
+2026-08-26 15:20:41,427 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=fb415129-c76c-4c99-ab98-55a54e7c7004 y_minus=e47fbb2b-cbd2-43f0-a5a0-38b66cdbe7b5 round_id=7 emitted=3 deduplicated=3 inserted=0 call_id=49455d31-4a41-426c-aac3-0e0a9083c9f6
+2026-08-26 15:20:41,427 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 7 closed — 0 new criteria from (best=fb415129-c76c-4c99-ab98-55a54e7c7004, worst=e47fbb2b-cbd2-43f0-a5a0-38b66cdbe7b5)
+2026-08-26 15:21:05,162 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:21:05,167 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:21:25,757 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:21:26,072 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:21:41,447 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 8 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-08-26 15:21:48,529 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:21:48,788 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:22:19,500 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:22:19,503 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:22:26,484 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:22:26,487 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:22:41,460 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 9 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-08-26 15:23:08,456 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:23:08,792 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:23:18,964 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:23:19,506 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:23:41,500 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 10 — alien proposal 7016d4ca-bcee-4f6c-8750-315b1d858fbf could not be parsed/evaluated to a finite force (symbolic_form='m2 * (G/r**2 + K/r**3)'); excluded from alien-fit ranking
+2026-08-26 15:23:41,507 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 10 — alien proposal 0a38d1ab-71a4-4ac8-8b9e-38b18b1d2485 could not be parsed/evaluated to a finite force (symbolic_form='-C / r**2 - alpha / r**kappa'); excluded from alien-fit ranking
+2026-08-26 15:23:41,507 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 10 — alien-fit ranking could not rank >=2 proposals (0 rankable); falling back to CONFIDENCE ranking for this round. This is the genuine-failure path (engineering_discipline_no_coverups — loud, never a silent circular signal). Investigate if it recurs: it means the Council emitted no parseable symbolic_form.
+2026-08-26 15:23:41,530 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 10 persisted residual feedback (fit=0.944 steeper_power=True oscillation=True) for best=0a38d1ab-71a4-4ac8-8b9e-38b18b1d2485
+2026-08-26 15:23:41,747 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:23:41,751 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:23:50,124 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:23:50,126 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:24:04,289 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:24:04,613 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:24:04,692 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The hypothesis directly models quantitative experimental results rather than dis'
+2026-08-26 15:24:04,901 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:24:04,975 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The hypothesis proposes a procedure for empirical falsification by identifying a'
+2026-08-26 15:24:05,259 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:24:05,311 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The hypothesis treats observed deviations from a baseline model as a signal to b'
+2026-08-26 15:24:05,530 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:24:06,264 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The hypothesis prioritizes empirical fit over adherence to a priori principles o'
+2026-08-26 15:24:06,267 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=0a38d1ab-71a4-4ac8-8b9e-38b18b1d2485 y_minus=7016d4ca-bcee-4f6c-8750-315b1d858fbf round_id=10 emitted=4 deduplicated=4 inserted=0 call_id=5027b0aa-d173-4c3b-8554-65d0fabd3f73
+2026-08-26 15:24:06,267 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 10 closed — 0 new criteria from (best=0a38d1ab-71a4-4ac8-8b9e-38b18b1d2485, worst=7016d4ca-bcee-4f6c-8750-315b1d858fbf)
+2026-08-26 15:24:09,232 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:24:09,234 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:24:38,383 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:24:38,665 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:25:04,251 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:25:04,579 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:25:06,289 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 11 — alien proposal d940a81d-50ad-498b-a4ba-e6e8eed7d878 could not be parsed/evaluated to a finite force (symbolic_form='G*m2/r**2 - C/r**p + D*cos(omega*r)'); excluded from alien-fit ranking
+2026-08-26 15:25:06,292 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 11 — alien proposal a7ac3b0e-dcdb-4fa7-9788-1e2055f8175c could not be parsed/evaluated to a finite force (symbolic_form='-G*m2/r**2 - (K/r**3)*cos(omega*r)'); excluded from alien-fit ranking
+2026-08-26 15:25:06,292 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 11 — alien-fit ranking could not rank >=2 proposals (0 rankable); falling back to CONFIDENCE ranking for this round. This is the genuine-failure path (engineering_discipline_no_coverups — loud, never a silent circular signal). Investigate if it recurs: it means the Council emitted no parseable symbolic_form.
+2026-08-26 15:25:06,309 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 11 persisted residual feedback (fit=0.943 steeper_power=False oscillation=True) for best=d940a81d-50ad-498b-a4ba-e6e8eed7d878
+2026-08-26 15:25:06,549 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:25:06,552 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:25:09,214 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:25:09,219 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:25:26,203 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:25:26,505 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:25:27,262 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis incorporates all cited empirical findings, rather than dis'
+2026-08-26 15:25:27,417 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:25:27,484 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis treats empirical constants as parameters to be fitted, not'
+2026-08-26 15:25:27,679 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:25:27,689 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis proposes a decomposable model where each term maps directl'
+2026-08-26 15:25:27,865 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:25:27,883 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis uses operational language, avoiding philosophical metaphor'
+2026-08-26 15:25:27,887 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=d940a81d-50ad-498b-a4ba-e6e8eed7d878 y_minus=a7ac3b0e-dcdb-4fa7-9788-1e2055f8175c round_id=11 emitted=4 deduplicated=4 inserted=0 call_id=16521e10-fa66-4e41-8b00-1458766bee43
+2026-08-26 15:25:27,887 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 11 closed — 0 new criteria from (best=d940a81d-50ad-498b-a4ba-e6e8eed7d878, worst=a7ac3b0e-dcdb-4fa7-9788-1e2055f8175c)
+2026-08-26 15:25:49,006 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:25:49,420 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:26:05,368 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:26:05,382 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:26:19,965 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:26:19,969 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:26:27,919 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 12 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-08-26 15:26:50,151 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:26:50,480 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:27:18,401 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:27:18,661 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:27:28,028 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 13 — alien proposal d1e95966-1a30-40c0-8222-647c7d84d8ed could not be parsed/evaluated to a finite force (symbolic_form='-G*m1*m2/r**2 - beta/r**3.4 + gamma*cos(omega/r)'); excluded from alien-fit ranking
+2026-08-26 15:27:28,029 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 13 — alien-fit ranking could not rank >=2 proposals (1 rankable); falling back to CONFIDENCE ranking for this round. This is the genuine-failure path (engineering_discipline_no_coverups — loud, never a silent circular signal). Investigate if it recurs: it means the Council emitted no parseable symbolic_form.
+2026-08-26 15:27:28,098 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 13 persisted residual feedback (fit=0.941 steeper_power=True oscillation=True) for best=e89b66a8-426a-4ba5-b050-5b9e6afd733b
+2026-08-26 15:27:28,298 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:27:28,301 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:27:49,288 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:27:49,293 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:27:50,815 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:27:51,056 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:27:51,403 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:27:51,685 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:27:51,751 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis is more parsimonious, proposing fewer distinct explanatory'
+2026-08-26 15:27:52,074 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:27:52,113 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis derives its parameters from a theoretical principle rather'
+2026-08-26 15:27:52,284 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:27:52,325 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis makes a stronger posterior commitment by positing a precis'
+2026-08-26 15:27:52,518 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:27:52,853 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis maintains a simpler core law rather than adding terms to f'
+2026-08-26 15:27:52,860 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=e89b66a8-426a-4ba5-b050-5b9e6afd733b y_minus=d1e95966-1a30-40c0-8222-647c7d84d8ed round_id=13 emitted=4 deduplicated=4 inserted=0 call_id=efa8256f-79ac-4f3f-8255-2081f0c02055
+2026-08-26 15:27:52,861 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 13 closed — 0 new criteria from (best=e89b66a8-426a-4ba5-b050-5b9e6afd733b, worst=d1e95966-1a30-40c0-8222-647c7d84d8ed)
+2026-08-26 15:28:22,627 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:28:22,933 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:28:43,602 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:28:43,897 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:28:52,945 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 14 — alien proposal 6347af2a-17e2-4d58-beba-1c2c97aaf215 could not be parsed/evaluated to a finite force (symbolic_form='G*m2/r**2 + alpha/r**p'); excluded from alien-fit ranking
+2026-08-26 15:28:52,946 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 14 — alien-fit ranking could not rank >=2 proposals (1 rankable); falling back to CONFIDENCE ranking for this round. This is the genuine-failure path (engineering_discipline_no_coverups — loud, never a silent circular signal). Investigate if it recurs: it means the Council emitted no parseable symbolic_form.
+2026-08-26 15:28:53,034 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 14 persisted residual feedback (fit=0.945 steeper_power=False oscillation=False) for best=6c3fd456-eadc-46e7-b525-e87a450aedb3
+2026-08-26 15:28:53,274 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:28:53,279 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:28:53,878 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-08-26 15:28:53,885 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-08-26 15:29:16,792 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:29:17,069 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:29:17,159 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis accounts for a wider range of documented anomalies or resi'
+2026-08-26 15:29:17,344 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:29:17,390 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis makes a more specific claim by directly incorporating obse'
+2026-08-26 15:29:17,578 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:29:17,960 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis proposes a complete model rather than a research program w'
+2026-08-26 15:29:18,091 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:29:18,113 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis explicitly maps components of its model to the specific ev'
+2026-08-26 15:29:18,118 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=6c3fd456-eadc-46e7-b525-e87a450aedb3 y_minus=6347af2a-17e2-4d58-beba-1c2c97aaf215 round_id=14 emitted=4 deduplicated=4 inserted=0 call_id=89b66872-8238-462d-b989-7334aee37a76
+2026-08-26 15:29:18,118 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 14 closed — 0 new criteria from (best=6c3fd456-eadc-46e7-b525-e87a450aedb3, worst=6347af2a-17e2-4d58-beba-1c2c97aaf215)
+2026-08-26 15:29:39,471 [WARNING] psycopg.pool: discarding closed connection: <psycopg.AsyncConnection [BAD] at 0x1183a6520>
+2026-08-26 15:29:39,502 [ERROR] ascension.orchestrator.orchestrator: idle heartbeat write failed for agent=plato
+Traceback (most recent call last):
+  File "<repo>/src/ascension/orchestrator/orchestrator.py", line 690, in _idle_heartbeat_task
+    await self._write_heartbeat(
+    ...<6 lines>...
+    )
+  File "<repo>/src/ascension/orchestrator/orchestrator.py", line 1736, in _write_heartbeat
+    await cur.execute(
+    ...<16 lines>...
+    )
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg/cursor_async.py", line 117, in execute
+    raise ex.with_traceback(None)
+psycopg.OperationalError: consuming input failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2026-08-26 15:29:39,536 [WARNING] psycopg.pool: discarding closed connection: <psycopg.AsyncConnection [BAD] at 0x1183a4e90>
+2026-08-26 15:29:39,536 [ERROR] ascension.orchestrator.orchestrator: idle heartbeat write failed for agent=heraclitus
+Traceback (most recent call last):
+  File "<repo>/src/ascension/orchestrator/orchestrator.py", line 690, in _idle_heartbeat_task
+    await self._write_heartbeat(
+    ...<6 lines>...
+    )
+  File "<repo>/src/ascension/orchestrator/orchestrator.py", line 1736, in _write_heartbeat
+    await cur.execute(
+    ...<16 lines>...
+    )
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg/cursor_async.py", line 117, in execute
+    raise ex.with_traceback(None)
+psycopg.OperationalError: consuming input failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2026-08-26 15:29:39,551 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:39,552 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:39,669 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-08-26 15:29:39,922 [WARNING] psycopg.pool: discarding closed connection: <psycopg.AsyncConnection [BAD] at 0x10c380190>
+2026-08-26 15:29:39,929 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:40,584 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:40,645 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:40,826 [WARNING] psycopg.pool: discarding closed connection: <psycopg.AsyncConnection [BAD] at 0x10c2ed7f0>
+2026-08-26 15:29:40,829 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:40,909 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:41,605 [WARNING] psycopg.pool: discarding closed connection: <psycopg.AsyncConnection [BAD] at 0x11830ead0>
+2026-08-26 15:29:41,606 [WARNING] ascension.llm.postgres_sink: PostgresCallLogger: degrading to deadletter — OperationalError: consuming input failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2026-08-26 15:29:41,613 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:41,784 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:41,820 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-08-26 15:29:41,849 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:42,540 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:42,644 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:42,778 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:42,825 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:42,861 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:43,692 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:44,400 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+2026-08-26 15:29:44,636 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:46,778 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:46,780 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:47,183 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:47,504 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:48,106 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+2026-08-26 15:29:48,349 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:54,589 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:55,015 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:55,121 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:55,504 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:55,774 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:29:55,896 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:30:10,237 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:30:10,292 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:30:10,352 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:30:10,600 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:30:11,487 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:30:13,341 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:30:14,026 [WARNING] ascension.council.base: council heraclitus iter 12: unexpected error: PoolTimeout: couldn't get a connection after 30.00 sec
+2026-08-26 15:30:14,027 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=PoolTimeout: couldn't get a connection after 30.00 sec
+2026-08-26 15:30:14,538 [ERROR] ascension.orchestrator.orchestrator: idle heartbeat write failed for agent=plato
+Traceback (most recent call last):
+  File "<repo>/src/ascension/orchestrator/orchestrator.py", line 690, in _idle_heartbeat_task
+    await self._write_heartbeat(
+    ...<6 lines>...
+    )
+  File "<repo>/src/ascension/orchestrator/orchestrator.py", line 1734, in _write_heartbeat
+    async with self.pool.connection() as conn:
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg_pool/pool_async.py", line 216, in connection
+    conn = await self.getconn(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg_pool/pool_async.py", line 251, in getconn
+    raise PoolTimeout(
+        f"couldn't get a connection after {timeout:.2f} sec"
+    ) from None
+psycopg_pool.PoolTimeout: couldn't get a connection after 30.00 sec
+2026-08-26 15:30:14,550 [ERROR] ascension.orchestrator.orchestrator: idle heartbeat write failed for agent=heraclitus
+Traceback (most recent call last):
+  File "<repo>/src/ascension/orchestrator/orchestrator.py", line 690, in _idle_heartbeat_task
+    await self._write_heartbeat(
+    ...<6 lines>...
+    )
+  File "<repo>/src/ascension/orchestrator/orchestrator.py", line 1734, in _write_heartbeat
+    async with self.pool.connection() as conn:
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg_pool/pool_async.py", line 216, in connection
+    conn = await self.getconn(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg_pool/pool_async.py", line 251, in getconn
+    raise PoolTimeout(
+        f"couldn't get a connection after {timeout:.2f} sec"
+    ) from None
+psycopg_pool.PoolTimeout: couldn't get a connection after 30.00 sec
+2026-08-26 15:30:17,477 [ERROR] ascension.orchestrator.orchestrator: orchestrator: poll-and-enact tick failed (continuing — the enactment channel stays live): couldn't get a connection after 30.00 sec
+Traceback (most recent call last):
+  File "<repo>/src/ascension/orchestrator/orchestrator.py", line 906, in _poll_and_enact_task
+    pending_rows = await enactment.poll_pending(self.pool, run_id=self._run_id)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/src/ascension/orchestrator/enactment.py", line 127, in poll_pending
+    async with pool.connection() as conn:
+               ~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg_pool/pool_async.py", line 216, in connection
+    conn = await self.getconn(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg_pool/pool_async.py", line 251, in getconn
+    raise PoolTimeout(
+        f"couldn't get a connection after {timeout:.2f} sec"
+    ) from None
+psycopg_pool.PoolTimeout: couldn't get a connection after 30.00 sec
+2026-08-26 15:30:39,978 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:30:40,258 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:30:40,815 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:30:41,428 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:30:44,032 [CRITICAL] ascension.orchestrator.orchestrator: orchestrator: failure heartbeat write FAILED — possible audit chain break: agent=heraclitus status=failed error=couldn't get a connection after 30.00 sec
+2026-08-26 15:30:44,418 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:30:48,125 [ERROR] ascension.council.round_close: RoundCloseCoordinator: round 15 failed: couldn't get a connection after 30.00 sec
+Traceback (most recent call last):
+  File "<repo>/src/ascension/council/round_close.py", line 274, in run
+    await self._close_one_round()
+  File "<repo>/src/ascension/council/round_close.py", line 322, in _close_one_round
+    async with self._pool.connection() as conn:
+               ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg_pool/pool_async.py", line 216, in connection
+    conn = await self.getconn(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg_pool/pool_async.py", line 251, in getconn
+    raise PoolTimeout(
+        f"couldn't get a connection after {timeout:.2f} sec"
+    ) from None
+psycopg_pool.PoolTimeout: couldn't get a connection after 30.00 sec
+2026-08-26 15:30:48,190 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:30:49,577 [ERROR] ascension.orchestrator.orchestrator: idle heartbeat write failed for agent=plato
+Traceback (most recent call last):
+  File "<repo>/src/ascension/orchestrator/orchestrator.py", line 690, in _idle_heartbeat_task
+    await self._write_heartbeat(
+    ...<6 lines>...
+    )
+  File "<repo>/src/ascension/orchestrator/orchestrator.py", line 1734, in _write_heartbeat
+    async with self.pool.connection() as conn:
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg_pool/pool_async.py", line 216, in connection
+    conn = await self.getconn(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg_pool/pool_async.py", line 251, in getconn
+    raise PoolTimeout(
+        f"couldn't get a connection after {timeout:.2f} sec"
+    ) from None
+psycopg_pool.PoolTimeout: couldn't get a connection after 30.00 sec
+2026-08-26 15:30:49,580 [ERROR] ascension.orchestrator.orchestrator: idle heartbeat write failed for agent=heraclitus
+Traceback (most recent call last):
+  File "<repo>/src/ascension/orchestrator/orchestrator.py", line 690, in _idle_heartbeat_task
+    await self._write_heartbeat(
+    ...<6 lines>...
+    )
+  File "<repo>/src/ascension/orchestrator/orchestrator.py", line 1734, in _write_heartbeat
+    async with self.pool.connection() as conn:
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg_pool/pool_async.py", line 216, in connection
+    conn = await self.getconn(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg_pool/pool_async.py", line 251, in getconn
+    raise PoolTimeout(
+        f"couldn't get a connection after {timeout:.2f} sec"
+    ) from None
+psycopg_pool.PoolTimeout: couldn't get a connection after 30.00 sec
+2026-08-26 15:31:12,635 [WARNING] psycopg.pool: discarding closed connection: <psycopg.AsyncConnection [BAD] at 0x118392e70>
+2026-08-26 15:31:12,637 [WARNING] ascension.council.base: council plato iter 15: unexpected error: OperationalError: consuming input failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2026-08-26 15:31:12,641 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=OperationalError: consuming input failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2026-08-26 15:31:12,644 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:31:13,678 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:31:15,739 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+2026-08-26 15:31:16,491 [WARNING] ascension.orchestrator.orchestrator: orchestrator: --max-duration-seconds=1200 elapsed — initiating graceful drain (halt_reason='duration_exceeded')
+2026-08-26 15:31:16,503 [INFO] ascension.council.round_close: RoundCloseCoordinator stopped after 15 rounds (run_id=14efa59d-8bb7-4093-b63d-7fe15978817e)
+2026-08-26 15:31:19,854 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:31:28,068 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:31:39,184 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:31:39,559 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:31:41,736 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:31:43,806 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:31:44,482 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:31:46,522 [CRITICAL] ascension.orchestrator.orchestrator: orchestrator: shutdown halt_reason write FAILED: run_id=14efa59d-8bb7-4093-b63d-7fe15978817e halt_reason=duration_exceeded status=completed error=couldn't get a connection after 30.00 sec
+2026-08-26 15:31:46,542 [INFO] __main__: orchestrator CLI exit: run_id=14efa59d-8bb7-4093-b63d-7fe15978817e halt_reason=duration_exceeded n_agents=5 n_halted=3

@@ -1,0 +1,11 @@
+== base ('ether', 'cached')
+== base ('dark_matter', 'cached')
+== fit dmcount cached 0s
+== fit ('dark_matter', 'DM-2', 'no_hidden', 'solo_best') ok 2193s
+== fit ('ether', 'ET-3', 'mass_dep_drift', 'solo_default') cached 0s
+== fit ('ether', 'ET-3', 'mass_dep_drift', 'solo_best') cached 0s
+== fit ('ether', 'ET-3', 'mass_dep_drift', 'pair_default_best') ok 143s
+== fit ('ether', 'ET-3', 'repulsor', 'solo_default') ok 367s
+== fit ('dark_matter', 'DM-2', 'no_hidden', 'pair_default_best') ok 3342s
+== fit ('ether', 'ET-3', 'repulsor', 'solo_best') ok 1233s
+== fit ('ether', 'ET-3', 'repulsor', 'pair_default_best') ok 2558s

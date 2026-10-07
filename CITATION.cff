@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code or these run records, please cite the paper and the software release."
+title: "LLM-IDEA: Identifiability-Driven Experimental Agent for Autonomous Discovery of Mechanistic World Models (code and run records)"
+type: software
+version: "1.0"
+date-released: "2026-10-07"
+license: Apache-2.0
+repository-code: "https://github.com/Suraskey/llm-idea"
+authors:
+  - family-names: Shetty
+    given-names: Surya
+    affiliation: "Texas A&M University; Polara Labs Inc."
+  - family-names: Braga-Neto
+    given-names: Ulisses
+    affiliation: "Texas A&M University, TAMIDS SciML Lab"
+preferred-citation:
+  type: article
+  title: "LLM-IDEA: Identifiability-Driven Experimental Agent for Autonomous Discovery of Mechanistic World Models"
+  authors:
+    - family-names: Shetty
+      given-names: Surya
+    - family-names: Braga-Neto
+      given-names: Ulisses
+  year: 2026
+  journal: "arXiv preprint"
+  notes: "arXiv identifier to be added once the preprint is announced."

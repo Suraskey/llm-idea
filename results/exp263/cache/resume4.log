@@ -1,0 +1,7 @@
+[orchestrator] 2026-09-29T23:53:34Z relaunch after 4th restart; single driver
+== base ('ether', 'cached')
+== base ('three_species', 'cached')
+== base ('dark_matter', 'cached')
+== fit dmcount cached 0s
+/usr/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 7 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

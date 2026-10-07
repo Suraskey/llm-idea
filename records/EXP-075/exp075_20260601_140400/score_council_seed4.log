@@ -1,0 +1,109 @@
+2026-06-01 17:09:58,217 [INFO] ascension.benchmarks.alien_depth: alien_depth: max_depth=6 per_layer=(True, True, True, False, False, True) held_out_rmse=0.21206819539332167 q_drift=None n_hyp=30 elapsed_ms=26284
+========================================================================
+ALIEN RUN 309ba2cc-04a9-4000-a1be-ac29e9274f85
+  run.status=completed  halt_reason=duration_exceeded
+  PROVENANCE (P-15.2-6): benchmark_system='alien_universe'  included_in_distillation_v1=False
+  SCORING MODE: FAMILY (L3/L4 vs held-out products {3,5})
+  node types: {'dispute': 3, 'hypothesis': 30}
+  hypothesis nodes=30  status_breakdown={'active': 26, 'contested': 4}
+  SPEND: 92 llm_calls, $2.1986 total
+    provider='google': 82 calls, $2.1986
+    provider='nvidia': 10 calls, $0.0000
+------------------------------------------------------------------------
+  DISCOVERY DEPTH (P-15.2-1/2/3): max_depth=6
+    per_layer L1..L6 = (True, True, True, False, False, True)
+    HONEST consecutive force-law depth (L1-L4, L-057) = 3   [L5=False L6=True reported separately, non-consecutive]
+    held_out_rss_reduction=0.21206819539332167  q_drift=None
+  scorer notes (95):
+    - L1: inverse-square term + Newton accel-fit converges ('(alpha * s1 * s2 / r**2 + beta / r**3.4) / m1')
+    - L2: second radial term ~r**-3.5 + alpha-basis RSS reduction 0.169 >= 0.05 ('(alpha * s1 * s2 / r**2 + beta / r**3.4) / m1')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('(alpha * s1 * s2 / r**2 + beta / r**3.4) / m1')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(alpha * s1 * s2 / r**2 + beta / r**3.4) / m1')
+    - L1: inverse-square term + Newton accel-fit converges ('(alpha * s2 / r**2) - (beta * m2 / r**3.4)')
+    - L2: second radial term ~r**-3.5 + alpha-basis RSS reduction 0.169 >= 0.05 ('(alpha * s2 / r**2) - (beta * m2 / r**3.4)')
+    - L6 DENIED: claimed symmetry not verified by sympy ('(alpha * s2 / r**2) - (beta * m2 / r**3.4)')
+    - L1: inverse-square term + Newton accel-fit converges ('(beta*s1*s2/r**2 - alpha/r**3)/m1')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('(beta*s1*s2/r**2 - alpha/r**3)/m1')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 ('(beta*s1*s2/r**2 - alpha/r**3)/m1')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(beta*s1*s2/r**2 - alpha/r**3)/m1')
+    - L1: inverse-square term + Newton accel-fit converges ('(k*s1*s2 - G*m1*m2) * (1/r**2 + alpha/r**3.4)')
+    - L2: second radial term ~r**-3.5 + alpha-basis RSS reduction 0.169 >= 0.05 ('(k*s1*s2 - G*m1*m2) * (1/r**2 + alpha/r**3.4)')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 ('(k*s1*s2 - G*m1*m2) * (1/r**2 + alpha/r**3.4)')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(k*s1*s2 - G*m1*m2) * (1/r**2 + alpha/r**3.4)')
+    - L1: inverse-square term + Newton accel-fit converges ('(kappa*s1*s2/m1 - gamma*m2) / r**2')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('(kappa*s1*s2/m1 - gamma*m2) / r**2')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(kappa*s1*s2/m1 - gamma*m2) / r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('(s1*s2/m1) * (1/r**2) * (cos(alpha*log(r)) + beta*sin(alpha*log(r)))')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 ('(s1*s2/m1) * (1/r**2) * (cos(alpha*log(r)) + beta*sin(alpha*log(r)))')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(s1*s2/m1) * (1/r**2) * (cos(alpha*log(r)) + beta*sin(alpha*log(r)))')
+    - L1: inverse-square term + Newton accel-fit converges ('-G * m2 / r**2 + beta * s1 * s2 / r**3.4')
+    - L2: second radial term ~r**-3.5 + alpha-basis RSS reduction 0.169 >= 0.05 ('-G * m2 / r**2 + beta * s1 * s2 / r**3.4')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('-G * m2 / r**2 + beta * s1 * s2 / r**3.4')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('-G * m2 / r**2 + beta * s1 * s2 / r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('-G*m1*m2/r**2 + k*s1*s2/r**3.4')
+    - L2: second radial term ~r**-3.5 + alpha-basis RSS reduction 0.169 >= 0.05 ('-G*m1*m2/r**2 + k*s1*s2/r**3.4')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('-G*m1*m2/r**2 + k*s1*s2/r**3.4')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('-G*m1*m2/r**2 + k*s1*s2/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('-G*m2/r**2 + k*s1*s2/(m1*r**3.4)')
+    - L2: second radial term ~r**-3.5 + alpha-basis RSS reduction 0.169 >= 0.05 ('-G*m2/r**2 + k*s1*s2/(m1*r**3.4)')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('-G*m2/r**2 + k*s1*s2/(m1*r**3.4)')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('-G*m2/r**2 + k*s1*s2/(m1*r**3.4)')
+    - L1: inverse-square term + Newton accel-fit converges ('-G*m2/r**2 + kappa*s1*s2*m2/r**3.4')
+    - L2: second radial term ~r**-3.5 + alpha-basis RSS reduction 0.169 >= 0.05 ('-G*m2/r**2 + kappa*s1*s2*m2/r**3.4')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('-G*m2/r**2 + kappa*s1*s2*m2/r**3.4')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('-G*m2/r**2 + kappa*s1*s2*m2/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('-G*m2/r**2 + kappa*s1*s2/(m1*r**3)')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('-G*m2/r**2 + kappa*s1*s2/(m1*r**3)')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('-G*m2/r**2 + kappa*s1*s2/(m1*r**3)')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('-G*m2/r**2 + kappa*s1*s2/(m1*r**3)')
+    - L1: inverse-square term + Newton accel-fit converges ('-G/r**2 + K*s1*s2/r**3.4')
+    - L2: second radial term ~r**-3.5 + alpha-basis RSS reduction 0.169 >= 0.05 ('-G/r**2 + K*s1*s2/r**3.4')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('-G/r**2 + K*s1*s2/r**3.4')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('-G/r**2 + K*s1*s2/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('-k * (1 - s1*s2 * exp(r/R)) / r**2')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('-k * (1 - s1*s2 * exp(r/R)) / r**2')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('-k * (1 - s1*s2 * exp(r/R)) / r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('-k*s1*s2*(1/r**2 + alpha/r**3)')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('-k*s1*s2*(1/r**2 + alpha/r**3)')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('-k*s1*s2*(1/r**2 + alpha/r**3)')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('-k*s1*s2*(1/r**2 + alpha/r**3)')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 ('-k*s1*s2*log(r)')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('-k*s1*s2*log(r)')
+    - L1: inverse-square term + Newton accel-fit converges ('-k*s1*s2/r**2 * (cos(alpha*log(r)) + alpha*sin(alpha*log(r)))')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 ('-k*s1*s2/r**2 * (cos(alpha*log(r)) + alpha*sin(alpha*log(r)))')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('-k*s1*s2/r**2 * (cos(alpha*log(r)) + alpha*sin(alpha*log(r)))')
+    - L1: inverse-square term + Newton accel-fit converges ('G * m2 * s1 * s2 / r**2 * (cos(alpha * log(r)) + beta * sin(alpha * log(r)))')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 ('G * m2 * s1 * s2 / r**2 * (cos(alpha * log(r)) + beta * sin(alpha * log(r)))')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('G * m2 * s1 * s2 / r**2 * (cos(alpha * log(r)) + beta * sin(alpha * log(r)))')
+  distinct symbolic_form count=30 (sample up to 30):
+    (alpha * s1 * s2 / r**2 + beta / r**3.4) / m1
+    (alpha * s2 / r**2) - (beta * m2 / r**3.4)
+    (beta*s1*s2/r**2 - alpha/r**3)/m1
+    (k*s1*s2 - G*m1*m2) * (1/r**2 + alpha/r**3.4)
+    (kappa*s1*s2/m1 - gamma*m2) / r**2
+    (s1*s2/m1) * (1/r**2) * (cos(alpha*log(r)) + beta*sin(alpha*log(r)))
+    -G * m2 / r**2 + beta * s1 * s2 / r**3.4
+    -G*m1*m2/r**2 + k*s1*s2/r**3.4
+    -G*m2/r**2 + k*s1*s2/(m1*r**3.4)
+    -G*m2/r**2 + kappa*s1*s2*m2/r**3.4
+    -G*m2/r**2 + kappa*s1*s2/(m1*r**3)
+    -G/r**2 + K*s1*s2/r**3.4
+    -k * (1 - s1*s2 * exp(r/R)) / r**2
+    -k*s1*s2*(1/r**2 + alpha/r**3)
+    -k*s1*s2*log(r)
+    -k*s1*s2/r**2 * (cos(alpha*log(r)) + alpha*sin(alpha*log(r)))
+    G * m2 * s1 * s2 / r**2 * (cos(alpha * log(r)) + beta * sin(alpha * log(r)))
+    G * s1*s2/r**2 * (cos(alpha*log(r)) + alpha*sin(alpha*log(r)))
+    G*m1*m2/r**2 + alpha*m1*m2/r**3.4
+    G*m1*m2/r**2 + alpha/r**3.4
+    G*m1*m2/r**2 + alpha/r**3.4 + beta*sin(k*r)
+    G*m1*m2/r**2.2 - alpha*sin(k*r) - beta/r**2
+    G*m1*m2/r**2.2 - alpha*sin(kappa*r)*r**(-1.8) + beta*s1*s2/r**2.5
+    G*r - alpha/r**2 + beta/r**3.4 * cos(gamma*log(r))
+    G*r - alpha/r**2.5 + beta*s1*s2/r**3.4*cos(gamma*log(r))
+    G*s1*s2*m2/r**2
+    alpha*m2/r**2 - beta*s2/r**3
+    k * s1 * s2 / (m1 * r**2)
+    k*s1*s2/(m1*r**2) - G*m2/r**2
+    k1*s1*s2*(cos(alpha*log(r)) + alpha*sin(alpha*log(r)))/r**2 + k2/r**3.4
+========================================================================

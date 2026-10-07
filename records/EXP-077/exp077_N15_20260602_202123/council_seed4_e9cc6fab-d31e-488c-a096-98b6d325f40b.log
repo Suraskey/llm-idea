@@ -1,0 +1,57 @@
+2026-06-02 22:06:30,571 [INFO] __main__: orchestrator CLI benchmark: system=alien_family seed=4 n_members=4 n_bodies=2 n_steps=1000 n_held_out=13
+2026-06-02 22:06:30,571 [INFO] __main__: orchestrator CLI pre-set run_id=e9cc6fab-d31e-488c-a096-98b6d325f40b
+2026-06-02 22:06:30,571 [INFO] __main__: orchestrator CLI episode start: n_agents=5 campaign_id=None focus=None max_duration_seconds=3600 call_budget=15 agents=[('plato', 30), ('aristotle', 5), ('diogenes', 15), ('heraclitus', 60), ('parmenides', 20)]
+2026-06-02 22:06:30,587 [INFO] ascension.orchestrator.orchestrator: orchestrator: alien run-record flags written to runs.config for run_id=e9cc6fab-d31e-488c-a096-98b6d325f40b: benchmark_system=alien_universe included_in_distillation_v1=False council_variant=council
+2026-06-02 22:06:30,589 [INFO] ascension.orchestrator.orchestrator: orchestrator started: run_id=e9cc6fab-d31e-488c-a096-98b6d325f40b n_agents=5
+2026-06-02 22:06:30,600 [INFO] ascension.council.round_close: RoundCloseCoordinator starting: window=60s run_id=e9cc6fab-d31e-488c-a096-98b6d325f40b score_ranking=True alien_fit_ranking=True
+2026-06-02 22:06:31,779 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 22:06:31,782 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 22:06:31,788 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 22:06:31,789 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 22:06:31,825 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 22:06:31,826 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 22:06:31,827 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 22:06:31,831 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 22:06:31,835 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 22:06:31,836 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 22:07:29,700 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-02 22:07:29,981 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 22:07:30,623 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 1 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-02 22:07:42,858 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-02 22:07:43,131 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 22:07:58,630 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-02 22:07:58,881 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 22:08:13,660 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 22:08:13,665 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 22:08:17,332 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-02 22:08:17,612 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 22:08:19,119 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 22:08:19,120 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 22:08:22,993 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 22:08:22,995 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 22:08:30,533 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 22:08:30,535 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 22:08:39,529 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 persisted residual feedback (fit=0.823 steeper_power=True oscillation=True) for best=78cc22ac-cd6f-4c03-a64d-f261853d9906
+2026-06-02 22:08:39,530 [INFO] ascension.benchmarks.experiment_feedback: experiment_feedback: 's1 * s2 / r' proposes no correction term to fit; battery not run
+2026-06-02 22:08:39,530 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 — best law 's1 * s2 / r' proposes no correction term to fit (no experiment feedback)
+2026-06-02 22:08:39,789 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 22:08:39,793 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 22:08:45,574 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-02 22:08:45,905 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 22:08:45,995 [INFO] ascension.agora._dispute_companion: dispute_companion_written rejected_node_id=12f39e18-21a2-4dbc-944d-2ce01fc52db5 run_id=e9cc6fab-d31e-488c-a096-98b6d325f40b
+2026-06-02 22:08:46,011 [INFO] ascension.agora.conflict_detection: conflict_detection: flagged ['12f39e18-21a2-4dbc-944d-2ce01fc52db5', 'cac05650-d01f-438f-98f9-cd4de3110885'] | trigger=agent_flag signal=contradicts_edge target_confidence>0.7
+2026-06-02 22:09:01,450 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 22:09:01,456 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 22:09:07,918 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-02 22:09:08,218 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 22:09:08,284 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Grounds the proposed law in more fundamental, underlying principles.'
+2026-06-02 22:09:08,513 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 22:09:08,577 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Proposes a law with fewer functional terms.'
+2026-06-02 22:09:08,818 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 22:09:08,848 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Unifies opposing phenomena under a single term whose character is determined by '
+2026-06-02 22:09:08,856 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=78cc22ac-cd6f-4c03-a64d-f261853d9906 y_minus=2e541674-905c-493c-8f5a-75b2bb967b8d round_id=2 emitted=3 deduplicated=3 inserted=0 call_id=34a89854-d5c7-49f9-9dde-257a17a0297b
+2026-06-02 22:09:08,856 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 closed — 0 new criteria from (best=78cc22ac-cd6f-4c03-a64d-f261853d9906, worst=2e541674-905c-493c-8f5a-75b2bb967b8d)
+2026-06-02 22:09:23,287 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-02 22:09:23,608 [WARNING] ascension.orchestrator.orchestrator: orchestrator: per-run call budget reached (15/15 calls) — initiating graceful drain (halt_reason='call_budget_exceeded')
+2026-06-02 22:09:23,615 [INFO] ascension.council.round_close: RoundCloseCoordinator stopped after 2 rounds (run_id=e9cc6fab-d31e-488c-a096-98b6d325f40b)
+2026-06-02 22:09:23,628 [INFO] __main__: orchestrator CLI exit: run_id=e9cc6fab-d31e-488c-a096-98b6d325f40b halt_reason=call_budget_exceeded n_agents=5 n_halted=0

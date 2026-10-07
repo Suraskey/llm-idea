@@ -1,0 +1,99 @@
+2026-05-30 17:17:14,503 [INFO] ascension.benchmarks.alien_depth: alien_depth: max_depth=6 per_layer=(True, False, True, False, False, True) held_out_rmse=0.1323213441236496 q_drift=None n_hyp=77 elapsed_ms=9117
+========================================================================
+ALIEN RUN 69fb2bd4-517f-4288-a984-21b104d9ef10
+  run.status=completed  halt_reason=duration_exceeded
+  PROVENANCE (P-15.2-6): benchmark_system='alien_universe'  included_in_distillation_v1=False
+  SCORING MODE: single-config
+  node types: {'dispute': 4, 'hypothesis': 77}
+  hypothesis nodes=77  status_breakdown={'active': 70, 'contested': 7}
+  SPEND: 207 llm_calls, $1.4723 total
+    provider='google': 141 calls, $1.4723
+    provider='nvidia': 66 calls, $0.0000
+------------------------------------------------------------------------
+  DISCOVERY DEPTH (P-15.2-1/2/3): max_depth=6
+    per_layer L1..L6 = (True, False, True, False, False, True)
+    HONEST consecutive force-law depth (L1-L4, L-057) = 1   [L5=False L6=True reported separately, non-consecutive]
+    held_out_rss_reduction=0.1323213441236496  q_drift=None
+  scorer notes (88):
+    - L2 DENIED: second radial term exponent not ~-3.5 ('-G * m2 * (x1 - x2) / r**3')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G * m2 / r')
+    - L1: inverse-square term + Newton accel-fit converges ('G * m2 / r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G * m2 / r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G * m2 / r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G * m2 / r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G * m2 / r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G * m2 / r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G * m2 / r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G * m2 / r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G * m2 / r**2 - k * (vx1**2 + vy1**2)')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G * m2 / r**2 - k * (vx1**2 + vy1**2)')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 * (x2-x1)/r + G*m1*m2/r**2 * (y2-y1)/r')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2 + alpha*r**2 - beta*(vx1**2 + vy1**2)')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 + alpha*r**2 - beta*(vx1**2 + vy1**2)')
+  distinct symbolic_form count=20 (sample up to 30):
+    -G * m2 * (x1 - x2) / r**3
+    G * m2 / r
+    G * m2 / r**2
+    G * m2 / r**2 - k * (vx1**2 + vy1**2)
+    G*m1*m2/r**2
+    G*m1*m2/r**2 * (x2 - x1)/r + G*m1*m2/r**2 * (y2 - y1)/r
+    G*m1*m2/r**2 * (x2-x1)/r + G*m1*m2/r**2 * (y2-y1)/r
+    G*m1*m2/r**2 + alpha*r**2 - beta*(vx1**2 + vy1**2)
+    G*m2*(x2-x1)/r**3
+    G*m2/r**2
+    G*m2/r**2 - k*s1*s2/(m1*r**3)
+    G*m2/r**2*(x2-x1)/r + G*m1/r**2*(x1-x2)/r
+    G*r + alpha/r**3 + beta*sin(r)
+    G/r**2
+    G/r**2 + H/r**3
+    k * (m1 + m2) / r**3 + alpha * (vx1**2 + vy1**2) / r**2 - G * m1 * m2 / r**2
+    kappa / r**2
+    kappa/r
+    m2 / (2 * r**2)
+    s1 * s2 / r**2
+========================================================================

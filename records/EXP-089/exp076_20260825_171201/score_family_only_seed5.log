@@ -1,0 +1,79 @@
+2026-08-26 15:35:11,205 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:35:11,205 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:35:12,130 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+2026-08-26 15:35:12,300 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+2026-08-26 15:35:13,975 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:35:14,487 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:35:17,676 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:35:18,853 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:35:25,045 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:35:27,585 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+2026-08-26 15:35:39,779 [WARNING] psycopg.pool: error connecting in 'pool-1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: could not receive data from server: Connection refused
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: could not receive data from server: Connection refused
+Traceback (most recent call last):
+  File "<repo>/scripts/score_alien_run.py", line 209, in <module>
+    asyncio.run(_amain(args[0], family=family, family_v2=family_v2))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "<repo>/scripts/score_alien_run.py", line 78, in _amain
+    async with pool.connection() as conn:
+               ~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.13_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg_pool/pool_async.py", line 216, in connection
+    conn = await self.getconn(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/Library/Caches/pypoetry/virtualenvs/ascension-2kMUWn5D-py3.13/lib/python3.13/site-packages/psycopg_pool/pool_async.py", line 251, in getconn
+    raise PoolTimeout(
+        f"couldn't get a connection after {timeout:.2f} sec"
+    ) from None
+psycopg_pool.PoolTimeout: couldn't get a connection after 30.00 sec

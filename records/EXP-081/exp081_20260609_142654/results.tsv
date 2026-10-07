@@ -1,0 +1,9 @@
+seed	arm	run_id	max_depth	per_layer
+0	council	7cd887f9-a467-4510-b0f1-59f02483798a	6	per_layer L1..L6 = (True, True, True, False, False, True)
+1	council	b2468222-838a-4d22-9ed2-e5b34b96ecd4	6	per_layer L1..L6 = (True, True, False, False, False, True)
+2	council	3780a0da-c826-4dbc-ae60-49c36ffa4249	6	per_layer L1..L6 = (True, False, True, False, False, True)
+3	council	9a803bbd-68ed-46c2-ad62-7f4d0889283d	6	per_layer L1..L6 = (True, False, True, False, False, True)
+4	council	fc13434b-47ab-4659-bae8-a0e80fb30fa7	6	per_layer L1..L6 = (True, False, True, False, False, True)
+5	council	0aa27d06-bf35-4bd2-bb6c-194f76b3a3b6	6	per_layer L1..L6 = (True, True, True, False, False, True)
+6	council	e6741312-b8f6-4098-875c-0dc5e586f9ca	6	per_layer L1..L6 = (True, True, True, False, False, True)
+7	council	d95bf069-159f-4e35-b4a7-df7afe9784a4	6	per_layer L1..L6 = (True, False, True, False, False, True)

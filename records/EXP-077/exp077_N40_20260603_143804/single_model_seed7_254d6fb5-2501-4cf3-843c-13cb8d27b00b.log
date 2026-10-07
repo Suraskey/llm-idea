@@ -1,0 +1,161 @@
+2026-06-03 21:48:58,091 [INFO] __main__: orchestrator CLI benchmark: system=alien_family seed=7 n_members=4 n_bodies=2 n_steps=1000 n_held_out=13
+2026-06-03 21:48:58,092 [INFO] __main__: orchestrator CLI pre-set run_id=254d6fb5-2501-4cf3-843c-13cb8d27b00b
+2026-06-03 21:48:58,092 [INFO] __main__: orchestrator CLI episode start: n_agents=1 campaign_id=None focus=None max_duration_seconds=10800 call_budget=40 agents=[('solo', 20)]
+2026-06-03 21:48:58,105 [INFO] ascension.orchestrator.orchestrator: orchestrator: alien run-record flags written to runs.config for run_id=254d6fb5-2501-4cf3-843c-13cb8d27b00b: benchmark_system=alien_universe included_in_distillation_v1=False council_variant=single_model
+2026-06-03 21:48:58,108 [INFO] ascension.orchestrator.orchestrator: orchestrator started: run_id=254d6fb5-2501-4cf3-843c-13cb8d27b00b n_agents=1
+2026-06-03 21:48:58,122 [INFO] ascension.council.round_close: RoundCloseCoordinator starting: window=60s run_id=254d6fb5-2501-4cf3-843c-13cb8d27b00b score_ranking=True alien_fit_ranking=True
+2026-06-03 21:48:59,107 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 21:48:59,110 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 21:49:58,138 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 1 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 21:50:58,160 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 21:51:16,871 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 21:51:16,892 [WARNING] ascension.council.base: council solo iter 1: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=solo schema=CouncilHypothesis
+2026-06-03 21:51:37,253 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 21:51:37,255 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 21:51:58,171 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 3 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 21:52:58,192 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 4 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 21:53:39,607 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 21:53:39,942 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 21:53:58,208 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 5 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 21:54:00,271 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 21:54:00,274 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 21:54:58,221 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 6 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 21:55:58,235 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 7 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 21:56:17,746 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 21:56:18,055 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 21:56:38,578 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 21:56:38,580 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 21:56:58,277 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 8 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 21:57:58,287 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 9 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 21:58:58,304 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 10 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 21:59:06,573 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 21:59:06,609 [WARNING] ascension.council.base: council solo iter 4: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=solo schema=CouncilHypothesis
+2026-06-03 21:59:27,083 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 21:59:27,086 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 21:59:58,345 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 11 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:00:58,375 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 12 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:01:44,049 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:01:44,450 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 22:01:58,391 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 13 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:02:05,624 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:02:05,628 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:02:58,409 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 14 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:03:58,422 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 15 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:04:31,255 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:04:31,632 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 22:04:52,112 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:04:52,118 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:04:58,448 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 16 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:05:58,850 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 17 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:06:36,337 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:06:36,766 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 22:06:57,301 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:06:57,305 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:06:58,866 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 18 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:07:58,884 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 19 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:08:58,904 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 20 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:09:20,461 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:09:20,531 [WARNING] ascension.council.base: council solo iter 8: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=solo schema=CouncilHypothesis
+2026-06-03 22:09:40,976 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:09:40,979 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:09:58,931 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 21 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:10:58,945 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 22 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:11:58,965 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 23 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:12:09,049 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:12:09,433 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 22:12:29,954 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:12:29,960 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:12:58,989 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 24 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:13:59,006 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 25 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:14:50,995 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:14:51,435 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 22:14:59,036 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 26 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:15:11,917 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:15:11,920 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:15:59,058 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 27 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:16:59,086 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 28 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:17:32,470 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:17:32,935 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 22:17:53,378 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:17:53,385 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:17:59,194 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 29 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:18:59,235 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 30 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:19:59,249 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 31 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:20:22,160 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:20:22,546 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 22:20:43,058 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:20:43,062 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:20:59,263 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 32 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:21:59,281 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 33 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:22:59,297 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 34 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:23:19,458 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:23:19,837 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 22:23:40,553 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:23:40,557 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:23:59,323 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 35 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:24:59,332 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 36 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:25:59,354 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 37 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:26:14,619 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:26:14,667 [WARNING] ascension.council.base: council solo iter 14: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=solo schema=CouncilHypothesis
+2026-06-03 22:26:35,011 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:26:35,023 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:26:59,377 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 38 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:27:59,398 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 39 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:28:59,310 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:28:59,345 [WARNING] ascension.council.base: council solo iter 15: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=solo schema=CouncilHypothesis
+2026-06-03 22:28:59,411 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 40 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:29:19,821 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:29:19,824 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:29:59,429 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 41 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:30:59,469 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 42 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:31:16,799 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:31:17,188 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 22:31:38,027 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:31:38,031 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:31:59,497 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 43 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:32:59,512 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 44 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:33:59,541 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 45 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:34:04,503 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:34:09,085 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 22:34:30,008 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:34:30,012 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:34:59,582 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 46 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:35:59,607 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 47 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:36:51,919 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:36:52,183 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 22:36:59,624 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 48 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:37:12,738 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:37:12,740 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:37:59,643 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 49 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:38:59,659 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 50 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:39:46,464 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:39:46,770 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 22:39:59,674 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 51 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:40:07,313 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:40:07,317 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:40:59,693 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 52 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:41:59,713 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 53 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:42:31,040 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:42:31,467 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 22:42:51,906 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:42:51,908 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:42:59,732 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 54 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:43:59,745 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 55 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:44:59,769 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 56 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:45:21,762 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:45:22,455 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 22:45:43,031 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:45:43,036 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:45:59,790 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 57 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:46:59,807 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 58 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:47:59,825 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 59 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:48:05,322 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:48:05,777 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-03 22:48:26,190 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-03 22:48:26,197 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-03 22:48:59,848 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 60 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:49:59,882 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 61 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-03 22:50:20,057 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-03 22:50:20,213 [WARNING] ascension.orchestrator.orchestrator: orchestrator: per-run call budget reached (40/40 calls) — initiating graceful drain (halt_reason='call_budget_exceeded')
+2026-06-03 22:50:20,238 [INFO] ascension.council.round_close: RoundCloseCoordinator stopped after 61 rounds (run_id=254d6fb5-2501-4cf3-843c-13cb8d27b00b)
+2026-06-03 22:50:20,247 [INFO] __main__: orchestrator CLI exit: run_id=254d6fb5-2501-4cf3-843c-13cb8d27b00b halt_reason=call_budget_exceeded n_agents=1 n_halted=0

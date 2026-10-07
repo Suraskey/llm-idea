@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "<home>/project-ascension/scripts/exp263_discoverphysics_audit.py", line 1505, in worker
+    res = run_world(world, n_sampled=n_sampled, smoke=smoke,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/project-ascension/scripts/exp263_discoverphysics_audit.py", line 1312, in run_world
+    yp = executor_obs(build_executor(world, tp), world, designs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<home>/project-ascension/scripts/exp263_discoverphysics_audit.py", line 585, in executor_obs
+    res = ex.run([exp_of(d) for d in designs])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/ext/DiscoverPhysics/ScienceAgent/scienceagent/executor.py", line 1225, in run
+    return [self._run_one(e) for e in experiments]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/ext/DiscoverPhysics/ScienceAgent/scienceagent/executor.py", line 1225, in <listcomp>
+    return [self._run_one(e) for e in experiments]
+            ^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/ext/DiscoverPhysics/ScienceAgent/scienceagent/executor.py", line 1265, in _run_one
+    positions_rec, velocities_rec = _record_at_times(
+                                    ^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/ext/DiscoverPhysics/ScienceAgent/scienceagent/executor.py", line 143, in _record_at_times
+    traj = sim.run(n_steps=n_steps_total, record_every=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/ext/DiscoverPhysics/ScienceAgent/scienceagent/../../PhysicsSchool/physchool/worlds/nbody_sampler.py", line 597, in run
+    final_state, recorded = jax.lax.scan(chunk, state0, jnp.arange(n_records))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jax.errors.JaxRuntimeError: INTERNAL: Failed to materialize symbols: { (<xla_jit_dylib_6>, { multiply_add_fusion.6 }) }
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.

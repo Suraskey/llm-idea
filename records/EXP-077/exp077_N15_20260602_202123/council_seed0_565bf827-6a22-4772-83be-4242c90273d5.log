@@ -1,0 +1,62 @@
+2026-06-02 20:21:30,390 [INFO] __main__: orchestrator CLI benchmark: system=alien_family seed=0 n_members=4 n_bodies=2 n_steps=1000 n_held_out=13
+2026-06-02 20:21:30,390 [INFO] __main__: orchestrator CLI pre-set run_id=565bf827-6a22-4772-83be-4242c90273d5
+2026-06-02 20:21:30,390 [INFO] __main__: orchestrator CLI episode start: n_agents=5 campaign_id=None focus=None max_duration_seconds=3600 call_budget=15 agents=[('plato', 30), ('aristotle', 5), ('diogenes', 15), ('heraclitus', 60), ('parmenides', 20)]
+2026-06-02 20:21:30,408 [INFO] ascension.orchestrator.orchestrator: orchestrator: alien run-record flags written to runs.config for run_id=565bf827-6a22-4772-83be-4242c90273d5: benchmark_system=alien_universe included_in_distillation_v1=False council_variant=council
+2026-06-02 20:21:30,411 [INFO] ascension.orchestrator.orchestrator: orchestrator started: run_id=565bf827-6a22-4772-83be-4242c90273d5 n_agents=5
+2026-06-02 20:21:30,423 [INFO] ascension.council.round_close: RoundCloseCoordinator starting: window=60s run_id=565bf827-6a22-4772-83be-4242c90273d5 score_ranking=True alien_fit_ranking=True
+2026-06-02 20:21:31,998 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 20:21:32,000 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 20:21:32,002 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 20:21:32,002 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 20:21:32,003 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 20:21:32,004 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 20:21:32,011 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 20:21:32,012 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 20:21:32,026 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 20:21:32,027 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 20:22:14,602 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-02 20:22:14,930 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 20:22:30,461 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 1 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-06-02 20:22:47,677 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-02 20:22:47,687 [WARNING] ascension.agora.schemas: Dropping malformed parent_hypothesis_id 'CONTRADICTS:b64962f9' — not a valid UUID (likely a truncated/abbreviated id from an LLM). The hypothesis is kept; only this optional lineage reference is discarded.
+2026-06-02 20:22:47,894 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 20:22:47,983 [INFO] ascension.agora._dispute_companion: dispute_companion_written rejected_node_id=5bf3df93-762a-4545-b91a-489bd5d6bb11 run_id=565bf827-6a22-4772-83be-4242c90273d5
+2026-06-02 20:22:47,994 [INFO] ascension.agora.conflict_detection: conflict_detection: flagged ['5bf3df93-762a-4545-b91a-489bd5d6bb11', 'bab7179d-4b4b-4d1b-ab01-ef5a02405cde'] | trigger=agent_flag signal=contradicts_edge target_confidence>0.7
+2026-06-02 20:23:03,457 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 20:23:03,458 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 20:23:11,769 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-02 20:23:12,283 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 20:23:15,245 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 20:23:15,247 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 20:23:18,758 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-02 20:23:19,000 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 20:23:30,527 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 2 — alien proposal 4bdc78f1-f33f-43f2-8658-4892974bde17 could not be parsed/evaluated to a finite force (symbolic_form='(k*s1*s2 - G*m1*m2)/(m1*r**2)'); excluded from alien-fit ranking
+2026-06-02 20:23:30,531 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 2 — alien proposal 5bf3df93-762a-4545-b91a-489bd5d6bb11 could not be parsed/evaluated to a finite force (symbolic_form='k*s1*s2/r'); excluded from alien-fit ranking
+2026-06-02 20:23:30,531 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 2 — alien-fit ranking could not rank >=2 proposals (1 rankable); falling back to CONFIDENCE ranking for this round. This is the genuine-failure path (engineering_discipline_no_coverups — loud, never a silent circular signal). Investigate if it recurs: it means the Council emitted no parseable symbolic_form.
+2026-06-02 20:23:39,554 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-02 20:23:39,575 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 persisted residual feedback (fit=0.942 steeper_power=True oscillation=True) for best=ed8ddd5d-cf53-4c7e-8ecb-d627bf80573a
+2026-06-02 20:23:45,714 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 persisted experiment feedback (fitted_exponent=3.4 rss_reduction=1.000) for best=ed8ddd5d-cf53-4c7e-8ecb-d627bf80573a
+2026-06-02 20:23:46,179 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 20:23:46,181 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 20:23:46,186 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 20:23:46,187 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 20:23:46,188 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 20:23:46,189 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 20:23:46,293 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 20:23:51,746 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-06-02 20:23:51,748 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-06-02 20:24:02,126 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-02 20:24:02,583 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 20:24:02,749 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis proposes a specific, quantitative model rather than a qual'
+2026-06-02 20:24:03,401 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 20:24:03,415 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis integrates an existing, successful model with a new term t'
+2026-06-02 20:24:03,626 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-06-02 20:24:03,700 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 20:24:03,728 [WARNING] ascension.orchestrator.orchestrator: orchestrator: per-run call budget reached (15/15 calls) — initiating graceful drain (halt_reason='call_budget_exceeded')
+2026-06-02 20:24:03,729 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis provides an explicit mathematical form that is directly te'
+2026-06-02 20:24:04,053 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-06-02 20:24:04,109 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='The better hypothesis explains the mechanism for all observed dynamics (attracti'
+2026-06-02 20:24:04,119 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=ed8ddd5d-cf53-4c7e-8ecb-d627bf80573a y_minus=5bf3df93-762a-4545-b91a-489bd5d6bb11 round_id=2 emitted=4 deduplicated=4 inserted=0 call_id=d1935130-e7d1-4ad5-aa99-58a9a6fb5e1f
+2026-06-02 20:24:04,119 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 closed — 0 new criteria from (best=ed8ddd5d-cf53-4c7e-8ecb-d627bf80573a, worst=5bf3df93-762a-4545-b91a-489bd5d6bb11)
+2026-06-02 20:24:04,120 [INFO] ascension.council.round_close: RoundCloseCoordinator stopped after 2 rounds (run_id=565bf827-6a22-4772-83be-4242c90273d5)
+2026-06-02 20:24:04,124 [INFO] __main__: orchestrator CLI exit: run_id=565bf827-6a22-4772-83be-4242c90273d5 halt_reason=call_budget_exceeded n_agents=5 n_halted=0

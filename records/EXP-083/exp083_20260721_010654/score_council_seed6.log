@@ -1,0 +1,34 @@
+2026-07-21 08:14:42,342 [INFO] ascension.benchmarks.alien_depth: alien_depth: max_depth=6 per_layer=(True, False, False, False, False, True) held_out_rmse=None q_drift=None n_hyp=4 elapsed_ms=9807
+========================================================================
+ALIEN RUN 8231b915-c755-48f8-9d38-2ffac39cd103
+  run.status=completed  halt_reason=duration_exceeded
+  PROVENANCE (P-15.2-6): benchmark_system='alien_universe'  included_in_distillation_v1=False
+  SCORING MODE: FAMILY-V2 (V2 law: sum coupling + r^-2.5; L3/L4 vs held-out sums {4,6})
+  node types: {'hypothesis': 4}
+  hypothesis nodes=4  status_breakdown={'active': 4}
+  SPEND: 11 llm_calls, $0.4023 total
+    provider='google': 11 calls, $0.4023
+------------------------------------------------------------------------
+  DISCOVERY DEPTH (P-15.2-1/2/3): max_depth=6
+    per_layer L1..L6 = (True, False, False, False, False, True)
+    HONEST consecutive force-law depth (L1-L4, L-057) = 1   [L5=False L6=True reported separately, non-consecutive]
+    held_out_rss_reduction=None  q_drift=None
+  scorer notes (12):
+    - L1: inverse-square term + Newton accel-fit converges ('(alpha * s1 * s2 / r**3) - (beta / r**2)')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('(alpha * s1 * s2 / r**3) - (beta / r**2)')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(alpha * s1 * s2 / r**3) - (beta / r**2)')
+    - L1: inverse-square term + Newton accel-fit converges ('(kappa * s1 * s2 / r**3 - G * m1 * m2 / r**2) / m1')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('(kappa * s1 * s2 / r**3 - G * m1 * m2 / r**2) / m1')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(kappa * s1 * s2 / r**3 - G * m1 * m2 / r**2) / m1')
+    - L1: inverse-square term + Newton accel-fit converges ('kappa * s1 * s2 / (m1 * r**4) - G * m2 / r**2')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('kappa * s1 * s2 / (m1 * r**4) - G * m2 / r**2')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('kappa * s1 * s2 / (m1 * r**4) - G * m2 / r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('m2 * (kappa*(s1+s2)/r**3 - G/r**2)')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('m2 * (kappa*(s1+s2)/r**3 - G/r**2)')
+    - L6 DENIED: claimed symmetry not verified by sympy ('m2 * (kappa*(s1+s2)/r**3 - G/r**2)')
+  distinct symbolic_form count=4 (sample up to 30):
+    (alpha * s1 * s2 / r**3) - (beta / r**2)
+    (kappa * s1 * s2 / r**3 - G * m1 * m2 / r**2) / m1
+    kappa * s1 * s2 / (m1 * r**4) - G * m2 / r**2
+    m2 * (kappa*(s1+s2)/r**3 - G/r**2)
+========================================================================

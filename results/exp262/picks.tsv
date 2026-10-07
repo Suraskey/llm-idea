@@ -1,0 +1,897 @@
+protocol	sys_id	name	criterion	pick_label	pick_is_max_rank	pick_rank	max_rank	rank_before	pick_m2	oracle_best_label	oracle_best_m2	in_P1_setting	in_P2_setting	certificate_triage
+T1	1	RC-circuit	RANK	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00691241	box IC 3	0.00372873	False	True	change_class
+T1	1	RC-circuit	HYBRID	box IC 3	True	2	2	2	0.00372873	box IC 3	0.00372873	False	True	change_class
+T1	1	RC-circuit	DOPT	box IC 3	True	2	2	2	0.00372873	box IC 3	0.00372873	False	True	change_class
+T1	1	RC-circuit	AOPT	box IC 3	True	2	2	2	0.00372873	box IC 3	0.00372873	False	True	change_class
+T1	1	RC-circuit	VOI	box IC 3	True	2	2	2	0.00372873	box IC 3	0.00372873	False	True	change_class
+T1	1	RC-circuit	DISAGREE	box IC 3	True	2	2	2	0.00372873	box IC 3	0.00372873	False	True	change_class
+T1	1	RC-circuit	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.0265158	box IC 3	0.00372873	False	True	change_class
+T1	2	Population growth naive	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.000899204	box IC 9	5.10849e-05	False	True	capability
+T1	2	Population growth naive	HYBRID	box IC 9	True	1	1	1	5.10849e-05	box IC 9	5.10849e-05	False	True	capability
+T1	2	Population growth naive	DOPT	box IC 9	True	1	1	1	5.10849e-05	box IC 9	5.10849e-05	False	True	capability
+T1	2	Population growth naive	AOPT	box IC 9	True	1	1	1	5.10849e-05	box IC 9	5.10849e-05	False	True	capability
+T1	2	Population growth naive	VOI	box IC 9	True	1	1	1	5.10849e-05	box IC 9	5.10849e-05	False	True	capability
+T1	2	Population growth naive	DISAGREE	box IC 8	True	1	1	1	8.12208e-05	box IC 9	5.10849e-05	False	True	capability
+T1	2	Population growth naive	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.000282099	box IC 9	5.10849e-05	False	True	capability
+T1	3	Population growth carrying capacity	RANK	box IC 8	True	2	2	2	0.000602405	box IC 9	0.00054955	False	True	capability
+T1	3	Population growth carrying capacity	HYBRID	box IC 9	True	2	2	2	0.00054955	box IC 9	0.00054955	False	True	capability
+T1	3	Population growth carrying capacity	DOPT	box IC 9	True	2	2	2	0.00054955	box IC 9	0.00054955	False	True	capability
+T1	3	Population growth carrying capacity	AOPT	box IC 9	True	2	2	2	0.00054955	box IC 9	0.00054955	False	True	capability
+T1	3	Population growth carrying capacity	VOI	box IC 9	True	2	2	2	0.00054955	box IC 9	0.00054955	False	True	capability
+T1	3	Population growth carrying capacity	DISAGREE	box IC 9	True	2	2	2	0.00054955	box IC 9	0.00054955	False	True	capability
+T1	3	Population growth carrying capacity	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00266621	box IC 9	0.00054955	False	True	capability
+T1	4	RC-circuit non-linear resistor	RANK	IC-1 (ODEBench held-out IC)	True	2	2	2	0.000501196	IC-1 (ODEBench held-out IC)	0.000501196	False	True	capability
+T1	4	RC-circuit non-linear resistor	HYBRID	IC-1 (ODEBench held-out IC)	True	2	2	2	0.000501196	IC-1 (ODEBench held-out IC)	0.000501196	False	True	capability
+T1	4	RC-circuit non-linear resistor	DOPT	IC-1 (ODEBench held-out IC)	True	2	2	2	0.000501196	IC-1 (ODEBench held-out IC)	0.000501196	False	True	capability
+T1	4	RC-circuit non-linear resistor	AOPT	IC-1 (ODEBench held-out IC)	True	2	2	2	0.000501196	IC-1 (ODEBench held-out IC)	0.000501196	False	True	capability
+T1	4	RC-circuit non-linear resistor	VOI	IC-1 (ODEBench held-out IC)	True	2	2	2	0.000501196	IC-1 (ODEBench held-out IC)	0.000501196	False	True	capability
+T1	4	RC-circuit non-linear resistor	DISAGREE	box IC 3	True	2	2	2	0.0005378	IC-1 (ODEBench held-out IC)	0.000501196	False	True	capability
+T1	4	RC-circuit non-linear resistor	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00117985	IC-1 (ODEBench held-out IC)	0.000501196	False	True	capability
+T1	5	Velocity falling object	RANK	box IC 9	True	2	2	2	0.000822976	box IC 9	0.000822976	False	True	capability
+T1	5	Velocity falling object	HYBRID	box IC 9	True	2	2	2	0.000822976	box IC 9	0.000822976	False	True	capability
+T1	5	Velocity falling object	DOPT	box IC 9	True	2	2	2	0.000822976	box IC 9	0.000822976	False	True	capability
+T1	5	Velocity falling object	AOPT	box IC 9	True	2	2	2	0.000822976	box IC 9	0.000822976	False	True	capability
+T1	5	Velocity falling object	VOI	box IC 9	True	2	2	2	0.000822976	box IC 9	0.000822976	False	True	capability
+T1	5	Velocity falling object	DISAGREE	box IC 9	True	2	2	2	0.000822976	box IC 9	0.000822976	False	True	capability
+T1	5	Velocity falling object	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.0147841	box IC 9	0.000822976	False	True	capability
+T1	6	Autocatalysis	RANK	box IC 8	True	2	2	2	0.000428394	box IC 1	0.000424792	False	True	capability
+T1	6	Autocatalysis	HYBRID	box IC 9	True	2	2	2	0.000500408	box IC 1	0.000424792	False	True	capability
+T1	6	Autocatalysis	DOPT	box IC 9	True	2	2	2	0.000500408	box IC 1	0.000424792	False	True	capability
+T1	6	Autocatalysis	AOPT	box IC 9	True	2	2	2	0.000500408	box IC 1	0.000424792	False	True	capability
+T1	6	Autocatalysis	VOI	box IC 9	True	2	2	2	0.000500408	box IC 1	0.000424792	False	True	capability
+T1	6	Autocatalysis	DISAGREE	box IC 9	True	2	2	2	0.000500408	box IC 1	0.000424792	False	True	capability
+T1	6	Autocatalysis	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00153832	box IC 1	0.000424792	False	True	capability
+T1	7	Gompertz law tumor growth	RANK	box IC 2	True	2	2	2	0.00355635	box IC 9	0.0018898	False	True	capability
+T1	7	Gompertz law tumor growth	HYBRID	box IC 9	True	2	2	2	0.0018898	box IC 9	0.0018898	False	True	capability
+T1	7	Gompertz law tumor growth	DOPT	box IC 9	True	2	2	2	0.0018898	box IC 9	0.0018898	False	True	capability
+T1	7	Gompertz law tumor growth	AOPT	box IC 9	True	2	2	2	0.0018898	box IC 9	0.0018898	False	True	capability
+T1	7	Gompertz law tumor growth	VOI	box IC 9	True	2	2	2	0.0018898	box IC 9	0.0018898	False	True	capability
+T1	7	Gompertz law tumor growth	DISAGREE	box IC 9	True	2	2	2	0.0018898	box IC 9	0.0018898	False	True	capability
+T1	7	Gompertz law tumor growth	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00242603	box IC 9	0.0018898	False	True	capability
+T1	8	Logistic equation Allee effect	RANK	box IC 1	True	3	3	3	0.000205334	box IC 1	0.000205334	False	True	capability
+T1	8	Logistic equation Allee effect	HYBRID	box IC 8	True	3	3	3	0.000321644	box IC 1	0.000205334	False	True	capability
+T1	8	Logistic equation Allee effect	DOPT	box IC 8	True	3	3	3	0.000321644	box IC 1	0.000205334	False	True	capability
+T1	8	Logistic equation Allee effect	AOPT	box IC 1	True	3	3	3	0.000205334	box IC 1	0.000205334	False	True	capability
+T1	8	Logistic equation Allee effect	VOI	box IC 8	True	3	3	3	0.000321644	box IC 1	0.000205334	False	True	capability
+T1	8	Logistic equation Allee effect	DISAGREE	box IC 9	True	3	3	3	0.000605366	box IC 1	0.000205334	False	True	capability
+T1	8	Logistic equation Allee effect	RANDOM	uniform (expectation)	1.0000	NA	3	3	12.8415	box IC 1	0.000205334	False	True	capability
+T1	9	Language death model	RANK	box IC 9	True	2	2	2	0.00078051	box IC 9	0.00078051	False	True	capability
+T1	9	Language death model	HYBRID	box IC 9	True	2	2	2	0.00078051	box IC 9	0.00078051	False	True	capability
+T1	9	Language death model	DOPT	box IC 9	True	2	2	2	0.00078051	box IC 9	0.00078051	False	True	capability
+T1	9	Language death model	AOPT	box IC 9	True	2	2	2	0.00078051	box IC 9	0.00078051	False	True	capability
+T1	9	Language death model	VOI	box IC 9	True	2	2	2	0.00078051	box IC 9	0.00078051	False	True	capability
+T1	9	Language death model	DISAGREE	box IC 9	True	2	2	2	0.00078051	box IC 9	0.00078051	False	True	capability
+T1	9	Language death model	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00222202	box IC 9	0.00078051	False	True	capability
+T1	10	Refined language death model	RANK	IC-1 (ODEBench held-out IC)	True	2	2	2	0.000617982	IC-1 (ODEBench held-out IC)	0.000617982	False	True	capability
+T1	10	Refined language death model	HYBRID	IC-1 (ODEBench held-out IC)	True	2	2	2	0.000617982	IC-1 (ODEBench held-out IC)	0.000617982	False	True	capability
+T1	10	Refined language death model	DOPT	IC-1 (ODEBench held-out IC)	True	2	2	2	0.000617982	IC-1 (ODEBench held-out IC)	0.000617982	False	True	capability
+T1	10	Refined language death model	AOPT	IC-1 (ODEBench held-out IC)	True	2	2	2	0.000617982	IC-1 (ODEBench held-out IC)	0.000617982	False	True	capability
+T1	10	Refined language death model	VOI	IC-1 (ODEBench held-out IC)	True	2	2	2	0.000617982	IC-1 (ODEBench held-out IC)	0.000617982	False	True	capability
+T1	10	Refined language death model	DISAGREE	box IC 2	True	2	2	2	0.00277343	IC-1 (ODEBench held-out IC)	0.000617982	False	True	capability
+T1	10	Refined language death model	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00351037	IC-1 (ODEBench held-out IC)	0.000617982	False	True	capability
+T1	12	Photons in a laser	RANK	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00067473	IC-1 (ODEBench held-out IC)	0.00067473	False	True	capability
+T1	12	Photons in a laser	HYBRID	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00067473	IC-1 (ODEBench held-out IC)	0.00067473	False	True	capability
+T1	12	Photons in a laser	DOPT	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00067473	IC-1 (ODEBench held-out IC)	0.00067473	False	True	capability
+T1	12	Photons in a laser	AOPT	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00067473	IC-1 (ODEBench held-out IC)	0.00067473	False	True	capability
+T1	12	Photons in a laser	VOI	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00067473	IC-1 (ODEBench held-out IC)	0.00067473	False	True	capability
+T1	12	Photons in a laser	DISAGREE	box IC 3	True	2	2	2	0.00122372	IC-1 (ODEBench held-out IC)	0.00067473	False	True	capability
+T1	12	Photons in a laser	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00166624	IC-1 (ODEBench held-out IC)	0.00067473	False	True	capability
+T1	13	Overdamped bead	RANK	box IC 1	True	2	2	2	0.00115861	box IC 7	0.000694271	False	True	capability
+T1	13	Overdamped bead	HYBRID	box IC 6	True	2	2	2	0.0026004	box IC 7	0.000694271	False	True	capability
+T1	13	Overdamped bead	DOPT	box IC 6	True	2	2	2	0.0026004	box IC 7	0.000694271	False	True	capability
+T1	13	Overdamped bead	AOPT	box IC 1	True	2	2	2	0.00115861	box IC 7	0.000694271	False	True	capability
+T1	13	Overdamped bead	VOI	box IC 6	True	2	2	2	0.0026004	box IC 7	0.000694271	False	True	capability
+T1	13	Overdamped bead	DISAGREE	box IC 8	True	2	2	2	0.00349329	box IC 7	0.000694271	False	True	capability
+T1	13	Overdamped bead	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.0224862	box IC 7	0.000694271	False	True	capability
+T1	14	Budworm outbreak model	RANK	box IC 8	True	4	4	4	0.0977264	IC-1 (ODEBench held-out IC)	0.0973864	False	True	capability
+T1	14	Budworm outbreak model	HYBRID	box IC 4	True	4	4	4	0.137335	IC-1 (ODEBench held-out IC)	0.0973864	False	True	capability
+T1	14	Budworm outbreak model	DOPT	box IC 4	True	4	4	4	0.137335	IC-1 (ODEBench held-out IC)	0.0973864	False	True	capability
+T1	14	Budworm outbreak model	AOPT	box IC 4	True	4	4	4	0.137335	IC-1 (ODEBench held-out IC)	0.0973864	False	True	capability
+T1	14	Budworm outbreak model	VOI	box IC 4	True	4	4	4	0.137335	IC-1 (ODEBench held-out IC)	0.0973864	False	True	capability
+T1	14	Budworm outbreak model	DISAGREE	box IC 9	True	4	4	4	0.184652	IC-1 (ODEBench held-out IC)	0.0973864	False	True	capability
+T1	14	Budworm outbreak model	RANDOM	uniform (expectation)	1.0000	NA	4	4	1.99649	IC-1 (ODEBench held-out IC)	0.0973864	False	True	capability
+T1	15	Budworm outbreak predation	RANK	box IC 8	True	2	2	2	0.00171189	box IC 8	0.00171189	False	True	capability
+T1	15	Budworm outbreak predation	HYBRID	box IC 0	True	2	2	2	0.00178108	box IC 8	0.00171189	False	True	capability
+T1	15	Budworm outbreak predation	DOPT	box IC 0	True	2	2	2	0.00178108	box IC 8	0.00171189	False	True	capability
+T1	15	Budworm outbreak predation	AOPT	box IC 6	True	2	2	2	0.00175274	box IC 8	0.00171189	False	True	capability
+T1	15	Budworm outbreak predation	VOI	box IC 0	True	2	2	2	0.00178108	box IC 8	0.00171189	False	True	capability
+T1	15	Budworm outbreak predation	DISAGREE	IC-1 (ODEBench held-out IC)	True	2	2	2	0.0029633	box IC 8	0.00171189	False	True	capability
+T1	15	Budworm outbreak predation	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00361125	box IC 8	0.00171189	False	True	capability
+T1	16	Landau equation	RANK	box IC 3	True	3	3	3	0.0121993	box IC 3	0.0121993	False	True	capability
+T1	16	Landau equation	HYBRID	box IC 3	True	3	3	3	0.0121993	box IC 3	0.0121993	False	True	capability
+T1	16	Landau equation	DOPT	box IC 3	True	3	3	3	0.0121993	box IC 3	0.0121993	False	True	capability
+T1	16	Landau equation	AOPT	box IC 3	True	3	3	3	0.0121993	box IC 3	0.0121993	False	True	capability
+T1	16	Landau equation	VOI	box IC 3	True	3	3	3	0.0121993	box IC 3	0.0121993	False	True	capability
+T1	16	Landau equation	DISAGREE	box IC 3	True	3	3	3	0.0121993	box IC 3	0.0121993	False	True	capability
+T1	16	Landau equation	RANDOM	uniform (expectation)	1.0000	NA	3	3	14.3299	box IC 3	0.0121993	False	True	capability
+T1	17	Logistic equation harvesting	RANK	box IC 3	True	3	3	3	0.0381685	box IC 4	0.0249174	False	True	capability
+T1	17	Logistic equation harvesting	HYBRID	box IC 4	True	3	3	3	0.0249174	box IC 4	0.0249174	False	True	capability
+T1	17	Logistic equation harvesting	DOPT	box IC 4	True	3	3	3	0.0249174	box IC 4	0.0249174	False	True	capability
+T1	17	Logistic equation harvesting	AOPT	box IC 3	True	3	3	3	0.0381685	box IC 4	0.0249174	False	True	capability
+T1	17	Logistic equation harvesting	VOI	box IC 4	True	3	3	3	0.0249174	box IC 4	0.0249174	False	True	capability
+T1	17	Logistic equation harvesting	DISAGREE	box IC 3	True	3	3	3	0.0381685	box IC 4	0.0249174	False	True	capability
+T1	17	Logistic equation harvesting	RANDOM	uniform (expectation)	1.0000	NA	3	3	0.0505473	box IC 4	0.0249174	False	True	capability
+T1	18	Improved logistic equation harvesting	RANK	box IC 7	True	4	4	4	80.3338	box IC 0	62.5945	False	True	capability
+T1	18	Improved logistic equation harvesting	HYBRID	box IC 4	True	4	4	4	136.716	box IC 0	62.5945	False	True	capability
+T1	18	Improved logistic equation harvesting	DOPT	box IC 4	True	4	4	4	136.716	box IC 0	62.5945	False	True	capability
+T1	18	Improved logistic equation harvesting	AOPT	box IC 4	True	4	4	4	136.716	box IC 0	62.5945	False	True	capability
+T1	18	Improved logistic equation harvesting	VOI	box IC 9	True	4	4	4	104.937	box IC 0	62.5945	False	True	capability
+T1	18	Improved logistic equation harvesting	DISAGREE	box IC 3	True	4	4	4	inf	box IC 0	62.5945	False	True	capability
+T1	18	Improved logistic equation harvesting	RANDOM	uniform (expectation)	1.0000	NA	4	4	inf	box IC 0	62.5945	False	True	capability
+T1	19	Improved logistic equation harvesting dimensionless	RANK	box IC 9	True	2	2	2	0.0218421	box IC 9	0.0218421	False	True	capability
+T1	19	Improved logistic equation harvesting dimensionless	HYBRID	box IC 9	True	2	2	2	0.0218421	box IC 9	0.0218421	False	True	capability
+T1	19	Improved logistic equation harvesting dimensionless	DOPT	box IC 9	True	2	2	2	0.0218421	box IC 9	0.0218421	False	True	capability
+T1	19	Improved logistic equation harvesting dimensionless	AOPT	box IC 9	True	2	2	2	0.0218421	box IC 9	0.0218421	False	True	capability
+T1	19	Improved logistic equation harvesting dimensionless	VOI	box IC 9	True	2	2	2	0.0218421	box IC 9	0.0218421	False	True	capability
+T1	19	Improved logistic equation harvesting dimensionless	DISAGREE	box IC 3	True	2	2	2	0.122048	box IC 9	0.0218421	False	True	capability
+T1	19	Improved logistic equation harvesting dimensionless	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.0519469	box IC 9	0.0218421	False	True	capability
+T1	20	Autocatalytic gene switching	RANK	IC-1 (ODEBench held-out IC)	True	2	2	2	0.000749273	box IC 9	0.000412955	False	True	capability
+T1	20	Autocatalytic gene switching	HYBRID	box IC 9	True	2	2	2	0.000412955	box IC 9	0.000412955	False	True	capability
+T1	20	Autocatalytic gene switching	DOPT	box IC 9	True	2	2	2	0.000412955	box IC 9	0.000412955	False	True	capability
+T1	20	Autocatalytic gene switching	AOPT	box IC 9	True	2	2	2	0.000412955	box IC 9	0.000412955	False	True	capability
+T1	20	Autocatalytic gene switching	VOI	box IC 9	True	2	2	2	0.000412955	box IC 9	0.000412955	False	True	capability
+T1	20	Autocatalytic gene switching	DISAGREE	box IC 6	True	2	2	2	0.000455605	box IC 9	0.000412955	False	True	capability
+T1	20	Autocatalytic gene switching	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00117793	box IC 9	0.000412955	False	True	capability
+T1	21	Dimensionally reduced SIR	RANK	box IC 9	True	2	2	2	0.000803161	box IC 9	0.000803161	False	True	capability
+T1	21	Dimensionally reduced SIR	HYBRID	box IC 9	True	2	2	2	0.000803161	box IC 9	0.000803161	False	True	capability
+T1	21	Dimensionally reduced SIR	DOPT	box IC 9	True	2	2	2	0.000803161	box IC 9	0.000803161	False	True	capability
+T1	21	Dimensionally reduced SIR	AOPT	box IC 9	True	2	2	2	0.000803161	box IC 9	0.000803161	False	True	capability
+T1	21	Dimensionally reduced SIR	VOI	box IC 9	True	2	2	2	0.000803161	box IC 9	0.000803161	False	True	capability
+T1	21	Dimensionally reduced SIR	DISAGREE	box IC 9	True	2	2	2	0.000803161	box IC 9	0.000803161	False	True	capability
+T1	21	Dimensionally reduced SIR	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00246321	box IC 9	0.000803161	False	True	capability
+T1	22	Protein expression	RANK	box IC 3	True	4	4	4	0.0292524	box IC 3	0.0292524	False	True	capability
+T1	22	Protein expression	HYBRID	box IC 9	True	4	4	4	0.0530732	box IC 3	0.0292524	False	True	capability
+T1	22	Protein expression	DOPT	box IC 9	True	4	4	4	0.0530732	box IC 3	0.0292524	False	True	capability
+T1	22	Protein expression	AOPT	box IC 3	True	4	4	4	0.0292524	box IC 3	0.0292524	False	True	capability
+T1	22	Protein expression	VOI	box IC 9	True	4	4	4	0.0530732	box IC 3	0.0292524	False	True	capability
+T1	22	Protein expression	DISAGREE	box IC 3	True	4	4	4	0.0292524	box IC 3	0.0292524	False	True	capability
+T1	22	Protein expression	RANDOM	uniform (expectation)	1.0000	NA	4	4	0.0598533	box IC 3	0.0292524	False	True	capability
+T1	23	Overdamped pendulum	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00180062	box IC 3	0.00108985	False	True	capability
+T1	23	Overdamped pendulum	HYBRID	box IC 3	True	1	1	1	0.00108985	box IC 3	0.00108985	False	True	capability
+T1	23	Overdamped pendulum	DOPT	box IC 3	True	1	1	1	0.00108985	box IC 3	0.00108985	False	True	capability
+T1	23	Overdamped pendulum	AOPT	box IC 3	True	1	1	1	0.00108985	box IC 3	0.00108985	False	True	capability
+T1	23	Overdamped pendulum	VOI	box IC 3	True	1	1	1	0.00108985	box IC 3	0.00108985	False	True	capability
+T1	23	Overdamped pendulum	DISAGREE	box IC 8	True	1	1	1	0.00206212	box IC 3	0.00108985	False	True	capability
+T1	23	Overdamped pendulum	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.00161784	box IC 3	0.00108985	False	True	capability
+T1	24	Harmonic oscillator	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00036982	box IC 1	0.000111436	False	True	capability
+T1	24	Harmonic oscillator	HYBRID	box IC 1	True	1	1	1	0.000111436	box IC 1	0.000111436	False	True	capability
+T1	24	Harmonic oscillator	DOPT	box IC 1	True	1	1	1	0.000111436	box IC 1	0.000111436	False	True	capability
+T1	24	Harmonic oscillator	AOPT	box IC 1	True	1	1	1	0.000111436	box IC 1	0.000111436	False	True	capability
+T1	24	Harmonic oscillator	VOI	box IC 1	True	1	1	1	0.000111436	box IC 1	0.000111436	False	True	capability
+T1	24	Harmonic oscillator	DISAGREE	box IC 1	True	1	1	1	0.000111436	box IC 1	0.000111436	False	True	capability
+T1	24	Harmonic oscillator	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.000203422	box IC 1	0.000111436	False	True	capability
+T1	25	Harmonic oscillator damping	RANK	box IC 0	True	2	2	2	0.000519342	box IC 1	0.00016596	False	True	capability
+T1	25	Harmonic oscillator damping	HYBRID	box IC 1	True	2	2	2	0.00016596	box IC 1	0.00016596	False	True	capability
+T1	25	Harmonic oscillator damping	DOPT	box IC 1	True	2	2	2	0.00016596	box IC 1	0.00016596	False	True	capability
+T1	25	Harmonic oscillator damping	AOPT	box IC 6	True	2	2	2	0.000211529	box IC 1	0.00016596	False	True	capability
+T1	25	Harmonic oscillator damping	VOI	box IC 1	True	2	2	2	0.00016596	box IC 1	0.00016596	False	True	capability
+T1	25	Harmonic oscillator damping	DISAGREE	box IC 0	True	2	2	2	0.000519342	box IC 1	0.00016596	False	True	capability
+T1	25	Harmonic oscillator damping	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.000472027	box IC 1	0.00016596	False	True	capability
+T1	26	Lotka-Volterra competition	RANK	box IC 1	True	3	3	3	0.00124604	box IC 1	0.00124604	False	True	capability
+T1	26	Lotka-Volterra competition	HYBRID	box IC 2	True	3	3	3	0.00160854	box IC 1	0.00124604	False	True	capability
+T1	26	Lotka-Volterra competition	DOPT	box IC 2	True	3	3	3	0.00160854	box IC 1	0.00124604	False	True	capability
+T1	26	Lotka-Volterra competition	AOPT	box IC 5	True	3	3	3	0.00132931	box IC 1	0.00124604	False	True	capability
+T1	26	Lotka-Volterra competition	VOI	box IC 2	True	3	3	3	0.00160854	box IC 1	0.00124604	False	True	capability
+T1	26	Lotka-Volterra competition	DISAGREE	box IC 1	True	3	3	3	0.00124604	box IC 1	0.00124604	False	True	capability
+T1	26	Lotka-Volterra competition	RANDOM	uniform (expectation)	1.0000	NA	3	3	0.00163167	box IC 1	0.00124604	False	True	capability
+T1	27	Lotka-Volterra simple	RANK	box IC 1	True	4	4	4	0.00120105	box IC 5	0.000447208	False	True	capability
+T1	27	Lotka-Volterra simple	HYBRID	box IC 5	True	4	4	4	0.000447208	box IC 5	0.000447208	False	True	capability
+T1	27	Lotka-Volterra simple	DOPT	box IC 5	True	4	4	4	0.000447208	box IC 5	0.000447208	False	True	capability
+T1	27	Lotka-Volterra simple	AOPT	box IC 5	True	4	4	4	0.000447208	box IC 5	0.000447208	False	True	capability
+T1	27	Lotka-Volterra simple	VOI	box IC 5	True	4	4	4	0.000447208	box IC 5	0.000447208	False	True	capability
+T1	27	Lotka-Volterra simple	DISAGREE	box IC 1	True	4	4	4	0.00120105	box IC 5	0.000447208	False	True	capability
+T1	27	Lotka-Volterra simple	RANDOM	uniform (expectation)	1.0000	NA	4	4	0.00214325	box IC 5	0.000447208	False	True	capability
+T1	28	Pendulum without friction	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.000497754	box IC 9	0.000151232	False	True	capability
+T1	28	Pendulum without friction	HYBRID	box IC 9	True	1	1	1	0.000151232	box IC 9	0.000151232	False	True	capability
+T1	28	Pendulum without friction	DOPT	box IC 9	True	1	1	1	0.000151232	box IC 9	0.000151232	False	True	capability
+T1	28	Pendulum without friction	AOPT	box IC 9	True	1	1	1	0.000151232	box IC 9	0.000151232	False	True	capability
+T1	28	Pendulum without friction	VOI	box IC 9	True	1	1	1	0.000151232	box IC 9	0.000151232	False	True	capability
+T1	28	Pendulum without friction	DISAGREE	box IC 9	True	1	1	1	0.000151232	box IC 9	0.000151232	False	True	capability
+T1	28	Pendulum without friction	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.000389119	box IC 9	0.000151232	False	True	capability
+T1	29	Dipole fixed point	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.000816511	box IC 2	4.70989e-05	False	True	capability
+T1	29	Dipole fixed point	HYBRID	box IC 2	True	1	1	1	4.70989e-05	box IC 2	4.70989e-05	False	True	capability
+T1	29	Dipole fixed point	DOPT	box IC 2	True	1	1	1	4.70989e-05	box IC 2	4.70989e-05	False	True	capability
+T1	29	Dipole fixed point	AOPT	box IC 2	True	1	1	1	4.70989e-05	box IC 2	4.70989e-05	False	True	capability
+T1	29	Dipole fixed point	VOI	box IC 2	True	1	1	1	4.70989e-05	box IC 2	4.70989e-05	False	True	capability
+T1	29	Dipole fixed point	DISAGREE	box IC 2	True	1	1	1	4.70989e-05	box IC 2	4.70989e-05	False	True	capability
+T1	29	Dipole fixed point	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.000617699	box IC 2	4.70989e-05	False	True	capability
+T1	30	Catalyzing RNA molecules	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.000424421	box IC 2	2.74774e-06	False	True	capability
+T1	30	Catalyzing RNA molecules	HYBRID	box IC 2	True	1	1	1	2.74774e-06	box IC 2	2.74774e-06	False	True	capability
+T1	30	Catalyzing RNA molecules	DOPT	box IC 2	True	1	1	1	2.74774e-06	box IC 2	2.74774e-06	False	True	capability
+T1	30	Catalyzing RNA molecules	AOPT	box IC 2	True	1	1	1	2.74774e-06	box IC 2	2.74774e-06	False	True	capability
+T1	30	Catalyzing RNA molecules	VOI	box IC 2	True	1	1	1	2.74774e-06	box IC 2	2.74774e-06	False	True	capability
+T1	30	Catalyzing RNA molecules	DISAGREE	box IC 2	True	1	1	1	2.74774e-06	box IC 2	2.74774e-06	False	True	capability
+T1	30	Catalyzing RNA molecules	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.000118541	box IC 2	2.74774e-06	False	True	capability
+T1	31	SIR infection	RANK	box IC 9	True	2	2	2	0.000456896	box IC 8	0.000139942	False	True	capability
+T1	31	SIR infection	HYBRID	box IC 2	True	2	2	2	0.000141127	box IC 8	0.000139942	False	True	capability
+T1	31	SIR infection	DOPT	box IC 2	True	2	2	2	0.000141127	box IC 8	0.000139942	False	True	capability
+T1	31	SIR infection	AOPT	box IC 2	True	2	2	2	0.000141127	box IC 8	0.000139942	False	True	capability
+T1	31	SIR infection	VOI	box IC 2	True	2	2	2	0.000141127	box IC 8	0.000139942	False	True	capability
+T1	31	SIR infection	DISAGREE	box IC 5	True	2	2	2	0.000637683	box IC 8	0.000139942	False	True	capability
+T1	31	SIR infection	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.000495639	box IC 8	0.000139942	False	True	capability
+T1	32	Damped double well oscillator	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.000469513	box IC 1	0.000455825	False	True	capability
+T1	32	Damped double well oscillator	HYBRID	IC-1 (ODEBench held-out IC)	True	1	1	1	0.000469513	box IC 1	0.000455825	False	True	capability
+T1	32	Damped double well oscillator	DOPT	IC-1 (ODEBench held-out IC)	True	1	1	1	0.000469513	box IC 1	0.000455825	False	True	capability
+T1	32	Damped double well oscillator	AOPT	IC-1 (ODEBench held-out IC)	True	1	1	1	0.000469513	box IC 1	0.000455825	False	True	capability
+T1	32	Damped double well oscillator	VOI	IC-1 (ODEBench held-out IC)	True	1	1	1	0.000469513	box IC 1	0.000455825	False	True	capability
+T1	32	Damped double well oscillator	DISAGREE	box IC 5	True	1	1	1	0.000850064	box IC 1	0.000455825	False	True	capability
+T1	32	Damped double well oscillator	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.00340084	box IC 1	0.000455825	False	True	capability
+T1	33	Glider	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.0003436	box IC 8	0.000320628	False	True	capability
+T1	33	Glider	HYBRID	box IC 6	True	1	1	1	0.000347517	box IC 8	0.000320628	False	True	capability
+T1	33	Glider	DOPT	box IC 6	True	1	1	1	0.000347517	box IC 8	0.000320628	False	True	capability
+T1	33	Glider	AOPT	box IC 6	True	1	1	1	0.000347517	box IC 8	0.000320628	False	True	capability
+T1	33	Glider	VOI	box IC 6	True	1	1	1	0.000347517	box IC 8	0.000320628	False	True	capability
+T1	33	Glider	DISAGREE	box IC 6	True	1	1	1	0.000347517	box IC 8	0.000320628	False	True	capability
+T1	33	Glider	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.000514372	box IC 8	0.000320628	False	True	capability
+T1	34	Frictionless bead	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.000557257	box IC 3	0.000194372	False	True	capability
+T1	34	Frictionless bead	HYBRID	box IC 9	True	1	1	1	0.00054159	box IC 3	0.000194372	False	True	capability
+T1	34	Frictionless bead	DOPT	box IC 9	True	1	1	1	0.00054159	box IC 3	0.000194372	False	True	capability
+T1	34	Frictionless bead	AOPT	box IC 9	True	1	1	1	0.00054159	box IC 3	0.000194372	False	True	capability
+T1	34	Frictionless bead	VOI	box IC 9	True	1	1	1	0.00054159	box IC 3	0.000194372	False	True	capability
+T1	34	Frictionless bead	DISAGREE	IC-1 (ODEBench held-out IC)	True	1	1	1	0.000557257	box IC 3	0.000194372	False	True	capability
+T1	34	Frictionless bead	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.0004371	box IC 3	0.000194372	False	True	capability
+T1	35	Rotational dynamics	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.000468966	box IC 7	5.68523e-05	False	True	capability
+T1	35	Rotational dynamics	HYBRID	box IC 7	True	1	1	1	5.68523e-05	box IC 7	5.68523e-05	False	True	capability
+T1	35	Rotational dynamics	DOPT	box IC 7	True	1	1	1	5.68523e-05	box IC 7	5.68523e-05	False	True	capability
+T1	35	Rotational dynamics	AOPT	box IC 7	True	1	1	1	5.68523e-05	box IC 7	5.68523e-05	False	True	capability
+T1	35	Rotational dynamics	VOI	box IC 7	True	1	1	1	5.68523e-05	box IC 7	5.68523e-05	False	True	capability
+T1	35	Rotational dynamics	DISAGREE	box IC 7	True	1	1	1	5.68523e-05	box IC 7	5.68523e-05	False	True	capability
+T1	35	Rotational dynamics	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.000403011	box IC 7	5.68523e-05	False	True	capability
+T1	36	Pendulum non-linear damping	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.0188309	box IC 1	0.00375081	False	True	capability
+T1	36	Pendulum non-linear damping	HYBRID	box IC 2	True	1	1	1	0.00520136	box IC 1	0.00375081	False	True	capability
+T1	36	Pendulum non-linear damping	DOPT	box IC 2	True	1	1	1	0.00520136	box IC 1	0.00375081	False	True	capability
+T1	36	Pendulum non-linear damping	AOPT	box IC 2	True	1	1	1	0.00520136	box IC 1	0.00375081	False	True	capability
+T1	36	Pendulum non-linear damping	VOI	box IC 2	True	1	1	1	0.00520136	box IC 1	0.00375081	False	True	capability
+T1	36	Pendulum non-linear damping	DISAGREE	box IC 0	True	1	1	1	0.00987937	box IC 1	0.00375081	False	True	capability
+T1	36	Pendulum non-linear damping	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.0105366	box IC 1	0.00375081	False	True	capability
+T1	37	Van der Pol oscillator	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00067941	box IC 1	0.000126521	False	True	capability
+T1	37	Van der Pol oscillator	HYBRID	box IC 1	True	1	1	1	0.000126521	box IC 1	0.000126521	False	True	capability
+T1	37	Van der Pol oscillator	DOPT	box IC 1	True	1	1	1	0.000126521	box IC 1	0.000126521	False	True	capability
+T1	37	Van der Pol oscillator	AOPT	box IC 1	True	1	1	1	0.000126521	box IC 1	0.000126521	False	True	capability
+T1	37	Van der Pol oscillator	VOI	box IC 1	True	1	1	1	0.000126521	box IC 1	0.000126521	False	True	capability
+T1	37	Van der Pol oscillator	DISAGREE	box IC 1	True	1	1	1	0.000126521	box IC 1	0.000126521	False	True	capability
+T1	37	Van der Pol oscillator	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.000528403	box IC 1	0.000126521	False	True	capability
+T1	38	Van der Pol oscillator simplified	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.000298202	box IC 6	3.46383e-05	False	True	capability
+T1	38	Van der Pol oscillator simplified	HYBRID	box IC 6	True	1	1	1	3.46383e-05	box IC 6	3.46383e-05	False	True	capability
+T1	38	Van der Pol oscillator simplified	DOPT	box IC 6	True	1	1	1	3.46383e-05	box IC 6	3.46383e-05	False	True	capability
+T1	38	Van der Pol oscillator simplified	AOPT	box IC 6	True	1	1	1	3.46383e-05	box IC 6	3.46383e-05	False	True	capability
+T1	38	Van der Pol oscillator simplified	VOI	box IC 6	True	1	1	1	3.46383e-05	box IC 6	3.46383e-05	False	True	capability
+T1	38	Van der Pol oscillator simplified	DISAGREE	box IC 7	True	1	1	1	6.12988e-05	box IC 6	3.46383e-05	False	True	capability
+T1	38	Van der Pol oscillator simplified	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.000161365	box IC 6	3.46383e-05	False	True	capability
+T1	39	Glycolytic oscillator	RANK	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00178833	box IC 8	0.0011955	False	True	capability
+T1	39	Glycolytic oscillator	HYBRID	box IC 5	True	2	2	2	0.00206505	box IC 8	0.0011955	False	True	capability
+T1	39	Glycolytic oscillator	DOPT	box IC 5	True	2	2	2	0.00206505	box IC 8	0.0011955	False	True	capability
+T1	39	Glycolytic oscillator	AOPT	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00178833	box IC 8	0.0011955	False	True	capability
+T1	39	Glycolytic oscillator	VOI	box IC 5	True	2	2	2	0.00206505	box IC 8	0.0011955	False	True	capability
+T1	39	Glycolytic oscillator	DISAGREE	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00178833	box IC 8	0.0011955	False	True	capability
+T1	39	Glycolytic oscillator	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00158785	box IC 8	0.0011955	False	True	capability
+T1	40	Duffing equation	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00124114	box IC 1	8.87438e-05	False	True	capability
+T1	40	Duffing equation	HYBRID	box IC 5	True	1	1	1	0.000145558	box IC 1	8.87438e-05	False	True	capability
+T1	40	Duffing equation	DOPT	box IC 5	True	1	1	1	0.000145558	box IC 1	8.87438e-05	False	True	capability
+T1	40	Duffing equation	AOPT	box IC 5	True	1	1	1	0.000145558	box IC 1	8.87438e-05	False	True	capability
+T1	40	Duffing equation	VOI	box IC 5	True	1	1	1	0.000145558	box IC 1	8.87438e-05	False	True	capability
+T1	40	Duffing equation	DISAGREE	box IC 0	True	1	1	1	0.000253053	box IC 1	8.87438e-05	False	True	capability
+T1	40	Duffing equation	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.000477374	box IC 1	8.87438e-05	False	True	capability
+T1	41	Cell cycle model	RANK	IC-1 (ODEBench held-out IC)	True	3	3	3	0.0102574	IC-1 (ODEBench held-out IC)	0.0102574	False	True	capability
+T1	41	Cell cycle model	HYBRID	box IC 5	True	3	3	3	0.130373	IC-1 (ODEBench held-out IC)	0.0102574	False	True	capability
+T1	41	Cell cycle model	DOPT	box IC 5	True	3	3	3	0.130373	IC-1 (ODEBench held-out IC)	0.0102574	False	True	capability
+T1	41	Cell cycle model	AOPT	IC-1 (ODEBench held-out IC)	True	3	3	3	0.0102574	IC-1 (ODEBench held-out IC)	0.0102574	False	True	capability
+T1	41	Cell cycle model	VOI	box IC 5	True	3	3	3	0.130373	IC-1 (ODEBench held-out IC)	0.0102574	False	True	capability
+T1	41	Cell cycle model	DISAGREE	IC-1 (ODEBench held-out IC)	True	3	3	3	0.0102574	IC-1 (ODEBench held-out IC)	0.0102574	False	True	capability
+T1	41	Cell cycle model	RANDOM	uniform (expectation)	1.0000	NA	3	3	0.981218	IC-1 (ODEBench held-out IC)	0.0102574	False	True	capability
+T1	42	CDIMA reaction	RANK	box IC 4	True	3	3	3	0.000670303	box IC 2	0.000605645	False	True	capability
+T1	42	CDIMA reaction	HYBRID	box IC 2	True	3	3	3	0.000605645	box IC 2	0.000605645	False	True	capability
+T1	42	CDIMA reaction	DOPT	box IC 2	True	3	3	3	0.000605645	box IC 2	0.000605645	False	True	capability
+T1	42	CDIMA reaction	AOPT	box IC 2	True	3	3	3	0.000605645	box IC 2	0.000605645	False	True	capability
+T1	42	CDIMA reaction	VOI	box IC 2	True	3	3	3	0.000605645	box IC 2	0.000605645	False	True	capability
+T1	42	CDIMA reaction	DISAGREE	box IC 8	True	3	3	3	0.000797018	box IC 2	0.000605645	False	True	capability
+T1	42	CDIMA reaction	RANDOM	uniform (expectation)	1.0000	NA	3	3	0.000943309	box IC 2	0.000605645	False	True	capability
+T1	43	Driven pendulum linear damping	RANK	box IC 5	True	2	2	2	0.000169416	box IC 5	0.000169416	False	True	capability
+T1	43	Driven pendulum linear damping	HYBRID	box IC 4	True	2	2	2	0.000171813	box IC 5	0.000169416	False	True	capability
+T1	43	Driven pendulum linear damping	DOPT	box IC 4	True	2	2	2	0.000171813	box IC 5	0.000169416	False	True	capability
+T1	43	Driven pendulum linear damping	AOPT	box IC 4	True	2	2	2	0.000171813	box IC 5	0.000169416	False	True	capability
+T1	43	Driven pendulum linear damping	VOI	box IC 4	True	2	2	2	0.000171813	box IC 5	0.000169416	False	True	capability
+T1	43	Driven pendulum linear damping	DISAGREE	box IC 4	True	2	2	2	0.000171813	box IC 5	0.000169416	False	True	capability
+T1	43	Driven pendulum linear damping	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.000315478	box IC 5	0.000169416	False	True	capability
+T1	44	Driven pendulum quadratic damping	RANK	box IC 6	True	2	2	2	0.000135843	box IC 5	0.00012672	False	True	capability
+T1	44	Driven pendulum quadratic damping	HYBRID	box IC 1	True	2	2	2	0.000132015	box IC 5	0.00012672	False	True	capability
+T1	44	Driven pendulum quadratic damping	DOPT	box IC 1	True	2	2	2	0.000132015	box IC 5	0.00012672	False	True	capability
+T1	44	Driven pendulum quadratic damping	AOPT	box IC 5	True	2	2	2	0.00012672	box IC 5	0.00012672	False	True	capability
+T1	44	Driven pendulum quadratic damping	VOI	box IC 1	True	2	2	2	0.000132015	box IC 5	0.00012672	False	True	capability
+T1	44	Driven pendulum quadratic damping	DISAGREE	box IC 4	True	2	2	2	0.00014095	box IC 5	0.00012672	False	True	capability
+T1	44	Driven pendulum quadratic damping	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.000334297	box IC 5	0.00012672	False	True	capability
+T1	45	Gray-Scott model	RANK	box IC 0	True	2	2	2	0.00157267	box IC 8	0.000285903	False	True	capability
+T1	45	Gray-Scott model	HYBRID	box IC 2	True	2	2	2	0.000584179	box IC 8	0.000285903	False	True	capability
+T1	45	Gray-Scott model	DOPT	box IC 2	True	2	2	2	0.000584179	box IC 8	0.000285903	False	True	capability
+T1	45	Gray-Scott model	AOPT	box IC 8	True	2	2	2	0.000285903	box IC 8	0.000285903	False	True	capability
+T1	45	Gray-Scott model	VOI	box IC 2	True	2	2	2	0.000584179	box IC 8	0.000285903	False	True	capability
+T1	45	Gray-Scott model	DISAGREE	box IC 1	True	2	2	2	0.0047232	box IC 8	0.000285903	False	True	capability
+T1	45	Gray-Scott model	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00216712	box IC 8	0.000285903	False	True	capability
+T1	46	Interacting bar magnets	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.000108278	box IC 5	4.94736e-05	False	True	capability
+T1	46	Interacting bar magnets	HYBRID	box IC 2	True	1	1	1	5.71954e-05	box IC 5	4.94736e-05	False	True	capability
+T1	46	Interacting bar magnets	DOPT	box IC 2	True	1	1	1	5.71954e-05	box IC 5	4.94736e-05	False	True	capability
+T1	46	Interacting bar magnets	AOPT	box IC 2	True	1	1	1	5.71954e-05	box IC 5	4.94736e-05	False	True	capability
+T1	46	Interacting bar magnets	VOI	box IC 2	True	1	1	1	5.71954e-05	box IC 5	4.94736e-05	False	True	capability
+T1	46	Interacting bar magnets	DISAGREE	IC-1 (ODEBench held-out IC)	True	1	1	1	0.000108278	box IC 5	4.94736e-05	False	True	capability
+T1	46	Interacting bar magnets	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.000107379	box IC 5	4.94736e-05	False	True	capability
+T1	47	Binocular rivalry model	RANK	box IC 5	True	2	2	2	0.000879009	box IC 6	0.000866285	False	True	capability
+T1	47	Binocular rivalry model	HYBRID	box IC 5	True	2	2	2	0.000879009	box IC 6	0.000866285	False	True	capability
+T1	47	Binocular rivalry model	DOPT	box IC 5	True	2	2	2	0.000879009	box IC 6	0.000866285	False	True	capability
+T1	47	Binocular rivalry model	AOPT	box IC 5	True	2	2	2	0.000879009	box IC 6	0.000866285	False	True	capability
+T1	47	Binocular rivalry model	VOI	box IC 5	True	2	2	2	0.000879009	box IC 6	0.000866285	False	True	capability
+T1	47	Binocular rivalry model	DISAGREE	box IC 1	True	2	2	2	0.00116688	box IC 6	0.000866285	False	True	capability
+T1	47	Binocular rivalry model	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.0032645	box IC 6	0.000866285	False	True	capability
+T1	48	Bacterial respiration model	RANK	box IC 5	True	3	3	3	0.000977178	box IC 1	0.000896599	False	True	capability
+T1	48	Bacterial respiration model	HYBRID	box IC 4	True	3	3	3	0.00144351	box IC 1	0.000896599	False	True	capability
+T1	48	Bacterial respiration model	DOPT	box IC 4	True	3	3	3	0.00144351	box IC 1	0.000896599	False	True	capability
+T1	48	Bacterial respiration model	AOPT	box IC 5	True	3	3	3	0.000977178	box IC 1	0.000896599	False	True	capability
+T1	48	Bacterial respiration model	VOI	box IC 4	True	3	3	3	0.00144351	box IC 1	0.000896599	False	True	capability
+T1	48	Bacterial respiration model	DISAGREE	box IC 1	True	3	3	3	0.000896599	box IC 1	0.000896599	False	True	capability
+T1	48	Bacterial respiration model	RANDOM	uniform (expectation)	1.0000	NA	3	3	0.00119883	box IC 1	0.000896599	False	True	capability
+T1	49	Brusselator	RANK	box IC 7	True	2	2	2	0.000189345	box IC 6	0.000177335	False	True	capability
+T1	49	Brusselator	HYBRID	box IC 2	True	2	2	2	0.000435161	box IC 6	0.000177335	False	True	capability
+T1	49	Brusselator	DOPT	box IC 2	True	2	2	2	0.000435161	box IC 6	0.000177335	False	True	capability
+T1	49	Brusselator	AOPT	box IC 6	True	2	2	2	0.000177335	box IC 6	0.000177335	False	True	capability
+T1	49	Brusselator	VOI	box IC 2	True	2	2	2	0.000435161	box IC 6	0.000177335	False	True	capability
+T1	49	Brusselator	DISAGREE	box IC 9	True	2	2	2	0.000846905	box IC 6	0.000177335	False	True	capability
+T1	49	Brusselator	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.000538341	box IC 6	0.000177335	False	True	capability
+T1	50	Schnackenberg model	RANK	box IC 1	True	2	2	2	0.000321716	box IC 9	0.000142415	False	True	capability
+T1	50	Schnackenberg model	HYBRID	box IC 9	True	2	2	2	0.000142415	box IC 9	0.000142415	False	True	capability
+T1	50	Schnackenberg model	DOPT	box IC 9	True	2	2	2	0.000142415	box IC 9	0.000142415	False	True	capability
+T1	50	Schnackenberg model	AOPT	box IC 9	True	2	2	2	0.000142415	box IC 9	0.000142415	False	True	capability
+T1	50	Schnackenberg model	VOI	box IC 9	True	2	2	2	0.000142415	box IC 9	0.000142415	False	True	capability
+T1	50	Schnackenberg model	DISAGREE	box IC 1	True	2	2	2	0.000321716	box IC 9	0.000142415	False	True	capability
+T1	50	Schnackenberg model	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.000291594	box IC 9	0.000142415	False	True	capability
+T1	51	Oscillator death model	RANK	box IC 7	True	2	2	2	0.000214631	box IC 1	0.000197508	False	True	capability
+T1	51	Oscillator death model	HYBRID	box IC 0	True	2	2	2	0.00019938	box IC 1	0.000197508	False	True	capability
+T1	51	Oscillator death model	DOPT	box IC 0	True	2	2	2	0.00019938	box IC 1	0.000197508	False	True	capability
+T1	51	Oscillator death model	AOPT	box IC 0	True	2	2	2	0.00019938	box IC 1	0.000197508	False	True	capability
+T1	51	Oscillator death model	VOI	box IC 0	True	2	2	2	0.00019938	box IC 1	0.000197508	False	True	capability
+T1	51	Oscillator death model	DISAGREE	box IC 0	True	2	2	2	0.00019938	box IC 1	0.000197508	False	True	capability
+T1	51	Oscillator death model	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.000227018	box IC 1	0.000197508	False	True	capability
+T1	52	Maxwell-Bloch equations	RANK	box IC 6	True	4	4	4	0.00098505	box IC 1	0.000175675	False	True	capability
+T1	52	Maxwell-Bloch equations	HYBRID	box IC 1	True	4	4	4	0.000175675	box IC 1	0.000175675	False	True	capability
+T1	52	Maxwell-Bloch equations	DOPT	box IC 1	True	4	4	4	0.000175675	box IC 1	0.000175675	False	True	capability
+T1	52	Maxwell-Bloch equations	AOPT	box IC 1	True	4	4	4	0.000175675	box IC 1	0.000175675	False	True	capability
+T1	52	Maxwell-Bloch equations	VOI	box IC 1	True	4	4	4	0.000175675	box IC 1	0.000175675	False	True	capability
+T1	52	Maxwell-Bloch equations	DISAGREE	box IC 6	True	4	4	4	0.00098505	box IC 1	0.000175675	False	True	capability
+T1	52	Maxwell-Bloch equations	RANDOM	uniform (expectation)	1.0000	NA	4	4	0.000977353	box IC 1	0.000175675	False	True	capability
+T1	53	Apoptosis model	RANK	box IC 3	True	10	10	10	0.0370299	box IC 3	0.0370299	False	True	capability
+T1	53	Apoptosis model	HYBRID	box IC 3	True	10	10	10	0.0370299	box IC 3	0.0370299	False	True	capability
+T1	53	Apoptosis model	DOPT	box IC 3	True	10	10	10	0.0370299	box IC 3	0.0370299	False	True	capability
+T1	53	Apoptosis model	AOPT	box IC 3	True	10	10	10	0.0370299	box IC 3	0.0370299	False	True	capability
+T1	53	Apoptosis model	VOI	box IC 3	True	10	10	10	0.0370299	box IC 3	0.0370299	False	True	capability
+T1	53	Apoptosis model	DISAGREE	box IC 6	True	10	10	10	0.235156	box IC 3	0.0370299	False	True	capability
+T1	53	Apoptosis model	RANDOM	uniform (expectation)	1.0000	NA	10	10	1.07014	box IC 3	0.0370299	False	True	capability
+T1	54	Lorenz equations periodic	RANK	box IC 8	True	3	3	3	0.000206775	box IC 4	0.000161026	False	True	capability
+T1	54	Lorenz equations periodic	HYBRID	box IC 1	True	3	3	3	0.000185565	box IC 4	0.000161026	False	True	capability
+T1	54	Lorenz equations periodic	DOPT	box IC 1	True	3	3	3	0.000185565	box IC 4	0.000161026	False	True	capability
+T1	54	Lorenz equations periodic	AOPT	box IC 1	True	3	3	3	0.000185565	box IC 4	0.000161026	False	True	capability
+T1	54	Lorenz equations periodic	VOI	box IC 1	True	3	3	3	0.000185565	box IC 4	0.000161026	False	True	capability
+T1	54	Lorenz equations periodic	DISAGREE	box IC 0	True	3	3	3	0.000233845	box IC 4	0.000161026	False	True	capability
+T1	54	Lorenz equations periodic	RANDOM	uniform (expectation)	1.0000	NA	3	3	0.000245754	box IC 4	0.000161026	False	True	capability
+T1	55	Lorenz equations complex periodic	RANK	box IC 3	True	3	3	3	0.000240497	box IC 9	0.000205665	False	True	capability
+T1	55	Lorenz equations complex periodic	HYBRID	box IC 0	True	3	3	3	0.105233	box IC 9	0.000205665	False	True	capability
+T1	55	Lorenz equations complex periodic	DOPT	box IC 0	True	3	3	3	0.105233	box IC 9	0.000205665	False	True	capability
+T1	55	Lorenz equations complex periodic	AOPT	box IC 9	True	3	3	3	0.000205665	box IC 9	0.000205665	False	True	capability
+T1	55	Lorenz equations complex periodic	VOI	box IC 0	True	3	3	3	0.105233	box IC 9	0.000205665	False	True	capability
+T1	55	Lorenz equations complex periodic	DISAGREE	box IC 0	True	3	3	3	0.105233	box IC 9	0.000205665	False	True	capability
+T1	55	Lorenz equations complex periodic	RANDOM	uniform (expectation)	1.0000	NA	3	3	0.0197339	box IC 9	0.000205665	False	True	capability
+T1	56	Lorenz equations chaotic	RANK	box IC 4	True	3	3	3	0.000145839	box IC 4	0.000145839	False	True	capability
+T1	56	Lorenz equations chaotic	HYBRID	IC-1 (ODEBench held-out IC)	True	3	3	3	0.127217	box IC 4	0.000145839	False	True	capability
+T1	56	Lorenz equations chaotic	DOPT	IC-1 (ODEBench held-out IC)	True	3	3	3	0.127217	box IC 4	0.000145839	False	True	capability
+T1	56	Lorenz equations chaotic	AOPT	box IC 1	True	3	3	3	0.0994788	box IC 4	0.000145839	False	True	capability
+T1	56	Lorenz equations chaotic	VOI	IC-1 (ODEBench held-out IC)	True	3	3	3	0.127217	box IC 4	0.000145839	False	True	capability
+T1	56	Lorenz equations chaotic	DISAGREE	IC-1 (ODEBench held-out IC)	True	3	3	3	0.127217	box IC 4	0.000145839	False	True	capability
+T1	56	Lorenz equations chaotic	RANDOM	uniform (expectation)	1.0000	NA	3	3	0.0319011	box IC 4	0.000145839	False	True	capability
+T1	57	Rössler fixed point	RANK	box IC 2	True	4	4	4	0.00189118	box IC 0	0.000528748	False	True	capability
+T1	57	Rössler fixed point	HYBRID	box IC 3	True	4	4	4	0.000918965	box IC 0	0.000528748	False	True	capability
+T1	57	Rössler fixed point	DOPT	box IC 3	True	4	4	4	0.000918965	box IC 0	0.000528748	False	True	capability
+T1	57	Rössler fixed point	AOPT	box IC 1	True	4	4	4	0.00113582	box IC 0	0.000528748	False	True	capability
+T1	57	Rössler fixed point	VOI	box IC 3	True	4	4	4	0.000918965	box IC 0	0.000528748	False	True	capability
+T1	57	Rössler fixed point	DISAGREE	box IC 3	True	4	4	4	0.000918965	box IC 0	0.000528748	False	True	capability
+T1	57	Rössler fixed point	RANDOM	uniform (expectation)	1.0000	NA	4	4	0.00122462	box IC 0	0.000528748	False	True	capability
+T1	58	Rössler attractor periodic	RANK	IC-1 (ODEBench held-out IC)	True	4	4	4	0.00133204	box IC 0	0.000600214	False	True	capability
+T1	58	Rössler attractor periodic	HYBRID	box IC 1	True	4	4	4	0.000983279	box IC 0	0.000600214	False	True	capability
+T1	58	Rössler attractor periodic	DOPT	box IC 1	True	4	4	4	0.000983279	box IC 0	0.000600214	False	True	capability
+T1	58	Rössler attractor periodic	AOPT	box IC 1	True	4	4	4	0.000983279	box IC 0	0.000600214	False	True	capability
+T1	58	Rössler attractor periodic	VOI	box IC 1	True	4	4	4	0.000983279	box IC 0	0.000600214	False	True	capability
+T1	58	Rössler attractor periodic	DISAGREE	box IC 3	True	4	4	4	0.00120927	box IC 0	0.000600214	False	True	capability
+T1	58	Rössler attractor periodic	RANDOM	uniform (expectation)	1.0000	NA	4	4	0.0012751	box IC 0	0.000600214	False	True	capability
+T1	59	Rössler attractor chaotic	RANK	IC-1 (ODEBench held-out IC)	True	4	4	4	0.0012081	box IC 0	0.000352174	False	True	capability
+T1	59	Rössler attractor chaotic	HYBRID	box IC 1	True	4	4	4	0.000589156	box IC 0	0.000352174	False	True	capability
+T1	59	Rössler attractor chaotic	DOPT	box IC 1	True	4	4	4	0.000589156	box IC 0	0.000352174	False	True	capability
+T1	59	Rössler attractor chaotic	AOPT	box IC 1	True	4	4	4	0.000589156	box IC 0	0.000352174	False	True	capability
+T1	59	Rössler attractor chaotic	VOI	box IC 1	True	4	4	4	0.000589156	box IC 0	0.000352174	False	True	capability
+T1	59	Rössler attractor chaotic	DISAGREE	box IC 1	True	4	4	4	0.000589156	box IC 0	0.000352174	False	True	capability
+T1	59	Rössler attractor chaotic	RANDOM	uniform (expectation)	1.0000	NA	4	4	0.00108166	box IC 0	0.000352174	False	True	capability
+T1	60	Aizawa attractor	RANK	box IC 3	True	6	6	6	0.0039515	box IC 4	0.00240749	False	True	capability
+T1	60	Aizawa attractor	HYBRID	box IC 1	True	6	6	6	0.00340353	box IC 4	0.00240749	False	True	capability
+T1	60	Aizawa attractor	DOPT	box IC 1	True	6	6	6	0.00340353	box IC 4	0.00240749	False	True	capability
+T1	60	Aizawa attractor	AOPT	box IC 1	True	6	6	6	0.00340353	box IC 4	0.00240749	False	True	capability
+T1	60	Aizawa attractor	VOI	box IC 1	True	6	6	6	0.00340353	box IC 4	0.00240749	False	True	capability
+T1	60	Aizawa attractor	DISAGREE	box IC 3	True	6	6	6	0.0039515	box IC 4	0.00240749	False	True	capability
+T1	60	Aizawa attractor	RANDOM	uniform (expectation)	1.0000	NA	6	6	0.200189	box IC 4	0.00240749	False	True	capability
+T1	61	Chen-Lee attractor	RANK	box IC 5	True	4	4	4	7.85144e-05	box IC 4	3.13746e-05	False	True	capability
+T1	61	Chen-Lee attractor	HYBRID	box IC 4	True	4	4	4	3.13746e-05	box IC 4	3.13746e-05	False	True	capability
+T1	61	Chen-Lee attractor	DOPT	box IC 4	True	4	4	4	3.13746e-05	box IC 4	3.13746e-05	False	True	capability
+T1	61	Chen-Lee attractor	AOPT	box IC 4	True	4	4	4	3.13746e-05	box IC 4	3.13746e-05	False	True	capability
+T1	61	Chen-Lee attractor	VOI	box IC 4	True	4	4	4	3.13746e-05	box IC 4	3.13746e-05	False	True	capability
+T1	61	Chen-Lee attractor	DISAGREE	box IC 4	True	4	4	4	3.13746e-05	box IC 4	3.13746e-05	False	True	capability
+T1	61	Chen-Lee attractor	RANDOM	uniform (expectation)	1.0000	NA	4	4	0.000207018	box IC 4	3.13746e-05	False	True	capability
+T1	62	Binocular rivalry adaptation	RANK	box IC 6	True	4	4	4	0.00686234	box IC 6	0.00686234	False	True	capability
+T1	62	Binocular rivalry adaptation	HYBRID	box IC 6	True	4	4	4	0.00686234	box IC 6	0.00686234	False	True	capability
+T1	62	Binocular rivalry adaptation	DOPT	box IC 6	True	4	4	4	0.00686234	box IC 6	0.00686234	False	True	capability
+T1	62	Binocular rivalry adaptation	AOPT	box IC 6	True	4	4	4	0.00686234	box IC 6	0.00686234	False	True	capability
+T1	62	Binocular rivalry adaptation	VOI	box IC 6	True	4	4	4	0.00686234	box IC 6	0.00686234	False	True	capability
+T1	62	Binocular rivalry adaptation	DISAGREE	box IC 2	True	4	4	4	0.0121871	box IC 6	0.00686234	False	True	capability
+T1	62	Binocular rivalry adaptation	RANDOM	uniform (expectation)	1.0000	NA	4	4	0.010909	box IC 6	0.00686234	False	True	capability
+T1	63	SEIR infection	RANK	IC-1 (ODEBench held-out IC)	True	3	3	3	0.00050914	IC-1 (ODEBench held-out IC)	0.00050914	False	False	capability
+T1	63	SEIR infection	HYBRID	IC-1 (ODEBench held-out IC)	True	3	3	3	0.00050914	IC-1 (ODEBench held-out IC)	0.00050914	False	False	capability
+T1	63	SEIR infection	DOPT	IC-1 (ODEBench held-out IC)	True	3	3	3	0.00050914	IC-1 (ODEBench held-out IC)	0.00050914	False	False	capability
+T1	63	SEIR infection	AOPT	IC-1 (ODEBench held-out IC)	True	3	3	3	0.00050914	IC-1 (ODEBench held-out IC)	0.00050914	False	False	capability
+T1	63	SEIR infection	VOI	IC-1 (ODEBench held-out IC)	True	3	3	3	0.00050914	IC-1 (ODEBench held-out IC)	0.00050914	False	False	capability
+T1	63	SEIR infection	DISAGREE	IC-1 (ODEBench held-out IC)	True	3	3	3	0.00050914	IC-1 (ODEBench held-out IC)	0.00050914	False	False	capability
+T1	63	SEIR infection	RANDOM	uniform (expectation)	1.0000	NA	3	3	0.00050914	IC-1 (ODEBench held-out IC)	0.00050914	False	False	capability
+T2	1	RC-circuit	RANK	IC-1 (ODEBench held-out IC)	True	2	2	2	0.0405362	box IC 3	0.0300229	False	True	change_class
+T2	1	RC-circuit	HYBRID	box IC 3	True	2	2	2	0.0300229	box IC 3	0.0300229	False	True	change_class
+T2	1	RC-circuit	DOPT	box IC 3	True	2	2	2	0.0300229	box IC 3	0.0300229	False	True	change_class
+T2	1	RC-circuit	AOPT	box IC 3	True	2	2	2	0.0300229	box IC 3	0.0300229	False	True	change_class
+T2	1	RC-circuit	VOI	box IC 3	True	2	2	2	0.0300229	box IC 3	0.0300229	False	True	change_class
+T2	1	RC-circuit	DISAGREE	box IC 3	True	2	2	2	0.0300229	box IC 3	0.0300229	False	True	change_class
+T2	1	RC-circuit	RANDOM	uniform (expectation)	1.0000	NA	2	2	1.72408	box IC 3	0.0300229	False	True	change_class
+T2	2	Population growth naive	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00949376	box IC 9	0.000511574	False	True	capability
+T2	2	Population growth naive	HYBRID	box IC 9	True	1	1	1	0.000511574	box IC 9	0.000511574	False	True	capability
+T2	2	Population growth naive	DOPT	box IC 9	True	1	1	1	0.000511574	box IC 9	0.000511574	False	True	capability
+T2	2	Population growth naive	AOPT	box IC 9	True	1	1	1	0.000511574	box IC 9	0.000511574	False	True	capability
+T2	2	Population growth naive	VOI	box IC 9	True	1	1	1	0.000511574	box IC 9	0.000511574	False	True	capability
+T2	2	Population growth naive	DISAGREE	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00949376	box IC 9	0.000511574	False	True	capability
+T2	2	Population growth naive	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.00316307	box IC 9	0.000511574	False	True	capability
+T2	3	Population growth carrying capacity	RANK	box IC 8	True	2	2	2	0.00147515	box IC 4	0.00135768	False	True	capability
+T2	3	Population growth carrying capacity	HYBRID	box IC 9	True	2	2	2	0.00136857	box IC 4	0.00135768	False	True	capability
+T2	3	Population growth carrying capacity	DOPT	box IC 9	True	2	2	2	0.00136857	box IC 4	0.00135768	False	True	capability
+T2	3	Population growth carrying capacity	AOPT	box IC 9	True	2	2	2	0.00136857	box IC 4	0.00135768	False	True	capability
+T2	3	Population growth carrying capacity	VOI	box IC 9	True	2	2	2	0.00136857	box IC 4	0.00135768	False	True	capability
+T2	3	Population growth carrying capacity	DISAGREE	box IC 9	True	2	2	2	0.00136857	box IC 4	0.00135768	False	True	capability
+T2	3	Population growth carrying capacity	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00881524	box IC 4	0.00135768	False	True	capability
+T2	4	RC-circuit non-linear resistor	RANK	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00537032	IC-1 (ODEBench held-out IC)	0.00537032	False	True	capability
+T2	4	RC-circuit non-linear resistor	HYBRID	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00537032	IC-1 (ODEBench held-out IC)	0.00537032	False	True	capability
+T2	4	RC-circuit non-linear resistor	DOPT	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00537032	IC-1 (ODEBench held-out IC)	0.00537032	False	True	capability
+T2	4	RC-circuit non-linear resistor	AOPT	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00537032	IC-1 (ODEBench held-out IC)	0.00537032	False	True	capability
+T2	4	RC-circuit non-linear resistor	VOI	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00537032	IC-1 (ODEBench held-out IC)	0.00537032	False	True	capability
+T2	4	RC-circuit non-linear resistor	DISAGREE	box IC 2	True	2	2	2	0.0058603	IC-1 (ODEBench held-out IC)	0.00537032	False	True	capability
+T2	4	RC-circuit non-linear resistor	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00872377	IC-1 (ODEBench held-out IC)	0.00537032	False	True	capability
+T2	5	Velocity falling object	RANK	box IC 9	True	2	2	2	0.000808967	box IC 9	0.000808967	False	True	capability
+T2	5	Velocity falling object	HYBRID	box IC 9	True	2	2	2	0.000808967	box IC 9	0.000808967	False	True	capability
+T2	5	Velocity falling object	DOPT	box IC 9	True	2	2	2	0.000808967	box IC 9	0.000808967	False	True	capability
+T2	5	Velocity falling object	AOPT	box IC 9	True	2	2	2	0.000808967	box IC 9	0.000808967	False	True	capability
+T2	5	Velocity falling object	VOI	box IC 9	True	2	2	2	0.000808967	box IC 9	0.000808967	False	True	capability
+T2	5	Velocity falling object	DISAGREE	box IC 9	True	2	2	2	0.000808967	box IC 9	0.000808967	False	True	capability
+T2	5	Velocity falling object	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.0387234	box IC 9	0.000808967	False	True	capability
+T2	6	Autocatalysis	RANK	box IC 0	True	2	2	2	0.000545205	box IC 7	0.000544375	False	True	capability
+T2	6	Autocatalysis	HYBRID	box IC 9	True	2	2	2	0.000559505	box IC 7	0.000544375	False	True	capability
+T2	6	Autocatalysis	DOPT	box IC 9	True	2	2	2	0.000559505	box IC 7	0.000544375	False	True	capability
+T2	6	Autocatalysis	AOPT	box IC 9	True	2	2	2	0.000559505	box IC 7	0.000544375	False	True	capability
+T2	6	Autocatalysis	VOI	box IC 9	True	2	2	2	0.000559505	box IC 7	0.000544375	False	True	capability
+T2	6	Autocatalysis	DISAGREE	box IC 9	True	2	2	2	0.000559505	box IC 7	0.000544375	False	True	capability
+T2	6	Autocatalysis	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00534849	box IC 7	0.000544375	False	True	capability
+T2	7	Gompertz law tumor growth	RANK	box IC 2	True	2	2	2	0.0899496	box IC 9	0.0533429	False	True	capability
+T2	7	Gompertz law tumor growth	HYBRID	box IC 9	True	2	2	2	0.0533429	box IC 9	0.0533429	False	True	capability
+T2	7	Gompertz law tumor growth	DOPT	box IC 9	True	2	2	2	0.0533429	box IC 9	0.0533429	False	True	capability
+T2	7	Gompertz law tumor growth	AOPT	box IC 9	True	2	2	2	0.0533429	box IC 9	0.0533429	False	True	capability
+T2	7	Gompertz law tumor growth	VOI	box IC 9	True	2	2	2	0.0533429	box IC 9	0.0533429	False	True	capability
+T2	7	Gompertz law tumor growth	DISAGREE	box IC 3	True	2	2	2	0.114593	box IC 9	0.0533429	False	True	capability
+T2	7	Gompertz law tumor growth	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.0671043	box IC 9	0.0533429	False	True	capability
+T2	8	Logistic equation Allee effect	RANK	box IC 1	True	3	3	3	0.0067577	box IC 0	0.00673292	False	True	capability
+T2	8	Logistic equation Allee effect	HYBRID	box IC 8	True	3	3	3	0.00689544	box IC 0	0.00673292	False	True	capability
+T2	8	Logistic equation Allee effect	DOPT	box IC 8	True	3	3	3	0.00689544	box IC 0	0.00673292	False	True	capability
+T2	8	Logistic equation Allee effect	AOPT	box IC 0	True	3	3	3	0.00673292	box IC 0	0.00673292	False	True	capability
+T2	8	Logistic equation Allee effect	VOI	box IC 8	True	3	3	3	0.00689544	box IC 0	0.00673292	False	True	capability
+T2	8	Logistic equation Allee effect	DISAGREE	box IC 8	True	3	3	3	0.00689544	box IC 0	0.00673292	False	True	capability
+T2	8	Logistic equation Allee effect	RANDOM	uniform (expectation)	1.0000	NA	3	3	5.07166	box IC 0	0.00673292	False	True	capability
+T2	9	Language death model	RANK	box IC 9	True	2	2	2	0.00159316	box IC 9	0.00159316	False	True	capability
+T2	9	Language death model	HYBRID	box IC 9	True	2	2	2	0.00159316	box IC 9	0.00159316	False	True	capability
+T2	9	Language death model	DOPT	box IC 9	True	2	2	2	0.00159316	box IC 9	0.00159316	False	True	capability
+T2	9	Language death model	AOPT	box IC 9	True	2	2	2	0.00159316	box IC 9	0.00159316	False	True	capability
+T2	9	Language death model	VOI	box IC 9	True	2	2	2	0.00159316	box IC 9	0.00159316	False	True	capability
+T2	9	Language death model	DISAGREE	box IC 9	True	2	2	2	0.00159316	box IC 9	0.00159316	False	True	capability
+T2	9	Language death model	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00414424	box IC 9	0.00159316	False	True	capability
+T2	10	Refined language death model	RANK	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00904742	IC-1 (ODEBench held-out IC)	0.00904742	False	True	capability
+T2	10	Refined language death model	HYBRID	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00904742	IC-1 (ODEBench held-out IC)	0.00904742	False	True	capability
+T2	10	Refined language death model	DOPT	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00904742	IC-1 (ODEBench held-out IC)	0.00904742	False	True	capability
+T2	10	Refined language death model	AOPT	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00904742	IC-1 (ODEBench held-out IC)	0.00904742	False	True	capability
+T2	10	Refined language death model	VOI	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00904742	IC-1 (ODEBench held-out IC)	0.00904742	False	True	capability
+T2	10	Refined language death model	DISAGREE	box IC 3	True	2	2	2	0.137064	IC-1 (ODEBench held-out IC)	0.00904742	False	True	capability
+T2	10	Refined language death model	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.374091	IC-1 (ODEBench held-out IC)	0.00904742	False	True	capability
+T2	12	Photons in a laser	RANK	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00251822	IC-1 (ODEBench held-out IC)	0.00251822	False	True	capability
+T2	12	Photons in a laser	HYBRID	box IC 9	True	2	2	2	0.00549843	IC-1 (ODEBench held-out IC)	0.00251822	False	True	capability
+T2	12	Photons in a laser	DOPT	box IC 9	True	2	2	2	0.00549843	IC-1 (ODEBench held-out IC)	0.00251822	False	True	capability
+T2	12	Photons in a laser	AOPT	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00251822	IC-1 (ODEBench held-out IC)	0.00251822	False	True	capability
+T2	12	Photons in a laser	VOI	box IC 9	True	2	2	2	0.00549843	IC-1 (ODEBench held-out IC)	0.00251822	False	True	capability
+T2	12	Photons in a laser	DISAGREE	box IC 3	True	2	2	2	0.0083641	IC-1 (ODEBench held-out IC)	0.00251822	False	True	capability
+T2	12	Photons in a laser	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.0132104	IC-1 (ODEBench held-out IC)	0.00251822	False	True	capability
+T2	13	Overdamped bead	RANK	box IC 1	True	2	2	2	0.0452047	box IC 1	0.0452047	False	True	capability
+T2	13	Overdamped bead	HYBRID	box IC 6	True	2	2	2	0.208078	box IC 1	0.0452047	False	True	capability
+T2	13	Overdamped bead	DOPT	box IC 6	True	2	2	2	0.208078	box IC 1	0.0452047	False	True	capability
+T2	13	Overdamped bead	AOPT	box IC 1	True	2	2	2	0.0452047	box IC 1	0.0452047	False	True	capability
+T2	13	Overdamped bead	VOI	box IC 6	True	2	2	2	0.208078	box IC 1	0.0452047	False	True	capability
+T2	13	Overdamped bead	DISAGREE	box IC 8	True	2	2	2	0.265432	box IC 1	0.0452047	False	True	capability
+T2	13	Overdamped bead	RANDOM	uniform (expectation)	1.0000	NA	2	2	1.63372	box IC 1	0.0452047	False	True	capability
+T2	14	Budworm outbreak model	RANK	box IC 0	True	4	4	4	inf	box IC 3	7.37535	False	True	capability
+T2	14	Budworm outbreak model	HYBRID	box IC 4	True	4	4	4	inf	box IC 3	7.37535	False	True	capability
+T2	14	Budworm outbreak model	DOPT	box IC 4	True	4	4	4	inf	box IC 3	7.37535	False	True	capability
+T2	14	Budworm outbreak model	AOPT	box IC 9	True	4	4	4	inf	box IC 3	7.37535	False	True	capability
+T2	14	Budworm outbreak model	VOI	box IC 9	True	4	4	4	inf	box IC 3	7.37535	False	True	capability
+T2	14	Budworm outbreak model	DISAGREE	box IC 9	True	4	4	4	inf	box IC 3	7.37535	False	True	capability
+T2	14	Budworm outbreak model	RANDOM	uniform (expectation)	1.0000	NA	4	4	inf	box IC 3	7.37535	False	True	capability
+T2	15	Budworm outbreak predation	RANK	box IC 8	True	2	2	2	0.00945632	box IC 0	0.00924331	False	True	capability
+T2	15	Budworm outbreak predation	HYBRID	box IC 7	True	2	2	2	0.00936099	box IC 0	0.00924331	False	True	capability
+T2	15	Budworm outbreak predation	DOPT	box IC 7	True	2	2	2	0.00936099	box IC 0	0.00924331	False	True	capability
+T2	15	Budworm outbreak predation	AOPT	box IC 6	True	2	2	2	0.00927342	box IC 0	0.00924331	False	True	capability
+T2	15	Budworm outbreak predation	VOI	box IC 7	True	2	2	2	0.00936099	box IC 0	0.00924331	False	True	capability
+T2	15	Budworm outbreak predation	DISAGREE	box IC 2	True	2	2	2	0.169829	box IC 0	0.00924331	False	True	capability
+T2	15	Budworm outbreak predation	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.0551114	box IC 0	0.00924331	False	True	capability
+T2	16	Landau equation	RANK	box IC 3	True	3	3	3	0.0262002	box IC 3	0.0262002	False	True	capability
+T2	16	Landau equation	HYBRID	box IC 3	True	3	3	3	0.0262002	box IC 3	0.0262002	False	True	capability
+T2	16	Landau equation	DOPT	box IC 3	True	3	3	3	0.0262002	box IC 3	0.0262002	False	True	capability
+T2	16	Landau equation	AOPT	box IC 3	True	3	3	3	0.0262002	box IC 3	0.0262002	False	True	capability
+T2	16	Landau equation	VOI	box IC 3	True	3	3	3	0.0262002	box IC 3	0.0262002	False	True	capability
+T2	16	Landau equation	DISAGREE	box IC 3	True	3	3	3	0.0262002	box IC 3	0.0262002	False	True	capability
+T2	16	Landau equation	RANDOM	uniform (expectation)	1.0000	NA	3	3	7.83335	box IC 3	0.0262002	False	True	capability
+T2	17	Logistic equation harvesting	RANK	box IC 3	True	3	3	3	2.15646	box IC 3	2.15646	False	True	capability
+T2	17	Logistic equation harvesting	HYBRID	box IC 4	True	3	3	3	90.9879	box IC 3	2.15646	False	True	capability
+T2	17	Logistic equation harvesting	DOPT	box IC 4	True	3	3	3	90.9879	box IC 3	2.15646	False	True	capability
+T2	17	Logistic equation harvesting	AOPT	box IC 3	True	3	3	3	2.15646	box IC 3	2.15646	False	True	capability
+T2	17	Logistic equation harvesting	VOI	box IC 9	True	3	3	3	205.589	box IC 3	2.15646	False	True	capability
+T2	17	Logistic equation harvesting	DISAGREE	box IC 9	True	3	3	3	205.589	box IC 3	2.15646	False	True	capability
+T2	17	Logistic equation harvesting	RANDOM	uniform (expectation)	1.0000	NA	3	3	70.0555	box IC 3	2.15646	False	True	capability
+T2	18	Improved logistic equation harvesting	RANK	box IC 7	True	4	4	4	inf	box IC 1	23.3071	False	True	design_within_class
+T2	18	Improved logistic equation harvesting	HYBRID	box IC 4	True	4	4	4	inf	box IC 1	23.3071	False	True	design_within_class
+T2	18	Improved logistic equation harvesting	DOPT	box IC 4	True	4	4	4	inf	box IC 1	23.3071	False	True	design_within_class
+T2	18	Improved logistic equation harvesting	AOPT	box IC 4	True	4	4	4	inf	box IC 1	23.3071	False	True	design_within_class
+T2	18	Improved logistic equation harvesting	VOI	box IC 9	True	4	4	4	inf	box IC 1	23.3071	False	True	design_within_class
+T2	18	Improved logistic equation harvesting	DISAGREE	box IC 9	True	4	4	4	inf	box IC 1	23.3071	False	True	design_within_class
+T2	18	Improved logistic equation harvesting	RANDOM	uniform (expectation)	1.0000	NA	4	4	inf	box IC 1	23.3071	False	True	design_within_class
+T2	19	Improved logistic equation harvesting dimensionless	RANK	box IC 9	True	2	2	2	0.0275726	box IC 9	0.0275726	False	True	capability
+T2	19	Improved logistic equation harvesting dimensionless	HYBRID	box IC 9	True	2	2	2	0.0275726	box IC 9	0.0275726	False	True	capability
+T2	19	Improved logistic equation harvesting dimensionless	DOPT	box IC 9	True	2	2	2	0.0275726	box IC 9	0.0275726	False	True	capability
+T2	19	Improved logistic equation harvesting dimensionless	AOPT	box IC 9	True	2	2	2	0.0275726	box IC 9	0.0275726	False	True	capability
+T2	19	Improved logistic equation harvesting dimensionless	VOI	box IC 9	True	2	2	2	0.0275726	box IC 9	0.0275726	False	True	capability
+T2	19	Improved logistic equation harvesting dimensionless	DISAGREE	box IC 3	True	2	2	2	0.655317	box IC 9	0.0275726	False	True	capability
+T2	19	Improved logistic equation harvesting dimensionless	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.167931	box IC 9	0.0275726	False	True	capability
+T2	20	Autocatalytic gene switching	RANK	IC-1 (ODEBench held-out IC)	True	2	2	2	0.000788483	box IC 9	0.000643374	False	True	capability
+T2	20	Autocatalytic gene switching	HYBRID	box IC 9	True	2	2	2	0.000643374	box IC 9	0.000643374	False	True	capability
+T2	20	Autocatalytic gene switching	DOPT	box IC 9	True	2	2	2	0.000643374	box IC 9	0.000643374	False	True	capability
+T2	20	Autocatalytic gene switching	AOPT	box IC 9	True	2	2	2	0.000643374	box IC 9	0.000643374	False	True	capability
+T2	20	Autocatalytic gene switching	VOI	box IC 9	True	2	2	2	0.000643374	box IC 9	0.000643374	False	True	capability
+T2	20	Autocatalytic gene switching	DISAGREE	box IC 0	True	2	2	2	0.000660126	box IC 9	0.000643374	False	True	capability
+T2	20	Autocatalytic gene switching	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00219589	box IC 9	0.000643374	False	True	capability
+T2	21	Dimensionally reduced SIR	RANK	box IC 9	True	2	2	2	0.000399311	box IC 9	0.000399311	False	True	capability
+T2	21	Dimensionally reduced SIR	HYBRID	box IC 9	True	2	2	2	0.000399311	box IC 9	0.000399311	False	True	capability
+T2	21	Dimensionally reduced SIR	DOPT	box IC 9	True	2	2	2	0.000399311	box IC 9	0.000399311	False	True	capability
+T2	21	Dimensionally reduced SIR	AOPT	box IC 9	True	2	2	2	0.000399311	box IC 9	0.000399311	False	True	capability
+T2	21	Dimensionally reduced SIR	VOI	box IC 9	True	2	2	2	0.000399311	box IC 9	0.000399311	False	True	capability
+T2	21	Dimensionally reduced SIR	DISAGREE	box IC 9	True	2	2	2	0.000399311	box IC 9	0.000399311	False	True	capability
+T2	21	Dimensionally reduced SIR	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00514466	box IC 9	0.000399311	False	True	capability
+T2	22	Protein expression	RANK	box IC 3	True	4	4	4	0.652945	box IC 2	0.636728	False	True	capability
+T2	22	Protein expression	HYBRID	box IC 9	True	4	4	4	5.11184	box IC 2	0.636728	False	True	capability
+T2	22	Protein expression	DOPT	box IC 9	True	4	4	4	5.11184	box IC 2	0.636728	False	True	capability
+T2	22	Protein expression	AOPT	box IC 3	True	4	4	4	0.652945	box IC 2	0.636728	False	True	capability
+T2	22	Protein expression	VOI	box IC 9	True	4	4	4	5.11184	box IC 2	0.636728	False	True	capability
+T2	22	Protein expression	DISAGREE	box IC 3	True	4	4	4	0.652945	box IC 2	0.636728	False	True	capability
+T2	22	Protein expression	RANDOM	uniform (expectation)	1.0000	NA	4	4	4.51119	box IC 2	0.636728	False	True	capability
+T2	23	Overdamped pendulum	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.0156257	box IC 3	0.0123223	False	True	capability
+T2	23	Overdamped pendulum	HYBRID	box IC 3	True	1	1	1	0.0123223	box IC 3	0.0123223	False	True	capability
+T2	23	Overdamped pendulum	DOPT	box IC 3	True	1	1	1	0.0123223	box IC 3	0.0123223	False	True	capability
+T2	23	Overdamped pendulum	AOPT	box IC 3	True	1	1	1	0.0123223	box IC 3	0.0123223	False	True	capability
+T2	23	Overdamped pendulum	VOI	box IC 3	True	1	1	1	0.0123223	box IC 3	0.0123223	False	True	capability
+T2	23	Overdamped pendulum	DISAGREE	box IC 8	True	1	1	1	0.0165834	box IC 3	0.0123223	False	True	capability
+T2	23	Overdamped pendulum	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.0148043	box IC 3	0.0123223	False	True	capability
+T2	24	Harmonic oscillator	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00289839	box IC 1	0.000162136	False	True	capability
+T2	24	Harmonic oscillator	HYBRID	box IC 1	True	1	1	1	0.000162136	box IC 1	0.000162136	False	True	capability
+T2	24	Harmonic oscillator	DOPT	box IC 1	True	1	1	1	0.000162136	box IC 1	0.000162136	False	True	capability
+T2	24	Harmonic oscillator	AOPT	box IC 1	True	1	1	1	0.000162136	box IC 1	0.000162136	False	True	capability
+T2	24	Harmonic oscillator	VOI	box IC 1	True	1	1	1	0.000162136	box IC 1	0.000162136	False	True	capability
+T2	24	Harmonic oscillator	DISAGREE	box IC 8	True	1	1	1	0.000519741	box IC 1	0.000162136	False	True	capability
+T2	24	Harmonic oscillator	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.00119192	box IC 1	0.000162136	False	True	capability
+T2	25	Harmonic oscillator damping	RANK	box IC 0	True	2	2	2	0.00123926	box IC 5	0.000734771	False	True	capability
+T2	25	Harmonic oscillator damping	HYBRID	box IC 1	True	2	2	2	0.0010524	box IC 5	0.000734771	False	True	capability
+T2	25	Harmonic oscillator damping	DOPT	box IC 1	True	2	2	2	0.0010524	box IC 5	0.000734771	False	True	capability
+T2	25	Harmonic oscillator damping	AOPT	box IC 5	True	2	2	2	0.000734771	box IC 5	0.000734771	False	True	capability
+T2	25	Harmonic oscillator damping	VOI	box IC 1	True	2	2	2	0.0010524	box IC 5	0.000734771	False	True	capability
+T2	25	Harmonic oscillator damping	DISAGREE	box IC 0	True	2	2	2	0.00123926	box IC 5	0.000734771	False	True	capability
+T2	25	Harmonic oscillator damping	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00183536	box IC 5	0.000734771	False	True	capability
+T2	26	Lotka-Volterra competition	RANK	box IC 5	True	3	3	3	0.01017	box IC 0	0.0057409	False	True	capability
+T2	26	Lotka-Volterra competition	HYBRID	box IC 5	True	3	3	3	0.01017	box IC 0	0.0057409	False	True	capability
+T2	26	Lotka-Volterra competition	DOPT	box IC 5	True	3	3	3	0.01017	box IC 0	0.0057409	False	True	capability
+T2	26	Lotka-Volterra competition	AOPT	box IC 7	True	3	3	3	0.00588123	box IC 0	0.0057409	False	True	capability
+T2	26	Lotka-Volterra competition	VOI	box IC 5	True	3	3	3	0.01017	box IC 0	0.0057409	False	True	capability
+T2	26	Lotka-Volterra competition	DISAGREE	box IC 1	True	3	3	3	0.00993723	box IC 0	0.0057409	False	True	capability
+T2	26	Lotka-Volterra competition	RANDOM	uniform (expectation)	1.0000	NA	3	3	0.0121029	box IC 0	0.0057409	False	True	capability
+T2	27	Lotka-Volterra simple	RANK	box IC 6	True	4	4	4	0.0108593	box IC 5	0.00974071	False	True	capability
+T2	27	Lotka-Volterra simple	HYBRID	box IC 5	True	4	4	4	0.00974071	box IC 5	0.00974071	False	True	capability
+T2	27	Lotka-Volterra simple	DOPT	box IC 5	True	4	4	4	0.00974071	box IC 5	0.00974071	False	True	capability
+T2	27	Lotka-Volterra simple	AOPT	box IC 5	True	4	4	4	0.00974071	box IC 5	0.00974071	False	True	capability
+T2	27	Lotka-Volterra simple	VOI	box IC 5	True	4	4	4	0.00974071	box IC 5	0.00974071	False	True	capability
+T2	27	Lotka-Volterra simple	DISAGREE	box IC 1	True	4	4	4	0.0120066	box IC 5	0.00974071	False	True	capability
+T2	27	Lotka-Volterra simple	RANDOM	uniform (expectation)	1.0000	NA	4	4	0.0367163	box IC 5	0.00974071	False	True	capability
+T2	28	Pendulum without friction	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00954756	box IC 3	0.00644274	False	True	capability
+T2	28	Pendulum without friction	HYBRID	box IC 9	True	1	1	1	0.00907873	box IC 3	0.00644274	False	True	capability
+T2	28	Pendulum without friction	DOPT	box IC 9	True	1	1	1	0.00907873	box IC 3	0.00644274	False	True	capability
+T2	28	Pendulum without friction	AOPT	box IC 9	True	1	1	1	0.00907873	box IC 3	0.00644274	False	True	capability
+T2	28	Pendulum without friction	VOI	box IC 9	True	1	1	1	0.00907873	box IC 3	0.00644274	False	True	capability
+T2	28	Pendulum without friction	DISAGREE	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00954756	box IC 3	0.00644274	False	True	capability
+T2	28	Pendulum without friction	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.00879729	box IC 3	0.00644274	False	True	capability
+T2	29	Dipole fixed point	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.0051278	box IC 2	0.00172949	False	True	capability
+T2	29	Dipole fixed point	HYBRID	box IC 2	True	1	1	1	0.00172949	box IC 2	0.00172949	False	True	capability
+T2	29	Dipole fixed point	DOPT	box IC 2	True	1	1	1	0.00172949	box IC 2	0.00172949	False	True	capability
+T2	29	Dipole fixed point	AOPT	box IC 2	True	1	1	1	0.00172949	box IC 2	0.00172949	False	True	capability
+T2	29	Dipole fixed point	VOI	box IC 2	True	1	1	1	0.00172949	box IC 2	0.00172949	False	True	capability
+T2	29	Dipole fixed point	DISAGREE	box IC 2	True	1	1	1	0.00172949	box IC 2	0.00172949	False	True	capability
+T2	29	Dipole fixed point	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.00338654	box IC 2	0.00172949	False	True	capability
+T2	30	Catalyzing RNA molecules	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.0943866	box IC 4	0.000462941	False	True	capability
+T2	30	Catalyzing RNA molecules	HYBRID	box IC 2	True	1	1	1	0.000546051	box IC 4	0.000462941	False	True	capability
+T2	30	Catalyzing RNA molecules	DOPT	box IC 2	True	1	1	1	0.000546051	box IC 4	0.000462941	False	True	capability
+T2	30	Catalyzing RNA molecules	AOPT	box IC 2	True	1	1	1	0.000546051	box IC 4	0.000462941	False	True	capability
+T2	30	Catalyzing RNA molecules	VOI	box IC 2	True	1	1	1	0.000546051	box IC 4	0.000462941	False	True	capability
+T2	30	Catalyzing RNA molecules	DISAGREE	box IC 4	True	1	1	1	0.000462941	box IC 4	0.000462941	False	True	capability
+T2	30	Catalyzing RNA molecules	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.019631	box IC 4	0.000462941	False	True	capability
+T2	31	SIR infection	RANK	box IC 2	True	2	2	2	0.0512214	box IC 5	0.0217833	False	True	capability
+T2	31	SIR infection	HYBRID	box IC 5	True	2	2	2	0.0217833	box IC 5	0.0217833	False	True	capability
+T2	31	SIR infection	DOPT	box IC 5	True	2	2	2	0.0217833	box IC 5	0.0217833	False	True	capability
+T2	31	SIR infection	AOPT	box IC 6	True	2	2	2	0.0267373	box IC 5	0.0217833	False	True	capability
+T2	31	SIR infection	VOI	box IC 5	True	2	2	2	0.0217833	box IC 5	0.0217833	False	True	capability
+T2	31	SIR infection	DISAGREE	box IC 5	True	2	2	2	0.0217833	box IC 5	0.0217833	False	True	capability
+T2	31	SIR infection	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.0680542	box IC 5	0.0217833	False	True	capability
+T2	32	Damped double well oscillator	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00719134	box IC 5	0.00679225	False	True	capability
+T2	32	Damped double well oscillator	HYBRID	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00719134	box IC 5	0.00679225	False	True	capability
+T2	32	Damped double well oscillator	DOPT	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00719134	box IC 5	0.00679225	False	True	capability
+T2	32	Damped double well oscillator	AOPT	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00719134	box IC 5	0.00679225	False	True	capability
+T2	32	Damped double well oscillator	VOI	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00719134	box IC 5	0.00679225	False	True	capability
+T2	32	Damped double well oscillator	DISAGREE	box IC 7	True	1	1	1	0.00880252	box IC 5	0.00679225	False	True	capability
+T2	32	Damped double well oscillator	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.0195569	box IC 5	0.00679225	False	True	capability
+T2	33	Glider	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.0018463	box IC 6	0.00161559	False	True	capability
+T2	33	Glider	HYBRID	box IC 6	True	1	1	1	0.00161559	box IC 6	0.00161559	False	True	capability
+T2	33	Glider	DOPT	box IC 6	True	1	1	1	0.00161559	box IC 6	0.00161559	False	True	capability
+T2	33	Glider	AOPT	box IC 6	True	1	1	1	0.00161559	box IC 6	0.00161559	False	True	capability
+T2	33	Glider	VOI	box IC 6	True	1	1	1	0.00161559	box IC 6	0.00161559	False	True	capability
+T2	33	Glider	DISAGREE	box IC 6	True	1	1	1	0.00161559	box IC 6	0.00161559	False	True	capability
+T2	33	Glider	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.00310668	box IC 6	0.00161559	False	True	capability
+T2	34	Frictionless bead	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00660738	box IC 9	0.00630283	False	True	capability
+T2	34	Frictionless bead	HYBRID	box IC 9	True	1	1	1	0.00630283	box IC 9	0.00630283	False	True	capability
+T2	34	Frictionless bead	DOPT	box IC 9	True	1	1	1	0.00630283	box IC 9	0.00630283	False	True	capability
+T2	34	Frictionless bead	AOPT	box IC 9	True	1	1	1	0.00630283	box IC 9	0.00630283	False	True	capability
+T2	34	Frictionless bead	VOI	box IC 9	True	1	1	1	0.00630283	box IC 9	0.00630283	False	True	capability
+T2	34	Frictionless bead	DISAGREE	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00660738	box IC 9	0.00630283	False	True	capability
+T2	34	Frictionless bead	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.0117727	box IC 9	0.00630283	False	True	capability
+T2	35	Rotational dynamics	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00191272	box IC 7	0.000488003	False	True	capability
+T2	35	Rotational dynamics	HYBRID	box IC 7	True	1	1	1	0.000488003	box IC 7	0.000488003	False	True	capability
+T2	35	Rotational dynamics	DOPT	box IC 7	True	1	1	1	0.000488003	box IC 7	0.000488003	False	True	capability
+T2	35	Rotational dynamics	AOPT	box IC 7	True	1	1	1	0.000488003	box IC 7	0.000488003	False	True	capability
+T2	35	Rotational dynamics	VOI	box IC 7	True	1	1	1	0.000488003	box IC 7	0.000488003	False	True	capability
+T2	35	Rotational dynamics	DISAGREE	box IC 7	True	1	1	1	0.000488003	box IC 7	0.000488003	False	True	capability
+T2	35	Rotational dynamics	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.00481479	box IC 7	0.000488003	False	True	capability
+T2	36	Pendulum non-linear damping	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.0913751	box IC 2	0.0129182	False	True	capability
+T2	36	Pendulum non-linear damping	HYBRID	box IC 1	True	1	1	1	0.0232349	box IC 2	0.0129182	False	True	capability
+T2	36	Pendulum non-linear damping	DOPT	box IC 1	True	1	1	1	0.0232349	box IC 2	0.0129182	False	True	capability
+T2	36	Pendulum non-linear damping	AOPT	box IC 1	True	1	1	1	0.0232349	box IC 2	0.0129182	False	True	capability
+T2	36	Pendulum non-linear damping	VOI	box IC 1	True	1	1	1	0.0232349	box IC 2	0.0129182	False	True	capability
+T2	36	Pendulum non-linear damping	DISAGREE	box IC 0	True	1	1	1	0.0192048	box IC 2	0.0129182	False	True	capability
+T2	36	Pendulum non-linear damping	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.0731584	box IC 2	0.0129182	False	True	capability
+T2	37	Van der Pol oscillator	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.015413	box IC 2	0.00294431	False	True	capability
+T2	37	Van der Pol oscillator	HYBRID	box IC 1	True	1	1	1	0.00336309	box IC 2	0.00294431	False	True	capability
+T2	37	Van der Pol oscillator	DOPT	box IC 1	True	1	1	1	0.00336309	box IC 2	0.00294431	False	True	capability
+T2	37	Van der Pol oscillator	AOPT	box IC 1	True	1	1	1	0.00336309	box IC 2	0.00294431	False	True	capability
+T2	37	Van der Pol oscillator	VOI	box IC 1	True	1	1	1	0.00336309	box IC 2	0.00294431	False	True	capability
+T2	37	Van der Pol oscillator	DISAGREE	box IC 6	True	1	1	1	0.00604654	box IC 2	0.00294431	False	True	capability
+T2	37	Van der Pol oscillator	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.0120591	box IC 2	0.00294431	False	True	capability
+T2	38	Van der Pol oscillator simplified	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00506098	box IC 6	0.00254083	False	True	capability
+T2	38	Van der Pol oscillator simplified	HYBRID	box IC 6	True	1	1	1	0.00254083	box IC 6	0.00254083	False	True	capability
+T2	38	Van der Pol oscillator simplified	DOPT	box IC 6	True	1	1	1	0.00254083	box IC 6	0.00254083	False	True	capability
+T2	38	Van der Pol oscillator simplified	AOPT	box IC 6	True	1	1	1	0.00254083	box IC 6	0.00254083	False	True	capability
+T2	38	Van der Pol oscillator simplified	VOI	box IC 6	True	1	1	1	0.00254083	box IC 6	0.00254083	False	True	capability
+T2	38	Van der Pol oscillator simplified	DISAGREE	box IC 7	True	1	1	1	0.00283949	box IC 6	0.00254083	False	True	capability
+T2	38	Van der Pol oscillator simplified	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.0039055	box IC 6	0.00254083	False	True	capability
+T2	39	Glycolytic oscillator	RANK	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00777902	box IC 9	0.00769672	False	True	capability
+T2	39	Glycolytic oscillator	HYBRID	box IC 2	True	2	2	2	0.009587	box IC 9	0.00769672	False	True	capability
+T2	39	Glycolytic oscillator	DOPT	box IC 2	True	2	2	2	0.009587	box IC 9	0.00769672	False	True	capability
+T2	39	Glycolytic oscillator	AOPT	box IC 1	True	2	2	2	0.00771947	box IC 9	0.00769672	False	True	capability
+T2	39	Glycolytic oscillator	VOI	box IC 2	True	2	2	2	0.009587	box IC 9	0.00769672	False	True	capability
+T2	39	Glycolytic oscillator	DISAGREE	IC-1 (ODEBench held-out IC)	True	2	2	2	0.00777902	box IC 9	0.00769672	False	True	capability
+T2	39	Glycolytic oscillator	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00886659	box IC 9	0.00769672	False	True	capability
+T2	40	Duffing equation	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.009048	box IC 1	0.00102572	False	True	capability
+T2	40	Duffing equation	HYBRID	box IC 1	True	1	1	1	0.00102572	box IC 1	0.00102572	False	True	capability
+T2	40	Duffing equation	DOPT	box IC 1	True	1	1	1	0.00102572	box IC 1	0.00102572	False	True	capability
+T2	40	Duffing equation	AOPT	box IC 1	True	1	1	1	0.00102572	box IC 1	0.00102572	False	True	capability
+T2	40	Duffing equation	VOI	box IC 1	True	1	1	1	0.00102572	box IC 1	0.00102572	False	True	capability
+T2	40	Duffing equation	DISAGREE	box IC 0	True	1	1	1	0.00150924	box IC 1	0.00102572	False	True	capability
+T2	40	Duffing equation	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.00651121	box IC 1	0.00102572	False	True	capability
+T2	41	Cell cycle model	RANK	IC-1 (ODEBench held-out IC)	True	3	3	3	0.0317107	IC-1 (ODEBench held-out IC)	0.0317107	False	True	capability
+T2	41	Cell cycle model	HYBRID	IC-1 (ODEBench held-out IC)	True	3	3	3	0.0317107	IC-1 (ODEBench held-out IC)	0.0317107	False	True	capability
+T2	41	Cell cycle model	DOPT	IC-1 (ODEBench held-out IC)	True	3	3	3	0.0317107	IC-1 (ODEBench held-out IC)	0.0317107	False	True	capability
+T2	41	Cell cycle model	AOPT	IC-1 (ODEBench held-out IC)	True	3	3	3	0.0317107	IC-1 (ODEBench held-out IC)	0.0317107	False	True	capability
+T2	41	Cell cycle model	VOI	IC-1 (ODEBench held-out IC)	True	3	3	3	0.0317107	IC-1 (ODEBench held-out IC)	0.0317107	False	True	capability
+T2	41	Cell cycle model	DISAGREE	IC-1 (ODEBench held-out IC)	True	3	3	3	0.0317107	IC-1 (ODEBench held-out IC)	0.0317107	False	True	capability
+T2	41	Cell cycle model	RANDOM	uniform (expectation)	1.0000	NA	3	3	103.026	IC-1 (ODEBench held-out IC)	0.0317107	False	True	capability
+T2	42	CDIMA reaction	RANK	box IC 3	True	3	3	3	0.0232964	box IC 0	0.0140128	False	True	capability
+T2	42	CDIMA reaction	HYBRID	box IC 8	True	3	3	3	0.0190975	box IC 0	0.0140128	False	True	capability
+T2	42	CDIMA reaction	DOPT	box IC 8	True	3	3	3	0.0190975	box IC 0	0.0140128	False	True	capability
+T2	42	CDIMA reaction	AOPT	box IC 9	True	3	3	3	0.0192126	box IC 0	0.0140128	False	True	capability
+T2	42	CDIMA reaction	VOI	box IC 8	True	3	3	3	0.0190975	box IC 0	0.0140128	False	True	capability
+T2	42	CDIMA reaction	DISAGREE	box IC 4	True	3	3	3	0.0266836	box IC 0	0.0140128	False	True	capability
+T2	42	CDIMA reaction	RANDOM	uniform (expectation)	1.0000	NA	3	3	0.0213386	box IC 0	0.0140128	False	True	capability
+T2	43	Driven pendulum linear damping	RANK	box IC 5	True	2	2	2	0.00323469	box IC 5	0.00323469	False	True	capability
+T2	43	Driven pendulum linear damping	HYBRID	box IC 4	True	2	2	2	0.00326598	box IC 5	0.00323469	False	True	capability
+T2	43	Driven pendulum linear damping	DOPT	box IC 4	True	2	2	2	0.00326598	box IC 5	0.00323469	False	True	capability
+T2	43	Driven pendulum linear damping	AOPT	box IC 4	True	2	2	2	0.00326598	box IC 5	0.00323469	False	True	capability
+T2	43	Driven pendulum linear damping	VOI	box IC 4	True	2	2	2	0.00326598	box IC 5	0.00323469	False	True	capability
+T2	43	Driven pendulum linear damping	DISAGREE	box IC 0	True	2	2	2	0.00460264	box IC 5	0.00323469	False	True	capability
+T2	43	Driven pendulum linear damping	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.011185	box IC 5	0.00323469	False	True	capability
+T2	44	Driven pendulum quadratic damping	RANK	box IC 6	True	2	2	2	0.00280969	box IC 2	0.00277284	False	True	capability
+T2	44	Driven pendulum quadratic damping	HYBRID	box IC 2	True	2	2	2	0.00277284	box IC 2	0.00277284	False	True	capability
+T2	44	Driven pendulum quadratic damping	DOPT	box IC 2	True	2	2	2	0.00277284	box IC 2	0.00277284	False	True	capability
+T2	44	Driven pendulum quadratic damping	AOPT	box IC 2	True	2	2	2	0.00277284	box IC 2	0.00277284	False	True	capability
+T2	44	Driven pendulum quadratic damping	VOI	box IC 2	True	2	2	2	0.00277284	box IC 2	0.00277284	False	True	capability
+T2	44	Driven pendulum quadratic damping	DISAGREE	box IC 5	True	2	2	2	0.00278903	box IC 2	0.00277284	False	True	capability
+T2	44	Driven pendulum quadratic damping	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00998305	box IC 2	0.00277284	False	True	capability
+T2	45	Gray-Scott model	RANK	box IC 0	True	2	2	2	0.105529	box IC 0	0.105529	False	True	capability
+T2	45	Gray-Scott model	HYBRID	box IC 0	True	2	2	2	0.105529	box IC 0	0.105529	False	True	capability
+T2	45	Gray-Scott model	DOPT	box IC 0	True	2	2	2	0.105529	box IC 0	0.105529	False	True	capability
+T2	45	Gray-Scott model	AOPT	box IC 0	True	2	2	2	0.105529	box IC 0	0.105529	False	True	capability
+T2	45	Gray-Scott model	VOI	box IC 1	True	2	2	2	11.1033	box IC 0	0.105529	False	True	capability
+T2	45	Gray-Scott model	DISAGREE	box IC 1	True	2	2	2	11.1033	box IC 0	0.105529	False	True	capability
+T2	45	Gray-Scott model	RANDOM	uniform (expectation)	1.0000	NA	2	2	7.90138	box IC 0	0.105529	False	True	capability
+T2	46	Interacting bar magnets	RANK	IC-1 (ODEBench held-out IC)	True	1	1	1	0.00174283	box IC 2	0.00101122	False	True	capability
+T2	46	Interacting bar magnets	HYBRID	box IC 8	True	1	1	1	0.00202035	box IC 2	0.00101122	False	True	capability
+T2	46	Interacting bar magnets	DOPT	box IC 8	True	1	1	1	0.00202035	box IC 2	0.00101122	False	True	capability
+T2	46	Interacting bar magnets	AOPT	box IC 8	True	1	1	1	0.00202035	box IC 2	0.00101122	False	True	capability
+T2	46	Interacting bar magnets	VOI	box IC 8	True	1	1	1	0.00202035	box IC 2	0.00101122	False	True	capability
+T2	46	Interacting bar magnets	DISAGREE	box IC 4	True	1	1	1	0.00356113	box IC 2	0.00101122	False	True	capability
+T2	46	Interacting bar magnets	RANDOM	uniform (expectation)	1.0000	NA	1	1	0.00253111	box IC 2	0.00101122	False	True	capability
+T2	47	Binocular rivalry model	RANK	box IC 5	True	2	2	2	0.00309279	box IC 5	0.00309279	False	True	capability
+T2	47	Binocular rivalry model	HYBRID	box IC 5	True	2	2	2	0.00309279	box IC 5	0.00309279	False	True	capability
+T2	47	Binocular rivalry model	DOPT	box IC 5	True	2	2	2	0.00309279	box IC 5	0.00309279	False	True	capability
+T2	47	Binocular rivalry model	AOPT	box IC 5	True	2	2	2	0.00309279	box IC 5	0.00309279	False	True	capability
+T2	47	Binocular rivalry model	VOI	box IC 5	True	2	2	2	0.00309279	box IC 5	0.00309279	False	True	capability
+T2	47	Binocular rivalry model	DISAGREE	box IC 1	True	2	2	2	0.012849	box IC 5	0.00309279	False	True	capability
+T2	47	Binocular rivalry model	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.0695572	box IC 5	0.00309279	False	True	capability
+T2	48	Bacterial respiration model	RANK	box IC 4	True	3	3	3	0.00828885	box IC 2	0.00626934	False	True	capability
+T2	48	Bacterial respiration model	HYBRID	box IC 4	True	3	3	3	0.00828885	box IC 2	0.00626934	False	True	capability
+T2	48	Bacterial respiration model	DOPT	box IC 4	True	3	3	3	0.00828885	box IC 2	0.00626934	False	True	capability
+T2	48	Bacterial respiration model	AOPT	box IC 4	True	3	3	3	0.00828885	box IC 2	0.00626934	False	True	capability
+T2	48	Bacterial respiration model	VOI	box IC 4	True	3	3	3	0.00828885	box IC 2	0.00626934	False	True	capability
+T2	48	Bacterial respiration model	DISAGREE	box IC 4	True	3	3	3	0.00828885	box IC 2	0.00626934	False	True	capability
+T2	48	Bacterial respiration model	RANDOM	uniform (expectation)	1.0000	NA	3	3	0.0258954	box IC 2	0.00626934	False	True	capability
+T2	49	Brusselator	RANK	box IC 4	True	2	2	2	0.00240318	box IC 0	0.00198356	False	True	capability
+T2	49	Brusselator	HYBRID	box IC 7	True	2	2	2	0.00220057	box IC 0	0.00198356	False	True	capability
+T2	49	Brusselator	DOPT	box IC 7	True	2	2	2	0.00220057	box IC 0	0.00198356	False	True	capability
+T2	49	Brusselator	AOPT	box IC 4	True	2	2	2	0.00240318	box IC 0	0.00198356	False	True	capability
+T2	49	Brusselator	VOI	box IC 7	True	2	2	2	0.00220057	box IC 0	0.00198356	False	True	capability
+T2	49	Brusselator	DISAGREE	box IC 9	True	2	2	2	0.00217931	box IC 0	0.00198356	False	True	capability
+T2	49	Brusselator	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00383516	box IC 0	0.00198356	False	True	capability
+T2	50	Schnackenberg model	RANK	box IC 5	True	2	2	2	0.000888867	box IC 4	0.000808418	False	True	capability
+T2	50	Schnackenberg model	HYBRID	box IC 9	True	2	2	2	0.00104354	box IC 4	0.000808418	False	True	capability
+T2	50	Schnackenberg model	DOPT	box IC 9	True	2	2	2	0.00104354	box IC 4	0.000808418	False	True	capability
+T2	50	Schnackenberg model	AOPT	box IC 9	True	2	2	2	0.00104354	box IC 4	0.000808418	False	True	capability
+T2	50	Schnackenberg model	VOI	box IC 9	True	2	2	2	0.00104354	box IC 4	0.000808418	False	True	capability
+T2	50	Schnackenberg model	DISAGREE	box IC 9	True	2	2	2	0.00104354	box IC 4	0.000808418	False	True	capability
+T2	50	Schnackenberg model	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.00539434	box IC 4	0.000808418	False	True	capability
+T2	51	Oscillator death model	RANK	box IC 9	True	2	2	2	0.00354696	box IC 9	0.00354696	False	True	capability
+T2	51	Oscillator death model	HYBRID	box IC 9	True	2	2	2	0.00354696	box IC 9	0.00354696	False	True	capability
+T2	51	Oscillator death model	DOPT	box IC 9	True	2	2	2	0.00354696	box IC 9	0.00354696	False	True	capability
+T2	51	Oscillator death model	AOPT	box IC 9	True	2	2	2	0.00354696	box IC 9	0.00354696	False	True	capability
+T2	51	Oscillator death model	VOI	box IC 9	True	2	2	2	0.00354696	box IC 9	0.00354696	False	True	capability
+T2	51	Oscillator death model	DISAGREE	box IC 9	True	2	2	2	0.00354696	box IC 9	0.00354696	False	True	capability
+T2	51	Oscillator death model	RANDOM	uniform (expectation)	1.0000	NA	2	2	0.0218925	box IC 9	0.00354696	False	True	capability
+T2	52	Maxwell-Bloch equations	RANK	box IC 6	True	4	4	4	29.9257	box IC 7	5.95796	False	True	capability
+T2	52	Maxwell-Bloch equations	HYBRID	box IC 1	True	4	4	4	7.04916	box IC 7	5.95796	False	True	capability
+T2	52	Maxwell-Bloch equations	DOPT	box IC 1	True	4	4	4	7.04916	box IC 7	5.95796	False	True	capability
+T2	52	Maxwell-Bloch equations	AOPT	box IC 1	True	4	4	4	7.04916	box IC 7	5.95796	False	True	capability
+T2	52	Maxwell-Bloch equations	VOI	box IC 1	True	4	4	4	7.04916	box IC 7	5.95796	False	True	capability
+T2	52	Maxwell-Bloch equations	DISAGREE	box IC 0	True	4	4	4	38.1536	box IC 7	5.95796	False	True	capability
+T2	52	Maxwell-Bloch equations	RANDOM	uniform (expectation)	1.0000	NA	4	4	19.7676	box IC 7	5.95796	False	True	capability
+T2	53	Apoptosis model	RANK	box IC 3	True	10	10	8	5.13087	box IC 6	3.05044	True	True	design_within_class
+T2	53	Apoptosis model	HYBRID	box IC 3	True	10	10	8	5.13087	box IC 6	3.05044	True	True	design_within_class
+T2	53	Apoptosis model	DOPT	box IC 3	True	10	10	8	5.13087	box IC 6	3.05044	True	True	design_within_class
+T2	53	Apoptosis model	AOPT	box IC 3	True	10	10	8	5.13087	box IC 6	3.05044	True	True	design_within_class
+T2	53	Apoptosis model	VOI	box IC 3	True	10	10	8	5.13087	box IC 6	3.05044	True	True	design_within_class
+T2	53	Apoptosis model	DISAGREE	box IC 5	True	10	10	8	inf	box IC 6	3.05044	True	True	design_within_class
+T2	53	Apoptosis model	RANDOM	uniform (expectation)	1.0000	NA	10	8	inf	box IC 6	3.05044	True	True	design_within_class
+T2	54	Lorenz equations periodic	RANK	box IC 0	True	3	3	3	0.00120238	box IC 0	0.00120238	False	True	capability
+T2	54	Lorenz equations periodic	HYBRID	box IC 0	True	3	3	3	0.00120238	box IC 0	0.00120238	False	True	capability
+T2	54	Lorenz equations periodic	DOPT	box IC 0	True	3	3	3	0.00120238	box IC 0	0.00120238	False	True	capability
+T2	54	Lorenz equations periodic	AOPT	box IC 0	True	3	3	3	0.00120238	box IC 0	0.00120238	False	True	capability
+T2	54	Lorenz equations periodic	VOI	box IC 0	True	3	3	3	0.00120238	box IC 0	0.00120238	False	True	capability
+T2	54	Lorenz equations periodic	DISAGREE	box IC 4	True	3	3	3	0.00194787	box IC 0	0.00120238	False	True	capability
+T2	54	Lorenz equations periodic	RANDOM	uniform (expectation)	1.0000	NA	3	3	0.00253445	box IC 0	0.00120238	False	True	capability
+T2	55	Lorenz equations complex periodic	RANK	box IC 3	True	3	3	3	0.00148405	box IC 9	0.000508811	False	True	capability
+T2	55	Lorenz equations complex periodic	HYBRID	box IC 0	True	3	3	3	0.0833137	box IC 9	0.000508811	False	True	capability
+T2	55	Lorenz equations complex periodic	DOPT	box IC 0	True	3	3	3	0.0833137	box IC 9	0.000508811	False	True	capability
+T2	55	Lorenz equations complex periodic	AOPT	IC-1 (ODEBench held-out IC)	True	3	3	3	0.000643827	box IC 9	0.000508811	False	True	capability
+T2	55	Lorenz equations complex periodic	VOI	box IC 0	True	3	3	3	0.0833137	box IC 9	0.000508811	False	True	capability
+T2	55	Lorenz equations complex periodic	DISAGREE	box IC 0	True	3	3	3	0.0833137	box IC 9	0.000508811	False	True	capability
+T2	55	Lorenz equations complex periodic	RANDOM	uniform (expectation)	1.0000	NA	3	3	0.0204312	box IC 9	0.000508811	False	True	capability
+T2	56	Lorenz equations chaotic	RANK	box IC 0	True	3	3	3	0.00163497	box IC 1	0.000693515	False	True	capability
+T2	56	Lorenz equations chaotic	HYBRID	IC-1 (ODEBench held-out IC)	True	3	3	3	0.116078	box IC 1	0.000693515	False	True	capability
+T2	56	Lorenz equations chaotic	DOPT	IC-1 (ODEBench held-out IC)	True	3	3	3	0.116078	box IC 1	0.000693515	False	True	capability
+T2	56	Lorenz equations chaotic	AOPT	box IC 1	True	3	3	3	0.000693515	box IC 1	0.000693515	False	True	capability
+T2	56	Lorenz equations chaotic	VOI	IC-1 (ODEBench held-out IC)	True	3	3	3	0.116078	box IC 1	0.000693515	False	True	capability
+T2	56	Lorenz equations chaotic	DISAGREE	IC-1 (ODEBench held-out IC)	True	3	3	3	0.116078	box IC 1	0.000693515	False	True	capability
+T2	56	Lorenz equations chaotic	RANDOM	uniform (expectation)	1.0000	NA	3	3	0.0185516	box IC 1	0.000693515	False	True	capability
+T2	57	Rössler fixed point	RANK	box IC 6	True	4	4	4	0.0342392	box IC 8	0.0255667	False	True	capability
+T2	57	Rössler fixed point	HYBRID	box IC 3	True	4	4	4	0.0605507	box IC 8	0.0255667	False	True	capability
+T2	57	Rössler fixed point	DOPT	box IC 3	True	4	4	4	0.0605507	box IC 8	0.0255667	False	True	capability
+T2	57	Rössler fixed point	AOPT	box IC 6	True	4	4	4	0.0342392	box IC 8	0.0255667	False	True	capability
+T2	57	Rössler fixed point	VOI	box IC 3	True	4	4	4	0.0605507	box IC 8	0.0255667	False	True	capability
+T2	57	Rössler fixed point	DISAGREE	box IC 3	True	4	4	4	0.0605507	box IC 8	0.0255667	False	True	capability
+T2	57	Rössler fixed point	RANDOM	uniform (expectation)	1.0000	NA	4	4	0.0527113	box IC 8	0.0255667	False	True	capability
+T2	58	Rössler attractor periodic	RANK	box IC 6	True	4	4	4	0.0358989	box IC 6	0.0358989	False	True	capability
+T2	58	Rössler attractor periodic	HYBRID	box IC 3	True	4	4	4	0.0764227	box IC 6	0.0358989	False	True	capability
+T2	58	Rössler attractor periodic	DOPT	box IC 3	True	4	4	4	0.0764227	box IC 6	0.0358989	False	True	capability
+T2	58	Rössler attractor periodic	AOPT	box IC 1	True	4	4	4	0.0539514	box IC 6	0.0358989	False	True	capability
+T2	58	Rössler attractor periodic	VOI	box IC 3	True	4	4	4	0.0764227	box IC 6	0.0358989	False	True	capability
+T2	58	Rössler attractor periodic	DISAGREE	box IC 3	True	4	4	4	0.0764227	box IC 6	0.0358989	False	True	capability
+T2	58	Rössler attractor periodic	RANDOM	uniform (expectation)	1.0000	NA	4	4	0.0808335	box IC 6	0.0358989	False	True	capability
+T2	59	Rössler attractor chaotic	RANK	box IC 6	True	4	4	4	0.0309837	box IC 1	0.0254983	False	True	capability
+T2	59	Rössler attractor chaotic	HYBRID	box IC 3	True	4	4	4	0.0775397	box IC 1	0.0254983	False	True	capability
+T2	59	Rössler attractor chaotic	DOPT	box IC 3	True	4	4	4	0.0775397	box IC 1	0.0254983	False	True	capability
+T2	59	Rössler attractor chaotic	AOPT	box IC 1	True	4	4	4	0.0254983	box IC 1	0.0254983	False	True	capability
+T2	59	Rössler attractor chaotic	VOI	box IC 3	True	4	4	4	0.0775397	box IC 1	0.0254983	False	True	capability
+T2	59	Rössler attractor chaotic	DISAGREE	box IC 3	True	4	4	4	0.0775397	box IC 1	0.0254983	False	True	capability
+T2	59	Rössler attractor chaotic	RANDOM	uniform (expectation)	1.0000	NA	4	4	0.0864857	box IC 1	0.0254983	False	True	capability
+T2	60	Aizawa attractor	RANK	box IC 4	True	6	6	6	0.0400482	box IC 4	0.0400482	False	True	capability
+T2	60	Aizawa attractor	HYBRID	box IC 1	True	6	6	6	0.127054	box IC 4	0.0400482	False	True	capability
+T2	60	Aizawa attractor	DOPT	box IC 1	True	6	6	6	0.127054	box IC 4	0.0400482	False	True	capability
+T2	60	Aizawa attractor	AOPT	box IC 4	True	6	6	6	0.0400482	box IC 4	0.0400482	False	True	capability
+T2	60	Aizawa attractor	VOI	box IC 1	True	6	6	6	0.127054	box IC 4	0.0400482	False	True	capability
+T2	60	Aizawa attractor	DISAGREE	box IC 8	True	6	6	6	0.102934	box IC 4	0.0400482	False	True	capability
+T2	60	Aizawa attractor	RANDOM	uniform (expectation)	1.0000	NA	6	6	inf	box IC 4	0.0400482	False	True	capability
+T2	61	Chen-Lee attractor	RANK	box IC 5	True	4	4	4	0.000511332	box IC 5	0.000511332	False	True	capability
+T2	61	Chen-Lee attractor	HYBRID	box IC 4	True	4	4	4	0.0277836	box IC 5	0.000511332	False	True	capability
+T2	61	Chen-Lee attractor	DOPT	box IC 4	True	4	4	4	0.0277836	box IC 5	0.000511332	False	True	capability
+T2	61	Chen-Lee attractor	AOPT	box IC 4	True	4	4	4	0.0277836	box IC 5	0.000511332	False	True	capability
+T2	61	Chen-Lee attractor	VOI	box IC 4	True	4	4	4	0.0277836	box IC 5	0.000511332	False	True	capability
+T2	61	Chen-Lee attractor	DISAGREE	box IC 4	True	4	4	4	0.0277836	box IC 5	0.000511332	False	True	capability
+T2	61	Chen-Lee attractor	RANDOM	uniform (expectation)	1.0000	NA	4	4	0.0884188	box IC 5	0.000511332	False	True	capability
+T2	62	Binocular rivalry adaptation	RANK	box IC 8	True	4	4	4	3.43779	box IC 1	0.619739	False	True	capability
+T2	62	Binocular rivalry adaptation	HYBRID	box IC 8	True	4	4	4	3.43779	box IC 1	0.619739	False	True	capability
+T2	62	Binocular rivalry adaptation	DOPT	box IC 8	True	4	4	4	3.43779	box IC 1	0.619739	False	True	capability
+T2	62	Binocular rivalry adaptation	AOPT	box IC 8	True	4	4	4	3.43779	box IC 1	0.619739	False	True	capability
+T2	62	Binocular rivalry adaptation	VOI	box IC 6	True	4	4	4	0.738065	box IC 1	0.619739	False	True	capability
+T2	62	Binocular rivalry adaptation	DISAGREE	box IC 5	True	4	4	4	6.57115	box IC 1	0.619739	False	True	capability
+T2	62	Binocular rivalry adaptation	RANDOM	uniform (expectation)	1.0000	NA	4	4	inf	box IC 1	0.619739	False	True	capability
+T2	63	SEIR infection	RANK	IC-1 (ODEBench held-out IC)	True	3	3	3	16.6008	IC-1 (ODEBench held-out IC)	16.6008	False	False	capability
+T2	63	SEIR infection	HYBRID	IC-1 (ODEBench held-out IC)	True	3	3	3	16.6008	IC-1 (ODEBench held-out IC)	16.6008	False	False	capability
+T2	63	SEIR infection	DOPT	IC-1 (ODEBench held-out IC)	True	3	3	3	16.6008	IC-1 (ODEBench held-out IC)	16.6008	False	False	capability
+T2	63	SEIR infection	AOPT	IC-1 (ODEBench held-out IC)	True	3	3	3	16.6008	IC-1 (ODEBench held-out IC)	16.6008	False	False	capability
+T2	63	SEIR infection	VOI	IC-1 (ODEBench held-out IC)	True	3	3	3	16.6008	IC-1 (ODEBench held-out IC)	16.6008	False	False	capability
+T2	63	SEIR infection	DISAGREE	IC-1 (ODEBench held-out IC)	True	3	3	3	16.6008	IC-1 (ODEBench held-out IC)	16.6008	False	False	capability
+T2	63	SEIR infection	RANDOM	uniform (expectation)	1.0000	NA	3	3	16.6008	IC-1 (ODEBench held-out IC)	16.6008	False	False	capability
+T3	MM	Michaelis-Menten (substrate observed)	RANK	E0 assay (direct enzyme measurement)	True	3	3	2	0.0168432	substrate run S0 = 20	0.00282817	True	False	design_within_class
+T3	MM	Michaelis-Menten (substrate observed)	HYBRID	E0 assay (direct enzyme measurement)	True	3	3	2	0.0168432	substrate run S0 = 20	0.00282817	True	False	design_within_class
+T3	MM	Michaelis-Menten (substrate observed)	DOPT	E0 assay (direct enzyme measurement)	True	3	3	2	0.0168432	substrate run S0 = 20	0.00282817	True	False	design_within_class
+T3	MM	Michaelis-Menten (substrate observed)	AOPT	E0 assay (direct enzyme measurement)	True	3	3	2	0.0168432	substrate run S0 = 20	0.00282817	True	False	design_within_class
+T3	MM	Michaelis-Menten (substrate observed)	VOI	E0 assay (direct enzyme measurement)	True	3	3	2	0.0168432	substrate run S0 = 20	0.00282817	True	False	design_within_class
+T3	MM	Michaelis-Menten (substrate observed)	DISAGREE	E0 assay (direct enzyme measurement)	True	3	3	2	0.0168432	substrate run S0 = 20	0.00282817	True	False	design_within_class
+T3	MM	Michaelis-Menten (substrate observed)	RANDOM	uniform (expectation)	0.0909	NA	3	2	0.011623	substrate run S0 = 20	0.00282817	True	False	design_within_class
+T3	PK	Oral one-compartment PK	RANK	oral + intravenous arm (24 + 24 pts)	True	4	4	3	0.00257736	oral, 4x denser sampling (96 pts, 24 h)	0.00241395	True	False	change_class
+T3	PK	Oral one-compartment PK	HYBRID	oral + intravenous arm (24 + 24 pts)	True	4	4	3	0.00257736	oral, 4x denser sampling (96 pts, 24 h)	0.00241395	True	False	change_class
+T3	PK	Oral one-compartment PK	DOPT	oral + intravenous arm (24 + 24 pts)	True	4	4	3	0.00257736	oral, 4x denser sampling (96 pts, 24 h)	0.00241395	True	False	change_class
+T3	PK	Oral one-compartment PK	AOPT	oral + intravenous arm (24 + 24 pts)	True	4	4	3	0.00257736	oral, 4x denser sampling (96 pts, 24 h)	0.00241395	True	False	change_class
+T3	PK	Oral one-compartment PK	VOI	oral + intravenous arm (24 + 24 pts)	True	4	4	3	0.00257736	oral, 4x denser sampling (96 pts, 24 h)	0.00241395	True	False	change_class
+T3	PK	Oral one-compartment PK	DISAGREE	oral + intravenous arm (24 + 24 pts)	True	4	4	3	0.00257736	oral, 4x denser sampling (96 pts, 24 h)	0.00241395	True	False	change_class
+T3	PK	Oral one-compartment PK	RANDOM	uniform (expectation)	0.3333	NA	4	3	0.00305378	oral, 4x denser sampling (96 pts, 24 h)	0.00241395	True	False	change_class
+T3	SEQ	Sequence ansatz log f = log th0 + th1 log n + n log th2	RANK	geometric spread n = [2, 5, 20, 100, 400]	True	3	3	2	2.60976	narrow window n = [400, 401, 402]	0.840517	True	False	design_within_class
+T3	SEQ	Sequence ansatz log f = log th0 + th1 log n + n log th2	HYBRID	geometric spread n = [2, 5, 20, 100, 400]	True	3	3	2	2.60976	narrow window n = [400, 401, 402]	0.840517	True	False	design_within_class
+T3	SEQ	Sequence ansatz log f = log th0 + th1 log n + n log th2	DOPT	geometric spread n = [2, 5, 20, 100, 400]	True	3	3	2	2.60976	narrow window n = [400, 401, 402]	0.840517	True	False	design_within_class
+T3	SEQ	Sequence ansatz log f = log th0 + th1 log n + n log th2	AOPT	geometric spread n = [2, 5, 20, 100, 400]	True	3	3	2	2.60976	narrow window n = [400, 401, 402]	0.840517	True	False	design_within_class
+T3	SEQ	Sequence ansatz log f = log th0 + th1 log n + n log th2	VOI	geometric spread n = [2, 5, 20, 100, 400]	True	3	3	2	2.60976	narrow window n = [400, 401, 402]	0.840517	True	False	design_within_class
+T3	SEQ	Sequence ansatz log f = log th0 + th1 log n + n log th2	DISAGREE	narrow window n = [400, 401, 402]	False	2	3	2	0.840517	narrow window n = [400, 401, 402]	0.840517	True	False	design_within_class
+T3	SEQ	Sequence ansatz log f = log th0 + th1 log n + n log th2	RANDOM	uniform (expectation)	0.5000	NA	3	2	1.72514	narrow window n = [400, 401, 402]	0.840517	True	False	design_within_class
+T3	ALIEN	Alien amplitude A = beta * product^p	RANK	two distinct products [1, 2]	True	2	2	1	0.00655599	single product [1]	0.00529548	True	False	design_within_class
+T3	ALIEN	Alien amplitude A = beta * product^p	HYBRID	two distinct products [1, 2]	True	2	2	1	0.00655599	single product [1]	0.00529548	True	False	design_within_class
+T3	ALIEN	Alien amplitude A = beta * product^p	DOPT	two distinct products [1, 2]	True	2	2	1	0.00655599	single product [1]	0.00529548	True	False	design_within_class
+T3	ALIEN	Alien amplitude A = beta * product^p	AOPT	two distinct products [1, 2]	True	2	2	1	0.00655599	single product [1]	0.00529548	True	False	design_within_class
+T3	ALIEN	Alien amplitude A = beta * product^p	VOI	two distinct products [1, 2]	True	2	2	1	0.00655599	single product [1]	0.00529548	True	False	design_within_class
+T3	ALIEN	Alien amplitude A = beta * product^p	DISAGREE	two distinct products [1, 2]	True	2	2	1	0.00655599	single product [1]	0.00529548	True	False	design_within_class
+T3	ALIEN	Alien amplitude A = beta * product^p	RANDOM	uniform (expectation)	0.5000	NA	2	1	0.00592574	single product [1]	0.00529548	True	False	design_within_class

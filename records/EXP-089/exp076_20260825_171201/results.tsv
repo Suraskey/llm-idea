@@ -1,0 +1,17 @@
+seed	arm	run_id	max_depth	per_layer
+0	family_only	94d2c350-6853-443a-9793-567ae0741a0e	6	per_layer L1..L6 = (True, False, True, False, False, True)
+0	instrument_only	a0b2b1bc-5697-421f-b62b-36703e5be3c3	2	per_layer L1..L6 = (True, True, False, False, False, False)
+1	family_only	ab82126f-98d2-4d46-bbca-64cfbd43f455	6	per_layer L1..L6 = (True, False, True, False, False, True)
+1	instrument_only	84a10485-6419-445c-b3bb-c88f04f01845	2	per_layer L1..L6 = (True, True, False, False, False, False)
+2	family_only	970fec4f-1c5b-4c2c-8654-c636676181c3	6	per_layer L1..L6 = (True, False, True, False, False, True)
+2	instrument_only	88bed60e-4513-4126-ae94-78828e596aaf	2	per_layer L1..L6 = (True, True, False, False, False, False)
+3	family_only	7a085668-934b-49ca-81ec-5c900bf6685f	6	per_layer L1..L6 = (True, False, True, False, False, True)
+3	instrument_only	14efa59d-8bb7-4093-b63d-7fe15978817e	ERR	?
+4	family_only	71dc9298-0d39-487d-a577-3b5667fa4282	ERR	?
+4	instrument_only	481f1a49-382a-4f2e-aced-6f187cfd2ac8	ERR	?
+5	family_only	f8cd5fea-559b-4ca9-a711-2ff63d62911f	ERR	?
+5	instrument_only	b115677a-e47b-4d2a-974d-3c568be2bd94	ERR	?
+6	family_only	e1f8ce7f-c766-46f6-90c0-c8d5f5cce58e	ERR	?
+6	instrument_only	f6864836-4a4c-4f27-b21b-6a2a4113c0f2	ERR	?
+7	family_only	a2c24f64-5234-4496-bcfa-e6202da0b96b	ERR	?
+7	instrument_only	8defedf5-e425-4e01-ac5b-e90144875288	ERR	?

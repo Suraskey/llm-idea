@@ -1,0 +1,5 @@
+label=exp077_N130
+benchmark_system=alien_family  score_flag=--family
+council_provider_mode=single-provider
+call_budget=130  (0 = OFF / wall-clock-matched)
+max_duration_s=28800  per_run_ceiling_usd=12

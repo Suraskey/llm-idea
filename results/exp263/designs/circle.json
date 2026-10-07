@@ -1,0 +1,1173 @@
+[
+ {
+  "ring_radius": 5.0,
+  "initial_tangential_velocity": 0.0,
+  "measurement_times": [
+   0.5,
+   1.0,
+   1.5,
+   2.0,
+   2.5,
+   3.0,
+   3.5,
+   4.0,
+   4.5,
+   5.0
+  ],
+  "duration": 5.0,
+  "label": "DEFAULT",
+  "source": "world experiment_format"
+ },
+ {
+  "ring_radius": 4.698215273842961,
+  "initial_tangential_velocity": 0.23659577878686489,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S00"
+ },
+ {
+  "ring_radius": 2.6067798626648937,
+  "initial_tangential_velocity": 1.1805324966709205,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S01"
+ },
+ {
+  "ring_radius": 4.581444287989363,
+  "initial_tangential_velocity": 0.3138085437805982,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S02"
+ },
+ {
+  "ring_radius": 5.238437324091528,
+  "initial_tangential_velocity": 0.8337056959000062,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S03"
+ },
+ {
+  "ring_radius": 9.27002541267513,
+  "initial_tangential_velocity": 0.7204007932442571,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S04"
+ },
+ {
+  "ring_radius": 3.111253776969396,
+  "initial_tangential_velocity": 0.5323640077004246,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S05"
+ },
+ {
+  "ring_radius": 6.5856653967579994,
+  "initial_tangential_velocity": 1.7317041706031293,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S06"
+ },
+ {
+  "ring_radius": 9.051070043259722,
+  "initial_tangential_velocity": 0.5677718465798003,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S07"
+ },
+ {
+  "ring_radius": 5.249457278568726,
+  "initial_tangential_velocity": 0.08986396104872019,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S08"
+ },
+ {
+  "ring_radius": 5.287542971359503,
+  "initial_tangential_velocity": 0.641032785940306,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S09"
+ },
+ {
+  "ring_radius": 3.0490826845221557,
+  "initial_tangential_velocity": 0.9006226461664206,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S10"
+ },
+ {
+  "ring_radius": 4.778718238976134,
+  "initial_tangential_velocity": 1.8057658630997695,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S11"
+ },
+ {
+  "ring_radius": 7.229419948222051,
+  "initial_tangential_velocity": 1.6176818079169106,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S12"
+ },
+ {
+  "ring_radius": 8.867054028809871,
+  "initial_tangential_velocity": 1.841359923292888,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S13"
+ },
+ {
+  "ring_radius": 2.2902627700508624,
+  "initial_tangential_velocity": 1.3257373175724605,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S14"
+ },
+ {
+  "ring_radius": 9.205535502523407,
+  "initial_tangential_velocity": 1.5858991278195347,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S15"
+ },
+ {
+  "ring_radius": 9.715873727087804,
+  "initial_tangential_velocity": 0.09076335557308268,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S16"
+ },
+ {
+  "ring_radius": 9.104090904187892,
+  "initial_tangential_velocity": 1.4639935561245192,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S17"
+ },
+ {
+  "ring_radius": 9.788331047370374,
+  "initial_tangential_velocity": 1.4389085492768556,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S18"
+ },
+ {
+  "ring_radius": 7.329923595153087,
+  "initial_tangential_velocity": 1.425353130819645,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S19"
+ },
+ {
+  "ring_radius": 2.2330090623122096,
+  "initial_tangential_velocity": 1.003179822973918,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S20"
+ },
+ {
+  "ring_radius": 3.572277237617131,
+  "initial_tangential_velocity": 1.888078392769356,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S21"
+ },
+ {
+  "ring_radius": 4.820852690373583,
+  "initial_tangential_velocity": 1.701040511916028,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S22"
+ },
+ {
+  "ring_radius": 2.0073629783803293,
+  "initial_tangential_velocity": 0.894280118594494,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S23"
+ },
+ {
+  "ring_radius": 6.017691647583807,
+  "initial_tangential_velocity": 1.0465671641482106,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S24"
+ },
+ {
+  "ring_radius": 9.534040758922949,
+  "initial_tangential_velocity": 0.1328666746833025,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S25"
+ },
+ {
+  "ring_radius": 2.5219360779980127,
+  "initial_tangential_velocity": 1.3370217691240567,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S26"
+ },
+ {
+  "ring_radius": 8.680401547444465,
+  "initial_tangential_velocity": 0.7141992433354867,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S27"
+ },
+ {
+  "ring_radius": 6.3828159076377915,
+  "initial_tangential_velocity": 0.08994751274349255,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S28"
+ },
+ {
+  "ring_radius": 2.322658823415673,
+  "initial_tangential_velocity": 1.2509806774072372,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S29"
+ },
+ {
+  "ring_radius": 8.918068516848155,
+  "initial_tangential_velocity": 1.5145257579417346,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S30"
+ },
+ {
+  "ring_radius": 2.3699711155081937,
+  "initial_tangential_velocity": 0.2903638735210936,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S31"
+ },
+ {
+  "ring_radius": 2.7409724870250454,
+  "initial_tangential_velocity": 0.18376062801702941,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S32"
+ },
+ {
+  "ring_radius": 5.669101770350723,
+  "initial_tangential_velocity": 1.7377351281552769,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S33"
+ },
+ {
+  "ring_radius": 4.805253234656551,
+  "initial_tangential_velocity": 1.9384952805121274,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S34"
+ },
+ {
+  "ring_radius": 7.579039050418962,
+  "initial_tangential_velocity": 1.8796556233221262,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S35"
+ },
+ {
+  "ring_radius": 2.059435961859304,
+  "initial_tangential_velocity": 1.672216117177686,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S36"
+ },
+ {
+  "ring_radius": 2.4503596641494463,
+  "initial_tangential_velocity": 0.3967397313451819,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S37"
+ },
+ {
+  "ring_radius": 8.52416507854959,
+  "initial_tangential_velocity": 0.7092094183575544,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S38"
+ },
+ {
+  "ring_radius": 2.3260882500101188,
+  "initial_tangential_velocity": 1.9493420835553499,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S39"
+ },
+ {
+  "ring_radius": 9.251955270122004,
+  "initial_tangential_velocity": 0.47768964905724487,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S40"
+ },
+ {
+  "ring_radius": 8.97297060123941,
+  "initial_tangential_velocity": 0.725836922483903,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S41"
+ },
+ {
+  "ring_radius": 6.8112343319936794,
+  "initial_tangential_velocity": 0.9867729435831845,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S42"
+ },
+ {
+  "ring_radius": 8.31236721850258,
+  "initial_tangential_velocity": 0.08421277102813507,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S43"
+ },
+ {
+  "ring_radius": 5.805731398512444,
+  "initial_tangential_velocity": 0.2819351359493012,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S44"
+ },
+ {
+  "ring_radius": 8.499434187581546,
+  "initial_tangential_velocity": 1.6831881628269858,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S45"
+ },
+ {
+  "ring_radius": 6.829047826614513,
+  "initial_tangential_velocity": 1.1088768824831943,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S46"
+ },
+ {
+  "ring_radius": 5.422196453444839,
+  "initial_tangential_velocity": 0.4340290151755497,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S47"
+ },
+ {
+  "ring_radius": 6.612644170269907,
+  "initial_tangential_velocity": 1.9287640298063802,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S48"
+ },
+ {
+  "ring_radius": 6.938565057890281,
+  "initial_tangential_velocity": 0.6488897824368207,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S49"
+ },
+ {
+  "ring_radius": 6.886342991652965,
+  "initial_tangential_velocity": 1.7017027393255764,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S50"
+ },
+ {
+  "ring_radius": 7.314261676696645,
+  "initial_tangential_velocity": 0.7230089160483313,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S51"
+ },
+ {
+  "ring_radius": 6.224760933160796,
+  "initial_tangential_velocity": 1.3216528716865512,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S52"
+ },
+ {
+  "ring_radius": 7.502901372314274,
+  "initial_tangential_velocity": 0.5470789027816136,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S53"
+ },
+ {
+  "ring_radius": 6.675153264262994,
+  "initial_tangential_velocity": 1.7900805691184036,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S54"
+ },
+ {
+  "ring_radius": 7.694489857678193,
+  "initial_tangential_velocity": 0.3816451723010783,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S55"
+ },
+ {
+  "ring_radius": 2.4861898608807946,
+  "initial_tangential_velocity": 0.4135189843027083,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S56"
+ },
+ {
+  "ring_radius": 8.890843511626404,
+  "initial_tangential_velocity": 0.07481295678603539,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S57"
+ },
+ {
+  "ring_radius": 6.317542771551817,
+  "initial_tangential_velocity": 0.842820821006137,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S58"
+ },
+ {
+  "ring_radius": 2.8799360521017574,
+  "initial_tangential_velocity": 0.6149034586987399,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S59"
+ },
+ {
+  "ring_radius": 8.448237034574767,
+  "initial_tangential_velocity": 0.6600058761259726,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S60"
+ },
+ {
+  "ring_radius": 4.226775796864625,
+  "initial_tangential_velocity": 0.21467048600860594,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S61"
+ },
+ {
+  "ring_radius": 3.413720369015378,
+  "initial_tangential_velocity": 0.9703338370540227,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S62"
+ },
+ {
+  "ring_radius": 5.70444222776962,
+  "initial_tangential_velocity": 1.8140213334899677,
+  "duration": 10.0,
+  "measurement_times": [
+   1.0,
+   2.0,
+   3.0,
+   4.0,
+   5.0,
+   6.0,
+   7.0,
+   8.0,
+   9.0,
+   10.0
+  ],
+  "label": "S63"
+ }
+]

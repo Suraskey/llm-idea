@@ -1,0 +1,23 @@
+{
+ "n_systems": 62,
+ "n_no_free_parameters": 1,
+ "n_protocol_unrealizable": 0,
+ "unrealizable_ids": [],
+ "n_errors": 0,
+ "finite_difference_disagrees_with_exact": [
+  1,
+  18
+ ],
+ "round0_identifiable": 60,
+ "round0_structural_non_identifiable": 2,
+ "round0_practical_non_identifiable": 0,
+ "symbolic_structural_non_identifiable": 1,
+ "certified_change_class": 1,
+ "certified_ids": [
+  1
+ ],
+ "practical_restored_by_one_design": 0,
+ "practical_ids": [],
+ "P4_max_rel_over_certified": 5.3422252042225275e-14,
+ "llm_aces_commit": "60d4df7cd23ad3e994138bc3c2a4f34b152c0cbe"
+}

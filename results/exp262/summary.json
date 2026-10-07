@@ -1,0 +1,1867 @@
+{
+ "experiment": "EXP-262",
+ "preregistration": "predictions.md, block 2026-09-28 (Session 047), commit 8f746eb",
+ "llm_aces_pin": "60d4df7",
+ "predictions": {
+  "P-EXP-262-1": {
+   "status": "NOT SCORED",
+   "n_tasks": 1,
+   "rates": {
+    "RANK": 1.0,
+    "HYBRID": 1.0,
+    "DOPT": 1.0,
+    "AOPT": 1.0,
+    "VOI": 1.0,
+    "DISAGREE": 1.0,
+    "RANDOM": 1.0
+   },
+   "prediction_met": null,
+   "falsifier_fired": null,
+   "detail": "only 1 tasks in the P1 setting across T1+T2 (< 5): reported descriptively"
+  },
+  "P-EXP-262-2": {
+   "status": "NOT MET",
+   "n_tasks": 122,
+   "median_RANK": 0.0018687405199277933,
+   "median_DOPT": 0.0019550755319256603,
+   "ratio_RANK_over_DOPT": 0.9558405746539976,
+   "wilcoxon_DOPT_lt_RANK": {
+    "criterion": "DOPT",
+    "n_tasks": 122,
+    "n_nonzero": 91,
+    "statistic": 1739.0,
+    "p_raw": 0.08059228108678124,
+    "n_lower": 58,
+    "n_higher": 33,
+    "p_holm": 0.4029614054339062
+   },
+   "prediction_met": false,
+   "falsifier_fired": false
+  },
+  "P-EXP-262-3": {
+   "status": "HELD",
+   "population": "ALL tasks, T1+T2 pooled",
+   "n_tasks": 124,
+   "median_HYBRID": 0.0019550755319256603,
+   "median_DOPT": 0.0019550755319256603,
+   "ratio": 1.0,
+   "hybrid_rank_restoration_P1": {
+    "k": 1,
+    "n": 1,
+    "rate": 1.0,
+    "ci": [
+     0.025000000000000022,
+     1.0
+    ]
+   },
+   "secondary_P2": {
+    "median_HYBRID": 0.0019550755319256603,
+    "median_DOPT": 0.0019550755319256603
+   },
+   "prediction_met": true,
+   "falsifier_fired": false
+  },
+  "P-EXP-262-4": {
+   "status": "HELD",
+   "certified_tasks": [
+    "T1 id 1 (RC-circuit)",
+    "T2 id 1 (RC-circuit)"
+   ],
+   "rc_circuit_T1_certified": true,
+   "picks_raising_rank": [],
+   "max_disagree_contribution_along_certified": 6.900699902029208e-11,
+   "experiments_saved": "1 per round per task on 2 tasks (RANK + certificate spends 0; every pure selection criterion spends 1 per round)",
+   "prediction_met": true,
+   "falsifier_fired": false
+  },
+  "P-EXP-262-5": {
+   "status": "HELD",
+   "population": "ALL tasks, T1+T2 pooled",
+   "medians": {
+    "DOPT": 0.0019550755319256603,
+    "AOPT": 0.0016043735487784403,
+    "VOI": 0.0019550755319256603,
+    "DISAGREE": 0.0028142596627313693
+   },
+   "lowest_among_all_7": "AOPT",
+   "secondary_P2": {
+    "DOPT": 0.0019550755319256603,
+    "AOPT": 0.0016043735487784403,
+    "VOI": 0.0019550755319256603,
+    "DISAGREE": 0.0028142596627313693
+   },
+   "prediction_met": true,
+   "falsifier_fired": false
+  }
+ },
+ "counts": {
+  "units_total": 128,
+  "units_errored": 0,
+  "tasks": {
+   "T1": 62,
+   "T2": 62,
+   "T3": 4
+  },
+  "round0_rank_deficient": {
+   "T1": 1,
+   "T2": 2
+  },
+  "round0_status": {
+   "T1": {
+    "identifiable": 61,
+    "structurally_non_identifiable": 1,
+    "practically_non_identifiable": 0
+   },
+   "T2": {
+    "identifiable": 59,
+    "structurally_non_identifiable": 2,
+    "practically_non_identifiable": 1
+   }
+  },
+  "triage": {
+   "T1": {
+    "capability": 61,
+    "design_within_class": 0,
+    "change_class": 1
+   },
+   "T2": {
+    "capability": 59,
+    "design_within_class": 2,
+    "change_class": 1
+   }
+  },
+  "P1_setting": {
+   "T1": 0,
+   "T2": 1,
+   "pooled": 1
+  },
+  "P2_setting": {
+   "T1": 61,
+   "T2": 61,
+   "pooled": 122
+  },
+  "P1_setting_ids": {
+   "T1": [],
+   "T2": [
+    53
+   ]
+  },
+  "P1_setting_full_rank_restorable": {
+   "T1": 0,
+   "T2": 1
+  },
+  "rank_deficient_not_restorable": {
+   "T1": [
+    1
+   ],
+   "T2": [
+    1
+   ]
+  },
+  "dropped_candidates": [
+   {
+    "protocol": "T1",
+    "id": 29,
+    "dropped": [
+     "box IC 3: integration failed: A termination event occurred. (64/100 pts)",
+     "box IC 4: integration failed: A termination event occurred. (29/100 pts)"
+    ]
+   },
+   {
+    "protocol": "T2",
+    "id": 29,
+    "dropped": [
+     "box IC 3: integration failed: A termination event occurred. (13/20 pts)",
+     "box IC 4: integration failed: A termination event occurred. (6/20 pts)"
+    ]
+   }
+  ],
+  "single_candidate_tasks": [
+   "T1 id 63",
+   "T2 id 63"
+  ],
+  "notes": [
+   {
+    "protocol": "T1",
+    "id": 63,
+    "notes": [
+     "ic_bounds.json malformed ((3, 2) vs dim 4); box class empty (as EXP-261)"
+    ]
+   },
+   {
+    "protocol": "T2",
+    "id": 63,
+    "notes": [
+     "ic_bounds.json malformed ((3, 2) vs dim 4); box class empty (as EXP-261)"
+    ]
+   },
+   {
+    "protocol": "T3",
+    "id": "SEQ",
+    "notes": [
+     "round-0 RMS of log f is 0 at theta = (1, 0, 1); sigma = 0.01 absolute on log f"
+    ]
+   },
+   {
+    "protocol": "T3",
+    "id": "MM",
+    "notes": [
+     "E0-assay channel absent at round 0: sigma = 1% of E0*"
+    ]
+   }
+  ]
+ },
+ "rank_restoration": {
+  "P1_T1": {
+   "RANK": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci": [
+     null,
+     null
+    ]
+   },
+   "HYBRID": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci": [
+     null,
+     null
+    ]
+   },
+   "DOPT": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci": [
+     null,
+     null
+    ]
+   },
+   "AOPT": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci": [
+     null,
+     null
+    ]
+   },
+   "VOI": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci": [
+     null,
+     null
+    ]
+   },
+   "DISAGREE": {
+    "k": 0,
+    "n": 0,
+    "rate": null,
+    "ci": [
+     null,
+     null
+    ]
+   },
+   "RANDOM": {
+    "expected_rate": null,
+    "n": 0
+   }
+  },
+  "P1_T2": {
+   "RANK": {
+    "k": 1,
+    "n": 1,
+    "rate": 1.0,
+    "ci": [
+     0.025000000000000022,
+     1.0
+    ]
+   },
+   "HYBRID": {
+    "k": 1,
+    "n": 1,
+    "rate": 1.0,
+    "ci": [
+     0.025000000000000022,
+     1.0
+    ]
+   },
+   "DOPT": {
+    "k": 1,
+    "n": 1,
+    "rate": 1.0,
+    "ci": [
+     0.025000000000000022,
+     1.0
+    ]
+   },
+   "AOPT": {
+    "k": 1,
+    "n": 1,
+    "rate": 1.0,
+    "ci": [
+     0.025000000000000022,
+     1.0
+    ]
+   },
+   "VOI": {
+    "k": 1,
+    "n": 1,
+    "rate": 1.0,
+    "ci": [
+     0.025000000000000022,
+     1.0
+    ]
+   },
+   "DISAGREE": {
+    "k": 1,
+    "n": 1,
+    "rate": 1.0,
+    "ci": [
+     0.025000000000000022,
+     1.0
+    ]
+   },
+   "RANDOM": {
+    "expected_rate": 1.0,
+    "n": 1
+   }
+  },
+  "P1_pooled": {
+   "RANK": {
+    "k": 1,
+    "n": 1,
+    "rate": 1.0,
+    "ci": [
+     0.025000000000000022,
+     1.0
+    ]
+   },
+   "HYBRID": {
+    "k": 1,
+    "n": 1,
+    "rate": 1.0,
+    "ci": [
+     0.025000000000000022,
+     1.0
+    ]
+   },
+   "DOPT": {
+    "k": 1,
+    "n": 1,
+    "rate": 1.0,
+    "ci": [
+     0.025000000000000022,
+     1.0
+    ]
+   },
+   "AOPT": {
+    "k": 1,
+    "n": 1,
+    "rate": 1.0,
+    "ci": [
+     0.025000000000000022,
+     1.0
+    ]
+   },
+   "VOI": {
+    "k": 1,
+    "n": 1,
+    "rate": 1.0,
+    "ci": [
+     0.025000000000000022,
+     1.0
+    ]
+   },
+   "DISAGREE": {
+    "k": 1,
+    "n": 1,
+    "rate": 1.0,
+    "ci": [
+     0.025000000000000022,
+     1.0
+    ]
+   },
+   "RANDOM": {
+    "expected_rate": 1.0,
+    "n": 1
+   }
+  },
+  "ALL_T1": {
+   "RANK": {
+    "k": 62,
+    "n": 62,
+    "rate": 1.0,
+    "ci": [
+     0.9422373655707093,
+     1.0
+    ]
+   },
+   "HYBRID": {
+    "k": 62,
+    "n": 62,
+    "rate": 1.0,
+    "ci": [
+     0.9422373655707093,
+     1.0
+    ]
+   },
+   "DOPT": {
+    "k": 62,
+    "n": 62,
+    "rate": 1.0,
+    "ci": [
+     0.9422373655707093,
+     1.0
+    ]
+   },
+   "AOPT": {
+    "k": 62,
+    "n": 62,
+    "rate": 1.0,
+    "ci": [
+     0.9422373655707093,
+     1.0
+    ]
+   },
+   "VOI": {
+    "k": 62,
+    "n": 62,
+    "rate": 1.0,
+    "ci": [
+     0.9422373655707093,
+     1.0
+    ]
+   },
+   "DISAGREE": {
+    "k": 62,
+    "n": 62,
+    "rate": 1.0,
+    "ci": [
+     0.9422373655707093,
+     1.0
+    ]
+   },
+   "RANDOM": {
+    "expected_rate": 1.0,
+    "n": 62
+   }
+  },
+  "ALL_T2": {
+   "RANK": {
+    "k": 62,
+    "n": 62,
+    "rate": 1.0,
+    "ci": [
+     0.9422373655707093,
+     1.0
+    ]
+   },
+   "HYBRID": {
+    "k": 62,
+    "n": 62,
+    "rate": 1.0,
+    "ci": [
+     0.9422373655707093,
+     1.0
+    ]
+   },
+   "DOPT": {
+    "k": 62,
+    "n": 62,
+    "rate": 1.0,
+    "ci": [
+     0.9422373655707093,
+     1.0
+    ]
+   },
+   "AOPT": {
+    "k": 62,
+    "n": 62,
+    "rate": 1.0,
+    "ci": [
+     0.9422373655707093,
+     1.0
+    ]
+   },
+   "VOI": {
+    "k": 62,
+    "n": 62,
+    "rate": 1.0,
+    "ci": [
+     0.9422373655707093,
+     1.0
+    ]
+   },
+   "DISAGREE": {
+    "k": 62,
+    "n": 62,
+    "rate": 1.0,
+    "ci": [
+     0.9422373655707093,
+     1.0
+    ]
+   },
+   "RANDOM": {
+    "expected_rate": 1.0,
+    "n": 62
+   }
+  },
+  "ALL_pooled": {
+   "RANK": {
+    "k": 124,
+    "n": 124,
+    "rate": 1.0,
+    "ci": [
+     0.970689118910225,
+     1.0
+    ]
+   },
+   "HYBRID": {
+    "k": 124,
+    "n": 124,
+    "rate": 1.0,
+    "ci": [
+     0.970689118910225,
+     1.0
+    ]
+   },
+   "DOPT": {
+    "k": 124,
+    "n": 124,
+    "rate": 1.0,
+    "ci": [
+     0.970689118910225,
+     1.0
+    ]
+   },
+   "AOPT": {
+    "k": 124,
+    "n": 124,
+    "rate": 1.0,
+    "ci": [
+     0.970689118910225,
+     1.0
+    ]
+   },
+   "VOI": {
+    "k": 124,
+    "n": 124,
+    "rate": 1.0,
+    "ci": [
+     0.970689118910225,
+     1.0
+    ]
+   },
+   "DISAGREE": {
+    "k": 124,
+    "n": 124,
+    "rate": 1.0,
+    "ci": [
+     0.970689118910225,
+     1.0
+    ]
+   },
+   "RANDOM": {
+    "expected_rate": 1.0,
+    "n": 124
+   }
+  }
+ },
+ "median_m2": {
+  "ALL_T1": {
+   "RANK": {
+    "median": 0.0007918356116268597,
+    "ci95": [
+     0.0005572571916207142,
+     0.0011586105553860813
+    ],
+    "n": 62,
+    "n_inf": 0
+   },
+   "HYBRID": {
+    "median": 0.0005866675288955973,
+    "ci95": [
+     0.0004472084483644602,
+     0.0008709703632430453
+    ],
+    "n": 62,
+    "n_inf": 0
+   },
+   "DOPT": {
+    "median": 0.0005866675288955973,
+    "ci95": [
+     0.0004472084483644602,
+     0.0008709703632430453
+    ],
+    "n": 62,
+    "n_inf": 0
+   },
+   "AOPT": {
+    "median": 0.0005455696392644542,
+    "ci95": [
+     0.0003475170069432446,
+     0.0008229759828295511
+    ],
+    "n": 62,
+    "n_inf": 0
+   },
+   "VOI": {
+    "median": 0.0005866675288955973,
+    "ci95": [
+     0.0004472084483644602,
+     0.0008709703632430453
+    ],
+    "n": 62,
+    "n_inf": 0
+   },
+   "DISAGREE": {
+    "median": 0.0008349402516725003,
+    "ci95": [
+     0.000569352958650157,
+     0.0012092743059898647
+    ],
+    "n": 62,
+    "n_inf": 1
+   },
+   "RANDOM": {
+    "median": 0.001563086962974601,
+    "ci95": [
+     0.0009773532818375475,
+     0.002426034349018676
+    ],
+    "n": 62,
+    "n_inf": 1
+   }
+  },
+  "ALL_T2": {
+   "RANK": {
+    "median": 0.009047709539267028,
+    "ci95": [
+     0.005127795953259564,
+     0.015625709021536795
+    ],
+    "n": 62,
+    "n_inf": 2
+   },
+   "HYBRID": {
+    "median": 0.00906307542996419,
+    "ci95": [
+     0.0035469585161327687,
+     0.02116618709974596
+    ],
+    "n": 62,
+    "n_inf": 2
+   },
+   "DOPT": {
+    "median": 0.00906307542996419,
+    "ci95": [
+     0.0035469585161327687,
+     0.02116618709974596
+    ],
+    "n": 62,
+    "n_inf": 2
+   },
+   "AOPT": {
+    "median": 0.006962131904771806,
+    "ci95": [
+     0.0030927888530288983,
+     0.012322348186128842
+    ],
+    "n": 62,
+    "n_inf": 2
+   },
+   "VOI": {
+    "median": 0.00906307542996419,
+    "ci95": [
+     0.0035469585161327687,
+     0.02116618709974596
+    ],
+    "n": 62,
+    "n_inf": 2
+   },
+   "DISAGREE": {
+    "median": 0.00974239362705227,
+    "ci95": [
+     0.006607377395532285,
+     0.026683609079479653
+    ],
+    "n": 62,
+    "n_inf": 3
+   },
+   "RANDOM": {
+    "median": 0.020884897116692634,
+    "ci95": [
+     0.012059065741521158,
+     0.06710425765011473
+    ],
+    "n": 62,
+    "n_inf": 5
+   }
+  },
+  "ALL_pooled": {
+   "RANK": {
+    "median": 0.0018687405199277933,
+    "ci95": [
+     0.0013320384430444137,
+     0.004506235939623933
+    ],
+    "n": 124,
+    "n_inf": 2
+   },
+   "HYBRID": {
+    "median": 0.0019550755319256603,
+    "ci95": [
+     0.001052401199857896,
+     0.003566133923057843
+    ],
+    "n": 124,
+    "n_inf": 2
+   },
+   "DOPT": {
+    "median": 0.0019550755319256603,
+    "ci95": [
+     0.001052401199857896,
+     0.003566133923057843
+    ],
+    "n": 124,
+    "n_inf": 2
+   },
+   "AOPT": {
+    "median": 0.0016043735487784403,
+    "ci95": [
+     0.0009310676872020876,
+     0.003179382704389941
+    ],
+    "n": 124,
+    "n_inf": 2
+   },
+   "VOI": {
+    "median": 0.0019550755319256603,
+    "ci95": [
+     0.001052401199857896,
+     0.003566133923057843
+    ],
+    "n": 124,
+    "n_inf": 2
+   },
+   "DISAGREE": {
+    "median": 0.0028142596627313693,
+    "ci95": [
+     0.0014808677180228583,
+     0.006326957281035336
+    ],
+    "n": 124,
+    "n_inf": 4
+   },
+   "RANDOM": {
+    "median": 0.008760531454293452,
+    "ci95": [
+     0.0035060457744591914,
+     0.013997253977469853
+    ],
+    "n": 124,
+    "n_inf": 6
+   }
+  },
+  "P2_T1": {
+   "RANK": {
+    "median": 0.0008031610863445647,
+    "ci95": [
+     0.0006024050001268485,
+     0.0011586105553860813
+    ],
+    "n": 61,
+    "n_inf": 0
+   },
+   "HYBRID": {
+    "median": 0.0005891562060429651,
+    "ci95": [
+     0.00043516110092489565,
+     0.0008790088697426593
+    ],
+    "n": 61,
+    "n_inf": 0
+   },
+   "DOPT": {
+    "median": 0.0005891562060429651,
+    "ci95": [
+     0.00043516110092489565,
+     0.0008790088697426593
+    ],
+    "n": 61,
+    "n_inf": 0
+   },
+   "AOPT": {
+    "median": 0.0005495497112573489,
+    "ci95": [
+     0.00028590321191136444,
+     0.0008229759828295511
+    ],
+    "n": 61,
+    "n_inf": 0
+   },
+   "VOI": {
+    "median": 0.0005891562060429651,
+    "ci95": [
+     0.00043516110092489565,
+     0.0008790088697426593
+    ],
+    "n": 61,
+    "n_inf": 0
+   },
+   "DISAGREE": {
+    "median": 0.0008469045205154494,
+    "ci95": [
+     0.0005891562060429651,
+     0.0012092743059898647
+    ],
+    "n": 61,
+    "n_inf": 1
+   },
+   "RANDOM": {
+    "median": 0.0015878544043047172,
+    "ci95": [
+     0.0010816641809693753,
+     0.0024632105460377653
+    ],
+    "n": 61,
+    "n_inf": 1
+   }
+  },
+  "P2_T2": {
+   "RANK": {
+    "median": 0.009047418158618795,
+    "ci95": [
+     0.005127795953259564,
+     0.015625709021536795
+    ],
+    "n": 61,
+    "n_inf": 2
+   },
+   "HYBRID": {
+    "median": 0.009047418158618795,
+    "ci95": [
+     0.0035469585161327687,
+     0.019097456498004272
+    ],
+    "n": 61,
+    "n_inf": 2
+   },
+   "DOPT": {
+    "median": 0.009047418158618795,
+    "ci95": [
+     0.0035469585161327687,
+     0.019097456498004272
+    ],
+    "n": 61,
+    "n_inf": 2
+   },
+   "AOPT": {
+    "median": 0.006732924211141733,
+    "ci95": [
+     0.0030927888530288983,
+     0.012322348186128842
+    ],
+    "n": 61,
+    "n_inf": 2
+   },
+   "VOI": {
+    "median": 0.009047418158618795,
+    "ci95": [
+     0.0035469585161327687,
+     0.019097456498004272
+    ],
+    "n": 61,
+    "n_inf": 2
+   },
+   "DISAGREE": {
+    "median": 0.009547557271270202,
+    "ci95": [
+     0.006607377395532285,
+     0.0262002056736918
+    ],
+    "n": 61,
+    "n_inf": 3
+   },
+   "RANDOM": {
+    "median": 0.020431221444617696,
+    "ci95": [
+     0.011772684753280421,
+     0.055111436385574746
+    ],
+    "n": 61,
+    "n_inf": 5
+   }
+  },
+  "P2_pooled": {
+   "RANK": {
+    "median": 0.0018687405199277933,
+    "ci95": [
+     0.0013320384430444137,
+     0.004506235939623933
+    ],
+    "n": 122,
+    "n_inf": 2
+   },
+   "HYBRID": {
+    "median": 0.0019550755319256603,
+    "ci95": [
+     0.001052401199857896,
+     0.003637846097752335
+    ],
+    "n": 122,
+    "n_inf": 2
+   },
+   "DOPT": {
+    "median": 0.0019550755319256603,
+    "ci95": [
+     0.001052401199857896,
+     0.003637846097752335
+    ],
+    "n": 122,
+    "n_inf": 2
+   },
+   "AOPT": {
+    "median": 0.0016043735487784403,
+    "ci95": [
+     0.0009280933998301556,
+     0.003179382704389941
+    ],
+    "n": 122,
+    "n_inf": 2
+   },
+   "VOI": {
+    "median": 0.0019550755319256603,
+    "ci95": [
+     0.001052401199857896,
+     0.003637846097752335
+    ],
+    "n": 122,
+    "n_inf": 2
+   },
+   "DISAGREE": {
+    "median": 0.0028142596627313693,
+    "ci95": [
+     0.0014920808141643525,
+     0.006326957281035336
+    ],
+    "n": 122,
+    "n_inf": 4
+   },
+   "RANDOM": {
+    "median": 0.008760531454293452,
+    "ci95": [
+     0.0035103709227214206,
+     0.013997253977469853
+    ],
+    "n": 122,
+    "n_inf": 6
+   }
+  }
+ },
+ "wilcoxon": {
+  "P2_pooled": [
+   {
+    "criterion": "DOPT",
+    "n_tasks": 122,
+    "n_nonzero": 91,
+    "statistic": 1739.0,
+    "p_raw": 0.08059228108678124,
+    "n_lower": 58,
+    "n_higher": 33,
+    "p_holm": 0.4029614054339062
+   },
+   {
+    "criterion": "AOPT",
+    "n_tasks": 122,
+    "n_nonzero": 78,
+    "statistic": 489.0,
+    "p_raw": 8.148853317144582e-08,
+    "n_lower": 64,
+    "n_higher": 14,
+    "p_holm": 4.889311990286749e-07
+   },
+   {
+    "criterion": "VOI",
+    "n_tasks": 122,
+    "n_nonzero": 93,
+    "statistic": 1834.0,
+    "p_raw": 0.08902150908784218,
+    "n_lower": 59,
+    "n_higher": 34,
+    "p_holm": 0.4029614054339062
+   },
+   {
+    "criterion": "DISAGREE",
+    "n_tasks": 122,
+    "n_nonzero": 91,
+    "statistic": 2853.0,
+    "p_raw": 0.9986851838062685,
+    "n_lower": 36,
+    "n_higher": 55,
+    "p_holm": 1.0
+   },
+   {
+    "criterion": "RANDOM",
+    "n_tasks": 122,
+    "n_nonzero": 120,
+    "statistic": 6012.0,
+    "p_raw": 0.9999999997786445,
+    "n_lower": 34,
+    "n_higher": 86,
+    "p_holm": 1.0
+   },
+   {
+    "criterion": "HYBRID",
+    "n_tasks": 122,
+    "n_nonzero": 91,
+    "statistic": 1739.0,
+    "p_raw": 0.08059228108678124,
+    "n_lower": 58,
+    "n_higher": 33,
+    "p_holm": 0.4029614054339062
+   }
+  ],
+  "P2_T1": [
+   {
+    "criterion": "DOPT",
+    "n_tasks": 61,
+    "n_nonzero": 49,
+    "statistic": 442.0,
+    "p_raw": 0.04494163959821127,
+    "n_lower": 33,
+    "n_higher": 16,
+    "p_holm": 0.22470819799105635
+   },
+   {
+    "criterion": "AOPT",
+    "n_tasks": 61,
+    "n_nonzero": 42,
+    "statistic": 164.0,
+    "p_raw": 0.0001623183653996484,
+    "n_lower": 34,
+    "n_higher": 8,
+    "p_holm": 0.0009739101923978903
+   },
+   {
+    "criterion": "VOI",
+    "n_tasks": 61,
+    "n_nonzero": 49,
+    "statistic": 442.0,
+    "p_raw": 0.04494163959821127,
+    "n_lower": 33,
+    "n_higher": 16,
+    "p_holm": 0.22470819799105635
+   },
+   {
+    "criterion": "DISAGREE",
+    "n_tasks": 61,
+    "n_nonzero": 45,
+    "statistic": 606.0,
+    "p_raw": 0.841090137500509,
+    "n_lower": 20,
+    "n_higher": 25,
+    "p_holm": 1.0
+   },
+   {
+    "criterion": "RANDOM",
+    "n_tasks": 61,
+    "n_nonzero": 61,
+    "statistic": 1516.0,
+    "p_raw": 0.999979142844043,
+    "n_lower": 21,
+    "n_higher": 40,
+    "p_holm": 1.0
+   },
+   {
+    "criterion": "HYBRID",
+    "n_tasks": 61,
+    "n_nonzero": 49,
+    "statistic": 442.0,
+    "p_raw": 0.04494163959821127,
+    "n_lower": 33,
+    "n_higher": 16,
+    "p_holm": 0.22470819799105635
+   }
+  ],
+  "P2_T2": [
+   {
+    "criterion": "DOPT",
+    "n_tasks": 61,
+    "n_nonzero": 42,
+    "statistic": 418.0,
+    "p_raw": 0.3376545722194755,
+    "n_lower": 25,
+    "n_higher": 17,
+    "p_holm": 1.0
+   },
+   {
+    "criterion": "AOPT",
+    "n_tasks": 61,
+    "n_nonzero": 36,
+    "statistic": 85.0,
+    "p_raw": 4.885230153767128e-05,
+    "n_lower": 30,
+    "n_higher": 6,
+    "p_holm": 0.00029311380922602767
+   },
+   {
+    "criterion": "VOI",
+    "n_tasks": 61,
+    "n_nonzero": 44,
+    "statistic": 463.0,
+    "p_raw": 0.35440820395335937,
+    "n_lower": 26,
+    "n_higher": 18,
+    "p_holm": 1.0
+   },
+   {
+    "criterion": "DISAGREE",
+    "n_tasks": 61,
+    "n_nonzero": 46,
+    "statistic": 802.0,
+    "p_raw": 0.9978615712948729,
+    "n_lower": 16,
+    "n_higher": 30,
+    "p_holm": 1.0
+   },
+   {
+    "criterion": "RANDOM",
+    "n_tasks": 61,
+    "n_nonzero": 59,
+    "statistic": 1495.0,
+    "p_raw": 0.9999979310298336,
+    "n_lower": 13,
+    "n_higher": 46,
+    "p_holm": 1.0
+   },
+   {
+    "criterion": "HYBRID",
+    "n_tasks": 61,
+    "n_nonzero": 42,
+    "statistic": 418.0,
+    "p_raw": 0.3376545722194755,
+    "n_lower": 25,
+    "n_higher": 17,
+    "p_holm": 1.0
+   }
+  ],
+  "ALL_pooled": [
+   {
+    "criterion": "DOPT",
+    "n_tasks": 124,
+    "n_nonzero": 91,
+    "statistic": 1739.0,
+    "p_raw": 0.08059228108678124,
+    "n_lower": 58,
+    "n_higher": 33,
+    "p_holm": 0.4029614054339062
+   },
+   {
+    "criterion": "AOPT",
+    "n_tasks": 124,
+    "n_nonzero": 78,
+    "statistic": 489.0,
+    "p_raw": 8.148853317144582e-08,
+    "n_lower": 64,
+    "n_higher": 14,
+    "p_holm": 4.889311990286749e-07
+   },
+   {
+    "criterion": "VOI",
+    "n_tasks": 124,
+    "n_nonzero": 93,
+    "statistic": 1834.0,
+    "p_raw": 0.08902150908784218,
+    "n_lower": 59,
+    "n_higher": 34,
+    "p_holm": 0.4029614054339062
+   },
+   {
+    "criterion": "DISAGREE",
+    "n_tasks": 124,
+    "n_nonzero": 91,
+    "statistic": 2853.0,
+    "p_raw": 0.9986851838062685,
+    "n_lower": 36,
+    "n_higher": 55,
+    "p_holm": 1.0
+   },
+   {
+    "criterion": "RANDOM",
+    "n_tasks": 124,
+    "n_nonzero": 120,
+    "statistic": 6012.0,
+    "p_raw": 0.9999999997786445,
+    "n_lower": 34,
+    "n_higher": 86,
+    "p_holm": 1.0
+   },
+   {
+    "criterion": "HYBRID",
+    "n_tasks": 124,
+    "n_nonzero": 91,
+    "statistic": 1739.0,
+    "p_raw": 0.08059228108678124,
+    "n_lower": 58,
+    "n_higher": 33,
+    "p_holm": 0.4029614054339062
+   }
+  ]
+ },
+ "agreement": {
+  "ALL_pooled": {
+   "RANK": {
+    "RANK": 1.0,
+    "HYBRID": 0.25,
+    "DOPT": 0.25,
+    "AOPT": 0.3548387096774194,
+    "VOI": 0.23387096774193547,
+    "DISAGREE": 0.25,
+    "RANDOM": 0.10589768654284785
+   },
+   "HYBRID": {
+    "RANK": 0.25,
+    "HYBRID": 1.0,
+    "DOPT": 1.0,
+    "AOPT": 0.717741935483871,
+    "VOI": 0.9516129032258065,
+    "DISAGREE": 0.3709677419354839,
+    "RANDOM": 0.10589768654284785
+   },
+   "DOPT": {
+    "RANK": 0.25,
+    "HYBRID": 1.0,
+    "DOPT": 1.0,
+    "AOPT": 0.717741935483871,
+    "VOI": 0.9516129032258065,
+    "DISAGREE": 0.3709677419354839,
+    "RANDOM": 0.10589768654284785
+   },
+   "AOPT": {
+    "RANK": 0.3548387096774194,
+    "HYBRID": 0.717741935483871,
+    "DOPT": 0.717741935483871,
+    "AOPT": 1.0,
+    "VOI": 0.6935483870967742,
+    "DISAGREE": 0.3387096774193548,
+    "RANDOM": 0.10589768654284785
+   },
+   "VOI": {
+    "RANK": 0.23387096774193547,
+    "HYBRID": 0.9516129032258065,
+    "DOPT": 0.9516129032258065,
+    "AOPT": 0.6935483870967742,
+    "VOI": 1.0,
+    "DISAGREE": 0.4032258064516129,
+    "RANDOM": 0.10589768654284785
+   },
+   "DISAGREE": {
+    "RANK": 0.25,
+    "HYBRID": 0.3709677419354839,
+    "DOPT": 0.3709677419354839,
+    "AOPT": 0.3387096774193548,
+    "VOI": 0.4032258064516129,
+    "DISAGREE": 1.0,
+    "RANDOM": 0.10589768654284785
+   },
+   "RANDOM": {
+    "RANK": 0.10589768654284785,
+    "HYBRID": 0.10589768654284785,
+    "DOPT": 0.10589768654284785,
+    "AOPT": 0.10589768654284785,
+    "VOI": 0.10589768654284785,
+    "DISAGREE": 0.10589768654284785,
+    "RANDOM": 0.10589768654284785
+   }
+  },
+  "ALL_T1": {
+   "RANK": {
+    "RANK": 1.0,
+    "HYBRID": 0.20967741935483872,
+    "DOPT": 0.20967741935483872,
+    "AOPT": 0.3225806451612903,
+    "VOI": 0.20967741935483872,
+    "DISAGREE": 0.27419354838709675,
+    "RANDOM": 0.10589768654284784
+   },
+   "HYBRID": {
+    "RANK": 0.20967741935483872,
+    "HYBRID": 1.0,
+    "DOPT": 1.0,
+    "AOPT": 0.7419354838709677,
+    "VOI": 0.9838709677419355,
+    "DISAGREE": 0.3709677419354839,
+    "RANDOM": 0.10589768654284784
+   },
+   "DOPT": {
+    "RANK": 0.20967741935483872,
+    "HYBRID": 1.0,
+    "DOPT": 1.0,
+    "AOPT": 0.7419354838709677,
+    "VOI": 0.9838709677419355,
+    "DISAGREE": 0.3709677419354839,
+    "RANDOM": 0.10589768654284784
+   },
+   "AOPT": {
+    "RANK": 0.3225806451612903,
+    "HYBRID": 0.7419354838709677,
+    "DOPT": 0.7419354838709677,
+    "AOPT": 1.0,
+    "VOI": 0.7258064516129032,
+    "DISAGREE": 0.3870967741935484,
+    "RANDOM": 0.10589768654284784
+   },
+   "VOI": {
+    "RANK": 0.20967741935483872,
+    "HYBRID": 0.9838709677419355,
+    "DOPT": 0.9838709677419355,
+    "AOPT": 0.7258064516129032,
+    "VOI": 1.0,
+    "DISAGREE": 0.3709677419354839,
+    "RANDOM": 0.10589768654284784
+   },
+   "DISAGREE": {
+    "RANK": 0.27419354838709675,
+    "HYBRID": 0.3709677419354839,
+    "DOPT": 0.3709677419354839,
+    "AOPT": 0.3870967741935484,
+    "VOI": 0.3709677419354839,
+    "DISAGREE": 1.0,
+    "RANDOM": 0.10589768654284784
+   },
+   "RANDOM": {
+    "RANK": 0.10589768654284784,
+    "HYBRID": 0.10589768654284784,
+    "DOPT": 0.10589768654284784,
+    "AOPT": 0.10589768654284784,
+    "VOI": 0.10589768654284784,
+    "DISAGREE": 0.10589768654284784,
+    "RANDOM": 0.10589768654284784
+   }
+  },
+  "ALL_T2": {
+   "RANK": {
+    "RANK": 1.0,
+    "HYBRID": 0.2903225806451613,
+    "DOPT": 0.2903225806451613,
+    "AOPT": 0.3870967741935484,
+    "VOI": 0.25806451612903225,
+    "DISAGREE": 0.22580645161290322,
+    "RANDOM": 0.10589768654284784
+   },
+   "HYBRID": {
+    "RANK": 0.2903225806451613,
+    "HYBRID": 1.0,
+    "DOPT": 1.0,
+    "AOPT": 0.6935483870967742,
+    "VOI": 0.9193548387096774,
+    "DISAGREE": 0.3709677419354839,
+    "RANDOM": 0.10589768654284784
+   },
+   "DOPT": {
+    "RANK": 0.2903225806451613,
+    "HYBRID": 1.0,
+    "DOPT": 1.0,
+    "AOPT": 0.6935483870967742,
+    "VOI": 0.9193548387096774,
+    "DISAGREE": 0.3709677419354839,
+    "RANDOM": 0.10589768654284784
+   },
+   "AOPT": {
+    "RANK": 0.3870967741935484,
+    "HYBRID": 0.6935483870967742,
+    "DOPT": 0.6935483870967742,
+    "AOPT": 1.0,
+    "VOI": 0.6612903225806451,
+    "DISAGREE": 0.2903225806451613,
+    "RANDOM": 0.10589768654284784
+   },
+   "VOI": {
+    "RANK": 0.25806451612903225,
+    "HYBRID": 0.9193548387096774,
+    "DOPT": 0.9193548387096774,
+    "AOPT": 0.6612903225806451,
+    "VOI": 1.0,
+    "DISAGREE": 0.43548387096774194,
+    "RANDOM": 0.10589768654284784
+   },
+   "DISAGREE": {
+    "RANK": 0.22580645161290322,
+    "HYBRID": 0.3709677419354839,
+    "DOPT": 0.3709677419354839,
+    "AOPT": 0.2903225806451613,
+    "VOI": 0.43548387096774194,
+    "DISAGREE": 1.0,
+    "RANDOM": 0.10589768654284784
+   },
+   "RANDOM": {
+    "RANK": 0.10589768654284784,
+    "HYBRID": 0.10589768654284784,
+    "DOPT": 0.10589768654284784,
+    "AOPT": 0.10589768654284784,
+    "VOI": 0.10589768654284784,
+    "DISAGREE": 0.10589768654284784,
+    "RANDOM": 0.10589768654284784
+   }
+  }
+ },
+ "m2_fit_failures": {
+  "T1": {
+   "n_fits": 3350,
+   "n_failed": 6,
+   "reasons": {
+    "lm status 0": 6
+   },
+   "disagree_failed_rollouts": 1,
+   "disagree_nan_scores": 0,
+   "candidates_with_inf_m2": 5
+  },
+  "T2": {
+   "n_fits": 3350,
+   "n_failed": 32,
+   "reasons": {
+    "lm status 0": 32
+   },
+   "disagree_failed_rollouts": 9,
+   "disagree_nan_scores": 0,
+   "candidates_with_inf_m2": 25
+  },
+  "T3": {
+   "n_fits": 90,
+   "n_failed": 0,
+   "reasons": {},
+   "disagree_failed_rollouts": 0,
+   "disagree_nan_scores": 0,
+   "candidates_with_inf_m2": 0
+  }
+ },
+ "m3": {
+  "n_change_class_tasks": 2,
+  "spent_per_round": {
+   "RANK": 2,
+   "HYBRID": 2,
+   "DOPT": 2,
+   "AOPT": 2,
+   "VOI": 2,
+   "DISAGREE": 2,
+   "RANDOM": 2,
+   "RANK+certificate": 0
+  }
+ },
+ "sanity": {
+  "RANK_hits_max_rank_all_tasks": true,
+  "HYBRID_hits_max_rank_all_tasks": true,
+  "rc_circuit": {
+   "T1": {
+    "rank0": 2,
+    "n": 3,
+    "candidate_ranks": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "pick_ranks": {
+     "RANK": 2,
+     "HYBRID": 2,
+     "DOPT": 2,
+     "AOPT": 2,
+     "VOI": 2,
+     "DISAGREE": 2
+    }
+   },
+   "T2": {
+    "rank0": 2,
+    "n": 3,
+    "candidate_ranks": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "pick_ranks": {
+     "RANK": 2,
+     "HYBRID": 2,
+     "DOPT": 2,
+     "AOPT": 2,
+     "VOI": 2,
+     "DISAGREE": 2
+    }
+   }
+  }
+ },
+ "errored": [],
+ "t3": [
+  {
+   "case": "ALIEN",
+   "name": "Alien amplitude A = beta * product^p",
+   "n_params": 2,
+   "rank0": 1,
+   "cond0": "inf",
+   "triage": "design_within_class",
+   "certified": [
+    false
+   ],
+   "candidates": [
+    {
+     "label": "single product [1]",
+     "rank": 1,
+     "m2_mean": 0.005295482888767211,
+     "n_failed": 0
+    },
+    {
+     "label": "two distinct products [1, 2]",
+     "rank": 2,
+     "m2_mean": 0.0065559905140387285,
+     "n_failed": 0
+    }
+   ],
+   "picks": {
+    "RANK": {
+     "label": "two distinct products [1, 2]",
+     "rank": 2,
+     "m2": 0.0065559905140387285
+    },
+    "HYBRID": {
+     "label": "two distinct products [1, 2]",
+     "rank": 2,
+     "m2": 0.0065559905140387285
+    },
+    "DOPT": {
+     "label": "two distinct products [1, 2]",
+     "rank": 2,
+     "m2": 0.0065559905140387285
+    },
+    "AOPT": {
+     "label": "two distinct products [1, 2]",
+     "rank": 2,
+     "m2": 0.0065559905140387285
+    },
+    "VOI": {
+     "label": "two distinct products [1, 2]",
+     "rank": 2,
+     "m2": 0.0065559905140387285
+    },
+    "DISAGREE": {
+     "label": "two distinct products [1, 2]",
+     "rank": 2,
+     "m2": 0.0065559905140387285
+    },
+    "RANDOM": {
+     "label": "uniform (expectation)",
+     "rank": null,
+     "m2": 0.00592573670140297
+    }
+   },
+   "notes": []
+  },
+  {
+   "case": "MM",
+   "name": "Michaelis-Menten (substrate observed)",
+   "n_params": 3,
+   "rank0": 2,
+   "cond0": "inf",
+   "triage": "design_within_class",
+   "certified": [
+    false
+   ],
+   "candidates": [
+    {
+     "label": "substrate run S0 = 0.2",
+     "rank": 2,
+     "m2_mean": 0.015280900175175452,
+     "n_failed": 0
+    },
+    {
+     "label": "substrate run S0 = 0.334",
+     "rank": 2,
+     "m2_mean": 0.015528633438784693,
+     "n_failed": 0
+    },
+    {
+     "label": "substrate run S0 = 0.557",
+     "rank": 2,
+     "m2_mean": 0.015589329616768458,
+     "n_failed": 0
+    },
+    {
+     "label": "substrate run S0 = 0.928",
+     "rank": 2,
+     "m2_mean": 0.015159147365267045,
+     "n_failed": 0
+    },
+    {
+     "label": "substrate run S0 = 1.55",
+     "rank": 2,
+     "m2_mean": 0.014077683240803437,
+     "n_failed": 0
+    },
+    {
+     "label": "substrate run S0 = 2.58",
+     "rank": 2,
+     "m2_mean": 0.012576211201816526,
+     "n_failed": 0
+    },
+    {
+     "label": "substrate run S0 = 4.31",
+     "rank": 2,
+     "m2_mean": 0.011563960074507567,
+     "n_failed": 0
+    },
+    {
+     "label": "substrate run S0 = 7.19",
+     "rank": 2,
+     "m2_mean": 0.004672801450114748,
+     "n_failed": 0
+    },
+    {
+     "label": "substrate run S0 = 12",
+     "rank": 2,
+     "m2_mean": 0.00373316793400775,
+     "n_failed": 0
+    },
+    {
+     "label": "substrate run S0 = 20",
+     "rank": 2,
+     "m2_mean": 0.0028281727153592843,
+     "n_failed": 0
+    },
+    {
+     "label": "E0 assay (direct enzyme measurement)",
+     "rank": 3,
+     "m2_mean": 0.016843241010665477,
+     "n_failed": 0
+    }
+   ],
+   "picks": {
+    "RANK": {
+     "label": "E0 assay (direct enzyme measurement)",
+     "rank": 3,
+     "m2": 0.016843241010665477
+    },
+    "HYBRID": {
+     "label": "E0 assay (direct enzyme measurement)",
+     "rank": 3,
+     "m2": 0.016843241010665477
+    },
+    "DOPT": {
+     "label": "E0 assay (direct enzyme measurement)",
+     "rank": 3,
+     "m2": 0.016843241010665477
+    },
+    "AOPT": {
+     "label": "E0 assay (direct enzyme measurement)",
+     "rank": 3,
+     "m2": 0.016843241010665477
+    },
+    "VOI": {
+     "label": "E0 assay (direct enzyme measurement)",
+     "rank": 3,
+     "m2": 0.016843241010665477
+    },
+    "DISAGREE": {
+     "label": "E0 assay (direct enzyme measurement)",
+     "rank": 3,
+     "m2": 0.016843241010665477
+    },
+    "RANDOM": {
+     "label": "uniform (expectation)",
+     "rank": null,
+     "m2": 0.011623022565751857
+    }
+   },
+   "notes": [
+    "E0-assay channel absent at round 0: sigma = 1% of E0*"
+   ]
+  },
+  {
+   "case": "PK",
+   "name": "Oral one-compartment PK",
+   "n_params": 4,
+   "rank0": 3,
+   "cond0": "inf",
+   "triage": "change_class",
+   "certified": [
+    true
+   ],
+   "candidates": [
+    {
+     "label": "oral, 4x denser sampling (96 pts, 24 h)",
+     "rank": 3,
+     "m2_mean": 0.0024139462933582658,
+     "n_failed": 0
+    },
+    {
+     "label": "oral, 72 h window (48 pts)",
+     "rank": 3,
+     "m2_mean": 0.0041700436902912825,
+     "n_failed": 0
+    },
+    {
+     "label": "oral + intravenous arm (24 + 24 pts)",
+     "rank": 4,
+     "m2_mean": 0.002577361930819712,
+     "n_failed": 0
+    }
+   ],
+   "picks": {
+    "RANK": {
+     "label": "oral + intravenous arm (24 + 24 pts)",
+     "rank": 4,
+     "m2": 0.002577361930819712
+    },
+    "HYBRID": {
+     "label": "oral + intravenous arm (24 + 24 pts)",
+     "rank": 4,
+     "m2": 0.002577361930819712
+    },
+    "DOPT": {
+     "label": "oral + intravenous arm (24 + 24 pts)",
+     "rank": 4,
+     "m2": 0.002577361930819712
+    },
+    "AOPT": {
+     "label": "oral + intravenous arm (24 + 24 pts)",
+     "rank": 4,
+     "m2": 0.002577361930819712
+    },
+    "VOI": {
+     "label": "oral + intravenous arm (24 + 24 pts)",
+     "rank": 4,
+     "m2": 0.002577361930819712
+    },
+    "DISAGREE": {
+     "label": "oral + intravenous arm (24 + 24 pts)",
+     "rank": 4,
+     "m2": 0.002577361930819712
+    },
+    "RANDOM": {
+     "label": "uniform (expectation)",
+     "rank": null,
+     "m2": 0.0030537839714897537
+    }
+   },
+   "notes": []
+  },
+  {
+   "case": "SEQ",
+   "name": "Sequence ansatz log f = log th0 + th1 log n + n log th2",
+   "n_params": 3,
+   "rank0": 2,
+   "cond0": "inf",
+   "triage": "design_within_class",
+   "certified": [
+    false
+   ],
+   "candidates": [
+    {
+     "label": "narrow window n = [400, 401, 402]",
+     "rank": 2,
+     "m2_mean": 0.8405165339540842,
+     "n_failed": 0
+    },
+    {
+     "label": "geometric spread n = [2, 5, 20, 100, 400]",
+     "rank": 3,
+     "m2_mean": 2.6097636016774586,
+     "n_failed": 0
+    }
+   ],
+   "picks": {
+    "RANK": {
+     "label": "geometric spread n = [2, 5, 20, 100, 400]",
+     "rank": 3,
+     "m2": 2.6097636016774586
+    },
+    "HYBRID": {
+     "label": "geometric spread n = [2, 5, 20, 100, 400]",
+     "rank": 3,
+     "m2": 2.6097636016774586
+    },
+    "DOPT": {
+     "label": "geometric spread n = [2, 5, 20, 100, 400]",
+     "rank": 3,
+     "m2": 2.6097636016774586
+    },
+    "AOPT": {
+     "label": "geometric spread n = [2, 5, 20, 100, 400]",
+     "rank": 3,
+     "m2": 2.6097636016774586
+    },
+    "VOI": {
+     "label": "geometric spread n = [2, 5, 20, 100, 400]",
+     "rank": 3,
+     "m2": 2.6097636016774586
+    },
+    "DISAGREE": {
+     "label": "narrow window n = [400, 401, 402]",
+     "rank": 2,
+     "m2": 0.8405165339540842
+    },
+    "RANDOM": {
+     "label": "uniform (expectation)",
+     "rank": null,
+     "m2": 1.7251400678157713
+    }
+   },
+   "notes": [
+    "round-0 RMS of log f is 0 at theta = (1, 0, 1); sigma = 0.01 absolute on log f"
+   ]
+  }
+ ],
+ "runtime": {
+  "wall_s": 244.3,
+  "processes": 4,
+  "slowest": [
+   "T2 53: 172.99 s",
+   "T2 52: 65.32 s",
+   "T2 8: 61.03 s",
+   "T2 16: 39.18 s",
+   "T2 18: 34.93 s"
+  ],
+  "sum_unit_wall_s": 924.6
+ },
+ "implementation_choices": [
+  "Candidate order is EXP-261's: IC-1 (ODEBench held-out IC) first, then box IC 0..9 (np.random.default_rng(0).uniform over the ic_bounds.json box, exactly EXP-261). The EXP-261 OOD window is not a candidate (the registered set is 10 box ICs + IC-1). Every argmax/argmin breaks ties by this order (first wins); RANK's ties are broken by the library ranker's stable sort, which is the same order.",
+  "Scaled sensitivity is formed with SIGNED scales, S diag(sign(theta*) max(|theta*|, 1e-3)): the exact Jacobian with respect to the sign-preserving log-parameters delta that DISAGREE draws and LM fits (theta = theta* exp(delta)). It differs from the registered S diag(max(|theta*|, 1e-3)) only by column signs (ids 16, 57, 61 have negative constants), which leaves rank, condition number, DOPT, AOPT and VOI scores identical and makes the posterior covariance Sigma's correlations correct for the draws. Constants with |theta*| < 1e-3 use the additive coordinate theta = theta* + 1e-3 delta (none in ODEBench; theta1 = 0 in the T3 sequence ansatz).",
+  "Every criterion, M1 and the round-0 verdict use the same whitened matrix A = W S~, W = diag(1/sigma_row), so F = A^T A. RANK is the library ranker (rank_designs_by_identifiability) applied to [A0; Ac]; M1 is rank([A0; Ac]) at the library's 1e-9 relative floor (practical_identifiability), so RANK and M1 read the same number. The round-0 verdict (and so the certificate input) is practical_identifiability on A0 with the 1e8 condition threshold.",
+  "Certificate: certify_class_symmetry_symbolic on the vector field sum_k w_k f_k(x; c) with x and w free (exactly EXP-261), applied to each round-0 null direction mapped to theta-space. For T2 this field-level certificate is sound (a symmetry of the field is invisible to any observation) but conservative (an x0-only symmetry that is not a field symmetry would not be certified). Triage: capability if round 0 is identifiable; change_class if every round-0 direction is certified; design_within_class otherwise.",
+  "A candidate whose trajectory at theta* leaves the finite domain (|x| > 1e6) or fails to integrate at 1e-12 cannot be acquired; it is dropped from that task's candidate set (EXP-261 behaviour) and listed.",
+  "P1 setting 'at least one candidate restores the maximum rank' is read as: max over candidates of rank([A0; Ac]) > rank(A0). A pick 'is max-rank' iff its rank equals that maximum.",
+  "DISAGREE: the K = 8 draws delta_k = Sigma^(1/2) z_k (symmetric square root, z = default_rng(262).standard_normal((8, n))) are shared by every candidate of a task. Each draw is rolled out with the true simulator from the candidate IC and observed under the task protocol (T1: states + analytic derivatives on 100 points; T2: x0 on 20 points), at rtol = atol = 1e-10. Score = mean over pairs of ||y_i - y_j||_2 divided by the RMS of the mean prediction (LLM-ACES normalises by the mean trajectory). A draw whose rollout fails is excluded; with fewer than 2 valid rollouts the score is NaN and the candidate is never picked.",
+  "M2 noise and starts use common random numbers: for seed s, rng = default_rng(s) draws the start delta0 ~ N(0, 0.1^2 I), then round-0 noise, then candidate noise, so the start and the round-0 noise are identical across candidates (and criteria) for a seed, and the candidate noise vector is identical across candidates of equal length.",
+  "M2 fit: scipy least_squares(method='lm') on delta with residuals (model - data)/sigma_row and the exact Jacobian (forward sensitivities at the current theta, rtol = atol = 1e-9). A trial point whose integration fails returns a constant 1e6 residual so LM backs off. A fit FAILS (NaN, counted) if least_squares raises, status <= 0 (including the default max_nfev = 100 n reached), the final point does not integrate, or x/cost are non-finite. The per-candidate mean over seeds is +inf if any seed failed (the registered 'error = +inf in rankings').",
+  "M2 score: e = delta_hat (error in log-parameters; delta* = 0). For a rank-deficient combined design with null space N (the collapsed right singular vectors of [A0; Ac] at the 1e-9 floor), e is replaced by (I - N N^T) e and the RMS is ||e|| / sqrt(rank) (the RMS over the rank-dimensional orthogonal complement; full rank reduces to the plain RMS over all parameters).",
+  "RANDOM: per task, rank-restoration = fraction of candidates at max rank; M2 = mean of the candidates' M2 (so +inf if any candidate's fit failed); agreement with a criterion = 1/n_candidates.",
+  "P2's 'p < 0.05' is read with the registered Holm correction across the 6 pairs with RANK (each pair: one-sided Wilcoxon signed-rank, H1: criterion's M2 < RANK's M2, paired by task, zero differences dropped, scipy default method). Raw p is reported alongside.",
+  "Populations: P1 = tasks in the P1 setting; P2 = tasks where >= 2 candidates attain the maximum rank. P3 and P5 state no setting, so their medians are over ALL scored tasks (T1 and T2 pooled); P3's rank-restoration part is scored on the P1 setting. The other populations are reported as secondary. All predictions are scored on T1+T2 pooled; per-protocol numbers are descriptive. T3 is never pooled into a prediction.",
+  "'Within 5%' (P3) means |median_HYBRID / median_DOPT - 1| <= 0.05. 'Best on median' (P5) means DISAGREE's median is strictly lower than each of DOPT, AOPT and VOI.",
+  "Status vocabulary: HELD (the prediction as stated is met); FAILED (the registered falsifier fired); NOT MET (the prediction as stated is not met but the registered falsifier did not fire); NOT SCORED (the registered descriptive fallback applies).",
+  "P4 DISAGREE contribution along a certified direction d (unit, in delta-space, from the certificate's snapped theta-direction): with the task's 8 draws, rollouts at 1e-12, (a) score of the draws projected onto d divided by the full score, and (b) |full score - score of the draws with the d-component removed| / full score; the prediction is scored on the max over candidates of both.",
+  "sigma floor: if a round-0 channel has RMS exactly 0, sigma = 1% of the RMS over all round-0 channels (and 0.01 absolute if that is 0 too); every use is listed in the notes.",
+  "Guard: 10 min wall clock per (system, protocol) unit (SIGALRM in the worker); an errored or timed-out unit is excluded from every denominator and listed with its reason.",
+  "Bootstrap: percentile 95% CI of the median, 10,000 resamples of tasks with default_rng(262), the same resampled task sets for every criterion; +inf is replaced by 1e300 (rank-preserving) and any bound >= 1e299 is reported as inf. Wilcoxon uses the same substitution (it only uses signs and ranks).",
+  "T3 definitions (fixed before running). PK: theta = (ka, ke, V, F) = (1.2, 0.25, 30, 0.6), dose 100; round 0 = oral, 24 points on [0.25, 24] h; candidates = the three follow-ups of scripts/diagnostic_pk_bioavailability.py as added data: oral 96 points on [0.25, 24], oral 48 points on [0.25, 72], oral 24 points + IV 24 points on [0.25, 24]; one channel (plasma concentration, the IV arm measures the same quantity) with sigma from round 0; certificate symbolic on the oral closed form (t free). Michaelis-Menten: theta = (kcat, E0, Km) = (10, 0.1, 2); round 0 = substrate from S0 = 5 at 24 points on [0.1, 20] (EXP-087 STD); candidates = substrate from S0 in geomspace(0.2, 20, 10) on the same grid, plus an E0 assay (one direct observation of E0, sigma = 1% of E0* since the channel is absent at round 0); certificate = EXP-087's numeric route (its sampler, seed 87, 32 designs). Alien amplitude: A(P) = beta P^p, theta = (1, 1); round 0 = P = [1]; candidates 'single product' P = [1] and 'two distinct products' P = [1, 2] (propose_charge_product_designs); certificate symbolic (P free). Sequence ansatz: log f(n) = log th0 + th1 log n + n log th2 at theta = (1, 0, 1) (test_exhaustion.py); round 0 = narrow window n = [400, 401, 402]; candidates 'narrow window' (the same window again) and 'geometric spread' n = [2, 5, 20, 100, 400]; round-0 RMS is 0 at this theta, so sigma = 0.01 absolute on log f (1% multiplicative on f); certificate symbolic (n free, snap_rational=False as in the test)."
+ ]
+}

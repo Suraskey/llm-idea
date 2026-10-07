@@ -1,0 +1,269 @@
+2026-09-08 13:44:33,332 [INFO] __main__: orchestrator CLI benchmark: system=alien_universe seed=5 n_bodies=2 n_steps=1000 n_held_out=13
+2026-09-08 13:44:33,334 [INFO] __main__: orchestrator CLI pre-set run_id=8c135042-cbaf-4c5f-a6df-f1740fc555d4
+2026-09-08 13:44:33,335 [INFO] __main__: orchestrator CLI episode start: n_agents=5 campaign_id=None focus=None max_duration_seconds=1200 call_budget=None agents=[('plato', 30), ('aristotle', 5), ('diogenes', 15), ('heraclitus', 60), ('parmenides', 20)]
+2026-09-08 13:44:33,400 [INFO] ascension.orchestrator.orchestrator: orchestrator: alien run-record flags written to runs.config for run_id=8c135042-cbaf-4c5f-a6df-f1740fc555d4: benchmark_system=alien_universe included_in_distillation_v1=False council_variant=council
+2026-09-08 13:44:33,410 [INFO] ascension.orchestrator.orchestrator: orchestrator started: run_id=8c135042-cbaf-4c5f-a6df-f1740fc555d4 n_agents=5
+2026-09-08 13:44:33,486 [INFO] ascension.council.round_close: RoundCloseCoordinator starting: window=60s run_id=8c135042-cbaf-4c5f-a6df-f1740fc555d4 score_ranking=True alien_fit_ranking=True
+2026-09-08 13:44:35,043 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:44:35,045 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:44:35,052 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:44:35,053 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:44:35,103 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:44:35,104 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:44:35,109 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:44:35,111 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:44:35,130 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:44:35,131 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:45:12,170 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:45:12,605 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:45:25,960 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:45:26,248 [WARNING] ascension.council.base: council parmenides iter 1: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=parmenides schema=CouncilHypothesis
+2026-09-08 13:45:26,249 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=parmenides error=SchemaValidationFailed: SchemaValidationFailed role=parmenides schema=CouncilHypothesis
+2026-09-08 13:45:28,529 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:45:28,544 [WARNING] ascension.agora.schemas: Dropping malformed parent_hypothesis_id 'fd93e5b9' — not a valid UUID (likely a truncated/abbreviated id from an LLM). The hypothesis is kept; only this optional lineage reference is discarded.
+2026-09-08 13:45:28,546 [WARNING] ascension.agora.schemas: Dropping malformed parent_hypothesis_id 'fd93e5b9' — not a valid UUID (likely a truncated/abbreviated id from an LLM). The hypothesis is kept; only this optional lineage reference is discarded.
+2026-09-08 13:45:28,589 [WARNING] ascension.council.base: council diogenes iter 1: CouncilHypothesis structured-output failed (Pitfall 3 / SchemaValidationFailed): SchemaValidationFailed role=diogenes schema=CouncilHypothesis
+2026-09-08 13:45:28,589 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=diogenes error=SchemaValidationFailed: SchemaValidationFailed role=diogenes schema=CouncilHypothesis
+2026-09-08 13:45:33,579 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 1 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-09-08 13:45:38,550 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:45:38,847 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:45:44,040 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:45:44,049 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:45:46,422 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:45:46,427 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:09,337 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:46:09,714 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:46:09,737 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:09,745 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:46:12,534 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:46:12,837 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:46:13,115 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:46:13,119 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:15,169 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:15,283 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:46:15,316 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:17,176 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:20,242 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:20,697 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:22,250 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:22,699 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:24,384 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:27,817 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:28,195 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:28,877 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:46:28,912 [WARNING] ascension.agora.schemas: Dropping malformed parent_hypothesis_id 'CONTRADICTS:fd93e5b96752495d9a9446d37013acb3' — not a valid UUID (likely a truncated/abbreviated id from an LLM). The hypothesis is kept; only this optional lineage reference is discarded.
+2026-09-08 13:46:29,129 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:46:29,636 [INFO] ascension.agora._dispute_companion: dispute_companion_written rejected_node_id=1db9b24d-f650-4dac-8c97-8001f4a317eb run_id=8c135042-cbaf-4c5f-a6df-f1740fc555d4
+2026-09-08 13:46:29,688 [INFO] ascension.agora.conflict_detection: conflict_detection: flagged ['1db9b24d-f650-4dac-8c97-8001f4a317eb', 'fe12c0fa-f9de-4e76-8abf-933e3356c1fc'] | trigger=agent_flag signal=contradicts_edge target_confidence>0.7
+2026-09-08 13:46:29,849 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:31,498 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:33,320 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:46:33,326 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:33,326 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:33,449 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:34,531 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:35,464 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:35,655 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:38,471 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:38,580 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:38,644 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:39,196 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:39,819 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:44,261 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:44,508 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:44,599 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:44,883 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:45,464 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:45,622 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:45,993 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:46,804 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:46:46,985 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:48,892 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:49,145 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:49,189 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:46:49,901 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:49,939 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 persisted residual feedback (fit=0.935 steeper_power=True oscillation=True) for best=fe12c0fa-f9de-4e76-8abf-933e3356c1fc
+2026-09-08 13:46:49,946 [INFO] ascension.benchmarks.experiment_feedback: experiment_feedback: 'G * m2 / r**2' proposes no correction term to fit; battery not run
+2026-09-08 13:46:49,946 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 — best law 'G * m2 / r**2' proposes no correction term to fit (no experiment feedback)
+2026-09-08 13:46:50,003 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:50,004 [WARNING] ascension.llm.queue: RequestQueue: 2 consecutive Vertex 429s — routing directly to NVIDIA for 90s (429-cooldown breaker; EXP-074 fix)
+2026-09-08 13:46:50,004 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:46:50,016 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:46:50,017 [WARNING] ascension.council.base: council parmenides iter 3: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:46:50,017 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=parmenides error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 13:46:50,039 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:46:50,039 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:46:50,095 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:46:50,096 [ERROR] ascension.agora.criteria_layer: populate_criteria_from_round failed: y_plus=fe12c0fa-f9de-4e76-8abf-933e3356c1fc y_minus=e1b8bddf-76df-4d97-b323-2331920ea40b round_id=2 error=NvidiaError: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:46:50,104 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 closed — 0 new criteria from (best=fe12c0fa-f9de-4e76-8abf-933e3356c1fc, worst=e1b8bddf-76df-4d97-b323-2331920ea40b)
+2026-09-08 13:46:50,176 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:46:50,177 [WARNING] ascension.council.base: council aristotle iter 2: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:46:50,177 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=aristotle error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 13:46:50,788 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:50,906 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:50,907 [WARNING] ascension.llm.queue: RequestQueue: 3 consecutive Vertex 429s — routing directly to NVIDIA for 90s (429-cooldown breaker; EXP-074 fix)
+2026-09-08 13:46:50,907 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:46:50,966 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:46:50,966 [WARNING] ascension.council.base: council heraclitus iter 2: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:46:50,967 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 13:46:53,260 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:54,666 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:55,270 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:46:55,595 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:46:55,797 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:46:55,802 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:46:55,874 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:46:55,874 [WARNING] ascension.council.base: council aristotle iter 3: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:46:55,874 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=aristotle error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 13:46:57,860 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:47:01,525 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:47:01,527 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:47:01,703 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:47:01,706 [WARNING] ascension.llm.queue: RequestQueue: 4 consecutive Vertex 429s — routing directly to NVIDIA for 90s (429-cooldown breaker; EXP-074 fix)
+2026-09-08 13:47:01,706 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:47:01,876 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:47:01,876 [WARNING] ascension.council.base: council aristotle iter 4: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:47:01,877 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=aristotle error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 13:47:01,887 [ERROR] ascension.orchestrator.orchestrator: agent halted by 3-strike rule: agent=aristotle
+2026-09-08 13:47:01,899 [INFO] ascension.orchestrator.orchestrator: orchestrator: agent supervise task 'agent-aristotle' finished; continuing with the remaining agents (D-18)
+2026-09-08 13:47:02,042 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:47:02,043 [WARNING] ascension.council.base: council plato iter 2: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:47:02,043 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 13:47:03,134 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:47:08,033 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:47:08,195 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:47:10,376 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:47:10,386 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:47:10,576 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:47:10,576 [WARNING] ascension.council.base: council parmenides iter 4: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:47:10,577 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=parmenides error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 13:47:15,976 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:47:21,763 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-09-08 13:47:21,797 [WARNING] ascension.llm.queue: RequestQueue: 5 consecutive Vertex 429s — routing directly to NVIDIA for 90s (429-cooldown breaker; EXP-074 fix)
+2026-09-08 13:47:21,797 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:47:22,022 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:47:22,024 [WARNING] ascension.council.base: council diogenes iter 3: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:47:22,025 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=diogenes error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 13:47:30,897 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:47:30,901 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:47:31,091 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:47:31,092 [WARNING] ascension.council.base: council parmenides iter 5: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:47:31,093 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=parmenides error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 13:47:31,103 [ERROR] ascension.orchestrator.orchestrator: agent halted by 3-strike rule: agent=parmenides
+2026-09-08 13:47:31,107 [INFO] ascension.orchestrator.orchestrator: orchestrator: agent supervise task 'agent-parmenides' finished; continuing with the remaining agents (D-18)
+2026-09-08 13:47:32,181 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:47:32,183 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:47:32,251 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:47:32,252 [WARNING] ascension.council.base: council plato iter 3: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:47:32,252 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 13:47:37,325 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:47:37,348 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:47:37,560 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:47:37,560 [WARNING] ascension.council.base: council diogenes iter 4: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:47:37,560 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=diogenes error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 13:47:50,117 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 3 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-09-08 13:47:51,435 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:47:51,437 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:47:51,626 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:47:51,627 [WARNING] ascension.council.base: council heraclitus iter 3: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:47:51,628 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 13:47:52,799 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:47:52,806 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:47:52,878 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:47:52,879 [WARNING] ascension.council.base: council diogenes iter 5: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:47:52,879 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=diogenes error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 13:47:52,884 [ERROR] ascension.orchestrator.orchestrator: agent halted by 3-strike rule: agent=diogenes
+2026-09-08 13:47:52,886 [INFO] ascension.orchestrator.orchestrator: orchestrator: agent supervise task 'agent-diogenes' finished; continuing with the remaining agents (D-18)
+2026-09-08 13:48:02,466 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:48:02,468 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:48:02,642 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:48:02,643 [WARNING] ascension.council.base: council plato iter 4: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:48:02,643 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 13:48:33,109 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:48:33,111 [WARNING] ascension.llm.queue: PROVIDER FALLBACK: gemini gemini-2.5-pro 429 -> nvidia meta/llama-3.3-70b-instruct
+2026-09-08 13:48:33,340 [INFO] httpx: HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-08 13:48:33,340 [WARNING] ascension.council.base: council plato iter 5: unexpected error: NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 2026-08-26T09:00:00Z and is no longer available."}
+
+2026-09-08 13:48:33,341 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=NvidiaError: NVIDIA returned HTTP 410 for model 'meta/llama-3.3-70b-instruct': {"type":"about:blank","title":"Gone","status":410,"detail":"The model 'meta/llama-3.3-70b-instruct' has reached its end of life on 202
+2026-09-08 13:48:50,138 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 4 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-09-08 13:48:52,397 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:48:52,400 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:49:03,741 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:49:03,743 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:49:44,977 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:49:45,010 [INFO] ascension.llm.queue: RequestQueue: Vertex call succeeded — clearing 429 cooldown
+2026-09-08 13:49:45,267 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:49:50,159 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 5 skipped — 1 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-09-08 13:50:46,103 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:50:46,109 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:50:50,178 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 6 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-09-08 13:51:12,346 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:51:12,670 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:51:23,926 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:51:24,505 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:51:45,797 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:51:45,938 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:51:50,301 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 7 — alien proposal 3d31425c-cb30-4b84-8552-b0f5c2dac74c could not be parsed/evaluated to a finite force (symbolic_form='-G * m2 / r**p + A * m2 * cos(k * r) / r**2'); excluded from alien-fit ranking
+2026-09-08 13:51:50,306 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 7 — alien proposal 3d2f7379-cde2-493f-ae00-236d2cfa71bb could not be parsed/evaluated to a finite force (symbolic_form='-G/r**p * (1 + alpha * cos(k*r))'); excluded from alien-fit ranking
+2026-09-08 13:51:50,306 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 7 — alien-fit ranking could not rank >=2 proposals (0 rankable); falling back to CONFIDENCE ranking for this round. This is the genuine-failure path (engineering_discipline_no_coverups — loud, never a silent circular signal). Investigate if it recurs: it means the Council emitted no parseable symbolic_form.
+2026-09-08 13:51:50,366 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 7 persisted residual feedback (fit=0.506 steeper_power=True oscillation=True) for best=3d31425c-cb30-4b84-8552-b0f5c2dac74c
+2026-09-08 13:52:02,841 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 7 persisted experiment feedback (fitted_exponent=3.4 rss_reduction=1.000) for best=3d31425c-cb30-4b84-8552-b0f5c2dac74c
+2026-09-08 13:52:03,607 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:52:03,608 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:52:20,241 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:52:20,467 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:52:20,602 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Proposes a concrete mathematical formula with defined parameters.'
+2026-09-08 13:52:20,733 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:52:20,798 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Explicitly maps each component of its model to a distinct phenomenon to be expla'
+2026-09-08 13:52:21,014 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:52:21,139 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=3d31425c-cb30-4b84-8552-b0f5c2dac74c y_minus=3d2f7379-cde2-493f-ae00-236d2cfa71bb round_id=7 emitted=3 deduplicated=2 inserted=1 call_id=1b4c75f8-b32c-4e3b-b6b6-5f5ed75e193a
+2026-09-08 13:52:21,140 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 7 closed — 1 new criteria from (best=3d31425c-cb30-4b84-8552-b0f5c2dac74c, worst=3d2f7379-cde2-493f-ae00-236d2cfa71bb)
+2026-09-08 13:52:25,455 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:52:25,459 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:52:30,769 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:52:31,038 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:53:01,553 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:53:01,566 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:53:07,619 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:53:07,842 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:53:21,241 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 8 — alien proposal 52fd25e0-1852-4c13-8348-8517ef548f85 could not be parsed/evaluated to a finite force (symbolic_form='-G * m1 * m2 / r**2 - A / r**3.4'); excluded from alien-fit ranking
+2026-09-08 13:53:21,258 [WARNING] ascension.council.round_close: RoundCloseCoordinator: round 8 — alien-fit ranking could not rank >=2 proposals (1 rankable); falling back to CONFIDENCE ranking for this round. This is the genuine-failure path (engineering_discipline_no_coverups — loud, never a silent circular signal). Investigate if it recurs: it means the Council emitted no parseable symbolic_form.
+2026-09-08 13:53:21,320 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 8 persisted residual feedback (fit=0.863 steeper_power=True oscillation=True) for best=67b25f69-097b-49f0-8ab3-8e585d6cf07e
+2026-09-08 13:53:21,579 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:53:21,583 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:53:32,594 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:53:32,914 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:53:37,764 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:53:37,957 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:53:37,996 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Proposes a single, unified law to explain multiple, distinct observational pheno'
+2026-09-08 13:53:38,158 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:53:38,188 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Contains simpler, established models as a special or limiting case of its own fo'
+2026-09-08 13:53:38,356 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:53:38,373 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: dedup hit — skipping insert. body='Derives its structure from a single theoretical postulate, rather than adding em'
+2026-09-08 13:53:38,378 [INFO] ascension.agora.criteria_layer: populate_criteria_from_round: success — y_plus=67b25f69-097b-49f0-8ab3-8e585d6cf07e y_minus=52fd25e0-1852-4c13-8348-8517ef548f85 round_id=8 emitted=3 deduplicated=3 inserted=0 call_id=1d47e252-c94c-404f-a315-c0b4daebe51a
+2026-09-08 13:53:38,378 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 8 closed — 0 new criteria from (best=67b25f69-097b-49f0-8ab3-8e585d6cf07e, worst=52fd25e0-1852-4c13-8348-8517ef548f85)
+2026-09-08 13:54:03,290 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:54:03,295 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:54:08,222 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-09-08 13:54:08,224 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-09-08 13:54:38,400 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 9 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-09-08 13:54:45,144 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-09-08 13:54:45,481 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-embedding-001:predict "HTTP/1.1 200 OK"
+2026-09-08 13:54:47,441 [INFO] ascension.council.round_close: RoundCloseCoordinator stopped after 9 rounds (run_id=8c135042-cbaf-4c5f-a6df-f1740fc555d4)
+2026-09-08 13:54:47,464 [INFO] __main__: orchestrator CLI exit: run_id=8c135042-cbaf-4c5f-a6df-f1740fc555d4 halt_reason=sigint n_agents=5 n_halted=3
+2026-09-08 13:54:52,736 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"

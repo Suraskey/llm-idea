@@ -1,0 +1,221 @@
+2026-07-21 02:08:17,389 [INFO] __main__: orchestrator CLI benchmark: system=alien_family_v2 seed=3 n_members=4 n_bodies=2 n_steps=1000 n_held_out=13 (V2: sum coupling + r^-2.5)
+2026-07-21 02:08:17,389 [INFO] __main__: orchestrator CLI pre-set run_id=07effd1d-58d0-46cd-b9ce-aa2dd634dc61
+2026-07-21 02:08:17,389 [INFO] __main__: orchestrator CLI episode start: n_agents=5 campaign_id=None focus=None max_duration_seconds=1200 call_budget=None agents=[('plato', 30), ('aristotle', 5), ('diogenes', 15), ('heraclitus', 60), ('parmenides', 20)]
+2026-07-21 02:08:17,395 [INFO] ascension.orchestrator.orchestrator: orchestrator: alien run-record flags written to runs.config for run_id=07effd1d-58d0-46cd-b9ce-aa2dd634dc61: benchmark_system=alien_universe included_in_distillation_v1=False council_variant=council
+2026-07-21 02:08:17,396 [INFO] ascension.orchestrator.orchestrator: orchestrator started: run_id=07effd1d-58d0-46cd-b9ce-aa2dd634dc61 n_agents=5
+2026-07-21 02:08:17,409 [INFO] ascension.council.round_close: RoundCloseCoordinator starting: window=60s run_id=07effd1d-58d0-46cd-b9ce-aa2dd634dc61 score_ranking=True alien_fit_ranking=True
+2026-07-21 02:08:18,461 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:08:18,463 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-07-21 02:08:18,466 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:08:18,466 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:08:18,467 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:08:18,467 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-07-21 02:08:18,469 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-07-21 02:08:18,473 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-07-21 02:08:18,475 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:08:18,476 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-07-21 02:08:34,038 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-21 02:12:30,034 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-07-21 02:12:35,712 [WARNING] ascension.council.base: council plato iter 1: unexpected error: ReadError: 
+2026-07-21 02:12:35,712 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ReadError: 
+2026-07-21 02:12:35,716 [WARNING] ascension.council.base: council heraclitus iter 1: unexpected error: ReadError: 
+2026-07-21 02:12:35,716 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ReadError: 
+2026-07-21 02:13:06,514 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:13:06,515 [WARNING] ascension.council.base: council plato iter 2: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:13:06,515 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:13:11,412 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 1 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 02:15:40,582 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:15:40,583 [WARNING] ascension.council.base: council heraclitus iter 2: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:15:40,583 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:15:41,232 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:15:41,232 [WARNING] ascension.council.base: council plato iter 3: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:15:41,232 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:15:48,101 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+2026-07-21 02:15:48,137 [WARNING] ascension.agent.publish: insert_node: embed failed for type=hypothesis run_id=07effd1d-58d0-46cd-b9ce-aa2dd634dc61 — deadlettering: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:17:46,332 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:17:46,333 [WARNING] ascension.council.base: council parmenides iter 2: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:17:46,333 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=parmenides error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:17:49,155 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:17:49,156 [WARNING] ascension.council.base: council plato iter 4: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:17:49,156 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:17:53,682 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 2 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 02:18:06,859 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:18:06,860 [WARNING] ascension.council.base: council parmenides iter 3: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:18:06,860 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=parmenides error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:18:19,008 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:18:19,009 [WARNING] ascension.council.base: council heraclitus iter 3: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:18:19,009 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:18:19,267 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:18:19,268 [WARNING] ascension.council.base: council plato iter 5: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:18:19,268 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:18:21,457 [WARNING] ascension.council.base: council diogenes iter 1: unexpected error: ReadError: 
+2026-07-21 02:18:21,457 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=diogenes error=ReadError: 
+2026-07-21 02:18:21,457 [WARNING] ascension.council.base: council aristotle iter 1: unexpected error: ReadError: 
+2026-07-21 02:18:21,457 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=aristotle error=ReadError: 
+2026-07-21 02:18:26,707 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:18:26,708 [WARNING] ascension.council.base: council aristotle iter 2: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:18:26,708 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=aristotle error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:18:26,969 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:18:26,969 [WARNING] ascension.council.base: council parmenides iter 4: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:18:26,969 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=parmenides error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:18:26,974 [ERROR] ascension.orchestrator.orchestrator: agent halted by 3-strike rule: agent=parmenides
+2026-07-21 02:18:26,975 [INFO] ascension.orchestrator.orchestrator: orchestrator: agent supervise task 'agent-parmenides' finished; continuing with the remaining agents (D-18)
+2026-07-21 02:19:29,765 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:19:29,766 [WARNING] ascension.council.base: council aristotle iter 3: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:19:29,766 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=aristotle error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:19:33,744 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:19:33,745 [WARNING] ascension.council.base: council diogenes iter 2: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:19:33,745 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=diogenes error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:19:36,069 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:19:36,070 [WARNING] ascension.council.base: council aristotle iter 4: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:19:36,070 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=aristotle error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:19:41,382 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:19:41,382 [WARNING] ascension.council.base: council aristotle iter 5: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:19:41,382 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=aristotle error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:19:41,387 [ERROR] ascension.orchestrator.orchestrator: agent halted by 3-strike rule: agent=aristotle
+2026-07-21 02:19:41,389 [INFO] ascension.orchestrator.orchestrator: orchestrator: agent supervise task 'agent-aristotle' finished; continuing with the remaining agents (D-18)
+2026-07-21 02:19:46,667 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:19:46,668 [WARNING] ascension.council.base: council plato iter 6: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:19:46,668 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:19:48,906 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:19:48,906 [WARNING] ascension.council.base: council diogenes iter 3: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:19:48,906 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=diogenes error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:19:50,813 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 3 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 02:20:04,956 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:20:04,957 [WARNING] ascension.council.base: council diogenes iter 4: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:20:04,957 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=diogenes error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:20:04,962 [ERROR] ascension.orchestrator.orchestrator: agent halted by 3-strike rule: agent=diogenes
+2026-07-21 02:20:04,964 [INFO] ascension.orchestrator.orchestrator: orchestrator: agent supervise task 'agent-diogenes' finished; continuing with the remaining agents (D-18)
+2026-07-21 02:20:37,062 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:20:37,063 [WARNING] ascension.council.base: council heraclitus iter 4: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:20:37,063 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:20:37,099 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:20:37,099 [WARNING] ascension.council.base: council plato iter 7: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:20:37,099 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:21:08,802 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:21:08,804 [WARNING] ascension.council.base: council plato iter 8: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:21:08,804 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:21:10,738 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 4 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 02:22:31,804 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:22:31,806 [WARNING] ascension.council.base: council heraclitus iter 5: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:22:31,806 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:22:33,380 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:22:33,381 [WARNING] ascension.council.base: council plato iter 9: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:22:33,381 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:23:03,639 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:23:03,641 [WARNING] ascension.council.base: council plato iter 10: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:23:03,641 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:23:05,165 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 5 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 02:23:50,819 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:23:50,820 [WARNING] ascension.council.base: council heraclitus iter 6: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:23:50,821 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:23:52,503 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:23:52,503 [WARNING] ascension.council.base: council plato iter 11: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:23:52,503 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=359710.817353083
+2026-07-21 02:25:29,168 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:25:29,171 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-07-21 02:25:30,175 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 6 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 02:25:57,504 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:25:57,507 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-07-21 02:29:26,809 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 7 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 02:34:40,107 [WARNING] ascension.council.base: council heraclitus iter 7: unexpected error: ReadError: 
+2026-07-21 02:34:40,107 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ReadError: 
+2026-07-21 02:34:40,108 [WARNING] ascension.council.base: council plato iter 12: unexpected error: ReadError: 
+2026-07-21 02:34:40,108 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ReadError: 
+2026-07-21 02:35:10,502 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:35:10,507 [WARNING] ascension.council.base: council plato iter 13: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:35:10,508 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:35:16,832 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 8 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 02:36:21,535 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:36:21,539 [WARNING] ascension.council.base: council heraclitus iter 8: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:36:21,539 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:36:21,751 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:36:21,753 [WARNING] ascension.council.base: council plato iter 14: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:36:21,754 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:36:51,943 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:36:51,946 [WARNING] ascension.council.base: council plato iter 15: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:36:51,946 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:38:42,262 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 9 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 02:39:06,261 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:39:06,265 [WARNING] ascension.council.base: council heraclitus iter 9: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:39:06,265 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:39:06,397 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:39:06,400 [WARNING] ascension.council.base: council plato iter 16: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:39:06,400 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:42:22,005 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:42:22,006 [WARNING] ascension.council.base: council plato iter 17: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:42:22,006 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:42:27,430 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 10 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 02:42:51,730 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:42:51,732 [WARNING] ascension.council.base: council heraclitus iter 10: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:42:51,732 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:42:52,108 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:42:52,111 [WARNING] ascension.council.base: council plato iter 18: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:42:52,111 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:44:28,294 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:44:28,299 [WARNING] ascension.council.base: council plato iter 19: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:44:28,300 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:44:33,345 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 11 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 02:45:37,643 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:45:37,648 [WARNING] ascension.council.base: council heraclitus iter 11: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:45:37,648 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:45:38,082 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:45:38,085 [WARNING] ascension.council.base: council plato iter 20: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:45:38,085 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:46:08,386 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:46:08,391 [WARNING] ascension.council.base: council plato iter 21: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:46:08,391 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:46:13,019 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 12 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 02:52:40,498 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:52:40,500 [WARNING] ascension.council.base: council heraclitus iter 12: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:52:40,501 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:52:41,055 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:52:41,056 [WARNING] ascension.council.base: council plato iter 22: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:52:41,057 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360129.451422791
+2026-07-21 02:53:11,243 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:53:11,250 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-07-21 02:53:15,547 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 13 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 02:53:19,136 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-21 02:53:21,142 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-07-21 02:53:40,848 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 02:53:40,853 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-07-21 02:57:33,525 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 14 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 02:59:15,293 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 15 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 03:02:22,565 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 16 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 03:03:29,167 [WARNING] ascension.council.base: council plato iter 23: unexpected error: ReadError: 
+2026-07-21 03:03:29,167 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ReadError: 
+2026-07-21 03:03:29,168 [WARNING] ascension.council.base: council heraclitus iter 13: unexpected error: ReadError: 
+2026-07-21 03:03:29,168 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ReadError: 
+2026-07-21 03:03:34,676 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 17 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 03:03:59,434 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 03:03:59,435 [WARNING] ascension.council.base: council plato iter 24: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:03:59,435 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:04:52,393 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 03:04:52,395 [WARNING] ascension.council.base: council heraclitus iter 14: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:04:52,396 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:04:52,535 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 03:04:52,538 [WARNING] ascension.council.base: council plato iter 25: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:04:52,538 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:04:57,490 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 18 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 03:07:44,746 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 03:07:44,748 [WARNING] ascension.council.base: council plato iter 26: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:07:44,748 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:08:14,601 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 03:08:14,603 [WARNING] ascension.council.base: council heraclitus iter 15: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:08:14,603 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:08:14,882 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 03:08:14,884 [WARNING] ascension.council.base: council plato iter 27: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:08:14,884 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:08:19,407 [INFO] ascension.council.round_close: RoundCloseCoordinator: round 19 skipped — 0 hypotheses in 60s window (need >=2 for contrastive distillation)
+2026-07-21 03:10:39,693 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 03:10:39,697 [WARNING] ascension.council.base: council plato iter 28: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:10:39,698 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:11:07,978 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 03:11:07,980 [WARNING] ascension.council.base: council heraclitus iter 16: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:11:07,981 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=heraclitus error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:13:19,868 [INFO] httpx: HTTP Request: POST https://us-central1-aiplatform.googleapis.com/v1beta1/projects/[gcp-project]/locations/us-central1/publishers/google/models/gemini-2.5-pro:countTokens "HTTP/1.1 200 OK"
+2026-07-21 03:13:19,871 [WARNING] ascension.council.base: council plato iter 29: unexpected error: ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:13:19,872 [ERROR] ascension.orchestrator.orchestrator: agent iteration returned failure: agent=plato error=ProviderUnavailable: ProviderUnavailable reason=circuit_breaker_open open_since=360700.63484575
+2026-07-21 03:13:21,738 [WARNING] ascension.orchestrator.orchestrator: orchestrator: --max-duration-seconds=1200 elapsed — initiating graceful drain (halt_reason='duration_exceeded')
+2026-07-21 03:13:21,739 [INFO] ascension.council.round_close: RoundCloseCoordinator stopped after 19 rounds (run_id=07effd1d-58d0-46cd-b9ce-aa2dd634dc61)
+2026-07-21 03:13:21,746 [INFO] __main__: orchestrator CLI exit: run_id=07effd1d-58d0-46cd-b9ce-aa2dd634dc61 halt_reason=duration_exceeded n_agents=5 n_halted=3

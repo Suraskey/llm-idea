@@ -1,0 +1,108 @@
+2026-09-08 13:22:01,479 [INFO] ascension.benchmarks.alien_depth: alien_depth: max_depth=2 per_layer=(True, True, False, False, False, False) held_out_rmse=0.16949941384776535 q_drift=None n_hyp=55 elapsed_ms=67755
+========================================================================
+ALIEN RUN b6cbe34a-ae58-4d74-af8f-f94b107e0142
+  run.status=completed  halt_reason=duration_exceeded
+  PROVENANCE (P-15.2-6): benchmark_system='alien_universe'  included_in_distillation_v1=False
+  SCORING MODE: single-config
+  node types: {'dispute': 13, 'hypothesis': 55}
+  hypothesis nodes=55  status_breakdown={'contested': 21, 'active': 34}
+  SPEND: 175 llm_calls, $4.4074 total
+    provider='google': 175 calls, $4.4074
+------------------------------------------------------------------------
+  DISCOVERY DEPTH (P-15.2-1/2/3): max_depth=2
+    per_layer L1..L6 = (True, True, False, False, False, False)
+    HONEST consecutive force-law depth (L1-L4, L-057) = 2   [L5=False L6=False reported separately, non-consecutive]
+    held_out_rss_reduction=0.16949941384776535  q_drift=None
+  scorer notes (98):
+    - L1: inverse-square term + Newton accel-fit converges ('(-G*m1*m2/r**2) - (alpha/r**3.4)')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('(-G*m1*m2/r**2) - (alpha/r**3.4)')
+    - L1: inverse-square term + Newton accel-fit converges ('(-k1*m2/r**2) - (k2/r**3) * cos(omega*r)')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('(-k1*m2/r**2) - (k2/r**3) * cos(omega*r)')
+    - L1: inverse-square term + Newton accel-fit converges ('(G * m2 / r**2) * (1 + kappa * ((vx1-vx2)**2 + (vy1-vy2)**2))')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('(x2 - x1) / r * (-G * m2 / r**2 + K * cos(omega * r) / r**2)')
+    - L1: inverse-square term + Newton accel-fit converges ('-(G/r**2 + kappa/r**3.4)')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('-(G/r**2 + kappa/r**3.4)')
+    - L1: inverse-square term + Newton accel-fit converges ('-G * (1/r**2 + kappa/r) * exp(-kappa*r) + B/r**3')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('-G * (1/r**2 + kappa/r) * exp(-kappa*r) + B/r**3')
+    - L1: inverse-square term + Newton accel-fit converges ('-G*m2/r**2 - alpha*m2/r**3.4')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('-G*m2/r**2 - alpha*m2/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('-G*m2/r**2 - beta/r**3')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('-G*m2/r**2 - beta/r**3')
+    - L1: inverse-square term + Newton accel-fit converges ('-G*m2/r**2 - k/r**3.4')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('-G*m2/r**2 - k/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('-G/r**2 + alpha/r**3')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('-G/r**2 + alpha/r**3')
+    - L1: inverse-square term + Newton accel-fit converges ('-G/r**2 - C/r**3.4')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('-G/r**2 - C/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('-G/r**2 - alpha/r**3.4')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('-G/r**2 - alpha/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('-G/r**2 - k/r**3.4')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('-G/r**2 - k/r**3.4')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('0')
+    - L1: inverse-square term + Newton accel-fit converges ('G * m2 / r**2 + alpha / r**3.4')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('G * m2 / r**2 + alpha / r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('G / r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*(m1+m2)/r**2 + C/r**3.4')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('G*(m1+m2)/r**2 + C/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2 + C*cos(k*r)/r**3')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m1*m2/r**2 + C*cos(k*r)/r**3')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m1*m2/r**2 + C/r**3.4')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('G*m1*m2/r**2 + C/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2 * (1 + alpha * ((vx1-vx2)**2 + (vy1-vy2)**2))')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2 * (1 + alpha * cos(kappa*r))')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2 * (1 + alpha*cos(omega/r))')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2 + C/r**3.4')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('G*m2/r**2 + C/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2 + C/r**3.4')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('G*m2/r**2 + C/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2 + H*m2/r**(10/3)')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('G*m2/r**2 + H*m2/r**(10/3)')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2 + K*m2/r**3.4')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('G*m2/r**2 + K*m2/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2 + K/r**3')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m2/r**2 + K/r**3')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2 + alpha*cos(omega*r)')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2 + alpha*m2/r**3.4')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('G*m2/r**2 + alpha*m2/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2 + alpha/r**3.4')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('G*m2/r**2 + alpha/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2 + alpha/r**3.4 + beta * cos(omega * r / sqrt((vx1-vx2)**2 + (vy1-vy2)**2)) / r**3')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('G*m2/r**2 + alpha/r**3.4 + beta * cos(omega * r / sqrt((vx1-vx2)**2 + (vy1-vy2)**2)) / r**3')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2 + beta*m2/r**3.4')
+    - L2: second radial term ~r**-3.5 + correction-basis RSS reduction 0.169 >= 0.05 ('G*m2/r**2 + beta*m2/r**3.4')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2 + beta/r')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('G*m2/r**2 + beta/r')
+    - L1: inverse-square term + Newton accel-fit converges ('G*m2/r**2 + beta/r**3 * cos(omega * r)')
+  distinct symbolic_form count=52 (sample up to 30):
+    (-G*m1*m2/r**2) - (alpha/r**3.4)
+    (-k1*m2/r**2) - (k2/r**3) * cos(omega*r)
+    (G * m2 / r**2) * (1 + kappa * ((vx1-vx2)**2 + (vy1-vy2)**2))
+    (x2 - x1) / r * (-G * m2 / r**2 + K * cos(omega * r) / r**2)
+    -(G/r**2 + kappa/r**3.4)
+    -G * (1/r**2 + kappa/r) * exp(-kappa*r) + B/r**3
+    -G*m2/r**2 - alpha*m2/r**3.4
+    -G*m2/r**2 - beta/r**3
+    -G*m2/r**2 - k/r**3.4
+    -G/r**2 + alpha/r**3
+    -G/r**2 - C/r**3.4
+    -G/r**2 - alpha/r**3.4
+    -G/r**2 - k/r**3.4
+    0
+    G * m2 / r**2 + alpha / r**3.4
+    G / r**2
+    G*(m1+m2)/r**2 + C/r**3.4
+    G*m1*m2/r**2 + C*cos(k*r)/r**3
+    G*m1*m2/r**2 + C/r**3.4
+    G*m2/r**2
+    G*m2/r**2 * (1 + alpha * ((vx1-vx2)**2 + (vy1-vy2)**2))
+    G*m2/r**2 * (1 + alpha * cos(kappa*r))
+    G*m2/r**2 * (1 + alpha*cos(omega/r))
+    G*m2/r**2 + C/r**3.4
+    G*m2/r**2 + H*m2/r**(10/3)
+    G*m2/r**2 + K*m2/r**3.4
+    G*m2/r**2 + K/r**3
+    G*m2/r**2 + alpha*cos(omega*r)
+    G*m2/r**2 + alpha*m2/r**3.4
+    G*m2/r**2 + alpha/r**3.4
+========================================================================

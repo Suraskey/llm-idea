@@ -1,0 +1,40 @@
+2026-06-02 23:12:41,790 [WARNING] ascension.benchmarks.alien_depth: alien_depth: could not parse symbolic_form '(gamma * s1 * s2 / r**3) * ( (x2-x1), (y2-y1) ) - (beta * (s1+s2) / (m1*m2)) * (vx1-vx2, vy1-vy2)' (TypeError: can't multiply sequence by non-int of type 'Mul'); skipped
+2026-06-02 23:12:53,551 [INFO] ascension.benchmarks.alien_depth: alien_depth: max_depth=6 per_layer=(True, False, True, False, False, True) held_out_rmse=0.21206819539332167 q_drift=None n_hyp=4 elapsed_ms=11779
+========================================================================
+ALIEN RUN 0f913fbe-1e0a-408b-8ab0-3904fd45dc57
+  run.status=completed  halt_reason=call_budget_exceeded
+  PROVENANCE (P-15.2-6): benchmark_system='alien_universe'  included_in_distillation_v1=False
+  SCORING MODE: FAMILY (L3/L4 vs held-out products {3,5})
+  node types: {'hypothesis': 5}
+  hypothesis nodes=5  status_breakdown={'active': 5}
+  SPEND: 15 llm_calls, $1.6322 total
+    provider='google': 15 calls, $1.6322
+------------------------------------------------------------------------
+  DISCOVERY DEPTH (P-15.2-1/2/3): max_depth=6
+    per_layer L1..L6 = (True, False, True, False, False, True)
+    HONEST consecutive force-law depth (L1-L4, L-057) = 1   [L5=False L6=True reported separately, non-consecutive]
+    held_out_rss_reduction=0.21206819539332167  q_drift=None
+  scorer notes (16):
+    - skipped: unparseable '(gamma * s1 * s2 / r**3) * ( (x2-x1), (y2-y1) ) - (beta * (s1+s2) / (m1*m2)) * (vx1-vx2, vy1-vy2)'
+    - L1: inverse-square term + Newton accel-fit converges ('(alpha * s1 * s2 / r**2 - beta / r**3) / m1')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('(alpha * s1 * s2 / r**2 - beta / r**3) / m1')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('(alpha * s1 * s2 / r**2 - beta / r**3) / m1')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('(alpha * s1 * s2 / r**2 - beta / r**3) / m1')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('alpha*s1*s2/r**3 - beta/r')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('alpha*s1*s2/r**3 - beta/r')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('alpha*s1*s2/r**3 - beta/r')
+    - L1: inverse-square term + Newton accel-fit converges ('alpha/r**3 - (s1*s2)/r**2')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('alpha/r**3 - (s1*s2)/r**2')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('alpha/r**3 - (s1*s2)/r**2')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('alpha/r**3 - (s1*s2)/r**2')
+    - L1: inverse-square term + Newton accel-fit converges ('s1*s2/r**3 - gamma/r**2')
+    - L2 DENIED: second radial term exponent not ~-3.5 ('s1*s2/r**3 - gamma/r**2')
+    - L3: hidden product does real work, hidden-basis RSS reduction 0.212 (+rationale tiebreaker) ('s1*s2/r**3 - gamma/r**2')
+    - L6: law verified invariant under P:(x->-x,v->-v,s->-s) ('s1*s2/r**3 - gamma/r**2')
+  distinct symbolic_form count=5 (sample up to 30):
+    (alpha * s1 * s2 / r**2 - beta / r**3) / m1
+    (gamma * s1 * s2 / r**3) * ( (x2-x1), (y2-y1) ) - (beta * (s1+s2) / (m1*m2)) * (vx1-vx2, vy1-vy2)
+    alpha*s1*s2/r**3 - beta/r
+    alpha/r**3 - (s1*s2)/r**2
+    s1*s2/r**3 - gamma/r**2
+========================================================================

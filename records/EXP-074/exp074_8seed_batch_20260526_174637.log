@@ -1,0 +1,35 @@
+EXP-074 8-seed confirmatory starting, TS=20260526_174637, manifest=.planning/research/exp074_8seed_manifest_20260526_174637.tsv
+===== seed=0 ARM=control battery=false run_id=55465986-4af8-4c97-b5fc-eb003cc9f851 dur=900s ceil=$6 =====
+===== seed=0 ARM=control DONE (exit 0) run_id=55465986-4af8-4c97-b5fc-eb003cc9f851 =====
+===== seed=0 ARM=treatment battery=true run_id=2704c346-6f50-4ece-a769-78029ce16fec dur=900s ceil=$6 =====
+===== seed=0 ARM=treatment DONE (exit 0) run_id=2704c346-6f50-4ece-a769-78029ce16fec =====
+===== seed=1 ARM=control battery=false run_id=bd116b31-82f7-47a4-8e8b-91bc5496fef2 dur=900s ceil=$6 =====
+===== seed=1 ARM=control DONE (exit 0) run_id=bd116b31-82f7-47a4-8e8b-91bc5496fef2 =====
+===== seed=1 ARM=treatment battery=true run_id=081aad83-f496-49bb-ac59-600592e9b447 dur=900s ceil=$6 =====
+===== seed=1 ARM=treatment DONE (exit 0) run_id=081aad83-f496-49bb-ac59-600592e9b447 =====
+===== seed=2 ARM=control battery=false run_id=408dda80-4803-42a2-a97a-1ddccf369dea dur=900s ceil=$6 =====
+===== seed=2 ARM=control DONE (exit 0) run_id=408dda80-4803-42a2-a97a-1ddccf369dea =====
+===== seed=2 ARM=treatment battery=true run_id=b62ce75b-a9a5-488c-9b50-78e793e202f1 dur=900s ceil=$6 =====
+===== seed=2 ARM=treatment DONE (exit 0) run_id=b62ce75b-a9a5-488c-9b50-78e793e202f1 =====
+===== seed=3 ARM=control battery=false run_id=0c9bc0bf-8b69-4725-98d0-5aeb3dbea9a7 dur=900s ceil=$6 =====
+===== seed=3 ARM=control DONE (exit 0) run_id=0c9bc0bf-8b69-4725-98d0-5aeb3dbea9a7 =====
+===== seed=3 ARM=treatment battery=true run_id=cdbe36d0-0808-4eb7-a497-5521c07777c8 dur=900s ceil=$6 =====
+===== seed=3 ARM=treatment DONE (exit 0) run_id=cdbe36d0-0808-4eb7-a497-5521c07777c8 =====
+===== seed=4 ARM=control battery=false run_id=07380410-4fda-42fa-92ce-858213c36306 dur=900s ceil=$6 =====
+===== seed=4 ARM=control DONE (exit 0) run_id=07380410-4fda-42fa-92ce-858213c36306 =====
+===== seed=4 ARM=treatment battery=true run_id=69489fb5-72e4-4a2b-961b-5cc6657e8be0 dur=900s ceil=$6 =====
+===== seed=4 ARM=treatment DONE (exit 0) run_id=69489fb5-72e4-4a2b-961b-5cc6657e8be0 =====
+===== seed=5 ARM=control battery=false run_id=3e538d10-02d7-4c6d-b795-c5b50bea10ee dur=900s ceil=$6 =====
+===== seed=5 ARM=control DONE (exit 0) run_id=3e538d10-02d7-4c6d-b795-c5b50bea10ee =====
+===== seed=5 ARM=treatment battery=true run_id=aa1eeb49-c221-4799-b70c-758b08fabaf3 dur=900s ceil=$6 =====
+===== seed=5 ARM=treatment DONE (exit 0) run_id=aa1eeb49-c221-4799-b70c-758b08fabaf3 =====
+===== seed=6 ARM=control battery=false run_id=06eaa448-6076-417d-bc7e-d12e3b6d6882 dur=900s ceil=$6 =====
+===== seed=6 ARM=control DONE (exit 0) run_id=06eaa448-6076-417d-bc7e-d12e3b6d6882 =====
+===== seed=6 ARM=treatment battery=true run_id=265f42aa-a1b4-444e-8fb7-9d17c0c61a66 dur=900s ceil=$6 =====
+===== seed=6 ARM=treatment DONE (exit 0) run_id=265f42aa-a1b4-444e-8fb7-9d17c0c61a66 =====
+===== seed=7 ARM=control battery=false run_id=cb588359-a705-4217-9761-9b66dcc63b10 dur=900s ceil=$6 =====
+===== seed=7 ARM=control DONE (exit 0) run_id=cb588359-a705-4217-9761-9b66dcc63b10 =====
+===== seed=7 ARM=treatment battery=true run_id=0fa79627-8be3-4a95-a49e-6229c240d0ea dur=900s ceil=$6 =====
+===== seed=7 ARM=treatment DONE (exit 0) run_id=0fa79627-8be3-4a95-a49e-6229c240d0ea =====
+EXP-074 8-SEED COMPLETE. Score with:
+  poetry run python scripts/score_exp074.py .planning/research/exp074_8seed_manifest_20260526_174637.tsv

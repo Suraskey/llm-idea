@@ -1,0 +1,21 @@
+2026-07-21 03:13:36,731 [INFO] ascension.benchmarks.alien_depth: alien_depth: max_depth=1 per_layer=(True, False, False, False, False, False) held_out_rmse=None q_drift=None n_hyp=1 elapsed_ms=9422
+========================================================================
+ALIEN RUN 07effd1d-58d0-46cd-b9ce-aa2dd634dc61
+  run.status=completed  halt_reason=duration_exceeded
+  PROVENANCE (P-15.2-6): benchmark_system='alien_universe'  included_in_distillation_v1=False
+  SCORING MODE: FAMILY-V2 (V2 law: sum coupling + r^-2.5; L3/L4 vs held-out sums {4,6})
+  node types: {'hypothesis': 1}
+  hypothesis nodes=1  status_breakdown={'active': 1}
+  SPEND: 1 llm_calls, $0.1159 total
+    provider='google': 1 calls, $0.1159
+------------------------------------------------------------------------
+  DISCOVERY DEPTH (P-15.2-1/2/3): max_depth=1
+    per_layer L1..L6 = (True, False, False, False, False, False)
+    HONEST consecutive force-law depth (L1-L4, L-057) = 1   [L5=False L6=False reported separately, non-consecutive]
+    held_out_rss_reduction=None  q_drift=None
+  scorer notes (2):
+    - L1: inverse-square term + Newton accel-fit converges ('alpha * (r0 - r) / r**3')
+    - L2 DENIED: second radial term exponent not ~-2.5 ('alpha * (r0 - r) / r**3')
+  distinct symbolic_form count=1 (sample up to 30):
+    alpha * (r0 - r) / r**3
+========================================================================

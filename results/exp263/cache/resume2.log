@@ -1,0 +1,34 @@
+== base ('ether', 'cached')
+== base ('dark_matter', 'cached')
+== base ('three_species', 'cached')
+== fit dmcount cached 0s
+== fit ('ether', 'ET-3', 'mass_dep_drift', 'joint') ok 1506s
+== fit ('dark_matter', 'DM-2', 'no_hidden', 'joint') ok 24099s
+== fit ('three_species', 'TS-2', 'partition:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]', 'solo_default') ok 67s
+== fit ('three_species', 'TS-2', 'partition:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]', 'solo_best') ok 61s
+== fit ('three_species', 'TS-2', 'partition:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]', 'pair_default_best') ok 66s
+== fit ('three_species', 'TS-2', 'merge_AB', 'solo_default') ok 339s
+== fit ('three_species', 'TS-2', 'merge_AB', 'solo_best') ok 346s
+== fit ('three_species', 'TS-2', 'merge_AB', 'pair_default_best') ok 349s
+== fit ('three_species', 'TS-2', 'merge_AC', 'solo_default') ok 348s
+== fit ('three_species', 'TS-2', 'merge_AC', 'solo_best') ok 352s
+== fit ('three_species', 'TS-2', 'merge_AC', 'pair_default_best') ok 354s
+== fit ('three_species', 'TS-2', 'merge_BC', 'solo_default') ok 329s
+== fit ('three_species', 'TS-2', 'merge_BC', 'solo_best') ok 333s
+== fit ('three_species', 'TS-2', 'merge_BC', 'pair_default_best') ok 334s
+== fit ('three_species', 'TS-2', 'all_identical', 'solo_default') ok 13s
+== fit ('three_species', 'TS-2', 'all_identical', 'solo_best') ok 13s
+== fit ('three_species', 'TS-2', 'all_identical', 'pair_default_best') ok 11s
+== fit ('three_species', 'TS-3', 'nonneg', 'solo_default') ok 735s
+== fit ('three_species', 'TS-3', 'nonneg', 'solo_best') ok 746s
+== fit ('three_species', 'TS-3', 'nonneg', 'pair_default_best') ok 741s
+== fit ('three_species', 'TS-5', 'probes_A', 'solo_default') ok 70s
+== fit ('three_species', 'TS-5', 'probes_A', 'solo_best') ok 71s
+== fit ('three_species', 'TS-5', 'probes_A', 'pair_default_best') ok 68s
+== fit ('three_species', 'TS-5', 'probes_B', 'solo_default') ok 947s
+== fit ('three_species', 'TS-5', 'probes_B', 'solo_best') ok 891s
+== fit ('three_species', 'TS-5', 'probes_B', 'pair_default_best') ok 899s
+== fit ('three_species', 'TS-5', 'probes_C', 'solo_default') ok 109s
+== fit ('three_species', 'TS-5', 'probes_C', 'solo_best') ok 112s
+== fit ('three_species', 'TS-5', 'probes_C', 'pair_default_best') ok 106s
+== fit ('dark_matter', 'DM-2', 'no_hidden', 'solo_default') ok 404s

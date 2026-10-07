@@ -1,0 +1,3 @@
+{"id":"2dc1049a-0e04-4bf9-8fc8-4b459c922049","from_node":"9358f697-df50-4f06-a6c8-b3ba228e2aef","to_node":"174ab648-236f-475c-8b32-b5a80d66c476","type":"CONTRADICTS","weight":1,"created_at":"2026-06-03T23:06:05.492041+00:00","metadata":{}}
+{"id":"86fdf3e1-8346-4a6a-b0cc-c7d080065cb6","from_node":"dc508d48-28c1-43cb-992b-20577f29f5c3","to_node":"dd3bba66-18e8-44d3-84bf-06d1daf0a601","type":"CONTRADICTS","weight":1,"created_at":"2026-06-03T23:08:05.583771+00:00","metadata":{}}
+{"id":"f8a921a0-3458-45a5-8c60-f07396ab0493","from_node":"0512f57c-6c53-4c55-b721-a1d78a992c72","to_node":"dd3bba66-18e8-44d3-84bf-06d1daf0a601","type":"CONTRADICTS","weight":1,"created_at":"2026-06-03T23:09:28.579201+00:00","metadata":{}}

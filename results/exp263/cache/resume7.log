@@ -1,0 +1,5 @@
+[driver] 2026-09-30T19:55:24Z relaunch (launch7): three_species remaining joints, then final aggregate
+== base ('three_species', 'cached')
+/usr/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 7 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+[orchestrator] 2026-09-30T20:55:30Z run stopped by user decision (wrap up); three_species joint fits b5a9b6997cf4 (start0 only), TS-5 probes_B (start0 only), TS-5 probes_C (none) left incomplete

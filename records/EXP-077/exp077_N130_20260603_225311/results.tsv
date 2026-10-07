@@ -1,0 +1,11 @@
+seed	arm	run_id	consec_depth	raw_max_depth	realized_calls	halt_reason	per_layer
+0	council	c4cdef33-27f3-448a-8be3-384345f25753	3	6	130	call_budget_exceeded	per_layer L1..L6 = (True, True, True, False, False, True)
+0	single_model	f2407da6-7ba8-4de0-bfda-931d6efc18cb	1	6	34	duration_exceeded	per_layer L1..L6 = (True, False, True, False, False, True)
+1	council	1d1fd18e-810e-4c5f-b654-cb7aae8517af	1	6	23	duration_exceeded	per_layer L1..L6 = (True, False, True, False, False, True)
+1	single_model	8635254b-3f81-4dcf-8f8c-60d212a7885d	1	6	109	budget_exceeded	per_layer L1..L6 = (True, False, True, False, False, True)
+2	council	d8792baf-f44d-49d1-8898-5017eec9f0f9	3	6	130	call_budget_exceeded	per_layer L1..L6 = (True, True, True, False, False, True)
+2	single_model	43c4e98d-ff23-497c-96e7-76b5e326293a	1	6	116	budget_exceeded	per_layer L1..L6 = (True, False, True, False, False, True)
+3	council	00f574df-1b01-4c4f-9f8c-c7732dc586da	3	6	130	call_budget_exceeded	per_layer L1..L6 = (True, True, True, False, False, True)
+3	single_model	2380136e-7e5c-45dd-89fd-caed37fbad50	1	6	125	budget_exceeded	per_layer L1..L6 = (True, False, True, False, False, True)
+4	council	6ec6926e-2093-4c7f-803e-f8cf24d52bc3	3	6	131	call_budget_exceeded	per_layer L1..L6 = (True, True, True, False, False, True)
+4	single_model	9542ef45-bec4-4cdd-9fb3-2db166d76528	1	6	113	budget_exceeded	per_layer L1..L6 = (True, False, True, False, False, True)

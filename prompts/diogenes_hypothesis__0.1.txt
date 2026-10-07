@@ -1,0 +1,12 @@
+PLAN_01_PLACEHOLDER — replaced in Plan 02 by production body.
+
+{judging_criteria_block}
+
+Benchmark task: {benchmark_task_description}
+
+Recent Agora context:
+{recent_agora_context}
+
+Role-specific emphasis: {role_specific_emphasis}
+
+{output_format_instructions}

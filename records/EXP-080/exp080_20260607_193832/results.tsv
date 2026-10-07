@@ -1,0 +1,9 @@
+seed	arm	run_id	consec_depth	raw_max_depth	realized_calls	halt_reason	per_layer
+0	council	d9601407-5f76-42ec-9598-2799eca5dd3c	3	6	183	duration_exceeded	per_layer L1..L6 = (True, True, True, False, False, True)
+1	council	f34a9c64-2af0-43bd-9aab-05aa72f97977	1	6	145	duration_exceeded	per_layer L1..L6 = (True, False, True, False, False, True)
+2	council	d68ebca5-2628-43cf-b10e-beb9148e00b5	2	6	124	duration_exceeded	per_layer L1..L6 = (True, True, False, False, False, True)
+3	council	8ef4a653-4b7e-426f-94dc-75e2ef59f432	3	6	120	duration_exceeded	per_layer L1..L6 = (True, True, True, False, False, True)
+4	council	301f8871-edff-49b3-9dac-e6fcae5c316f	3	6	94	duration_exceeded	per_layer L1..L6 = (True, True, True, False, False, True)
+5	council	dec785d2-4302-44f7-a9b3-bac1363774c6	3	6	115	duration_exceeded	per_layer L1..L6 = (True, True, True, False, False, True)
+6	council	139a382d-ea11-431d-aafd-99ae4c6498c9	1	6	125	duration_exceeded	per_layer L1..L6 = (True, False, True, False, False, True)
+7	council	de94529e-f67d-4b01-b68b-db8d7306ba1f	3	6	124	duration_exceeded	per_layer L1..L6 = (True, True, True, False, False, True)
